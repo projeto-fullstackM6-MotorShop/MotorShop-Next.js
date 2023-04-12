@@ -81,9 +81,20 @@ const theme = extendTheme({
   },
 
   components: {
+
+    variants: {
+      textBody1: {
+        fonts: "body",
+        fontWeights: "semibold",
+        fontSize: "xxxl",
+        color: "grey.2"
+      }
+    }
+
+    ,
+
     Button: {
       variants: {
-        
         grey1: {
           bg: "grey.0",
           fontSize: "xs",
@@ -174,13 +185,14 @@ const theme = extendTheme({
         },
         
         outline2: {
-          bg: "grey.4",
+          fontWeights: "semibold",
           fontSize: "xs",
           border: "1.5px solid",
           borderColor: "grey.4",
           borderRadius: "4px",
           color: "grey.0",
           padding: "12px 28px",
+          fonts: "body",
           _hover: {
             bg: "grey.1",
             color: "grey.10",
