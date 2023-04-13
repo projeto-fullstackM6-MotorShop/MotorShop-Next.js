@@ -9,6 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import AvatarIcon from "./avatarIcon";
 
 const AnnouceCard = (data: ICardPropInterface) => {
   const {
@@ -84,12 +85,7 @@ const AnnouceCard = (data: ICardPropInterface) => {
           {description}
         </Text>
         <Flex alignItems={"center"} gap={"8px"}>
-          <Box
-            bg={"random.1"}
-            width={"32px"}
-            height={"32px"}
-            borderRadius={"50%"}
-          ></Box>
+          <AvatarIcon />
           <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
             {"Nome do Usuário"}
           </Text>
