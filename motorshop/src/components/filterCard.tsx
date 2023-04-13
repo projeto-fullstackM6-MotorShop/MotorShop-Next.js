@@ -127,7 +127,7 @@ const FilterCard = () => {
           mb={'5px'}
         >Km</Text>
 
-        <Flex width={'90%'} justify={'space-between'} >
+        <Flex width={'90%'} justify={'space-between'} maxW={'250px'} >
           <Input
             placeholder="Minima"
             fontSize={'xs'}
@@ -152,7 +152,7 @@ const FilterCard = () => {
           color={'grey.0'}      
           mb={'5px'}
         >Preço</Text>
-        <Flex width={'90%'} justify={'space-between'}>
+        <Flex width={'90%'} justify={'space-between'} maxW={'250px'}>
           <Input
             placeholder="Minimo"
             fontSize={'xs'}
@@ -172,14 +172,17 @@ const FilterCard = () => {
             borderRadius={'3px'}
           ></Input>
         </Flex>
-
+        <Box width={'100%'} >          
         <Button
           background={'brand.4'}
           color={'brand.1'}
           m={'10px'}
           fontSize={'sm'}
-          width={'80%'}
-        >Ver anúncios</Button>
+          width={'90%'}
+          maxW={'225px'}
+          alignSelf={'center'}
+          >Ver anúncios</Button>
+          </Box>
 
       </Flex>
     </>
