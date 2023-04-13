@@ -1,12 +1,10 @@
-import FilterCard from "@/components/filterCard"
-
-const teste = () => {
- 
+const Home = () => {
   return (
     <>
-      <FilterCard></FilterCard>
+      <></>
     </>
-  )
-}
+  );
+};
 
-export default teste
+
+export default Home;

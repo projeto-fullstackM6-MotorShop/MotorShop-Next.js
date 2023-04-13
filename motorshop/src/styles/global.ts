@@ -3,10 +3,10 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   colors: {
     brand: {
-      1: "#EDEAFD",
-      2: "#B0A6F0",
-      3: "#5126EA",
-      4: "#4529E6",
+      1: "#4529E6",
+      2: "#5126EA",
+      3: "#B0A6F0",
+      4: "#EDEAFD",
     },
     grey: {
       0: "#0B0D0D",
@@ -49,8 +49,8 @@ const theme = extendTheme({
   },
 
   fonts: {
-    heading: "Lexend",
-    body: "Inter",
+    heading: `"Lexend", sans-serif`,
+    body: `"Inter", sans-serif`,
   },
 
   fontSizes: {
@@ -71,11 +71,182 @@ const theme = extendTheme({
     bold: 700,
   },
 
-  styles: {
-    global: {
-      body: {
-        bg: "white",
-        color: "blue.600",
+  components: {
+    variants: {
+      textBody1: {
+        fonts: "body",
+        fontWeights: "semibold",
+        fontSize: "xxxl",
+        color: "grey.2",
+      },
+    },
+
+    Button: {
+      variants: {
+        grey1: {
+          bg: "grey.0",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "grey.0",
+          borderRadius: "4px",
+          color: "grey.11",
+          padding: "12px 28px",
+          _hover: {
+            bg: "grey.1",
+          },
+        },
+
+        negative: {
+          bg: "grey.6",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "grey.6",
+          borderRadius: "4px",
+          color: "grey.2",
+          padding: "12px 28px",
+          _hover: {
+            bg: "grey.5",
+          },
+        },
+
+        diable: {
+          bg: "grey.5",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "grey.5",
+          borderRadius: "4px",
+          color: "grey.11",
+          padding: "12px 28px",
+        },
+
+        brand1: {
+          bg: "brand.1",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "brand.1",
+          borderRadius: "4px",
+          color: "grey.11",
+          padding: "12px 28px",
+          _hover: {
+            bg: "brand.2",
+          },
+        },
+
+        brandOpacity: {
+          bg: "brand.4",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "brand.4",
+          borderRadius: "4px",
+          color: "brand.1",
+          padding: "12px 28px",
+        },
+
+        light: {
+          bg: "grey.10",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "grey.10",
+          borderRadius: "4px",
+          color: "grey.1",
+          padding: "12px 28px",
+        },
+
+        outline1: {
+          bg: "grey.11",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "grey.0",
+          borderRadius: "4px",
+          color: "grey.0",
+          padding: "12px 28px",
+        },
+
+        big45: {
+          bg: "grey.1",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "grey.1",
+          borderRadius: "4px",
+          color: "grey.10",
+          padding: "12px 28px",
+        },
+
+        outline2: {
+          fontWeights: "semibold",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "grey.4",
+          borderRadius: "4px",
+          color: "grey.0",
+          padding: "12px 28px",
+          fonts: "body",
+          _hover: {
+            bg: "grey.1",
+            color: "grey.10",
+          },
+        },
+
+        outlineBrand1: {
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "brand.1",
+          borderRadius: "4px",
+          color: "grey.11",
+          padding: "12px 28px",
+          _hover: {
+            bg: "brand.4",
+            border: "brand.1",
+          },
+        },
+
+        link: {
+          fontSize: "xs",
+          borderRadius: "4px",
+          color: "grey.0",
+          padding: "12px 28px",
+          _hover: {
+            bg: "grey.8",
+          },
+        },
+
+        alert: {
+          bg: "alert.3",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "alert.3",
+          borderRadius: "4px",
+          color: "alert.1",
+          padding: "12px 28px",
+          _hover: {
+            bg: "alert.2",
+            border: "alert.2",
+          },
+        },
+
+        sucess: {
+          bg: "sucess.3",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "sucess.3",
+          borderRadius: "4px",
+          color: "sucess.1",
+          padding: "12px 28px",
+          _hover: {
+            bg: "sucess.2",
+            border: "sucess.2",
+          },
+        },
+
+        brandDisable: {
+          bg: "brand.3",
+          fontSize: "xs",
+          border: "1.5px solid",
+          borderColor: "brand.3",
+          borderRadius: "4px",
+          color: "brand.4",
+          padding: "12px 28px",
+        },
       },
     },
   },
