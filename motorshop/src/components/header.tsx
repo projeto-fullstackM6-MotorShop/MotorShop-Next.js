@@ -10,35 +10,20 @@ import {
   Image,
   Link,
   Stack,
+  Text,
   useDisclosure,
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import AvatarIcon from "./avatarIcon";
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   // Usuario para teste de modal com usuario "user = true" e sem usuario "user = false"
-  let user = false;
+  let user = true;
   const userName = "Clayson Roberto";
-
-  // Gere um número aleatório para escolher a cor de fundo do círculo
-  const colors_bg_icon_perfil = [
-    "#E34D8C",
-    "#C04277",
-    "#7D2A4D",
-    "#7000FF",
-    "#6200E3",
-    "#36007D",
-    "#349974",
-    "#2A7D5F",
-    "#153D2E",
-    "#6100FF",
-    "#5700E3",
-    "#30007D",
-  ];
-  const numberColor = Math.floor(Math.random() * colors_bg_icon_perfil.length);
 
   return (
     <>
@@ -86,14 +71,15 @@ const Header = () => {
             >
               <Wrap>
                 <WrapItem alignItems={"center"} marginRight={"124px"}>
-                  <Avatar
-                    marginRight={"8px"}
-                    bgColor={colors_bg_icon_perfil[numberColor]}
-                    name={userName}
-                    color={"grey.11"}
-                    size={"sm"}
-                  />
-                  <p>{userName}</p>
+                  <AvatarIcon />
+                  <Text
+                    marginLeft={"8px"}
+                    fontSize={"xs"}
+                    fontWeight={"normal"}
+                    color={"grey.2"}
+                  >
+                    {userName}
+                  </Text>
                 </WrapItem>
               </Wrap>
             </Flex>
