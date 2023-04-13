@@ -1,9 +1,10 @@
-import FilterCard from "@/components/filtercard/filterCard"
+import FilterCard from "@/components/filterCard"
 
 const teste = () => {
-  return (    
+ 
+  return (
     <>
-      <FilterCard></FilterCard>    
+      <FilterCard></FilterCard>
     </>
   )
 }
