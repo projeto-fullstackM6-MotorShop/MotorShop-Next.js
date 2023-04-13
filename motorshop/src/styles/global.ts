@@ -3,10 +3,10 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   colors: {
     brand: {
-      1: "#EDEAFD",
-      2: "#B0A6F0",
-      3: "#5126EA",
-      4: "#4529E6",
+      1: "#4529E6",
+      2: "#5126EA",
+      3: "#B0A6F0",
+      4: "#EDEAFD",
     },
     grey: {
       0: "#0B0D0D",
@@ -49,8 +49,8 @@ const theme = extendTheme({
   },
 
   fonts: {
-    heading: "Lexend",
-    body: "Inter",
+    heading: `"Lexend", sans-serif`,
+    body: `"Inter", sans-serif`,
   },
 
   fontSizes: {
@@ -71,27 +71,15 @@ const theme = extendTheme({
     bold: 700,
   },
 
-  styles: {
-    global: {
-      body: {
-        bg: "white",
-        color: "blue.600",
-      },
-    },
-  },
-
   components: {
-
     variants: {
       textBody1: {
         fonts: "body",
         fontWeights: "semibold",
         fontSize: "xxxl",
-        color: "grey.2"
-      }
-    }
-
-    ,
+        color: "grey.2",
+      },
+    },
 
     Button: {
       variants: {
@@ -107,7 +95,7 @@ const theme = extendTheme({
             bg: "grey.1",
           },
         },
-        
+
         negative: {
           bg: "grey.6",
           fontSize: "xs",
@@ -120,7 +108,7 @@ const theme = extendTheme({
             bg: "grey.5",
           },
         },
-        
+
         diable: {
           bg: "grey.5",
           fontSize: "xs",
@@ -130,7 +118,7 @@ const theme = extendTheme({
           color: "grey.11",
           padding: "12px 28px",
         },
-        
+
         brand1: {
           bg: "brand.1",
           fontSize: "xs",
@@ -143,7 +131,7 @@ const theme = extendTheme({
             bg: "brand.2",
           },
         },
-        
+
         brandOpacity: {
           bg: "brand.4",
           fontSize: "xs",
@@ -153,7 +141,7 @@ const theme = extendTheme({
           color: "brand.1",
           padding: "12px 28px",
         },
-        
+
         light: {
           bg: "grey.10",
           fontSize: "xs",
@@ -163,7 +151,7 @@ const theme = extendTheme({
           color: "grey.1",
           padding: "12px 28px",
         },
-        
+
         outline1: {
           bg: "grey.11",
           fontSize: "xs",
@@ -173,7 +161,7 @@ const theme = extendTheme({
           color: "grey.0",
           padding: "12px 28px",
         },
-       
+
         big45: {
           bg: "grey.1",
           fontSize: "xs",
@@ -183,7 +171,7 @@ const theme = extendTheme({
           color: "grey.10",
           padding: "12px 28px",
         },
-        
+
         outline2: {
           fontWeights: "semibold",
           fontSize: "xs",
