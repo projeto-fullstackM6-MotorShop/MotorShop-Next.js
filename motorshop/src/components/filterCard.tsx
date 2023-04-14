@@ -1,6 +1,6 @@
 import { FilterContext } from "@/contexts/filterContext";
 import { useContext } from "react";
-import { Box, Button, Flex, Input, Text, theme } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Input, Text, theme } from '@chakra-ui/react';
 import dataCar from '../../../dataTeste'
 
 const FilterCard = () => {
@@ -8,12 +8,12 @@ const FilterCard = () => {
   return (
     <>
       <Flex justify="start" flexDirection='column' marginLeft={'20px'}>
-        <Text
+        <Heading
           fontSize='sm'
           fontFamily='heading'
-          fontWeight='semibold'
+          fontWeight='bold'
           color={'grey.0'}         
-        >Marca</Text>
+        >Marca</Heading>
         <Box marginTop={'5px'}>
           {
             allMarks.map((model) => {
@@ -21,7 +21,7 @@ const FilterCard = () => {
                 <Text
                   fontSize='xs'
                   fontFamily='heading'
-                  fontWeight='semibold'
+                  fontWeight='bold'
                   color={'grey.3'}
                   key={model}
                   cursor={'pointer'}
@@ -30,12 +30,12 @@ const FilterCard = () => {
             })
           }
         </Box>
-        <Text
+        <Heading
           fontSize='sm'
           fontFamily='heading'
-          fontWeight='semibold'
+          fontWeight='bold'
           color={'grey.0'}         
-        >Modelo</Text>
+        >Modelo</Heading>
         <Box marginTop={'5px'}>
           {
             allModels.map((model) => {
@@ -52,12 +52,12 @@ const FilterCard = () => {
             })
           }
         </Box>
-        <Text
+        <Heading
           fontSize='sm'
           fontFamily='heading'
-          fontWeight='semibold'
+          fontWeight='bold'
           color={'grey.0'}         
-        >Cor</Text>
+        >Cor</Heading>
         <Box marginTop={'5px'}>
           {
             allColors.map((model) => {
@@ -74,12 +74,12 @@ const FilterCard = () => {
             })
           }
         </Box>
-        <Text
+        <Heading
           fontSize='sm'
           fontFamily='heading'
           fontWeight='semibold'
           color={'grey.0'}         
-        >Ano</Text>
+        >Ano</Heading>
         <Box marginTop={'5px'}>
         {
           allYears.map((model) => {
@@ -96,36 +96,36 @@ const FilterCard = () => {
               })
             }
             </Box>
-        <Text
+        <Heading
           fontSize='sm'
           fontFamily='heading'
           fontWeight='semibold'
           color={'grey.0'}    
-        >Combustível</Text>
+        >Combustível</Heading>
         <Box marginTop={'5px'}>
 
         {
           allFuels.map((model) => {
             return (
-              <Text
+              <Heading
                 fontSize='xs'
                 fontFamily='heading'
                 fontWeight='semibold'
                 color={'grey.3'}
                 key={model}
                 cursor={'pointer'}
-                >{model}</Text>
+                >{model}</Heading>
                 )
               })
             }
             </Box>
-        <Text
+        <Heading
           fontSize='sm'
           fontFamily='heading'
           fontWeight='semibold'
           color={'grey.0'}       
           mb={'5px'}
-        >Km</Text>
+        >Km</Heading>
 
         <Flex width={'90%'} justify={'space-between'} maxW={'250px'} >
           <Input
@@ -145,13 +145,13 @@ const FilterCard = () => {
             borderRadius={'3px'}
           ></Input>
         </Flex>
-        <Text
+        <Heading
           fontSize='sm'
           fontFamily='heading'
           fontWeight='semibold'
           color={'grey.0'}      
           mb={'5px'}
-        >Preço</Text>
+        >Preço</Heading>
         <Flex width={'90%'} justify={'space-between'} maxW={'250px'}>
           <Input
             placeholder="Minimo"
