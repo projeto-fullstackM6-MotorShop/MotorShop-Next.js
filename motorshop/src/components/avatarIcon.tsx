@@ -1,6 +1,10 @@
 import { Avatar } from "@chakra-ui/react";
 
-const AvatarIcon = () => {
+interface IAvatar{
+  size?:string
+}
+
+const AvatarIcon = (props: IAvatar) => {
   const userName = "Clayson Roberto";
 
   const numberColor = Math.floor(Math.random() * 13);
@@ -10,7 +14,7 @@ const AvatarIcon = () => {
       name={userName}
       bg={`random.${numberColor}`}
       color={"grey.11"}
-      size={"sm"}
+      size={props.size || 'sm'}
       fontWeight={"bold"}
     />
   );

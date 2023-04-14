@@ -12,7 +12,7 @@ const Footer = () => {
         display={"flex"}
         flexDirection={{ base: "column", md: "row" }}
         alignItems={"center"}
-        justifyContent={"space-between"}
+        justifyContent={"space-between"}     
       >
         <Image src="/motorsShopFooter.svg" alt="logo" />
 

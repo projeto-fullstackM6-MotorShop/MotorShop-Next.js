@@ -1,24 +1,89 @@
 import { FilterContext } from "@/contexts/filterContext";
 import { useContext } from "react";
-import { Box, Button, Flex, Input, Text, theme } from "@chakra-ui/react";
-import dataCar from "../../../dataTeste";
+import { Box, Button, Flex, Heading, Input, Text, theme } from '@chakra-ui/react';
+import dataCar from '../../../dataTeste'
 
 const FilterCard = () => {
   const { allModels, allMarks, allColors, allYears, allFuels } =
     useContext(FilterContext);
   return (
     <>
-      <Flex justify="start" flexDirection="column" marginLeft={"20px"}>
-        <Text
-          fontSize="sm"
-          fontFamily="heading"
-          fontWeight="semibold"
-          color={"grey.0"}
-        >
-          Marca
-        </Text>
-        <Box marginTop={"5px"}>
-          {allMarks.map((model) => {
+      <Flex justify="start" flexDirection='column' marginLeft={'20px'}>
+        <Heading
+          fontSize='sm'
+          fontFamily='heading'
+          fontWeight='bold'
+          color={'grey.0'}         
+        >Marca</Heading>
+        <Box marginTop={'5px'}>
+          {
+            allMarks.map((model) => {
+              return (
+                <Text
+                  fontSize='xs'
+                  fontFamily='heading'
+                  fontWeight='bold'
+                  color={'grey.3'}
+                  key={model}
+                  cursor={'pointer'}
+                >{model}</Text>
+              )
+            })
+          }
+        </Box>
+        <Heading
+          fontSize='sm'
+          fontFamily='heading'
+          fontWeight='bold'
+          color={'grey.0'}         
+        >Modelo</Heading>
+        <Box marginTop={'5px'}>
+          {
+            allModels.map((model) => {
+              return (
+                <Text
+                  fontSize='xs'
+                  fontFamily='heading'
+                  fontWeight='semibold'
+                  color={'grey.3'}
+                  key={model}
+                  cursor={'pointer'}
+                >{model}</Text>
+              )
+            })
+          }
+        </Box>
+        <Heading
+          fontSize='sm'
+          fontFamily='heading'
+          fontWeight='bold'
+          color={'grey.0'}         
+        >Cor</Heading>
+        <Box marginTop={'5px'}>
+          {
+            allColors.map((model) => {
+              return (
+                <Text
+                  fontSize='xs'
+                  fontFamily='heading'
+                  fontWeight='semibold'
+                  color={'grey.3'}
+                  key={model}
+                  cursor={'pointer'}
+                >{model}</Text>
+              )
+            })
+          }
+        </Box>
+        <Heading
+          fontSize='sm'
+          fontFamily='heading'
+          fontWeight='semibold'
+          color={'grey.0'}         
+        >Ano</Heading>
+        <Box marginTop={'5px'}>
+        {
+          allYears.map((model) => {
             return (
               <Text
                 fontSize="xs"
@@ -26,118 +91,42 @@ const FilterCard = () => {
                 fontWeight="semibold"
                 color={"grey.3"}
                 key={model}
-                cursor={"pointer"}
-              >
-                {model}
-              </Text>
-            );
-          })}
-        </Box>
-        <Text
-          fontSize="sm"
-          fontFamily="heading"
-          fontWeight="semibold"
-          color={"grey.0"}
-        >
-          Modelo
-        </Text>
-        <Box marginTop={"5px"}>
-          {allModels.map((model) => {
+                cursor={'pointer'}
+                >{model}</Text>
+                )
+              })
+            }
+            </Box>
+        <Heading
+          fontSize='sm'
+          fontFamily='heading'
+          fontWeight='semibold'
+          color={'grey.0'}    
+        >Combustível</Heading>
+        <Box marginTop={'5px'}>
+
+        {
+          allFuels.map((model) => {
             return (
-              <Text
-                fontSize="xs"
-                fontFamily="heading"
-                fontWeight="semibold"
-                color={"grey.3"}
+              <Heading
+                fontSize='xs'
+                fontFamily='heading'
+                fontWeight='semibold'
+                color={'grey.3'}
                 key={model}
-                cursor={"pointer"}
-              >
-                {model}
-              </Text>
-            );
-          })}
-        </Box>
-        <Text
-          fontSize="sm"
-          fontFamily="heading"
-          fontWeight="semibold"
-          color={"grey.0"}
-        >
-          Cor
-        </Text>
-        <Box marginTop={"5px"}>
-          {allColors.map((model) => {
-            return (
-              <Text
-                fontSize="xs"
-                fontFamily="heading"
-                fontWeight="semibold"
-                color={"grey.3"}
-                key={model}
-                cursor={"pointer"}
-              >
-                {model}
-              </Text>
-            );
-          })}
-        </Box>
-        <Text
-          fontSize="sm"
-          fontFamily="heading"
-          fontWeight="semibold"
-          color={"grey.0"}
-        >
-          Ano
-        </Text>
-        <Box marginTop={"5px"}>
-          {allYears.map((model) => {
-            return (
-              <Text
-                fontSize="xs"
-                fontFamily="heading"
-                fontWeight="semibold"
-                color={"grey.3"}
-                key={model}
-                cursor={"pointer"}
-              >
-                {model}
-              </Text>
-            );
-          })}
-        </Box>
-        <Text
-          fontSize="sm"
-          fontFamily="heading"
-          fontWeight="semibold"
-          color={"grey.0"}
-        >
-          Combustível
-        </Text>
-        <Box marginTop={"5px"}>
-          {allFuels.map((model) => {
-            return (
-              <Text
-                fontSize="xs"
-                fontFamily="heading"
-                fontWeight="semibold"
-                color={"grey.3"}
-                key={model}
-                cursor={"pointer"}
-              >
-                {model}
-              </Text>
-            );
-          })}
-        </Box>
-        <Text
-          fontSize="sm"
-          fontFamily="heading"
-          fontWeight="semibold"
-          color={"grey.0"}
-          mb={"5px"}
-        >
-          Km
-        </Text>
+                cursor={'pointer'}
+                >{model}</Heading>
+                )
+              })
+            }
+            </Box>
+        <Heading
+          fontSize='sm'
+          fontFamily='heading'
+          fontWeight='semibold'
+          color={'grey.0'}       
+          mb={'5px'}
+        >Km</Heading>
 
         <Flex width={"90%"} justify={"space-between"} maxW={"250px"}>
           <Input
@@ -157,16 +146,14 @@ const FilterCard = () => {
             borderRadius={"3px"}
           ></Input>
         </Flex>
-        <Text
-          fontSize="sm"
-          fontFamily="heading"
-          fontWeight="semibold"
-          color={"grey.0"}
-          mb={"5px"}
-        >
-          Preço
-        </Text>
-        <Flex width={"90%"} justify={"space-between"} maxW={"250px"}>
+        <Heading
+          fontSize='sm'
+          fontFamily='heading'
+          fontWeight='semibold'
+          color={'grey.0'}      
+          mb={'5px'}
+        >Preço</Heading>
+        <Flex width={'90%'} justify={'space-between'} maxW={'250px'}>
           <Input
             placeholder="Minimo"
             fontSize={"xs"}

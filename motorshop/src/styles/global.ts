@@ -109,7 +109,7 @@ const theme = extendTheme({
           },
         },
 
-        diable: {
+        disable: {
           bg: "grey.5",
           fontSize: "xs",
           border: "1.5px solid",
