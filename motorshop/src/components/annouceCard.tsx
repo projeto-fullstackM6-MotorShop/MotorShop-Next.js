@@ -34,7 +34,7 @@ const AnnouceCard = (data: ICardPropInterface) => {
   const pathname = router.pathname;
 
   return (
-    <Card as={"li"} width={"352px"} height={"152px"}>
+    <Card as={"li"} width={"100% / 3"}>
       <CardBody display={"flex"} flexDirection={"column"} gap={"16px"}>
         {pathname == "/" && is_good_price && (
           <Text

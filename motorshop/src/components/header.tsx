@@ -22,7 +22,7 @@ const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   // Usuario para teste de modal com usuario "user = true" e sem usuario "user = false"
-  let user = true;
+  let user = false;
   const userName = "Clayson Roberto";
 
   return (
@@ -37,9 +37,7 @@ const Header = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
         padding={{ base: "0px 15px", md: "0px 60px" }}
-        position={"absolute"}
-        top={"0px"}
-        left={"0px"}
+        zIndex={1}
       >
         <Image src="/motorsShop.svg" alt="logo" />
 
