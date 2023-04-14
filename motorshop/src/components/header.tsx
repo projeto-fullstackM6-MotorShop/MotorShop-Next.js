@@ -37,7 +37,7 @@ const Header = () => {
         justifyContent={"space-between"}
         alignItems={"center"}
         padding={{ base: "0px 15px", md: "0px 60px" }}
-        position={"absolute"}
+        position={"fixed"}
         top={"0px"}
         left={"0px"}
       >
