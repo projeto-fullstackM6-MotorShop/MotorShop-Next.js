@@ -95,7 +95,7 @@ const Header = () => {
               <Link as={NextLink} href="">
                 Fazer login
               </Link>
-              <Button variant={"brand1"} marginLeft={"44px"}>
+              <Button variant={"outline2"} marginLeft={"44px"}>
                 Cadastrar
               </Button>
             </Flex>

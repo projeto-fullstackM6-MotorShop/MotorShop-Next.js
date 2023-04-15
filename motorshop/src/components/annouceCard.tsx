@@ -76,14 +76,7 @@ const AnnouceCard = (data: ICardPropInterface) => {
         <Heading fontSize={"xs"} fontWeight={"semibold"} color={"grey.1"}>
           {`${brand} - ${model}`}
         </Heading>
-        <Text
-          fontSize={"xxs"}
-          fontWeight={"normal"}
-          lineHeight={"24px"}
-          color={"grey.2"}
-        >
-          {description}
-        </Text>
+        <Text textStyle={"body_1_400"}>{description}</Text>
         <Flex alignItems={"center"} gap={"8px"}>
           <AvatarIcon />
           <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>

@@ -71,140 +71,330 @@ const theme = extendTheme({
     bold: 700,
   },
 
-  components: {
-    variants: {
-      textBody1: {
-        fonts: "body",
-        fontWeights: "semibold",
-        fontSize: "xxxl",
-        color: "grey.2",
-      },
+  textStyles: {
+    body_1_400: {
+      fontFamily: "body",
+      fontWeight: "normal",
+      fontSize: "xs",
+      color: "grey.2"
     },
 
+    body_1_600: {
+      fontFamily: "body",
+      fontWeight: "semiBold",
+      fontSize: "xs",
+      color: "grey.2"
+    },
+
+    body_2_400: {
+      fontFamily: "body",
+      fontWeight: "normal",
+      fontSize: "xxs",
+      color: "grey.2"
+    },
+
+    body_2_500: {
+      fontFamily: "body",
+      fontWeight: "medium",
+      fontSize: "xxs",
+      color: "grey.2"
+    },
+
+    label: {
+      fontFamily: "body",
+      fontWeight: "medium",
+      fontSize: "xxs",
+      color: "grey.1"
+    },
+
+  },
+
+  headerText: {
+    healding_1_700: {
+      fontFamily: "heading",
+      fontWeight: "bold",
+      fontSize: "xxxl",
+      color: "grey.1"
+    },
+
+    healding_2_600: {
+      fontFamily: "heading",
+      fontWeight: "semiBold",
+      fontSize: "xxl",
+      color: "grey.1"
+    },
+
+    healding_3_600: {
+      fontFamily: "heading",
+      fontWeight: "semiBold",
+      fontSize: "xl",
+      color: "grey.1"
+    },
+
+    healding_3_500: {
+      fontFamily: "heading",
+      fontWeight: "medium",
+      fontSize: "xl",
+      color: "grey.1"
+    },
+
+    healding_4_600: {
+      fontFamily: "heading",
+      fontWeight: "semiBold",
+      fontSize: "lg",
+      color: "grey.1"
+    },
+
+    healding_4_500: {
+      fontFamily: "heading",
+      fontWeight: "medium",
+      fontSize: "lg",
+      color: "grey.1"
+    },
+
+    healding_5_600: {
+      fontFamily: "heading",
+      fontWeight: "semiBold",
+      fontSize: "md",
+      color: "grey.1"
+    },
+
+    healding_5_500: {
+      fontFamily: "heading",
+      fontWeight: "medium",
+      fontSize: "md",
+      color: "grey.1"
+    },
+
+    healding_6_600: {
+      fontFamily: "heading",
+      fontWeight: "semiBold",
+      fontSize: "sm",
+      color: "grey.1"
+    },
+
+    healding_6_500: {
+      fontFamily: "heading",
+      fontWeight: "medium",
+      fontSize: "sm",
+      color: "grey.1"
+    },
+
+    healding_7_600: {
+      fontFamily: "heading",
+      fontWeight: "semiBold",
+      fontSize: "xs",
+      color: "grey.1"
+    },
+
+    healding_7_500: {
+      fontFamily: "heading",
+      fontWeight: "medium",
+      fontSize: "xs",
+      color: "grey.1"
+    },
+  },
+
+  components: {
     Button: {
       variants: {
         grey1: {
           bg: "grey.0",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "grey.0",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "grey.11",
-          padding: "12px 28px",
+          fontWeight: "semiBold",
+
           _hover: {
             bg: "grey.1",
+            borderColor: "grey.1",
           },
         },
 
         negative: {
           bg: "grey.6",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "grey.6",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "grey.2",
-          padding: "12px 28px",
+          fontWeight: "semiBold",
+
           _hover: {
             bg: "grey.5",
+            borderColor: "grey.5",
           },
         },
 
         disable: {
           bg: "grey.5",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "grey.5",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "grey.11",
-          padding: "12px 28px",
+          fontWeight: "semiBold",
         },
 
         brand1: {
           bg: "brand.1",
-          fontSize: "xs",
-          border: "1.5px solid",
-          borderColor: "brand.1",
-          borderRadius: "4px",
-          color: "grey.11",
           padding: "12px 28px",
+          
+          border: "1.5px solid",
+          borderColor: "brand1",
+          borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
+          color: "grey.11",
+          fontWeight: "semiBold",
+
           _hover: {
             bg: "brand.2",
+            borderColor: "brand.2",
           },
         },
 
         brandOpacity: {
           bg: "brand.4",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "brand.4",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "brand.1",
-          padding: "12px 28px",
+          fontWeight: "semiBold",
         },
 
         light: {
           bg: "grey.10",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "grey.10",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "grey.1",
+          fontWeight: "semiBold",
+        },
+
+        outlineLight: {
           padding: "12px 28px",
+          
+          border: "1.5px solid",
+          borderColor: "grey.10",
+          borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
+          color: "grey.10",
+          fontWeight: "semiBold",
+
+          _hover: {
+            bg: "grey.10",
+            borderColor: "grey.10",
+
+            color: "grey.1",
+          },
         },
 
         outline1: {
-          bg: "grey.11",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "grey.0",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "grey.0",
-          padding: "12px 28px",
+          fontWeight: "semiBold",
         },
 
         big45: {
           bg: "grey.1",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "grey.1",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "grey.10",
-          padding: "12px 28px",
+          fontWeight: "semiBold",
         },
 
         outline2: {
-          fontWeights: "semibold",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "grey.4",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "grey.0",
-          padding: "12px 28px",
-          fonts: "body",
+          fontWeight: "semiBold",
+
           _hover: {
             bg: "grey.1",
+            borderColor: "grey.1",
+
             color: "grey.10",
           },
         },
 
         outlineBrand1: {
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "brand.1",
           borderRadius: "4px",
-          color: "grey.11",
-          padding: "12px 28px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
+          color: "brand.1",
+          fontWeight: "semiBold",
+
           _hover: {
             bg: "brand.4",
-            border: "brand.1",
+            borderColor: "barnd.1",
+
+            color: "brand.1",
           },
         },
 
         link: {
-          fontSize: "xs",
-          borderRadius: "4px",
-          color: "grey.0",
           padding: "12px 28px",
+          
+          border: "1.5px solid",
+          borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
+          color: "grey.0",
+          fontWeight: "semiBold",
+
           _hover: {
             bg: "grey.8",
           },
@@ -212,43 +402,61 @@ const theme = extendTheme({
 
         alert: {
           bg: "alert.3",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "alert.3",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "alert.1",
-          padding: "12px 28px",
+          fontWeight: "semiBold",
+
           _hover: {
             bg: "alert.2",
-            border: "alert.2",
+            borderColor: "alert.2",
           },
         },
 
         sucess: {
           bg: "sucess.3",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "sucess.3",
           borderRadius: "4px",
-          color: "sucess.1",
-          padding: "12px 28px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
+          color: "secess.1",
+          fontWeight: "semiBold",
+
           _hover: {
             bg: "sucess.2",
-            border: "sucess.2",
+            borderColor: "sucess.2",
           },
         },
 
         brandDisable: {
           bg: "brand.3",
-          fontSize: "xs",
+          padding: "12px 28px",
+          
           border: "1.5px solid",
           borderColor: "brand.3",
           borderRadius: "4px",
+          
+          fontFamily: "body",
+          fontSize: "xs",
           color: "brand.4",
-          padding: "12px 28px",
+          fontWeight: "semiBold",
         },
       },
     },
+
+    Input: {
+      
+    }
   },
 });
 
