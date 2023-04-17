@@ -4,10 +4,14 @@ import {
   Box,
   Button,
   Container,
+  Editable,
+  EditableInput,
+  EditablePreview,
   Flex,
   HStack,
   IconButton,
   Image,
+  Input,
   Link,
   Stack,
   Text,
@@ -92,12 +96,7 @@ const Header = () => {
               w={"311px"}
               h={"100%"}
             >
-              <Link as={NextLink} href="">
-                Fazer login
-              </Link>
-              <Button variant={"outline2"} marginLeft={"44px"}>
-                Cadastrar
-              </Button>
+              <Input placeholder={"teste"} />
             </Flex>
           </HStack>
         )}

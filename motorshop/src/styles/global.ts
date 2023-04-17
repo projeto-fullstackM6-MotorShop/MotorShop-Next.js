@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 
+
 const theme = extendTheme({
   colors: {
     brand: {
@@ -455,7 +456,36 @@ const theme = extendTheme({
     },
 
     Input: {
-      
+      baseStyle: {
+        field: {
+          border: "1.5px solid",
+          borderColor: "grey.7",
+          borderRadius: "4px",
+          
+          _placeholder: {
+            fontFamily: "body",
+            fontWeight: "normal",
+            fontSize: "xs",
+            color: "grey.3"
+          },
+
+          _hover: {
+            bg: "grey.8",
+            borderColor: "grey.8"
+          },
+
+          _focus: {
+            bg: "grey.9",
+            borderColor: "brand.2",
+            fontFamily: "body",
+            fontWeight: "normal",
+            fontSize: "xs",
+            _placeholder: {
+              color: "transparent"
+            }
+          },
+        }
+      }
     }
   },
 });
