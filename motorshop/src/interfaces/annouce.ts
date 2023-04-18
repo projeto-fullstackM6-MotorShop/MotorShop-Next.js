@@ -1,3 +1,6 @@
+import { ReactNode } from "react";
+import { JsxElement } from "typescript";
+
 export interface IAnnouceInterface {
   id: string;
   brand: string;
@@ -14,8 +17,13 @@ export interface IAnnouceInterface {
   updated_at: Date;
   is_active: boolean;
   is_good_price: boolean;
+  map?(arg0: (car: ICarBrand) => void): ReactNode;
 }
 
 export interface ICardPropInterface {
   data: IAnnouceInterface;
+}
+
+export interface ICarBrand {
+  name: string;
 }

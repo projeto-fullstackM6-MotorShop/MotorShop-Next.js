@@ -3,6 +3,7 @@ import {
   SetStateAction,
   createContext,
   useContext,
+  useEffect,
   useState,
 } from "react";
 import { IChildren } from "@/interfaces/misc";
@@ -11,14 +12,22 @@ import { IAnnouceInterface } from "../interfaces/annouce";
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
+  allCars: IAnnouceInterface[];
+  allBrands: string[];
 }
 
-export const announcementContext = createContext<announcementProviderData>(
+export const AnnouncementContext = createContext<announcementProviderData>(
   {} as announcementProviderData
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
   const [allCars, setAllCars] = useState([] as IAnnouceInterface[]);
+  const [allBrands, setAllBrands] = useState([] as string[]);
+
+  useEffect(() => {
+    const brands = Object.keys(allCars);
+    setAllBrands(brands);
+  }, [allCars]);
 
   const getAllCars = async () => {
     try {
@@ -29,8 +38,10 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
   return (
-    <announcementContext.Provider value={{ getAllCars }}>
+    <AnnouncementContext.Provider value={{ getAllCars, allCars, allBrands }}>
       {children}
-    </announcementContext.Provider>
+    </AnnouncementContext.Provider>
   );
 };
+
+export const useAnnouncement = () => useContext(AnnouncementContext);

@@ -1,15 +1,35 @@
 import Header from "@/components/header";
 import Footer from "../components/footer";
-import { Box, Button, Center, Flex, Heading, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  Heading,
+  Image,
+  useDisclosure,
+} from "@chakra-ui/react";
 import FilterCard from "@/components/filterCard";
 import ListOfCars from "@/components/listOfCars";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import { useAnnouncement } from "@/contexts/announcementContext";
+import { useEffect } from "react";
+import CreateAnnouncementModal from "@/components/createAnnouncementModal";
+import { useModal } from "@/contexts/modalContext";
 
 const Home = () => {
+  const { allCars, getAllCars } = useAnnouncement();
+  const { isOpen, onClose, onOpen } = useModal();
+
+  useEffect(() => {
+    getAllCars();
+  }, []);
+
   return (
     <>
       <Header />
-
+      <Button onClick={onOpen}>Clicar</Button>
+      <CreateAnnouncementModal></CreateAnnouncementModal>
       <Flex
         h={"550px"}
         alignItems={"center"}
