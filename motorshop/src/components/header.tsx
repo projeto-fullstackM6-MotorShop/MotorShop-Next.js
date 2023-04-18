@@ -26,7 +26,7 @@ const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   // Usuario para teste de modal com usuario "user = true" e sem usuario "user = false"
-  let user = false;
+  let user = true;
   const userName = "Clayson Roberto";
 
   return (
@@ -76,6 +76,7 @@ const Header = () => {
                   <AvatarIcon />
                   <Text
                     marginLeft={"8px"}
+                    marginRight={"120px"}
                     fontSize={"xs"}
                     fontWeight={"normal"}
                     color={"grey.2"}
@@ -96,7 +97,12 @@ const Header = () => {
               w={"311px"}
               h={"100%"}
             >
-              <Input placeholder={"teste"} />
+              <Link as={NextLink} href="">
+                Fazer login
+              </Link>
+              <Button variant={"outline2"} marginLeft={"44px"}>
+                Cadastrar
+              </Button>
             </Flex>
           </HStack>
         )}
