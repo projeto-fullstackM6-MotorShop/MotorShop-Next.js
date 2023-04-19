@@ -120,6 +120,7 @@ const Header = () => {
             w={"323px"}
             top={"78px"}
             left={"-1px"}
+            zIndex={3000}
           >
             <Stack
               h={"236px"}

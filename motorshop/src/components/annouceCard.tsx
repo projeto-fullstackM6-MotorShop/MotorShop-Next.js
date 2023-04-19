@@ -1,6 +1,7 @@
 import { ICardPropInterface } from "@/interfaces/annouce";
 import {
   Box,
+  Button,
   Card,
   CardBody,
   Flex,
@@ -34,8 +35,33 @@ const AnnouceCard = (data: ICardPropInterface) => {
   const pathname = router.pathname;
 
   return (
-    <Card as={"li"} width={"100% / 3"}>
-      <CardBody display={"flex"} flexDirection={"column"} gap={"16px"}>
+    <Card
+      as={"li"}
+      w={{ base: "290px", lg: "312px" }}
+      h={"356px"}
+      marginBottom={"85px"}
+      bgColor={"transparent"}
+      border={"none"}
+      boxShadow={"none"}
+      minWidth={"none"}
+      marginRight={{ base: "61px", lg: "0px" }}
+    >
+      <Image
+        src={cover_img}
+        alt={"Imagem de capa do anúncio"}
+        w={{ lg: "100%" }}
+        h={{ lg: "152px" }}
+        marginBottom={"16px"}
+        objectFit={"cover"}
+        maxW={"none"}
+      />
+      <CardBody
+        display={"flex"}
+        flexDirection={"column"}
+        gap={"16px"}
+        padding={"0px"}
+        justifyContent={"space-between"}
+      >
         {pathname == "/" && is_good_price && (
           <Text
             fontSize={"xxs"}
@@ -51,6 +77,7 @@ const AnnouceCard = (data: ICardPropInterface) => {
             $
           </Text>
         )}
+
         {pathname.includes("profile") && (
           <Text
             fontSize={"xxs"}
@@ -67,22 +94,23 @@ const AnnouceCard = (data: ICardPropInterface) => {
             {is_active ? "Ativo" : "Inativo"}
           </Text>
         )}
-        <Image
-          src={cover_img}
-          alt={"Imagem de capa do anúncio"}
-          boxSize={"100%"}
-          objectFit={"cover"}
-        />
+
         <Heading fontSize={"xs"} fontWeight={"semibold"} color={"grey.1"}>
           {`${brand} - ${model}`}
         </Heading>
         <Text textStyle={"body_1_400"}>{description}</Text>
-        <Flex alignItems={"center"} gap={"8px"}>
-          <AvatarIcon />
-          <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-            {"Nome do Usuário"}
-          </Text>
-        </Flex>
+
+        {pathname == "/advertiser" ? (
+          <></>
+        ) : (
+          <Flex alignItems={"center"} gap={"8px"}>
+            <AvatarIcon />
+            <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
+              {"Nome do Usuário"}
+            </Text>
+          </Flex>
+        )}
+
         <Flex justifyContent={"space-between"} alignItems={"center"}>
           <Flex gap={"12px"}>
             <Text
@@ -108,6 +136,17 @@ const AnnouceCard = (data: ICardPropInterface) => {
             {`R$ ${price.toFixed(2).toString().replace(".", ",")}`}
           </Heading>
         </Flex>
+
+        {pathname == "/advertiser" ? (
+          <Flex>
+            <Button variant={"outline1"} marginRight={"20px"}>
+              Edite
+            </Button>
+            <Button variant={"outline1"}>Ver detalhes</Button>
+          </Flex>
+        ) : (
+          <></>
+        )}
       </CardBody>
     </Card>
   );
