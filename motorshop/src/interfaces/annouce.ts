@@ -20,6 +20,19 @@ export interface IAnnouceInterface {
   map?(arg0: (car: ICarBrand) => void): ReactNode;
 }
 
+export interface IAnnouncementRequest {
+  brand: string;
+  model: string;
+  fabrication_year: string;
+  km: string;
+  color: string;
+  fuel_type: string;
+  price: number;
+  fipe: number;
+  description: string;
+  cover_img: string;
+}
+
 export interface ICardPropInterface {
   data: IAnnouceInterface;
 }
