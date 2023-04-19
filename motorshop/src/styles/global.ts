@@ -82,7 +82,7 @@ const theme = extendTheme({
 
     body_1_600: {
       fontFamily: "body",
-      fontWeight: "semiBold",
+      fontWeight: "semibold",
       fontSize: "xs",
       color: "grey.2"
     },
@@ -107,96 +107,97 @@ const theme = extendTheme({
       fontSize: "xxs",
       color: "grey.1"
     },
-
-  },
-
-  headerText: {
-    healding_1_700: {
-      fontFamily: "heading",
-      fontWeight: "bold",
-      fontSize: "xxxl",
-      color: "grey.1"
-    },
-
-    healding_2_600: {
-      fontFamily: "heading",
-      fontWeight: "semiBold",
-      fontSize: "xxl",
-      color: "grey.1"
-    },
-
-    healding_3_600: {
-      fontFamily: "heading",
-      fontWeight: "semiBold",
-      fontSize: "xl",
-      color: "grey.1"
-    },
-
-    healding_3_500: {
-      fontFamily: "heading",
-      fontWeight: "medium",
-      fontSize: "xl",
-      color: "grey.1"
-    },
-
-    healding_4_600: {
-      fontFamily: "heading",
-      fontWeight: "semiBold",
-      fontSize: "lg",
-      color: "grey.1"
-    },
-
-    healding_4_500: {
-      fontFamily: "heading",
-      fontWeight: "medium",
-      fontSize: "lg",
-      color: "grey.1"
-    },
-
-    healding_5_600: {
-      fontFamily: "heading",
-      fontWeight: "semiBold",
-      fontSize: "md",
-      color: "grey.1"
-    },
-
-    healding_5_500: {
-      fontFamily: "heading",
-      fontWeight: "medium",
-      fontSize: "md",
-      color: "grey.1"
-    },
-
-    healding_6_600: {
-      fontFamily: "heading",
-      fontWeight: "semiBold",
-      fontSize: "sm",
-      color: "grey.1"
-    },
-
-    healding_6_500: {
-      fontFamily: "heading",
-      fontWeight: "medium",
-      fontSize: "sm",
-      color: "grey.1"
-    },
-
-    healding_7_600: {
-      fontFamily: "heading",
-      fontWeight: "semiBold",
-      fontSize: "xs",
-      color: "grey.1"
-    },
-
-    healding_7_500: {
-      fontFamily: "heading",
-      fontWeight: "medium",
-      fontSize: "xs",
-      color: "grey.1"
-    },
   },
 
   components: {
+    Heading: {
+      variants: {
+      healding_1_700: {
+        fontFamily: "heading",
+        fontWeight: "bold",
+        fontSize: "xxxl",
+        color: "grey.1"
+      },
+  
+      healding_2_600: {
+        fontFamily: "heading",
+        fontWeight: "semibold",
+        fontSize: "xxl",
+        color: "grey.1"
+      },
+  
+      healding_3_600: {
+        fontFamily: "heading",
+        fontWeight: "semibold",
+        fontSize: "xl",
+        color: "grey.1"
+      },
+  
+      healding_3_500: {
+        fontFamily: "heading",
+        fontWeight: "medium",
+        fontSize: "xl",
+        color: "grey.1"
+      },
+  
+      healding_4_600: {
+        fontFamily: "heading",
+        fontWeight: "semibold",
+        fontSize: "lg",
+        color: "grey.1"
+      },
+  
+      healding_4_500: {
+        fontFamily: "heading",
+        fontWeight: "medium",
+        fontSize: "lg",
+        color: "grey.1"
+      },
+  
+      healding_5_600: {
+        fontFamily: "heading",
+        fontWeight: "semibold",
+        fontSize: "md",
+        color: "grey.1"
+      },
+  
+      healding_5_500: {
+        fontFamily: "heading",
+        fontWeight: "medium",
+        fontSize: "md",
+        color: "grey.1"
+      },
+  
+      healding_6_600: {
+        fontFamily: "heading",
+        fontWeight: "semibold",
+        fontSize: "sm",
+        color: "grey.1"
+      },
+  
+      healding_6_500: {
+        fontFamily: "heading",
+        fontWeight: "medium",
+        fontSize: "sm",
+        color: "grey.1"
+      },
+  
+      healding_7_600: {
+        fontFamily: "heading",
+        fontWeight: "semibold",
+        fontSize: "xs",
+        color: "grey.1"
+      },
+  
+      healding_7_500: {
+        fontFamily: "heading",
+        fontWeight: "medium",
+        fontSize: "xs",
+        color: "grey.1"
+        },
+      }
+    },
+
     Button: {
       variants: {
         grey1: {
@@ -210,7 +211,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.11",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "grey.1",
@@ -229,7 +230,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.2",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "grey.5",
@@ -248,7 +249,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.11",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
         },
 
         brand1: {
@@ -262,7 +263,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.11",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "brand.2",
@@ -281,7 +282,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "brand.1",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
         },
 
         light: {
@@ -295,7 +296,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.1",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
         },
 
         outlineLight: {
@@ -308,7 +309,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.10",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "grey.10",
@@ -319,16 +320,16 @@ const theme = extendTheme({
         },
 
         outline1: {
-          padding: "12px 28px",
+          padding: "12px 20px",
           
           border: "1.5px solid",
           borderColor: "grey.0",
           borderRadius: "4px",
           
           fontFamily: "body",
-          fontSize: "xs",
+          fontSize: "xxs",
           color: "grey.0",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
         },
 
         big45: {
@@ -342,7 +343,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.10",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
         },
 
         outline2: {
@@ -355,7 +356,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.0",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "grey.1",
@@ -375,7 +376,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "brand.1",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "brand.4",
@@ -394,7 +395,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.0",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "grey.8",
@@ -412,7 +413,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "alert.1",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "alert.2",
@@ -431,7 +432,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "secess.1",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
 
           _hover: {
             bg: "sucess.2",
@@ -450,7 +451,7 @@ const theme = extendTheme({
           fontFamily: "body",
           fontSize: "xs",
           color: "brand.4",
-          fontWeight: "semiBold",
+          fontWeight: "semibold",
         },
       },
     },
