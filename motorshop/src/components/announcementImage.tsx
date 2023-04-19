@@ -3,10 +3,14 @@ import { FormLabel, Input } from "@chakra-ui/react";
 const AnnouncementImage = ({ imgNumber }: any) => {
   return (
     <>
-      <FormLabel htmlFor={`image{imgNumber}`}>
+      <FormLabel
+        fontSize={"xs"}
+        fontWeight={"bold"}
+        htmlFor={`image{imgNumber}`}
+      >
         {imgNumber}º Imagem da galeria
       </FormLabel>
-      <Input placeholder="https://image.com" />
+      <Input marginBottom={"30px"} placeholder="https://image.com" />
     </>
   );
 };
