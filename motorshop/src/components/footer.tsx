@@ -8,11 +8,11 @@ const Footer = () => {
         w={"100%"}
         h={{ md: "140px", base: "310.34px" }}
         bgColor={"grey.0"}
-        padding={"45px 59px"}
+        padding={{ base: "45px 0px", md: "45px 59px" }}
         display={"flex"}
         flexDirection={{ base: "column", md: "row" }}
         alignItems={"center"}
-        justifyContent={"space-between"}     
+        justifyContent={"space-between"}
       >
         <Image src="/motorsShopFooter.svg" alt="logo" />
 
