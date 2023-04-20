@@ -462,6 +462,7 @@ const theme = extendTheme({
           border: "1.5px solid",
           borderColor: "grey.7",
           borderRadius: "4px",
+          fontSize: "xs",
           
           _placeholder: {
             fontFamily: "body",
