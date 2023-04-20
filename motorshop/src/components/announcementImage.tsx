@@ -10,7 +10,11 @@ const AnnouncementImage = ({ imgNumber }: any) => {
       >
         {imgNumber}º Imagem da galeria
       </FormLabel>
-      <Input marginBottom={"30px"} placeholder="https://image.com" />
+      <Input
+        marginBottom={"30px"}
+        fontSize={"xs"}
+        placeholder="https://image.com"
+      />
     </>
   );
 };

@@ -56,6 +56,11 @@ const CreateAnnouncementModal = () => {
     }
   };
 
+  const closeModal = () => {
+    setCounter(2);
+    onClose();
+  };
+
   const formschema = yup.object().shape({
     brand: yup.string().required("Escolha uma marca."),
     model: yup.string().required("Escolha o modelo."),
@@ -80,7 +85,7 @@ const CreateAnnouncementModal = () => {
   });
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
-    CreateAnnouncement(formData);
+    // CreateAnnouncement(formData);
   };
 
   return (
@@ -115,16 +120,13 @@ const CreateAnnouncementModal = () => {
             );
           })}
         </Select>
-        <Text color={"red"} className="errorMessage">
-          {errors.brand?.message}
-        </Text>
+        <Text className="errorMessage">{errors.brand?.message}</Text>
 
         <FormLabel htmlFor="model" fontSize={"xs"} fontWeight={"bold"}>
           Modelo
         </FormLabel>
         <Select
           fontSize={"xs"}
-          marginBottom={"30px"}
           id="model"
           {...register("model")}
           onChange={(e) => {
@@ -143,76 +145,81 @@ const CreateAnnouncementModal = () => {
         <Text className="errorMessage">{errors.model?.message}</Text>
 
         <Flex>
-          <Box marginRight={"7px"}>
+          <Box marginRight={"7px"} marginTop={"30px"}>
             <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="year">
               Ano
             </FormLabel>
             <Input
-              marginBottom={"40px"}
               id="year"
+              fontSize={"xs"}
               placeholder="2018"
               type="text"
               {...register("fabrication_year")}
             />
-            <Text className="errorMessage">
+            <Text className="errorMessage" textStyle={"error"}>
               {errors.fabrication_year?.message}
             </Text>
           </Box>
 
-          <Box marginLeft={"7px"}>
+          <Box marginLeft={"7px"} marginTop={"30px"}>
             <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="fuel">
               Combustível
             </FormLabel>
             <Input
-              marginBottom={"30px"}
               id="year"
               placeholder="Gasolina/Etanol"
               type="text"
+              fontSize={"xs"}
               {...register("fuel_type")}
             />
-            <Text className="errorMessage">{errors.fuel_type?.message}</Text>
+            <Text className="errorMessage" textStyle={"error"}>
+              {errors.fuel_type?.message}
+            </Text>
           </Box>
         </Flex>
 
         <Flex>
-          <Box marginRight={"7px"}>
+          <Box marginRight={"7px"} marginTop={"30px"}>
             <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="km">
               Quilometragem
             </FormLabel>
             <Input
-              marginBottom={"30px"}
               id="km"
+              fontSize={"xs"}
               placeholder="30.000"
               type="text"
               {...register("km")}
             />
-            <Text className="errorMessage">{errors.km?.message}</Text>
+            <Text className="errorMessage" textStyle={"error"}>
+              {errors.km?.message}
+            </Text>
           </Box>
 
-          <Box marginLeft={"7px"}>
+          <Box marginLeft={"7px"} marginTop={"30px"}>
             <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="color">
               Cor
             </FormLabel>
             <Input
-              marginBottom={"30px"}
               id="color"
+              fontSize={"xs"}
               placeholder="Branco"
               type="text"
               {...register("color")}
             />
-            <Text className="errorMessage">{errors.color?.message}</Text>
+            <Text className="errorMessage" textStyle={"error"}>
+              {errors.color?.message}
+            </Text>
           </Box>
         </Flex>
 
         <Flex>
-          <Box marginRight={"7px"}>
+          <Box marginRight={"7px"} marginTop={"30px"}>
             <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="fipe">
               Preço tabela FIPE
             </FormLabel>
             <Input
               w={"225px"}
               fontSize={"xs"}
-              marginBottom={"30px"}
               id="fipe"
               placeholder="R$ 48.000,00"
               value={formattedFipeValue}
@@ -220,47 +227,62 @@ const CreateAnnouncementModal = () => {
               type="text"
               {...register("fipe")}
             />
-            <Text className="errorMessage">{errors.fipe?.message}</Text>
+            <Text className="errorMessage" textStyle={"error"}>
+              {errors.fipe?.message}
+            </Text>
           </Box>
 
-          <Box marginLeft={"7px"}>
+          <Box marginLeft={"7px"} marginTop={"30px"}>
             <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="price">
               Preço
             </FormLabel>
             <Input
-              marginBottom={"30px"}
               id="price"
               placeholder="R$ 50.000,00"
               type="text"
+              fontSize={"xs"}
               {...register("price")}
             />
-            <Text className="errorMessage">{errors.price?.message}</Text>
+            <Text className="errorMessage" textStyle={"error"}>
+              {errors.price?.message}
+            </Text>
           </Box>
         </Flex>
 
-        <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="description">
-          Descrição
-        </FormLabel>
-        <Textarea
-          fontSize={"xs"}
-          marginBottom={"30px"}
-          id="description"
-          placeholder="Descrição..."
-          {...register("description")}
-        ></Textarea>
-        <Text className="errorMessage">{errors.description?.message}</Text>
+        <Box marginTop={"30px"}>
+          <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="description">
+            Descrição
+          </FormLabel>
+          <Textarea
+            fontSize={"xs"}
+            id="description"
+            placeholder="Descrição..."
+            {...register("description")}
+          ></Textarea>
+          <Text className="errorMessage" textStyle={"error"}>
+            {errors.description?.message}
+          </Text>
+        </Box>
 
-        <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="coverImg">
-          Imagem de capa
-        </FormLabel>
-        <Input
-          marginBottom={"30px"}
-          id="coverImg"
-          placeholder="https://image.com"
-          type="text"
-          {...register("cover_img")}
-        />
-        <Text className="errorMessage">{errors.cover_img?.message}</Text>
+        <Box marginTop={"30px"}>
+          <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="coverImg">
+            Imagem de capa
+          </FormLabel>
+          <Input
+            id="coverImg"
+            fontSize={"xs"}
+            placeholder="https://image.com"
+            type="text"
+            {...register("cover_img")}
+          />
+          <Text
+            className="errorMessage"
+            textStyle={"error"}
+            marginBottom={"17px"}
+          >
+            {errors.cover_img?.message}
+          </Text>
+        </Box>
 
         <AnnouncementImage marginBottom={"30px"} imgNumber={1} />
         <AnnouncementImage marginBottom={"30px"} imgNumber={2} />
@@ -278,7 +300,7 @@ const CreateAnnouncementModal = () => {
         </Button>
 
         <Flex marginTop={"56px"} justifyContent={"flex-end"} gap={"20px"}>
-          <Button variant={"negative"} onClick={onClose}>
+          <Button variant={"negative"} onClick={() => closeModal()}>
             Cancelar
           </Button>
           <Button variant={"brandDisable"} onClick={handleSubmit(onFormSubmit)}>
