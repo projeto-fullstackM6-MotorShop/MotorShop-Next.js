@@ -4,11 +4,15 @@ import ListOfCars from "@/components/listOfCars";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import AvatarIcon from "@/components/avatarIcon";
 import { Box, Button, Center, Flex, Heading, Text } from "@chakra-ui/react";
+import { useModal } from "@/contexts/modalContext";
+import CreateAnnouncementModal from "@/components/createAnnouncementModal";
 
 const Advertiser = () => {
+  const { onOpen } = useModal();
   return (
     <>
       <Header />
+      <CreateAnnouncementModal />
       <Box h={"277px"} bgColor={"brand.1"}></Box>
       <Flex
         paddingLeft={"28px"}
@@ -46,7 +50,7 @@ const Advertiser = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industries
         </Text>
-        <Button variant={"outlineBrand1"} w={"160px"}>
+        <Button onClick={onOpen} variant={"outlineBrand1"} w={"160px"}>
           Criar anuncio
         </Button>
       </Flex>

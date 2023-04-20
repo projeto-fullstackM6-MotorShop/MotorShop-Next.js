@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <>
       <Header />
-
       <Flex
         h={"550px"}
         alignItems={"center"}

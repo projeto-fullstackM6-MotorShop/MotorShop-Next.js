@@ -1,6 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
 
-
 const theme = extendTheme({
   colors: {
     brand: {
@@ -77,125 +76,132 @@ const theme = extendTheme({
       fontFamily: "body",
       fontWeight: "normal",
       fontSize: "xs",
-      color: "grey.2"
+      color: "grey.2",
     },
 
     body_1_600: {
       fontFamily: "body",
       fontWeight: "semibold",
       fontSize: "xs",
-      color: "grey.2"
+      color: "grey.2",
     },
 
     body_2_400: {
       fontFamily: "body",
       fontWeight: "normal",
       fontSize: "xxs",
-      color: "grey.2"
+      color: "grey.2",
     },
 
     body_2_500: {
       fontFamily: "body",
       fontWeight: "medium",
       fontSize: "xxs",
-      color: "grey.2"
+      color: "grey.2",
+    },
+
+    error: {
+      fontFamily: "body",
+      fontWeight: "normal",
+      fontSize: "xs",
+      color: "red",
     },
 
     label: {
       fontFamily: "body",
       fontWeight: "medium",
       fontSize: "xxs",
-      color: "grey.1"
+      color: "grey.1",
     },
   },
 
   components: {
     Heading: {
       variants: {
-      healding_1_700: {
-        fontFamily: "heading",
-        fontWeight: "bold",
-        fontSize: "xxxl",
-        color: "grey.1"
-      },
-  
-      healding_2_600: {
-        fontFamily: "heading",
-        fontWeight: "semibold",
-        fontSize: "xxl",
-        color: "grey.1"
-      },
-  
-      healding_3_600: {
-        fontFamily: "heading",
-        fontWeight: "semibold",
-        fontSize: "xl",
-        color: "grey.1"
-      },
-  
-      healding_3_500: {
-        fontFamily: "heading",
-        fontWeight: "medium",
-        fontSize: "xl",
-        color: "grey.1"
-      },
-  
-      healding_4_600: {
-        fontFamily: "heading",
-        fontWeight: "semibold",
-        fontSize: "lg",
-        color: "grey.1"
-      },
-  
-      healding_4_500: {
-        fontFamily: "heading",
-        fontWeight: "medium",
-        fontSize: "lg",
-        color: "grey.1"
-      },
-  
-      healding_5_600: {
-        fontFamily: "heading",
-        fontWeight: "semibold",
-        fontSize: "md",
-        color: "grey.1"
-      },
-  
-      healding_5_500: {
-        fontFamily: "heading",
-        fontWeight: "medium",
-        fontSize: "md",
-        color: "grey.1"
-      },
-  
-      healding_6_600: {
-        fontFamily: "heading",
-        fontWeight: "semibold",
-        fontSize: "sm",
-        color: "grey.1"
-      },
-  
-      healding_6_500: {
-        fontFamily: "heading",
-        fontWeight: "medium",
-        fontSize: "sm",
-        color: "grey.1"
-      },
-  
-      healding_7_600: {
-        fontFamily: "heading",
-        fontWeight: "semibold",
-        fontSize: "xs",
-        color: "grey.1"
-      },
-  
-      healding_7_500: {
-        fontFamily: "heading",
-        fontWeight: "medium",
-        fontSize: "xs",
-        color: "grey.1"
+        healding_1_700: {
+          fontFamily: "heading",
+          fontWeight: "bold",
+          fontSize: "xxxl",
+          color: "grey.1",
         },
-      }
+
+        healding_2_600: {
+          fontFamily: "heading",
+          fontWeight: "semibold",
+          fontSize: "xxl",
+          color: "grey.1",
+        },
+
+        healding_3_600: {
+          fontFamily: "heading",
+          fontWeight: "semibold",
+          fontSize: "xl",
+          color: "grey.1",
+        },
+
+        healding_3_500: {
+          fontFamily: "heading",
+          fontWeight: "medium",
+          fontSize: "xl",
+          color: "grey.1",
+        },
+
+        healding_4_600: {
+          fontFamily: "heading",
+          fontWeight: "semibold",
+          fontSize: "lg",
+          color: "grey.1",
+        },
+
+        healding_4_500: {
+          fontFamily: "heading",
+          fontWeight: "medium",
+          fontSize: "lg",
+          color: "grey.1",
+        },
+
+        healding_5_600: {
+          fontFamily: "heading",
+          fontWeight: "semibold",
+          fontSize: "md",
+          color: "grey.1",
+        },
+
+        healding_5_500: {
+          fontFamily: "heading",
+          fontWeight: "medium",
+          fontSize: "md",
+          color: "grey.1",
+        },
+
+        healding_6_600: {
+          fontFamily: "heading",
+          fontWeight: "semibold",
+          fontSize: "sm",
+          color: "grey.1",
+        },
+
+        healding_6_500: {
+          fontFamily: "heading",
+          fontWeight: "medium",
+          fontSize: "sm",
+          color: "grey.1",
+        },
+
+        healding_7_600: {
+          fontFamily: "heading",
+          fontWeight: "semibold",
+          fontSize: "xs",
+          color: "grey.1",
+        },
+
+        healding_7_500: {
+          fontFamily: "heading",
+          fontWeight: "medium",
+          fontSize: "xs",
+          color: "grey.1",
+        },
+      },
     },
 
     Button: {
@@ -203,11 +209,11 @@ const theme = extendTheme({
         grey1: {
           bg: "grey.0",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "grey.0",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.11",
@@ -222,11 +228,11 @@ const theme = extendTheme({
         negative: {
           bg: "grey.6",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "grey.6",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.2",
@@ -241,11 +247,11 @@ const theme = extendTheme({
         disable: {
           bg: "grey.5",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "grey.5",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.11",
@@ -255,11 +261,11 @@ const theme = extendTheme({
         brand1: {
           bg: "brand.1",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "brand1",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.11",
@@ -274,11 +280,11 @@ const theme = extendTheme({
         brandOpacity: {
           bg: "brand.4",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "brand.4",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "brand.1",
@@ -288,11 +294,11 @@ const theme = extendTheme({
         light: {
           bg: "grey.10",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "grey.10",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.1",
@@ -301,11 +307,11 @@ const theme = extendTheme({
 
         outlineLight: {
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "grey.10",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.10",
@@ -321,11 +327,11 @@ const theme = extendTheme({
 
         outline1: {
           padding: "12px 20px",
-          
+
           border: "1.5px solid",
           borderColor: "grey.0",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xxs",
           color: "grey.0",
@@ -335,11 +341,11 @@ const theme = extendTheme({
         big45: {
           bg: "grey.1",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "grey.1",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.10",
@@ -348,11 +354,11 @@ const theme = extendTheme({
 
         outline2: {
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "grey.4",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.0",
@@ -368,11 +374,11 @@ const theme = extendTheme({
 
         outlineBrand1: {
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "brand.1",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "brand.1",
@@ -388,10 +394,10 @@ const theme = extendTheme({
 
         link: {
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "grey.0",
@@ -405,11 +411,11 @@ const theme = extendTheme({
         alert: {
           bg: "alert.3",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "alert.3",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "alert.1",
@@ -424,11 +430,11 @@ const theme = extendTheme({
         sucess: {
           bg: "sucess.3",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "sucess.3",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "secess.1",
@@ -443,11 +449,11 @@ const theme = extendTheme({
         brandDisable: {
           bg: "brand.3",
           padding: "12px 28px",
-          
+
           border: "1.5px solid",
           borderColor: "brand.3",
           borderRadius: "4px",
-          
+
           fontFamily: "body",
           fontSize: "xs",
           color: "brand.4",
@@ -462,17 +468,17 @@ const theme = extendTheme({
           border: "1.5px solid",
           borderColor: "grey.7",
           borderRadius: "4px",
-          
+
           _placeholder: {
             fontFamily: "body",
             fontWeight: "normal",
             fontSize: "xs",
-            color: "grey.3"
+            color: "grey.3",
           },
 
           _hover: {
             bg: "grey.8",
-            borderColor: "grey.8"
+            borderColor: "grey.8",
           },
 
           _focus: {
@@ -482,12 +488,12 @@ const theme = extendTheme({
             fontWeight: "normal",
             fontSize: "xs",
             _placeholder: {
-              color: "transparent"
-            }
+              color: "transparent",
+            },
           },
-        }
-      }
-    }
+        },
+      },
+    },
   },
 });
 

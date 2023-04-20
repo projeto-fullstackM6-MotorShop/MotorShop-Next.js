@@ -6,7 +6,7 @@ const GeneralModal = ({ children }: IChildren) => {
   const { isOpen, onClose } = useModal();
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} size={"lg"}>
       <ModalOverlay>
         <ModalContent>{children}</ModalContent>
       </ModalOverlay>
