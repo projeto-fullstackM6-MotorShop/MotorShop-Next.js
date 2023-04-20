@@ -1,17 +1,23 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, ModalContextProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import theme from "@/styles/global";
 import { FilterProvider } from "@/contexts/filterContext";
+import { AnnouncementProvider } from "@/contexts/announcementContext";
+import { ModalProvider } from "@/contexts/modalContext";
 import { AuthProvider } from "@/contexts/authContext";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <FilterProvider>
-        <AuthProvider>
-          <Component {...pageProps} />
-        </AuthProvider>
-      </FilterProvider>
+      <AnnouncementProvider>
+        <ModalProvider>
+          <FilterProvider>
+           <AuthProvider>
+            <Component {...pageProps} />
+           </AuthProvider>
+          </FilterProvider>
+        </ModalProvider>
+      </AnnouncementProvider>
     </ChakraProvider>
   );
 }
