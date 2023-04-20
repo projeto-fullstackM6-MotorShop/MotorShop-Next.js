@@ -31,6 +31,12 @@ export interface IAnnouncementRequest {
   fipe: number;
   description: string;
   cover_img: string;
+  image: string;
+  image2: string;
+  image3: string;
+  image4: string;
+  image5: string;
+  image6: string;
 }
 
 export interface ICardPropInterface {

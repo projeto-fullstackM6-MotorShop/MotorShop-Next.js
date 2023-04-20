@@ -74,6 +74,12 @@ const CreateAnnouncementModal = () => {
     cover_img: yup
       .string()
       .required("Adicione uma foto de capa para o anuncio."),
+    image: yup.string().notRequired(),
+    image2: yup.string().notRequired(),
+    image3: yup.string().notRequired(),
+    image4: yup.string().notRequired(),
+    image5: yup.string().notRequired(),
+    image6: yup.string().notRequired(),
   });
 
   const {
@@ -85,7 +91,7 @@ const CreateAnnouncementModal = () => {
   });
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
-    // CreateAnnouncement(formData);
+    console.log(formData);
   };
 
   return (
@@ -284,12 +290,105 @@ const CreateAnnouncementModal = () => {
           </Text>
         </Box>
 
-        <AnnouncementImage marginBottom={"30px"} imgNumber={1} />
-        <AnnouncementImage marginBottom={"30px"} imgNumber={2} />
-        {counter >= 3 && <AnnouncementImage imgNumber={3} />}
-        {counter >= 4 && <AnnouncementImage imgNumber={4} />}
-        {counter >= 5 && <AnnouncementImage imgNumber={5} />}
-        {counter >= 6 && <AnnouncementImage imgNumber={6} />}
+        <>
+          <FormLabel
+            fontSize={"xs"}
+            fontWeight={"bold"}
+            htmlFor={`image{imgNumber}`}
+          >
+            1º Imagem da galeria
+          </FormLabel>
+          <Input
+            {...register("image")}
+            marginBottom={"30px"}
+            fontSize={"xs"}
+            placeholder="https://image.com"
+          />
+        </>
+
+        <>
+          <FormLabel
+            fontSize={"xs"}
+            fontWeight={"bold"}
+            htmlFor={`image{imgNumber}`}
+          >
+            2º Imagem da galeria
+          </FormLabel>
+          <Input
+            {...register("image2")}
+            marginBottom={"30px"}
+            fontSize={"xs"}
+            placeholder="https://image.com"
+          />
+        </>
+        {counter >= 3 && (
+          <>
+            <FormLabel
+              fontSize={"xs"}
+              fontWeight={"bold"}
+              htmlFor={`image{imgNumber}`}
+            >
+              3º Imagem da galeria
+            </FormLabel>
+            <Input
+              {...register("image3")}
+              marginBottom={"30px"}
+              fontSize={"xs"}
+              placeholder="https://image.com"
+            />
+          </>
+        )}
+        {counter >= 4 && (
+          <>
+            <FormLabel
+              fontSize={"xs"}
+              fontWeight={"bold"}
+              htmlFor={`image{imgNumber}`}
+            >
+              4º Imagem da galeria
+            </FormLabel>
+            <Input
+              {...register("image4")}
+              marginBottom={"30px"}
+              fontSize={"xs"}
+              placeholder="https://image.com"
+            />
+          </>
+        )}
+        {counter >= 5 && (
+          <>
+            <FormLabel
+              fontSize={"xs"}
+              fontWeight={"bold"}
+              htmlFor={`image{imgNumber}`}
+            >
+              5º Imagem da galeria
+            </FormLabel>
+            <Input
+              {...register("image5")}
+              marginBottom={"30px"}
+              fontSize={"xs"}
+              placeholder="https://image.com"
+            />
+          </>
+        )}
+        {counter >= 6 && (
+          <>
+            <FormLabel
+              fontSize={"xs"}
+              fontWeight={"bold"}
+              htmlFor={`image{imgNumber}`}
+            >
+              6º Imagem da galeria
+            </FormLabel>
+            <Input
+              {...register("image6")}
+              marginBottom={"30px"}
+              fontSize={"xs"}
+              placeholder="https://image.com"
+            />
+          </>
+        )}
 
         <Button
           variant={"outlineBrand1"}

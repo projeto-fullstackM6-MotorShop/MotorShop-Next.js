@@ -6,9 +6,16 @@ import AvatarIcon from "@/components/avatarIcon";
 import { Box, Button, Center, Flex, Heading, Text } from "@chakra-ui/react";
 import { useModal } from "@/contexts/modalContext";
 import CreateAnnouncementModal from "@/components/createAnnouncementModal";
+import { useEffect } from "react";
+import { useAnnouncement } from "@/contexts/announcementContext";
 
 const Advertiser = () => {
   const { onOpen } = useModal();
+  const { getAllCars, allCars } = useAnnouncement();
+
+  useEffect(() => {
+    getAllCars();
+  }, []);
   return (
     <>
       <Header />
