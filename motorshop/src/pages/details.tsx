@@ -2,14 +2,16 @@ import AnnouceCard from "@/components/annouceCard";
 import AvatarIcon from "@/components/avatarIcon";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { LoginPage } from "@/components/loginUser";
 
 import { mockAnnouce } from "@/mocks/AnnouceMock";
 import { Box, Button, Center, Flex, Heading, Img, SimpleGrid, Text, Textarea } from "@chakra-ui/react";
 
 const Details = () => {
   return (
-    <>
-      <Header />
+    <LoginPage/>)
+    /*<>
+       <Header />
       <Box bgColor={'grey.8'} h={'1700px'} zIndex={1}>
 
         <Box w={'100%'} h={'550px'} bgColor={'brand.1'} zIndex={-1} />
@@ -167,8 +169,9 @@ const Details = () => {
         </Flex>
       </Box>
       <Footer/>
-    </>
-  );
-};
+    </> */}
+    
+  ;
+;
 
 export default Details;
