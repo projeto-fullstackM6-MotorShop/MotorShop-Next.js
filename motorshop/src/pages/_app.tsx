@@ -4,6 +4,7 @@ import theme from "@/styles/global";
 import { FilterProvider } from "@/contexts/filterContext";
 import { AnnouncementProvider } from "@/contexts/announcementContext";
 import { ModalProvider } from "@/contexts/modalContext";
+import { AuthProvider } from "@/contexts/authContext";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -11,7 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <AnnouncementProvider>
         <ModalProvider>
           <FilterProvider>
+           <AuthProvider>
             <Component {...pageProps} />
+           </AuthProvider>
           </FilterProvider>
         </ModalProvider>
       </AnnouncementProvider>
