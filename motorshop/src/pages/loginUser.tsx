@@ -19,7 +19,6 @@ import {
   Link,
   Spacer,
   Text,
-  
 } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import Header from "@/components/header";
@@ -57,9 +56,17 @@ const LoginPage = () => {
 
   return (
     <>
-    <Header  />
+      <Header />
 
-      <Flex direction={'column'}  h={"650px"} w={"400px"} margin={'0 auto'} alignItems={'center'} padding={'20px'}>
+      <Flex
+        direction={"column"}
+        h={"650px"}
+        w={"400px"}
+        margin={"0 auto"}
+        alignItems={"center"}
+        padding={"20px"}
+        gap={"20px"}
+      >
         <Text fontSize="3xl">Login</Text>
         <FormControl isRequired isInvalid={isErrorEmail}>
           <FormLabel>E-mail</FormLabel>
@@ -99,10 +106,19 @@ const LoginPage = () => {
             <FormErrorMessage>{errors.password?.message}</FormErrorMessage>
           )}
         </FormControl>
+        <Flex w={"90%"} justifyContent={"flex-end"}>
+          <Link color={"gray.700"}>Esqueci minha senha</Link>
+        </Flex>
 
-        <Button variant={"default"} onClick={handleSubmit(onSubmitFormLogin)}>
-          Sign In
+        <Button variant={"brand1"} w={"90%"} onClick={handleSubmit(onSubmitFormLogin)}>
+          Entrar
         </Button>
+
+        <Flex w={"90%"} justifyContent={"center"}>
+          <Text color={"gray.700"}>Ainda não possui cadastro ?</Text>
+        </Flex>
+
+        <Button w={"90%"}>Cadastrar</Button>
       </Flex>
 
       <Footer />
@@ -110,4 +126,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage
+export default LoginPage;
