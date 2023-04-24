@@ -1,7 +1,6 @@
 import { IChildren } from "@/interfaces/misc";
 import { IProviderProps, IUserLogin } from "@/interfaces/usersTypes";
 import { api } from "@/services/api";
-
 import { Box, useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { setCookie } from "nookies";
@@ -17,7 +16,6 @@ export const AuthContext = createContext<AuthProviderData>(
 
 export const AuthProvider = ({ children }: IChildren) => {
   const toast = useToast();
-
 
   const login = (userData: IUserLogin) => {
     api
@@ -64,13 +62,10 @@ export const AuthProvider = ({ children }: IChildren) => {
           ),
         });
       });
-
-    };
-    return (
-  <AuthContext.Provider value={{ login }}>
-    {children}
-  </AuthContext.Provider>
-);
+  };
+  return (
+    <AuthContext.Provider value={{ login }}>{children}</AuthContext.Provider>
+  );
 };
 
 export const useAuth = () => useContext(AuthContext);

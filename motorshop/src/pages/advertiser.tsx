@@ -8,18 +8,32 @@ import { useModal } from "@/contexts/modalContext";
 import CreateAnnouncementModal from "@/components/createAnnouncementModal";
 import { useEffect } from "react";
 import { useAnnouncement } from "@/contexts/announcementContext";
+import CreateAnnouncementSucessModal from "@/components/createAnnouncementSucessModal";
 
 const Advertiser = () => {
-  const { onOpen } = useModal();
-  const { getAllCars, allCars } = useAnnouncement();
+  const { onOpen, isOpen } = useModal();
+  const {
+    getAllCars,
+    allCars,
+    isCreateAnnouncementSucessOpen,
+    setIsCreateAnnouncementOpen,
+    isCreateAnnouncementOpen,
+  } = useAnnouncement();
 
   useEffect(() => {
     getAllCars();
   }, []);
+
+  const opencreateAnnouncementModal = () => {
+    setIsCreateAnnouncementOpen(true);
+    onOpen();
+  };
+
   return (
     <>
       <Header />
-      <CreateAnnouncementModal />
+      {isCreateAnnouncementOpen && <CreateAnnouncementModal />}
+      {isCreateAnnouncementSucessOpen && <CreateAnnouncementSucessModal />}
       <Box h={"277px"} bgColor={"brand.1"}></Box>
       <Flex
         paddingLeft={"28px"}
@@ -57,7 +71,11 @@ const Advertiser = () => {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industries
         </Text>
-        <Button onClick={onOpen} variant={"outlineBrand1"} w={"160px"}>
+        <Button
+          onClick={opencreateAnnouncementModal}
+          variant={"outlineBrand1"}
+          w={"160px"}
+        >
           Criar anuncio
         </Button>
       </Flex>

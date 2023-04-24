@@ -28,6 +28,8 @@ const CreateAnnouncementModal = () => {
   const allSelectedBrandsCars = [allCars[selectedBrand]];
   const [selectedCar, setSelectedCar] = useState("");
   const [fipeValue, setFipeValue] = useState("");
+  const [fuelType, setFuelType] = useState("");
+  const [yearValue, setYearValue] = useState("" as any);
   let [counter, setCounter] = useState(2);
   const [isDisable, setIsDisable] = useState(false);
 
@@ -46,6 +48,8 @@ const CreateAnnouncementModal = () => {
     dataCar.filter((car) => {
       if (car.modelo.toLowerCase() === selectedCar.toLowerCase()) {
         setFipeValue(car.valor);
+        setFuelType(car.type);
+        setYearValue(car.ano);
       }
     });
   };
@@ -64,22 +68,22 @@ const CreateAnnouncementModal = () => {
   const formschema = yup.object().shape({
     brand: yup.string().required("Escolha uma marca."),
     model: yup.string().required("Escolha o modelo."),
-    fabrication_year: yup.string().required("Informe o ano de fabricação."),
+    fabrication_year: yup.string().default(yearValue),
     km: yup.string().required("Informe a quilometragem."),
     color: yup.string().required("Informe a cor do veículo."),
-    fuel_type: yup.string().required("Informe o tipo de combustível."),
+    fuel_type: yup.string().default(fuelType),
     price: yup.string().required("Informe o preço do veículo."),
     fipe: yup.string().default(fipeValue),
     description: yup.string().required("Descreva o veículo."),
     cover_img: yup
       .string()
       .required("Adicione uma foto de capa para o anuncio."),
-    image: yup.string().notRequired(),
-    image2: yup.string().notRequired(),
-    image3: yup.string().notRequired(),
-    image4: yup.string().notRequired(),
-    image5: yup.string().notRequired(),
-    image6: yup.string().notRequired(),
+    // image: yup.string().notRequired(),
+    // image2: yup.string().notRequired(),
+    // image3: yup.string().notRequired(),
+    // image4: yup.string().notRequired(),
+    // image5: yup.string().notRequired(),
+    // image6: yup.string().notRequired(),
   });
 
   const {
@@ -91,7 +95,7 @@ const CreateAnnouncementModal = () => {
   });
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
-    console.log(formData);
+    CreateAnnouncement(formData);
   };
 
   return (
@@ -159,6 +163,8 @@ const CreateAnnouncementModal = () => {
               id="year"
               fontSize={"xs"}
               placeholder="2018"
+              value={yearValue}
+              isDisabled
               type="text"
               {...register("fabrication_year")}
             />
@@ -176,6 +182,8 @@ const CreateAnnouncementModal = () => {
               placeholder="Gasolina/Etanol"
               type="text"
               fontSize={"xs"}
+              value={fuelType}
+              isDisabled
               {...register("fuel_type")}
             />
             <Text className="errorMessage" textStyle={"error"}>
@@ -299,7 +307,7 @@ const CreateAnnouncementModal = () => {
             1º Imagem da galeria
           </FormLabel>
           <Input
-            {...register("image")}
+            // {...register("image")}
             marginBottom={"30px"}
             fontSize={"xs"}
             placeholder="https://image.com"
@@ -315,7 +323,7 @@ const CreateAnnouncementModal = () => {
             2º Imagem da galeria
           </FormLabel>
           <Input
-            {...register("image2")}
+            // {...register("image2")}
             marginBottom={"30px"}
             fontSize={"xs"}
             placeholder="https://image.com"
@@ -331,7 +339,7 @@ const CreateAnnouncementModal = () => {
               3º Imagem da galeria
             </FormLabel>
             <Input
-              {...register("image3")}
+              // {...register("image3")}
               marginBottom={"30px"}
               fontSize={"xs"}
               placeholder="https://image.com"
@@ -348,7 +356,7 @@ const CreateAnnouncementModal = () => {
               4º Imagem da galeria
             </FormLabel>
             <Input
-              {...register("image4")}
+              // {...register("image4")}
               marginBottom={"30px"}
               fontSize={"xs"}
               placeholder="https://image.com"
@@ -365,7 +373,7 @@ const CreateAnnouncementModal = () => {
               5º Imagem da galeria
             </FormLabel>
             <Input
-              {...register("image5")}
+              // {...register("image5")}
               marginBottom={"30px"}
               fontSize={"xs"}
               placeholder="https://image.com"
@@ -382,7 +390,7 @@ const CreateAnnouncementModal = () => {
               6º Imagem da galeria
             </FormLabel>
             <Input
-              {...register("image6")}
+              // {...register("image6")}
               marginBottom={"30px"}
               fontSize={"xs"}
               placeholder="https://image.com"
