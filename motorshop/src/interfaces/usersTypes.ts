@@ -11,6 +11,27 @@ export interface IUserData {
   createdAt: Date;
   updatedAt: Date;
 }
+
+export interface IRegisterUserData {
+  name: string;
+  email: string;
+  cpf: string;
+  phone: string;
+  birth_date: string;
+  password: string;
+  description?: string;
+  is_seller?: boolean;
+  address: IAddressRegister;
+}
+
+export interface IAddressRegister {
+  zip_code: string;
+  state: string;
+  city: string;
+  street: string;
+  number: string;
+  complement?: string;
+}
 export interface IUserLogin {
   email: string;
   password: string;

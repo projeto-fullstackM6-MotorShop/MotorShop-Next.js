@@ -1,5 +1,9 @@
 import { IChildren } from "@/interfaces/misc";
-import { IUserData, IUserLogin } from "@/interfaces/usersTypes";
+import {
+  IRegisterUserData,
+  IUserData,
+  IUserLogin,
+} from "@/interfaces/usersTypes";
 import { api } from "@/services/api";
 import { Box, useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
@@ -10,6 +14,7 @@ interface AuthProviderData {
   token: string;
   user: IUserData | null;
   login: (userData: IUserLogin) => void;
+  registerUser: (userData: IRegisterUserData) => void;
 }
 
 export const AuthContext = createContext<AuthProviderData>(
@@ -61,8 +66,41 @@ export const AuthProvider = ({ children }: IChildren) => {
       });
   };
 
+  const registerUser = (userData: IRegisterUserData) => {
+    api
+      .post("/user", userData)
+      .then((res) => {
+        toast({
+          title: "sucess",
+          variant: "solid",
+          position: "top-right",
+          isClosable: true,
+          render: () => (
+            <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+              Usuário criado com sucesso!
+            </Box>
+          ),
+        });
+
+        router.push("/login");
+      })
+      .catch((err) => {
+        toast({
+          title: "error",
+          variant: "solid",
+          position: "top-right",
+          isClosable: true,
+          render: () => (
+            <Box bg={"alert.1"} color={"alert.3"} p={3}>
+              Verifique se preencheu todos os dados corretamente.
+            </Box>
+          ),
+        });
+      });
+  };
+
   return (
-    <AuthContext.Provider value={{ token, user, login }}>
+    <AuthContext.Provider value={{ token, user, login, registerUser }}>
       {children}
     </AuthContext.Provider>
   );
