@@ -8,13 +8,14 @@ import { api } from "@/services/api";
 import { Box, useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { parseCookies, setCookie } from "nookies";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 interface AuthProviderData {
   token: string;
   user: IUserData | null;
   login: (userData: IUserLogin) => void;
   registerUser: (userData: IRegisterUserData) => void;
+  getUserProfile: () => void;
 }
 
 export const AuthContext = createContext<AuthProviderData>(
@@ -29,6 +30,10 @@ export const AuthProvider = ({ children }: IChildren) => {
 
   const toast = useToast();
   const router = useRouter();
+
+  useEffect(() => {
+    getUserProfile();
+  }, []);
 
   const login = (userData: IUserLogin) => {
     api
@@ -99,8 +104,20 @@ export const AuthProvider = ({ children }: IChildren) => {
       });
   };
 
+  const getUserProfile = async () => {
+    api.defaults.headers.common.authorization = `Bearer ${"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpY3RvcmlhQGdtYWlsLmNvbSIsImlhdCI6MTY4MjM2OTYwNCwiZXhwIjoxNjgyNDU2MDA0LCJzdWIiOiI1OTYxMjY0ZC02MDI1LTQyODYtYjA2NC0yMmIxOGU4YzIwYzgifQ.VCAWOikPAvTUNyG_-eMEOIpyxM_SodcE4KeagbAjfdo"}`;
+    try {
+      const response = await api.get("/user/profile");
+      setUser(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
-    <AuthContext.Provider value={{ token, user, login, registerUser }}>
+    <AuthContext.Provider
+      value={{ token, user, login, registerUser, getUserProfile }}
+    >
       {children}
     </AuthContext.Provider>
   );

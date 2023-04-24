@@ -1,35 +1,31 @@
 import { FilterContext } from "@/contexts/filterContext";
 import { useContext, useEffect, useState } from "react";
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Input,
-  Text,
-  theme,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import { useAnnouncement } from "@/contexts/announcementContext";
-// import { BrowserView, MobileView } from "react-device-detect";
 import { useMediaQuery } from "react-responsive";
+import { useAuth } from "@/contexts/authContext";
 
 const FilterCard = () => {
-  const { allModels, allMarks, allColors, allYears, allFuels } =
+  const { allModels, allColors, allYears, allFuels } =
     useContext(FilterContext);
+  const { getUserProfile } = useAuth();
+  const { allBrands, getAllCars, setAllBrands, getAllAnnouncements } =
+    useAnnouncement();
 
-  const { allBrands, getAllCars, setAllBrands } = useAnnouncement();
   const [clearFilter, setClearFilter] = useState(false);
-  const [isFilterActive, setIsFilterActive] = useState(false);
-
+  const [isButtonClearFilterActive, setIsButtonClearFilterActive] =
+    useState(false);
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 700 });
 
   useEffect(() => {
     getAllCars();
+    getUserProfile();
+    getAllAnnouncements();
   }, []);
 
   const clearAllFilters = () => {
     getAllCars();
-    setIsFilterActive(false);
+    setIsButtonClearFilterActive(false);
   };
 
   return (
@@ -50,7 +46,7 @@ const FilterCard = () => {
                 onClick={() => {
                   setAllBrands([brand]),
                     setClearFilter(true),
-                    setIsFilterActive(true);
+                    setIsButtonClearFilterActive(true);
                 }}
                 fontSize="xs"
                 fontFamily="heading"
@@ -232,7 +228,7 @@ const FilterCard = () => {
             </Button>
           )}
 
-          {isFilterActive && (
+          {isButtonClearFilterActive && (
             <Button
               background={"brand.1"}
               color={"brand.4"}
