@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import Header from "./header";
 import {
   Box,
   Button,
@@ -23,8 +22,10 @@ import {
   
 } from "@chakra-ui/react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-export const LoginPage = () => {
+const LoginPage = () => {
   const { login } = useAuth();
 
   const formschama = yup.object().shape({
@@ -56,35 +57,22 @@ export const LoginPage = () => {
 
   return (
     <>
-      <Flex>
-        <Flex>
-        <Text fontSize='4xl' color={'black'} fontWeight={'bold'}>
-            Motor
-          </Text>
-          <Text fontSize='3xl' color={'purple'} fontWeight={'bold'}>
-            shop
-          </Text>
-        </Flex>
-        <Spacer/>
-        <Flex>
-          <Link>Fazer Login</Link> 
-          <Button>Cadastrar</Button>
-        </Flex>
-      </Flex>
-      <Box>
+    <Header  />
+
+      <Flex direction={'column'}  h={"650px"} w={"400px"} margin={'0 auto'} alignItems={'center'} padding={'20px'}>
         <Text fontSize="3xl">Login</Text>
         <FormControl isRequired isInvalid={isErrorEmail}>
           <FormLabel>E-mail</FormLabel>
           <Input
             required
-            id="usuario"
-            {...register("usuario")}
+            id="email"
+            {...register("email")}
             onChange={(e) => setInputEmail(e.target.value)}
           />
           {!isErrorEmail ? (
             <FormHelperText>Insert email</FormHelperText>
           ) : (
-            <FormErrorMessage>{errors.usuario?.message}</FormErrorMessage>
+            <FormErrorMessage>{errors.email?.message}</FormErrorMessage>
           )}
         </FormControl>
         <FormControl id="password" isRequired isInvalid={isErrorPassword}>
@@ -115,7 +103,11 @@ export const LoginPage = () => {
         <Button variant={"default"} onClick={handleSubmit(onSubmitFormLogin)}>
           Sign In
         </Button>
-      </Box>
+      </Flex>
+
+      <Footer />
     </>
   );
 };
+
+export default LoginPage

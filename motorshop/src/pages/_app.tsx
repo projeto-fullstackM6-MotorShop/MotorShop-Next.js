@@ -11,11 +11,11 @@ export default function App({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <AnnouncementProvider>
         <ModalProvider>
-          <FilterProvider>
-           <AuthProvider>
-            <Component {...pageProps} />
-           </AuthProvider>
-          </FilterProvider>
+          <AuthProvider>
+            <FilterProvider>
+              <Component {...pageProps} />
+            </FilterProvider>
+          </AuthProvider>
         </ModalProvider>
       </AnnouncementProvider>
     </ChakraProvider>

@@ -4,11 +4,10 @@ import { Box, Button, Center, Flex, Heading, Image } from "@chakra-ui/react";
 import FilterCard from "@/components/filterCard";
 import ListOfCars from "@/components/listOfCars";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { LoginPage } from "@/components/loginUser";
 
 const Home = () => {
   return (
-   /*  <>
+     <>
       <Header />
       <Flex
         h={"550px"}
@@ -64,8 +63,7 @@ const Home = () => {
       </Center>
 
       <Footer />
-    </> */
-    <LoginPage/>
+    </> 
   );
 };
 

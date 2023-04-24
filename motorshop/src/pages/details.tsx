@@ -2,7 +2,6 @@ import AnnouceCard from "@/components/annouceCard";
 import AvatarIcon from "@/components/avatarIcon";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import { LoginPage } from "@/components/loginUser";
 
 import { mockAnnouce } from "@/mocks/AnnouceMock";
 import {
@@ -19,20 +18,7 @@ import {
 
 const Details = () => {
   return (
-    <>
-      <Header />
-      <Box bgColor={"grey.8"} h={"1700px"} zIndex={1}>
-        <Box w={"100%"} h={"550px"} bgColor={"brand.1"} zIndex={-1} />
-        <Flex
-          position={"absolute"}
-          top={"120px"}
-          w={"80%"}
-          ml={"10%"}
-          mr={"10%"}
-          direction={"column"}
-        >
-    <LoginPage/>)
-    /*<>
+  <>
        <Header />
       <Box bgColor={'grey.8'} h={'1700px'} zIndex={1}>
         <Box w={'100%'} h={'550px'} bgColor={'brand.1'} zIndex={-1} />
