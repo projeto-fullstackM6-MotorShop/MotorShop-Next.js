@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
 
 export interface IUserLogin {
-    usuario: string,
+    email: string,
     password: string
 }
 
