@@ -15,6 +15,10 @@ interface announcementProviderData {
   allCars: IAnnouceInterface[];
   allBrands: string[];
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
+  isCreateAnnouncementSucessOpen: boolean;
+  isCreateAnnouncementOpen: boolean;
+  setIsCreateAnnouncementOpen: Dispatch<SetStateAction<boolean>>;
+  setIsCreateAnnouncementSucessOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -27,6 +31,10 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [userAnnouncements, setUserAnnouncements] = useState(
     [] as IAnnouceInterface[]
   );
+  const [isCreateAnnouncementSucessOpen, setIsCreateAnnouncementSucessOpen] =
+    useState(false);
+  const [isCreateAnnouncementOpen, setIsCreateAnnouncementOpen] =
+    useState(false);
 
   useEffect(() => {
     const brands = Object.keys(allCars);
@@ -43,20 +51,29 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   };
 
   const CreateAnnouncement = async (data: IAnnouncementRequest) => {
-    //loading(true)
+    api.defaults.headers.common.authorization = `Bearer ${"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpY3RvcmlhQGdtYWlsLmNvbSIsImlhdCI6MTY4MjM1MTU1OCwiZXhwIjoxNjgyNDM3OTU4LCJzdWIiOiI1OTYxMjY0ZC02MDI1LTQyODYtYjA2NC0yMmIxOGU4YzIwYzgifQ.2aL58g61poTqlJzfi4dYAGfBteF4EeONzV-Qqi1rnf8"}`;
     try {
       const response = await api.post("/announcement", data);
-      setUserAnnouncements([userAnnouncements, ...response.data]);
-      //colocar modal de sucesso aqui
+      setUserAnnouncements({ userAnnouncements, ...response.data });
+      setIsCreateAnnouncementSucessOpen(true);
+      setIsCreateAnnouncementOpen(false);
     } catch (error) {
       console.error(error);
     } finally {
-      //loading(false)
     }
   };
   return (
     <AnnouncementContext.Provider
-      value={{ getAllCars, allCars, allBrands, CreateAnnouncement }}
+      value={{
+        getAllCars,
+        allCars,
+        allBrands,
+        CreateAnnouncement,
+        isCreateAnnouncementSucessOpen,
+        setIsCreateAnnouncementSucessOpen,
+        setIsCreateAnnouncementOpen,
+        isCreateAnnouncementOpen,
+      }}
     >
       {children}
     </AnnouncementContext.Provider>

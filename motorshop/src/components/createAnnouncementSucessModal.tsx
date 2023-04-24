@@ -1,24 +1,45 @@
-import { Box, Button, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import GeneralModal from "./generalModal";
 import { useModal } from "@/contexts/modalContext";
+import { useAnnouncement } from "@/contexts/announcementContext";
+import { useEffect } from "react";
 
-const createAnnouncementSucessModal = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const { onClose } = useModal();
+const CreateAnnouncementSucessModal = () => {
+  const { onClose, isOpen } = useModal();
+  const { setIsCreateAnnouncementSucessOpen } = useAnnouncement();
+
+  const closeSucessModal = () => {
+    setIsCreateAnnouncementSucessOpen(false);
+    onClose();
+  };
+
+  useEffect(() => {
+    if (!isOpen) {
+      setIsCreateAnnouncementSucessOpen(false);
+    }
+  }, [isOpen]);
   return (
-    <GeneralModal>
-      <Box>
-        <Text>Sucesso!</Text>
-        <Button onClick={onClose}>X</Button>
-      </Box>
-      <Box>
-        <Heading>Seu anúncio foi criado com sucesso!</Heading>
-        <Text>
-          Agora você poderá ver seus negócios crescendo em grande escala
-        </Text>
-      </Box>
-    </GeneralModal>
+    <>
+      <GeneralModal>
+        <Box padding={"15px"}>
+          <Flex justifyContent={"space-between"}>
+            <Text fontWeight={"bold"}>Sucesso!</Text>
+            <Button onClick={closeSucessModal} color={"grey.4"} fontSize={"xs"}>
+              X
+            </Button>
+          </Flex>
+          <Box>
+            <Heading fontWeight={"bold"} fontSize={"xs"} marginBottom={"25px"}>
+              Seu anúncio foi criado com sucesso!
+            </Heading>
+            <Text marginBottom={"30px"}>
+              Agora você poderá ver seus negócios crescendo em grande escala
+            </Text>
+          </Box>
+        </Box>
+      </GeneralModal>
+    </>
   );
 };
 
-export default createAnnouncementSucessModal;
+export default CreateAnnouncementSucessModal;
