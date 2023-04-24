@@ -25,14 +25,17 @@
     "next": "^13.3.0",
     "nookies": "^2.5.2",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
+    "react-responsive": "^9.0.2",
     "styled-components": "^5.3.9",
     "typescript": "5.0.3",
     "yup": "^1.0.2"
   },
   "devDependencies": {
     "@types/jsonwebtoken": "^9.0.1",
+    "@types/react-responsive": "^8.0.5",
     "@types/styled-components": "^5.1.26"
   }
 }

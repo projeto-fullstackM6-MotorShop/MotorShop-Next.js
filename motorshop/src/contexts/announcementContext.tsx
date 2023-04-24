@@ -19,6 +19,7 @@ interface announcementProviderData {
   isCreateAnnouncementOpen: boolean;
   setIsCreateAnnouncementOpen: Dispatch<SetStateAction<boolean>>;
   setIsCreateAnnouncementSucessOpen: Dispatch<SetStateAction<boolean>>;
+  setAllBrands: Dispatch<SetStateAction<string[]>>;
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -66,6 +67,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     <AnnouncementContext.Provider
       value={{
         getAllCars,
+        setAllBrands,
         allCars,
         allBrands,
         CreateAnnouncement,
