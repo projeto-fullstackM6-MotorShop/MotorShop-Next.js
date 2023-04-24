@@ -1,13 +1,20 @@
 import { IChildren } from "@/interfaces/misc";
-import { IProviderProps, IUserLogin } from "@/interfaces/usersTypes";
+import {
+  IRegisterUserData,
+  IUserData,
+  IUserLogin,
+} from "@/interfaces/usersTypes";
 import { api } from "@/services/api";
 import { Box, useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { setCookie } from "nookies";
-import { ReactNode, createContext, useContext } from "react";
+import { parseCookies, setCookie } from "nookies";
+import { createContext, useContext, useState } from "react";
 
 interface AuthProviderData {
+  token: string;
+  user: IUserData | null;
   login: (userData: IUserLogin) => void;
+  registerUser: (userData: IRegisterUserData) => void;
 }
 
 export const AuthContext = createContext<AuthProviderData>(
@@ -15,33 +22,34 @@ export const AuthContext = createContext<AuthProviderData>(
 );
 
 export const AuthProvider = ({ children }: IChildren) => {
+  const cookies = parseCookies();
+
+  const [token, setToken] = useState<string>(cookies["@motorshop:token"] || "");
+  const [user, setUser] = useState<IUserData | null>(null);
+
   const toast = useToast();
+  const router = useRouter();
 
   const login = (userData: IUserLogin) => {
     api
       .post("/login", userData)
-      .then((resp) => {
-        setCookie(null, "kenzie.token", resp.data.token, {
-          maxAge: 60 * 30,
-          path: "/",
-        });
+      .then((res) => {
+        setCookie(null, "@motorshop:token", res.data.token);
+
         toast({
           title: "sucess",
           variant: "solid",
           position: "top-right",
           isClosable: true,
           render: () => (
-            <Box
-              color={"gray.50"}
-              p={3}
-              bg={"green.600"}
-              fontWeight={"bold"}
-              borderRadius={"md"}
-            >
-              Login realizado com sucesso !
+            <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+              Login realizado com sucesso!
             </Box>
           ),
         });
+
+        setToken(res.data.token);
+        router.push("/");
       })
       .catch((err) => {
         toast({
@@ -50,21 +58,51 @@ export const AuthProvider = ({ children }: IChildren) => {
           position: "top-right",
           isClosable: true,
           render: () => (
-            <Box
-              color={"gray.50"}
-              p={3}
-              bg={"red.600"}
-              fontWeight={"bold"}
-              borderRadius={"md"}
-            >
+            <Box bg={"alert.1"} color={"alert.3"} p={3}>
               Verifique se o e-mail e senha estão corretos
             </Box>
           ),
         });
       });
   };
+
+  const registerUser = (userData: IRegisterUserData) => {
+    api
+      .post("/user", userData)
+      .then((res) => {
+        toast({
+          title: "sucess",
+          variant: "solid",
+          position: "top-right",
+          isClosable: true,
+          render: () => (
+            <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+              Usuário criado com sucesso!
+            </Box>
+          ),
+        });
+
+        router.push("/login");
+      })
+      .catch((err) => {
+        toast({
+          title: "error",
+          variant: "solid",
+          position: "top-right",
+          isClosable: true,
+          render: () => (
+            <Box bg={"alert.1"} color={"alert.3"} p={3}>
+              Verifique se preencheu todos os dados corretamente.
+            </Box>
+          ),
+        });
+      });
+  };
+
   return (
-    <AuthContext.Provider value={{ login }}>{children}</AuthContext.Provider>
+    <AuthContext.Provider value={{ token, user, login, registerUser }}>
+      {children}
+    </AuthContext.Provider>
   );
 };
 
