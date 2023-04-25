@@ -81,10 +81,12 @@ const Advertiser = () => {
           Criar anuncio
         </Button>
       </Flex>
-      <Box
+      <Flex
         bgColor={"grey.8"}
         paddingTop={{ base: "386px", lg: "267px" }}
         marginTop={"-407px"}
+        direction={'column'}
+        alignItems={'center'}
       >
         <ListOfCars />
 
@@ -111,8 +113,8 @@ const Advertiser = () => {
             </Button>
           </Flex>
         </Center>
-        <Footer />
-      </Box>
+      </Flex>
+      <Footer />
     </>
   );
 };
