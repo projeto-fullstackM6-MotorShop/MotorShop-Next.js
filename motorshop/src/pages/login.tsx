@@ -20,6 +20,7 @@ import {
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { useRouter } from "next/router";
 
 const formschema = yup.object().shape({
   email: yup
@@ -35,6 +36,7 @@ const LoginPage = () => {
   const [passwordError, setPasswordError] = useState(false);
 
   const { login } = useAuth();
+  const router = useRouter();
 
   const {
     register,
@@ -126,7 +128,7 @@ const LoginPage = () => {
             Ainda não possui cadastro ?
           </Text>
 
-          <Button w={"100%"}>Cadastrar</Button>
+          <Button onClick={() => router.push("/register")}>Cadastrar</Button>
         </FormControl>
       </Center>
 

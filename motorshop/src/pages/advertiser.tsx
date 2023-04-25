@@ -9,6 +9,8 @@ import CreateAnnouncementModal from "@/components/createAnnouncementModal";
 import { useEffect } from "react";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import CreateAnnouncementSucessModal from "@/components/createAnnouncementSucessModal";
+import { GetServerSideProps } from "next";
+import nookies from "nookies";
 
 const Advertiser = () => {
   const { onOpen, isOpen } = useModal();
@@ -113,6 +115,25 @@ const Advertiser = () => {
       </Box>
     </>
   );
+};
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const cookies = nookies.get(ctx);
+
+  const token = cookies["@motorshop:token"];
+
+  if (!token) {
+    return {
+      redirect: {
+        destination: "/login",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
 };
 
 export default Advertiser;
