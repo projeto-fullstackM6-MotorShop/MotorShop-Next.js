@@ -9,6 +9,7 @@ import {
 import { IChildren } from "@/interfaces/misc";
 import { api, carsApi } from "@/services/api";
 import { IAnnouceInterface, IAnnouncementRequest } from "../interfaces/annouce";
+import { useAuth } from "./authContext";
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
@@ -19,6 +20,9 @@ interface announcementProviderData {
   isCreateAnnouncementOpen: boolean;
   setIsCreateAnnouncementOpen: Dispatch<SetStateAction<boolean>>;
   setIsCreateAnnouncementSucessOpen: Dispatch<SetStateAction<boolean>>;
+  setAllBrands: Dispatch<SetStateAction<string[]>>;
+  getAllAnnouncements: () => void;
+  allAnnouncements: IAnnouceInterface[];
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -35,10 +39,14 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     useState(false);
   const [isCreateAnnouncementOpen, setIsCreateAnnouncementOpen] =
     useState(false);
+  const [allAnnouncements, setAllAnnouncements] = useState([]);
+
+  const { token } = useAuth();
 
   useEffect(() => {
     const brands = Object.keys(allCars);
     setAllBrands(brands);
+    getAllAnnouncements();
   }, [allCars]);
 
   const getAllCars = async () => {
@@ -51,7 +59,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   };
 
   const CreateAnnouncement = async (data: IAnnouncementRequest) => {
-    api.defaults.headers.common.authorization = `Bearer ${"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZpY3RvcmlhQGdtYWlsLmNvbSIsImlhdCI6MTY4MjM1MTU1OCwiZXhwIjoxNjgyNDM3OTU4LCJzdWIiOiI1OTYxMjY0ZC02MDI1LTQyODYtYjA2NC0yMmIxOGU4YzIwYzgifQ.2aL58g61poTqlJzfi4dYAGfBteF4EeONzV-Qqi1rnf8"}`;
+    api.defaults.headers.common.authorization = `Bearer ${token}`;
     try {
       const response = await api.post("/announcement", data);
       setUserAnnouncements({ userAnnouncements, ...response.data });
@@ -62,10 +70,21 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     } finally {
     }
   };
+
+  const getAllAnnouncements = async () => {
+    try {
+      const response = await api.get("/announcement");
+      setAllAnnouncements(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <AnnouncementContext.Provider
       value={{
         getAllCars,
+        setAllBrands,
         allCars,
         allBrands,
         CreateAnnouncement,
@@ -73,6 +92,8 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         setIsCreateAnnouncementSucessOpen,
         setIsCreateAnnouncementOpen,
         isCreateAnnouncementOpen,
+        getAllAnnouncements,
+        allAnnouncements,
       }}
     >
       {children}
