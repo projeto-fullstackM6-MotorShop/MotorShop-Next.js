@@ -6,11 +6,25 @@ import { useMediaQuery } from "react-responsive";
 import { useAuth } from "@/contexts/authContext";
 
 const FilterCard = () => {
-  const { allModels, allColors, allYears, allFuels } =
-    useContext(FilterContext);
+  const {
+    allModels,
+    allColors,
+    allYears,
+    allFuels,
+    getAllModels,
+    setAllModels,
+  } = useContext(FilterContext);
   const { getUserProfile } = useAuth();
-  const { allBrands, getAllCars, setAllBrands, getAllAnnouncements } =
-    useAnnouncement();
+  const {
+    allBrands,
+    getAllCars,
+    setAllBrands,
+    getAllAnnouncements,
+    allCars,
+    setAllCars,
+    allAnnouncements,
+    setAllAnnouncements,
+  } = useAnnouncement();
 
   const [clearFilter, setClearFilter] = useState(false);
   const [isButtonClearFilterActive, setIsButtonClearFilterActive] =
@@ -21,11 +35,20 @@ const FilterCard = () => {
     getAllCars();
     getUserProfile();
     getAllAnnouncements();
+    getAllModels();
   }, []);
 
   const clearAllFilters = () => {
     getAllCars();
     setIsButtonClearFilterActive(false);
+  };
+
+  const getFilteredBrandCars = () => {
+    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
+      announcement.brand.toLowerCase() === allBrands[0].toLowerCase();
+    });
+    // setAllAnnouncements(filteredAnnouncements);
+    console.log(filteredAnnouncements);
   };
 
   return (
@@ -44,9 +67,8 @@ const FilterCard = () => {
             return (
               <Text
                 onClick={() => {
-                  setAllBrands([brand]),
-                    setClearFilter(true),
-                    setIsButtonClearFilterActive(true);
+                  setAllBrands([brand]);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
                 }}
                 fontSize="xs"
                 fontFamily="heading"
@@ -237,7 +259,9 @@ const FilterCard = () => {
               width={"90%"}
               maxW={"225px"}
               alignSelf={"center"}
-              onClick={() => clearAllFilters()}
+              onClick={() => {
+                clearAllFilters(), getAllAnnouncements();
+              }}
             >
               Limpar Filtros
             </Button>

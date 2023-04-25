@@ -3,9 +3,11 @@ import {
   SetStateAction,
   createContext,
   useContext,
+  useEffect,
   useState,
 } from "react";
 import { IChildren } from "@/interfaces/misc";
+import { useAnnouncement } from "./announcementContext";
 
 interface filterProviderData {
   model: null | string;
@@ -16,15 +18,15 @@ interface filterProviderData {
   setyear: Dispatch<SetStateAction<null | string>>;
   fuel: null | string;
   setfuel: Dispatch<SetStateAction<null | string>>;
-
-  allModels: string[];
-  setallModels: Dispatch<SetStateAction<string[]>>;
+  allModels: never[];
+  setAllModels: Dispatch<SetStateAction<string[]>>;
   allColors: string[];
   setallColors: Dispatch<SetStateAction<string[]>>;
   allYears: string[];
   setallYears: Dispatch<SetStateAction<string[]>>;
   allFuels: string[];
   setallFuels: Dispatch<SetStateAction<string[]>>;
+  getAllModels: () => Promise<void>;
 }
 
 export const FilterContext = createContext<filterProviderData>(
@@ -32,17 +34,10 @@ export const FilterContext = createContext<filterProviderData>(
 );
 
 export const FilterProvider = ({ children }: IChildren) => {
+  const { allAnnouncements, allBrands } = useAnnouncement();
+
   const [model, setmodel] = useState<string | null>(null);
-  const [allModels, setallModels] = useState([
-    "Civic",
-    "Corolla",
-    "Cruze",
-    "Fit",
-    "Gol",
-    "Ka",
-    "Onix",
-    "Pulse",
-  ]);
+  const [allModels, setAllModels] = useState([] as any);
 
   const [color, setcolor] = useState<string | null>(null);
   const [allColors, setallColors] = useState([
@@ -73,13 +68,19 @@ export const FilterProvider = ({ children }: IChildren) => {
     "Flex",
   ]);
 
+  const getAllModels = async () => {
+    const models = allAnnouncements.map((car) => car.model);
+    setAllModels(models);
+  };
+
   return (
     <FilterContext.Provider
       value={{
+        getAllModels,
         model,
         setmodel,
         allModels,
-        setallModels,
+        setAllModels,
         color,
         setcolor,
         allColors,

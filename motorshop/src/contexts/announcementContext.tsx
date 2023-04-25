@@ -23,6 +23,8 @@ interface announcementProviderData {
   setAllBrands: Dispatch<SetStateAction<string[]>>;
   getAllAnnouncements: () => void;
   allAnnouncements: IAnnouceInterface[];
+  setAllCars: Dispatch<SetStateAction<IAnnouceInterface[]>>;
+  setAllAnnouncements: Dispatch<SetStateAction<never[] | IAnnouceInterface[]>>;
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -39,7 +41,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     useState(false);
   const [isCreateAnnouncementOpen, setIsCreateAnnouncementOpen] =
     useState(false);
-  const [allAnnouncements, setAllAnnouncements] = useState([]);
+  const [allAnnouncements, setAllAnnouncements] = useState([] as any);
 
   const { token } = useAuth();
 
@@ -83,6 +85,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   return (
     <AnnouncementContext.Provider
       value={{
+        setAllCars,
         getAllCars,
         setAllBrands,
         allCars,
@@ -94,6 +97,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         isCreateAnnouncementOpen,
         getAllAnnouncements,
         allAnnouncements,
+        setAllAnnouncements,
       }}
     >
       {children}
