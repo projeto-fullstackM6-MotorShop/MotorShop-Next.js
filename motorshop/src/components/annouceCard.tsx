@@ -13,7 +13,7 @@ import { useRouter } from "next/router";
 import AvatarIcon from "./avatarIcon";
 
 const AnnouceCard = (data: ICardPropInterface) => {
-  const {
+  let {
     id,
     brand,
     model,
@@ -33,6 +33,8 @@ const AnnouceCard = (data: ICardPropInterface) => {
 
   const router = useRouter();
   const pathname = router.pathname;
+
+  price = +price;
 
   return (
     <Card
@@ -133,7 +135,11 @@ const AnnouceCard = (data: ICardPropInterface) => {
             </Text>
           </Flex>
           <Heading fontSize={"xs"} fontWeight={"bold"} color={"grey.1"}>
-            {`R$ ${price.toFixed(2).toString().replace(".", ",")}`}
+            {/* {`R$ ${price.toFixed(2).toString().replace(".", ",")}`} */}
+            {price.toLocaleString("pt-BR", {
+              style: "currency",
+              currency: "BRL",
+            })}
           </Heading>
         </Flex>
 

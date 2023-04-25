@@ -22,6 +22,7 @@ interface announcementProviderData {
   setIsCreateAnnouncementSucessOpen: Dispatch<SetStateAction<boolean>>;
   setAllBrands: Dispatch<SetStateAction<string[]>>;
   getAllAnnouncements: () => void;
+  allAnnouncements: IAnnouceInterface[];
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -45,6 +46,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   useEffect(() => {
     const brands = Object.keys(allCars);
     setAllBrands(brands);
+    getAllAnnouncements();
   }, [allCars]);
 
   const getAllCars = async () => {
@@ -72,7 +74,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const getAllAnnouncements = async () => {
     try {
       const response = await api.get("/announcement");
-      console.log(response);
       setAllAnnouncements(response.data);
     } catch (error) {
       console.error(error);
@@ -92,6 +93,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         setIsCreateAnnouncementOpen,
         isCreateAnnouncementOpen,
         getAllAnnouncements,
+        allAnnouncements,
       }}
     >
       {children}
