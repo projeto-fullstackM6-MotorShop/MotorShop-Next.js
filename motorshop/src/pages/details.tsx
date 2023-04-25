@@ -1,9 +1,7 @@
-import AnnouceCard from "@/components/annouceCard";
 import AvatarIcon from "@/components/avatarIcon";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-
-import { mockAnnouce } from "@/mocks/AnnouceMock";
+import { useAuth } from "@/contexts/authContext";
 import {
   Box,
   Button,
@@ -15,14 +13,31 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
 const Details = () => {
+  const { user } = useAuth();
+  const router = useRouter();
+
+  const goForLogin = () => {
+    if (!user) {
+      router.push("/login");
+    }
+  };
+
   return (
-  <>
-       <Header />
-      <Box bgColor={'grey.8'} h={'1700px'} zIndex={1}>
-        <Box w={'100%'} h={'550px'} bgColor={'brand.1'} zIndex={-1} />
-        <Flex position={'absolute'} top={'120px'} w={'80%'} ml={'10%'} mr={'10%'} direction={'column'}>
+    <>
+      <Header />
+      <Box bgColor={"grey.8"} h={"1700px"} zIndex={1}>
+        <Box w={"100%"} h={"550px"} bgColor={"brand.1"} zIndex={-1} />
+        <Flex
+          position={"absolute"}
+          top={"120px"}
+          w={"80%"}
+          ml={"10%"}
+          mr={"10%"}
+          direction={"column"}
+        >
           <SimpleGrid columns={2} spacing={15}>
             <Box>
               <Flex
@@ -75,10 +90,11 @@ const Details = () => {
                   <Text>{`R$ ${"00.000,00"}`}</Text>
                 </Flex>
                 <Button
-                  variant={"brand1"}
+                  variant={user ? "brand1" : "brandOpacity"}
                   position={"absolute"}
                   bottom={"10px"}
                   left={"20px"}
+                  onClick={goForLogin}
                 >
                   Comprar
                 </Button>
@@ -379,10 +395,11 @@ const Details = () => {
               position={"absolute"}
               right={"50px"}
               bottom={"50px"}
-              variant={"brand1"}
+              variant={user ? "brand1" : "disable"}
               size={"sm"}
               fontSize={"xxs"}
               padding={"4px 15px"}
+              onClick={goForLogin}
             >
               Comentar
             </Button>
@@ -392,5 +409,5 @@ const Details = () => {
       <Footer />
     </>
   );
-}
+};
 export default Details;

@@ -1,17 +1,12 @@
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import {
-  Avatar,
   Box,
   Button,
   Container,
-  Editable,
-  EditableInput,
-  EditablePreview,
   Flex,
   HStack,
   IconButton,
   Image,
-  Input,
   Link,
   Stack,
   Text,
@@ -21,12 +16,15 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import AvatarIcon from "./avatarIcon";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const router = useRouter();
+
   // Usuario para teste de modal com usuario "user = true" e sem usuario "user = false"
-  let user = true;
+  let user = false;
   const userName = "Clayson Roberto";
 
   return (
@@ -43,7 +41,12 @@ const Header = () => {
         padding={{ base: "0px 15px", md: "0px 60px" }}
         zIndex={1}
       >
-        <Image src="/motorsShop.svg" alt="logo" />
+        <Image
+          src="/motorsShop.svg"
+          alt="logo"
+          onClick={() => router.push("/")}
+          cursor={"pointer"}
+        />
 
         <Flex>
           <IconButton
@@ -92,15 +95,18 @@ const Header = () => {
             <Flex
               borderLeft={"2px solid"}
               borderColor={"grey.6"}
-              justifyContent={"flex-end"}
+              justifyContent={"space-around"}
               alignItems={"center"}
               w={"311px"}
               h={"100%"}
             >
-              <Link as={NextLink} href="">
+              <Button variant={"light"} onClick={() => router.push("/login")}>
                 Fazer login
-              </Link>
-              <Button variant={"outline2"} marginLeft={"44px"}>
+              </Button>
+              <Button
+                variant={"outline2"}
+                onClick={() => router.push("/register")}
+              >
                 Cadastrar
               </Button>
             </Flex>

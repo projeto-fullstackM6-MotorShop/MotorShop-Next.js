@@ -1,6 +1,10 @@
-import { Box, Container, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 
 const Footer = () => {
+  const scroolUp = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <Box
@@ -29,7 +33,12 @@ const Footer = () => {
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <Image src="/angleUp.svg" alt="arrowUp" />
+          <Image
+            src="/angleUp.svg"
+            alt="arrowUp"
+            onClick={scroolUp}
+            cursor={"pointer"}
+          />
         </Box>
       </Box>
     </>
