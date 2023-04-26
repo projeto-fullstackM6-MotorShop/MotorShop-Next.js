@@ -2,10 +2,11 @@ import { Avatar } from "@chakra-ui/react";
 
 interface IAvatar {
   size?: string;
+  userName?: string;
 }
 
 const AvatarIcon = (props: IAvatar) => {
-  const userName = "Clayson Roberto";
+  const userName = props.userName;
 
   let numberColor = Math.floor(Math.random() * 13);
 

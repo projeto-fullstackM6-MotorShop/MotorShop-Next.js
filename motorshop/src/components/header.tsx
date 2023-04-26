@@ -1,31 +1,30 @@
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { useAuth } from "@/contexts/authContext";
+import { useRouter } from "next/router";
 import {
   Box,
   Button,
-  Container,
   Flex,
   HStack,
-  IconButton,
   Image,
-  Link,
-  Stack,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   Text,
-  useDisclosure,
-  Wrap,
-  WrapItem,
 } from "@chakra-ui/react";
-import NextLink from "next/link";
 import AvatarIcon from "./avatarIcon";
-import { useRouter } from "next/router";
+import { destroyCookie } from "nookies";
 
 const Header = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { user } = useAuth();
 
   const router = useRouter();
 
-  // Usuario para teste de modal com usuario "user = true" e sem usuario "user = false"
-  let user = false;
-  const userName = "Clayson Roberto";
+  const onLogout = () => {
+    destroyCookie(null, "@motorshop:token");
+
+    router.reload();
+  };
 
   return (
     <>
@@ -48,48 +47,37 @@ const Header = () => {
           cursor={"pointer"}
         />
 
-        <Flex>
-          <IconButton
-            backgroundColor={"grey.10"}
-            h={"46px"}
-            w={"46px"}
-            icon={isOpen ? <CloseIcon h={"15px"} /> : <HamburgerIcon />}
-            aria-label={"Open Menu"}
-            display={{ md: "none" }}
-            onClick={isOpen ? onClose : onOpen}
-            _hover={{
-              h: "46px",
-              w: "46px",
-            }}
-          />
-        </Flex>
-
         {user ? (
-          <HStack h={"100%"} display={{ base: "none", md: "flex" }}>
-            <Flex
+          <Menu>
+            <MenuButton
+              as={Button}
+              bg={"transparent"}
               borderLeft={"2px solid"}
+              borderRadius={"0"}
               borderColor={"grey.6"}
-              justifyContent={"flex-end"}
-              alignItems={"center"}
-              w={"311px"}
               h={"100%"}
+              paddingLeft={"2rem"}
+              _hover={{ bg: "trasparent" }}
+              _active={{ bg: "trasparent" }}
             >
-              <Wrap>
-                <WrapItem alignItems={"center"} marginRight={"124px"}>
-                  <AvatarIcon />
-                  <Text
-                    marginLeft={"8px"}
-                    marginRight={"120px"}
-                    fontSize={"xs"}
-                    fontWeight={"normal"}
-                    color={"grey.2"}
-                  >
-                    {userName}
-                  </Text>
-                </WrapItem>
-              </Wrap>
-            </Flex>
-          </HStack>
+              <Flex
+                alignItems={"center"}
+                justifyContent={"flex-end"}
+                gap={"0.5rem"}
+              >
+                <AvatarIcon userName={user.name} />
+                <Text fontSize={"xs"} color={"grey.2"}>
+                  {user.name}
+                </Text>
+              </Flex>
+            </MenuButton>
+            <MenuList>
+              <MenuItem>Editar Perfil</MenuItem>
+              <MenuItem>Editar Endereço</MenuItem>
+              {user.is_seller && <MenuItem>Meus Anúncios</MenuItem>}
+              <MenuItem onClick={onLogout}>Sair</MenuItem>
+            </MenuList>
+          </Menu>
         ) : (
           <HStack h={"100%"} display={{ base: "none", md: "flex" }}>
             <Flex
@@ -112,58 +100,6 @@ const Header = () => {
             </Flex>
           </HStack>
         )}
-
-        {isOpen ? (
-          <Box
-            display={{ base: "flex", md: "none" }}
-            position={"fixed"}
-            backgroundColor={"grey.10"}
-            border={"2px solid"}
-            borderColor={"grey.6"}
-            flexDirection={"column"}
-            justifyContent={"space-between"}
-            maxHeight={"100%"}
-            w={"323px"}
-            top={"78px"}
-            left={"-1px"}
-            zIndex={3000}
-          >
-            <Stack
-              h={"236px"}
-              as={"nav"}
-              color={"grey.2"}
-              justifyContent={"space-evenly"}
-              paddingLeft={"16px"}
-            >
-              <Link variant={"textBody1"} as={NextLink} href="">
-                Carros
-              </Link>
-              <Link variant={"textBody1"} as={NextLink} href="">
-                Motos
-              </Link>
-              <Link variant={"textBody1"} as={NextLink} href="">
-                Leilão
-              </Link>
-            </Stack>
-            {user ? (
-              <></>
-            ) : (
-              <Container
-                h={"184px"}
-                display={"flex"}
-                flexDirection={"column"}
-                borderTop={"2px solid"}
-                borderColor={"grey.6"}
-                justifyContent={"space-evenly"}
-              >
-                <Link variant={"textBody1"} as={NextLink} href="">
-                  Fazer login
-                </Link>
-                <Button variant={"outline2"}>Cadastrar</Button>
-              </Container>
-            )}
-          </Box>
-        ) : null}
       </Box>
     </>
   );
