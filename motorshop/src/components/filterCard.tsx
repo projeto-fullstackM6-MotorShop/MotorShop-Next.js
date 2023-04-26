@@ -31,25 +31,26 @@ const FilterCard = () => {
     useState(false);
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 700 });
 
+  const clearAllFilters = () => {
+    getAllCars();
+    getAllAnnouncements();
+    setIsButtonClearFilterActive(false);
+  };
+
+  const getFilteredBrandCars = (brand: string) => {
+    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
+      return announcement.brand.toLowerCase() === brand.toLowerCase();
+    });
+    setAllAnnouncements(filteredAnnouncements);
+    console.log(filteredAnnouncements);
+  };
+
   useEffect(() => {
     getAllCars();
     getUserProfile();
     getAllAnnouncements();
     getAllModels();
   }, []);
-
-  const clearAllFilters = () => {
-    getAllCars();
-    setIsButtonClearFilterActive(false);
-  };
-
-  const getFilteredBrandCars = () => {
-    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
-      announcement.brand.toLowerCase() === allBrands[0].toLowerCase();
-    });
-    // setAllAnnouncements(filteredAnnouncements);
-    console.log(filteredAnnouncements);
-  };
 
   return (
     <>
@@ -68,6 +69,7 @@ const FilterCard = () => {
               <Text
                 onClick={() => {
                   setAllBrands([brand]);
+                  getFilteredBrandCars(brand);
                   setClearFilter(true), setIsButtonClearFilterActive(true);
                 }}
                 fontSize="xs"
