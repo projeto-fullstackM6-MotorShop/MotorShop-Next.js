@@ -19,6 +19,7 @@ import {
 import { useAuth } from "@/contexts/authContext";
 import { useState } from "react";
 import { EditIcon, LockIcon } from "@chakra-ui/icons";
+import { useRouter } from "next/router";
 
 const updateUserSchema = yup.object().shape({
   name: yup.string().notRequired(),
@@ -33,20 +34,33 @@ const updateUserSchema = yup.object().shape({
 
 const EditUserModal = () => {
   const [updatePass, setUpdatePass] = useState(false);
+  const [deleteModal, setDeleteModal] = useState(false);
 
-  const { user } = useAuth();
+  const { user, patchUser, deleteUser } = useAuth();
 
   const { onClose } = useModal();
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<IUpdateUserData>({
+  const router = useRouter();
+
+  const { register, handleSubmit } = useForm<IUpdateUserData>({
     resolver: yupResolver(updateUserSchema),
   });
 
-  const onSubmit = () => {};
+  const onSubmit = (data: IUpdateUserData) => {
+    patchUser(data);
+
+    onClose();
+  };
+
+  const openDeleteModal = () => {
+    setDeleteModal(true);
+  };
+
+  const onDeleteUser = () => {
+    deleteUser();
+
+    router.reload();
+  };
 
   return (
     <GeneralModal>
@@ -199,9 +213,49 @@ const EditUserModal = () => {
             <Button variant={"negative"} onClick={onClose}>
               Cancelar
             </Button>
-            <Button variant={"alert"}>Excluir Perfil</Button>
-            <Button variant={"brand1"}>Salvar Alterações</Button>
+            <Button variant={"alert"} onClick={openDeleteModal}>
+              Excluir Perfil
+            </Button>
+            <Button variant={"brand1"} type={"submit"}>
+              Salvar Alterações
+            </Button>
           </Flex>
+
+          {deleteModal && (
+            <GeneralModal>
+              <Center width={"100%"} mt={"10"} mb={"10"}>
+                <FormControl
+                  as={"form"}
+                  display={"flex"}
+                  flexDirection={"column"}
+                  gap={"2rem"}
+                  width={"80%"}
+                  onSubmit={handleSubmit(onSubmit)}
+                >
+                  <Flex justifyContent={"space-between"} alignItems={"center"}>
+                    <Heading variant={"healding_7_500"}>Excluir Perfil</Heading>
+                    <CloseButton onClick={() => setDeleteModal(!deleteModal)} />
+                  </Flex>
+
+                  <Heading variant={"healding_7_600"} textAlign={"center"}>
+                    Tem certeza que você quer excluir sua conta?
+                  </Heading>
+
+                  <Flex justifyContent={"space-around"}>
+                    <Button variant={"sucess"} onClick={onDeleteUser}>
+                      Sim
+                    </Button>
+                    <Button
+                      variant={"alert"}
+                      onClick={() => setDeleteModal(!deleteModal)}
+                    >
+                      Não
+                    </Button>
+                  </Flex>
+                </FormControl>
+              </Center>
+            </GeneralModal>
+          )}
         </FormControl>
       </Center>
     </GeneralModal>
