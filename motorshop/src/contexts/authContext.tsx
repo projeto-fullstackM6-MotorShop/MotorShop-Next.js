@@ -8,7 +8,13 @@ import { api } from "@/services/api";
 import { Box, useToast } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { parseCookies, setCookie } from "nookies";
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  Dispatch,
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 interface AuthProviderData {
   token: string;
@@ -16,6 +22,7 @@ interface AuthProviderData {
   login: (userData: IUserLogin) => void;
   registerUser: (userData: IRegisterUserData) => void;
   getUserProfile: () => void;
+  setToken: (value: string) => void;
 }
 
 export const AuthContext = createContext<AuthProviderData>(
@@ -32,8 +39,11 @@ export const AuthProvider = ({ children }: IChildren) => {
   const router = useRouter();
 
   useEffect(() => {
-    getUserProfile();
-  }, []);
+    if (token) {
+      // setToken(cookies["@motorshop:token"]);
+      getUserProfile();
+    }
+  }, [token]);
 
   const login = (userData: IUserLogin) => {
     api
@@ -116,7 +126,7 @@ export const AuthProvider = ({ children }: IChildren) => {
 
   return (
     <AuthContext.Provider
-      value={{ token, user, login, registerUser, getUserProfile }}
+      value={{ token, user, login, registerUser, getUserProfile, setToken }}
     >
       {children}
     </AuthContext.Provider>

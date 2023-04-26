@@ -10,7 +10,7 @@ const FilterCard = () => {
     allModels,
     allColors,
     allYears,
-    allFuels,
+    allFuelTypes,
     getAllModels,
     setAllModels,
   } = useContext(FilterContext);
@@ -30,6 +30,7 @@ const FilterCard = () => {
   const [isButtonClearFilterActive, setIsButtonClearFilterActive] =
     useState(false);
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 700 });
+  const [isFilterActive, setIsFilterActive] = useState(false);
 
   const clearAllFilters = () => {
     getAllCars();
@@ -42,20 +43,50 @@ const FilterCard = () => {
       return announcement.brand.toLowerCase() === brand.toLowerCase();
     });
     setAllAnnouncements(filteredAnnouncements);
-    console.log(filteredAnnouncements);
+  };
+
+  const getFilteredYear = (year: string) => {
+    const filteredYears = allAnnouncements.filter((announcement) => {
+      return announcement.fabrication_year.toLowerCase() === year.toLowerCase();
+    });
+
+    setAllAnnouncements(filteredYears);
+  };
+
+  const getFilteredModelCars = (model: string) => {
+    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
+      return (
+        announcement.model.split(" ")[0].toLowerCase() === model.toLowerCase()
+      );
+    });
+    setAllAnnouncements(filteredAnnouncements);
+  };
+  const getFilteredFuelTypeCars = (fuelType: string) => {
+    const filteredYears = allAnnouncements.filter((announcement) => {
+      return announcement.fuel_type.toLowerCase() === fuelType.toLowerCase();
+    });
+
+    setAllAnnouncements(filteredYears);
+  };
+
+  const getFilteredColor = (color: string) => {
+    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
+      return announcement.color.toLowerCase() === color.toLowerCase();
+    });
+    setAllAnnouncements(filteredAnnouncements);
   };
 
   useEffect(() => {
     getAllCars();
     getUserProfile();
     getAllAnnouncements();
-    getAllModels();
   }, []);
 
   return (
     <>
       <Flex justify="start" flexDirection="column" marginLeft={"20px"}>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="bold"
@@ -70,6 +101,7 @@ const FilterCard = () => {
                 onClick={() => {
                   setAllBrands([brand]);
                   getFilteredBrandCars(brand);
+                  setIsFilterActive(true);
                   setClearFilter(true), setIsButtonClearFilterActive(true);
                 }}
                 fontSize="xs"
@@ -85,6 +117,7 @@ const FilterCard = () => {
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="bold"
@@ -96,6 +129,10 @@ const FilterCard = () => {
           {allModels.map((model) => {
             return (
               <Text
+                onClick={() => {
+                  getFilteredModelCars(model), setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
+                }}
                 fontSize="xs"
                 fontFamily="heading"
                 fontWeight="semibold"
@@ -109,6 +146,7 @@ const FilterCard = () => {
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="bold"
@@ -117,22 +155,27 @@ const FilterCard = () => {
           Cor
         </Heading>
         <Box marginTop={"5px"}>
-          {allColors.map((model) => {
+          {allColors.map((color) => {
             return (
               <Text
+                onClick={() => {
+                  getFilteredColor(color), setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
+                }}
                 fontSize="xs"
                 fontFamily="heading"
                 fontWeight="semibold"
                 color={"grey.3"}
-                key={model}
+                key={color}
                 cursor={"pointer"}
               >
-                {model}
+                {color}
               </Text>
             );
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="semibold"
@@ -144,6 +187,10 @@ const FilterCard = () => {
           {allYears.map((model) => {
             return (
               <Text
+                onClick={() => {
+                  getFilteredYear(model), setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
+                }}
                 fontSize="xs"
                 fontFamily="heading"
                 fontWeight="semibold"
@@ -157,6 +204,7 @@ const FilterCard = () => {
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="semibold"
@@ -165,9 +213,13 @@ const FilterCard = () => {
           Combustível
         </Heading>
         <Box marginTop={"5px"}>
-          {allFuels.map((model) => {
+          {allFuelTypes.map((model) => {
             return (
               <Heading
+                onClick={() => {
+                  getFilteredFuelTypeCars(model), setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
+                }}
                 fontSize="xs"
                 fontFamily="heading"
                 fontWeight="semibold"
@@ -181,6 +233,7 @@ const FilterCard = () => {
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="semibold"
@@ -209,6 +262,7 @@ const FilterCard = () => {
           ></Input>
         </Flex>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="semibold"

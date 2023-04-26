@@ -32,6 +32,7 @@ export const AnnouncementContext = createContext<announcementProviderData>(
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
+  const { token } = useAuth();
   const [allCars, setAllCars] = useState([] as IAnnouceInterface[]);
   const [allBrands, setAllBrands] = useState([] as string[]);
   const [userAnnouncements, setUserAnnouncements] = useState(
@@ -42,8 +43,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [isCreateAnnouncementOpen, setIsCreateAnnouncementOpen] =
     useState(false);
   const [allAnnouncements, setAllAnnouncements] = useState([] as any);
-
-  const { token } = useAuth();
 
   useEffect(() => {
     const brands = Object.keys(allCars);
@@ -61,9 +60,13 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   };
 
   const CreateAnnouncement = async (data: IAnnouncementRequest) => {
-    api.defaults.headers.common.authorization = `Bearer ${token}`;
+    console.log(data);
     try {
-      const response = await api.post("/announcement", data);
+      const response = await api.post("/announcement", data, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
       setUserAnnouncements({ userAnnouncements, ...response.data });
       setIsCreateAnnouncementSucessOpen(true);
       setIsCreateAnnouncementOpen(false);

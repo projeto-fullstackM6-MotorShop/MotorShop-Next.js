@@ -9,15 +9,15 @@ import { AuthProvider } from "@/contexts/authContext";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <AnnouncementProvider>
-        <ModalProvider>
-          <AuthProvider>
+      <AuthProvider>
+        <AnnouncementProvider>
+          <ModalProvider>
             <FilterProvider>
               <Component {...pageProps} />
             </FilterProvider>
-          </AuthProvider>
-        </ModalProvider>
-      </AnnouncementProvider>
+          </ModalProvider>
+        </AnnouncementProvider>
+      </AuthProvider>
     </ChakraProvider>
   );
 }
