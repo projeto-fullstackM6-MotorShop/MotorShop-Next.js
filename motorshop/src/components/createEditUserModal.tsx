@@ -1,0 +1,211 @@
+import GeneralModal from "./generalModal";
+import { useModal } from "@/contexts/modalContext";
+import { IUpdateUserData } from "@/interfaces/usersTypes";
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import {
+  Box,
+  Button,
+  Center,
+  CloseButton,
+  Flex,
+  FormControl,
+  FormLabel,
+  Heading,
+  Input,
+  Text,
+} from "@chakra-ui/react";
+import { useAuth } from "@/contexts/authContext";
+import { useState } from "react";
+import { EditIcon, LockIcon } from "@chakra-ui/icons";
+
+const updateUserSchema = yup.object().shape({
+  name: yup.string().notRequired(),
+  email: yup.string().email().notRequired(),
+  cpf: yup.string().notRequired().min(11).max(11),
+  phone: yup.string().notRequired().min(11).max(11),
+  birth_date: yup.string().notRequired(),
+  password: yup.string().notRequired(),
+  description: yup.string().notRequired(),
+  is_seller: yup.boolean().notRequired(),
+});
+
+const EditUserModal = () => {
+  const [updatePass, setUpdatePass] = useState(false);
+
+  const { user } = useAuth();
+
+  const { onClose } = useModal();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<IUpdateUserData>({
+    resolver: yupResolver(updateUserSchema),
+  });
+
+  const onSubmit = () => {};
+
+  return (
+    <GeneralModal>
+      <Center width={"100%"} mt={"10"} mb={"10"}>
+        <FormControl
+          as={"form"}
+          display={"flex"}
+          flexDirection={"column"}
+          gap={"2rem"}
+          width={"80%"}
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <Flex justifyContent={"space-between"} alignItems={"center"}>
+            <Heading variant={"healding_7_500"}>Editar Perfil</Heading>
+            <CloseButton onClick={onClose} />
+          </Flex>
+
+          <Text variant={"body_2_500"}>Informações Pessoais</Text>
+
+          <Box>
+            <FormLabel
+              fontSize={"xxs"}
+              fontWeight={"medium"}
+              color={"grey.1"}
+              htmlFor={"name"}
+            >
+              Nome
+            </FormLabel>
+            <Input
+              id={"name"}
+              fontSize={"xs"}
+              {...register("name")}
+              defaultValue={user?.name}
+              placeholder={"Digite seu nome"}
+            />
+          </Box>
+
+          <Box>
+            <FormLabel
+              fontSize={"xxs"}
+              fontWeight={"medium"}
+              color={"grey.1"}
+              htmlFor={"email"}
+            >
+              Email
+            </FormLabel>
+            <Input
+              id={"email"}
+              fontSize={"xs"}
+              type={"email"}
+              {...register("email")}
+              defaultValue={user?.email}
+              placeholder={"Digite seu email"}
+            />
+          </Box>
+
+          <Box>
+            <FormLabel
+              fontSize={"xxs"}
+              fontWeight={"medium"}
+              color={"grey.1"}
+              htmlFor={"cpf"}
+            >
+              CPF
+            </FormLabel>
+            <Input
+              id={"cpf"}
+              fontSize={"xs"}
+              type={"number"}
+              {...register("cpf")}
+              defaultValue={user?.cpf}
+              placeholder={"Digite seu cpf"}
+            />
+          </Box>
+
+          <Box>
+            <FormLabel
+              fontSize={"xxs"}
+              fontWeight={"medium"}
+              color={"grey.1"}
+              htmlFor={"phone"}
+            >
+              Celular
+            </FormLabel>
+            <Input
+              id={"phone"}
+              fontSize={"xs"}
+              type={"number"}
+              {...register("phone")}
+              defaultValue={user?.phone}
+              placeholder={"Digite seu numero de celular"}
+            />
+          </Box>
+
+          <Box>
+            <FormLabel
+              fontSize={"xxs"}
+              fontWeight={"medium"}
+              color={"grey.1"}
+              htmlFor={"birth_date"}
+            >
+              Data de nascimento
+            </FormLabel>
+            <Input
+              id={"birth_date"}
+              fontSize={"xs"}
+              {...register("birth_date")}
+              defaultValue={user?.birth_date}
+              placeholder={"Digite sua data de nascimento"}
+            />
+          </Box>
+
+          {!updatePass && (
+            <Button
+              variant={"brand1"}
+              onClick={() => setUpdatePass(!updatePass)}
+              rightIcon={<EditIcon />}
+            >
+              Editar Senha
+            </Button>
+          )}
+          {updatePass && (
+            <>
+              <Box>
+                <FormLabel
+                  fontSize={"xxs"}
+                  fontWeight={"medium"}
+                  color={"grey.1"}
+                  htmlFor={"password"}
+                >
+                  Senha
+                </FormLabel>
+                <Input
+                  id={"password"}
+                  fontSize={"xs"}
+                  {...register("password")}
+                  placeholder={"Digite sua nova senha"}
+                />
+              </Box>
+              <Button
+                variant={"brand1"}
+                onClick={() => setUpdatePass(!updatePass)}
+                rightIcon={<LockIcon />}
+              >
+                Cancelar Edição de Senha
+              </Button>
+            </>
+          )}
+          <Flex gap={"5px"}>
+            <Button variant={"negative"} onClick={onClose}>
+              Cancelar
+            </Button>
+            <Button variant={"alert"}>Excluir Perfil</Button>
+            <Button variant={"brand1"}>Salvar Alterações</Button>
+          </Flex>
+        </FormControl>
+      </Center>
+    </GeneralModal>
+  );
+};
+
+export default EditUserModal;

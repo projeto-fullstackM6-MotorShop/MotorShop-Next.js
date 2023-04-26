@@ -24,6 +24,17 @@ export interface IRegisterUserData {
   address: IAddressRegister;
 }
 
+export interface IUpdateUserData {
+  name?: string;
+  email?: string;
+  cpf?: string;
+  phone?: string;
+  birth_date?: string;
+  password?: string;
+  description?: string;
+  is_seller?: boolean;
+}
+
 export interface IAddressRegister {
   zip_code: string;
   state: string;
@@ -39,20 +50,4 @@ export interface IUserLogin {
 
 export interface IProviderProps {
   children: ReactNode;
-}
-
-export interface IRegisterUser {
-  nome: string;
-  email: string;
-  cpf: string;
-  phone: string;
-  bornDate: Date;
-  description: string;
-  cep: string;
-  state: string;
-  city: string;
-  addressComplement: string;
-  typeAccount: string;
-  number: string;
-  password: string;
 }

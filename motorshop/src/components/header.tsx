@@ -14,9 +14,13 @@ import {
 } from "@chakra-ui/react";
 import AvatarIcon from "./avatarIcon";
 import { destroyCookie } from "nookies";
+import { useModal } from "@/contexts/modalContext";
+import EditUserModal from "./createEditUserModal";
 
 const Header = () => {
   const { user } = useAuth();
+
+  const { onOpen, modalType, setModalType } = useModal();
 
   const router = useRouter();
 
@@ -24,6 +28,12 @@ const Header = () => {
     destroyCookie(null, "@motorshop:token");
 
     router.reload();
+  };
+
+  const openEditUserModal = () => {
+    setModalType("editUser");
+
+    onOpen();
   };
 
   return (
@@ -72,7 +82,7 @@ const Header = () => {
               </Flex>
             </MenuButton>
             <MenuList>
-              <MenuItem>Editar Perfil</MenuItem>
+              <MenuItem onClick={openEditUserModal}>Editar Perfil</MenuItem>
               <MenuItem>Editar Endereço</MenuItem>
               {user.is_seller && <MenuItem>Meus Anúncios</MenuItem>}
               <MenuItem onClick={onLogout}>Sair</MenuItem>
@@ -100,6 +110,8 @@ const Header = () => {
             </Flex>
           </HStack>
         )}
+
+        {modalType == "editUser" ? <EditUserModal /> : null}
       </Box>
     </>
   );
