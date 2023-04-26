@@ -1,6 +1,7 @@
 import AvatarIcon from "@/components/avatarIcon";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
 import {
   Box,
@@ -14,10 +15,18 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Details = () => {
   const { user } = useAuth();
   const router = useRouter();
+
+  const { announcementView } = useAnnouncement()
+
+  useEffect(()=> {
+  
+  }, [announcementView])
+
 
   const goForLogin = () => {
     if (!user) {
@@ -61,7 +70,7 @@ const Details = () => {
                 padding={"20px"}
               >
                 <Heading color={"grey.0"} fontSize={"xs"} mt={"30px"}>
-                  Mercedes Benz A 200 CGI ADVANCE SEDAN Mercedes Benz A 200
+                  {announcementView?.data.model}
                 </Heading>
                 <Flex
                   justifyContent={"space-between"}
@@ -76,7 +85,7 @@ const Details = () => {
                       borderRadius={"4px"}
                       color={"brand.1"}
                     >
-                      2013
+                      {announcementView?.data.fabrication_year}
                     </Text>
                     <Text
                       padding={"5px"}
@@ -84,10 +93,10 @@ const Details = () => {
                       borderRadius={"4px"}
                       color={"brand.1"}
                     >
-                      0 km
+                      {`${announcementView?.data.km} Km`}
                     </Text>
                   </Flex>
-                  <Text>{`R$ ${"00.000,00"}`}</Text>
+                  <Text>{`R$ ${announcementView?.data.price}`}</Text>
                 </Flex>
                 <Button
                   variant={user ? "brand1" : "brandOpacity"}
@@ -111,11 +120,7 @@ const Details = () => {
                   Descrição
                 </Heading>
                 <Text w={"80%"}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industries
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  {announcementView?.data.description}
                 </Text>
               </Flex>
             </Box>
@@ -143,76 +148,7 @@ const Details = () => {
                       objectFit={"scale-down"}
                     />
                   </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src="/frontSidePilotNear.png"
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src="/frontSidePilotNear.png"
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src="/frontSidePilotNear.png"
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src="/frontSidePilotNear.png"
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src="/frontSidePilotNear.png"
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
+                 
                 </SimpleGrid>
               </Flex>
 
@@ -225,7 +161,7 @@ const Details = () => {
                 borderRadius={"4px"}
               >
                 <AvatarIcon size="xl" />
-                <Heading fontSize={"sm"}>Nome Qualquer</Heading>
+                <Heading fontSize={"sm"}>{announcementView?.data.user.name}</Heading>
                 <Text textAlign={"center"} color={"grey.3"}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industries
@@ -380,7 +316,7 @@ const Details = () => {
           >
             <Flex gap={"10px"} mb={"15px"} align={"center"}>
               <AvatarIcon size="sm" />
-              <Heading fontSize={"sm"}>Nome usuario</Heading>
+              <Heading fontSize={"sm"}>{user?.name }</Heading>
             </Flex>
             <Center w={"100%"} h={"75%"}>
               <Textarea

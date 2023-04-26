@@ -8,7 +8,7 @@ import {
 } from "react";
 import { IChildren } from "@/interfaces/misc";
 import { api, carsApi } from "@/services/api";
-import { IAnnouceInterface, IAnnouncementRequest } from "../interfaces/annouce";
+import { IAnnouceInterface, IAnnouncementRequest, ICardPropInterface } from "../interfaces/annouce";
 import { useAuth } from "./authContext";
 
 interface announcementProviderData {
@@ -23,6 +23,8 @@ interface announcementProviderData {
   setAllBrands: Dispatch<SetStateAction<string[]>>;
   getAllAnnouncements: () => void;
   allAnnouncements: IAnnouceInterface[];
+  announcementView: ICardPropInterface | null
+  setannouncementView: Dispatch<SetStateAction<ICardPropInterface | null>>
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -40,6 +42,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [isCreateAnnouncementOpen, setIsCreateAnnouncementOpen] =
     useState(false);
   const [allAnnouncements, setAllAnnouncements] = useState([]);
+  const [announcementView, setannouncementView] = useState<ICardPropInterface | null>(null)
 
   const { token } = useAuth();
 
@@ -79,6 +82,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
       console.error(error);
     }
   };
+ 
 
   return (
     <AnnouncementContext.Provider
@@ -94,6 +98,8 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         isCreateAnnouncementOpen,
         getAllAnnouncements,
         allAnnouncements,
+        announcementView,
+        setannouncementView
       }}
     >
       {children}

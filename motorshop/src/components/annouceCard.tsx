@@ -11,8 +11,17 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import AvatarIcon from "./avatarIcon";
+import { useAnnouncement } from "@/contexts/announcementContext";
 
 const AnnouceCard = (data: ICardPropInterface) => {
+
+  const { setannouncementView } = useAnnouncement()
+
+  const viewAnnouncementDetails = (data: ICardPropInterface) => {
+    setannouncementView(data)
+    router.push("/details");
+  }
+
   let {
     id,
     brand,
@@ -29,6 +38,7 @@ const AnnouceCard = (data: ICardPropInterface) => {
     updated_at,
     is_active,
     is_good_price,
+    user
   } = data.data;
 
   const router = useRouter();
@@ -47,6 +57,8 @@ const AnnouceCard = (data: ICardPropInterface) => {
       boxShadow={"none"}
       minWidth={"none"}
       marginRight={{ base: "61px", lg: "0px" }}
+      cursor={'pointer'}
+      onClick={() => viewAnnouncementDetails(data)}
     >
       <Image
         src={cover_img}
@@ -108,7 +120,7 @@ const AnnouceCard = (data: ICardPropInterface) => {
           <Flex alignItems={"center"} gap={"8px"}>
             <AvatarIcon />
             <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-              {"Nome do Usuário"}
+              {user.name}
             </Text>
           </Flex>
         )}
