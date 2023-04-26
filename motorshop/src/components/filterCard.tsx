@@ -4,6 +4,7 @@ import { Box, Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useMediaQuery } from "react-responsive";
 import { useAuth } from "@/contexts/authContext";
+import { IAnnouceInterface } from "@/interfaces/annouce";
 
 const FilterCard = () => {
   const {
@@ -51,6 +52,11 @@ const FilterCard = () => {
     });
 
     setAllAnnouncements(filteredYears);
+
+    const filteredBrands: any = filteredYears.map(
+      (announcement) => announcement.brand
+    );
+    setAllBrands(filteredBrands);
   };
 
   const getFilteredModelCars = (model: string) => {
@@ -60,6 +66,11 @@ const FilterCard = () => {
       );
     });
     setAllAnnouncements(filteredAnnouncements);
+
+    const filteredBrands: any = filteredAnnouncements.map(
+      (announcement) => announcement.brand
+    );
+    setAllBrands(filteredBrands);
   };
   const getFilteredFuelTypeCars = (fuelType: string) => {
     const filteredYears = allAnnouncements.filter((announcement) => {
@@ -67,6 +78,11 @@ const FilterCard = () => {
     });
 
     setAllAnnouncements(filteredYears);
+
+    const filteredBrands: any = filteredYears.map(
+      (announcement) => announcement.brand
+    );
+    setAllBrands(filteredBrands);
   };
 
   const getFilteredColor = (color: string) => {
@@ -74,6 +90,11 @@ const FilterCard = () => {
       return announcement.color.toLowerCase() === color.toLowerCase();
     });
     setAllAnnouncements(filteredAnnouncements);
+
+    const filteredBrands: any = filteredAnnouncements.map(
+      (announcement) => announcement.brand
+    );
+    setAllBrands(filteredBrands);
   };
 
   useEffect(() => {
