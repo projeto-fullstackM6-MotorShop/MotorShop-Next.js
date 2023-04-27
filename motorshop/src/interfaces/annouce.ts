@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { JsxElement } from "typescript";
+import { IUserData } from "./usersTypes";
 
 export interface IAnnouceInterface {
   id: string;
@@ -17,6 +18,7 @@ export interface IAnnouceInterface {
   updated_at: Date;
   is_active: boolean;
   is_good_price: boolean;
+  user: IUserData;
   map?(arg0: (car: ICarBrand) => void): ReactNode;
 }
 
