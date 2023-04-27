@@ -106,13 +106,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
-  // const getUserForProfile = async () => {
-  //   try {
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
   const goForprofile = () => {
     router.push("/profile");
   };
