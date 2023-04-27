@@ -2,7 +2,7 @@ import { Avatar } from "@chakra-ui/react";
 
 interface IAvatar {
   size?: string;
-  name: string;
+  name?: string;
 }
 
 const AvatarIcon = (props: IAvatar) => {

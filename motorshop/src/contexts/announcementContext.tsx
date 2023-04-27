@@ -11,6 +11,7 @@ import { api, carsApi } from "@/services/api";
 import { IAnnouceInterface, IAnnouncementRequest, ICardPropInterface } from "../interfaces/annouce";
 import { useAuth } from "./authContext";
 import { useRouter } from "next/router";
+import { IUserData } from "@/interfaces/usersTypes";
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
@@ -29,7 +30,7 @@ interface announcementProviderData {
   goForprofile: () => void
   announcementProfileView: IAnnouceInterface[]
   getAnnouncementsForProfile: () => Promise<void>
-
+  userView: IUserData | null
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -49,6 +50,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [allAnnouncements, setAllAnnouncements] = useState([]);
 
   const [announcementView, setannouncementView] = useState<IAnnouceInterface | null>(null)
+  const [userView, setuserView] = useState<IUserData | null>(null)
   const [announcementProfileView, setannouncementProfileView] = useState<IAnnouceInterface[]>([] as IAnnouceInterface[])
 
   const { token } = useAuth();
@@ -95,12 +97,21 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const getAnnouncementsForProfile = async () => {
     try {
       const res = await api.get(`/profile/${announcementView?.user.id}`);
+      const res2 = await api.get(`/user/${announcementView?.user.id}`);
+      setuserView(res2.data);    
       setannouncementProfileView(res.data);  
-      console.log(res.data.annoucements)
+      console.log(res.data)
     } catch (error) {
       console.error(error);
     }
   };
+
+  // const getUserForProfile = async () => {
+  //   try {
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // };
 
   const goForprofile = () => {
     router.push("/profile");
@@ -125,7 +136,8 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         setannouncementView,
         goForprofile,
         announcementProfileView,
-        getAnnouncementsForProfile
+        getAnnouncementsForProfile,
+        userView
       }}
     >
       {children}

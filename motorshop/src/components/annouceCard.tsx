@@ -16,11 +16,12 @@ import { useAnnouncement } from "@/contexts/announcementContext";
 
 const AnnouceCard = (data: IAnnouceInterface) => {
 
-  const { setannouncementView, announcementView, getAnnouncementsForProfile } = useAnnouncement()
+  const { setannouncementView, userView, getAnnouncementsForProfile } = useAnnouncement()
 
   const viewAnnouncementDetails = (data: IAnnouceInterface) => {
     getAnnouncementsForProfile()
     setannouncementView(data)
+    console.log(data)
     router.push("/details");
   }
 
@@ -59,7 +60,7 @@ const AnnouceCard = (data: IAnnouceInterface) => {
     {pathname == "/" ? (
       <Card
         as={"li"}
-        w={{ base: "290px", lg: "312px" }}
+        w={{ base: "100%", lg: "100%" }}
         h={"356px"}
         marginBottom={"85px"}
         bgColor={"transparent"}
@@ -76,7 +77,7 @@ const AnnouceCard = (data: IAnnouceInterface) => {
           w={{ lg: "100%" }}
           h={{ lg: "152px" }}
           marginBottom={"16px"}
-          objectFit={"cover"}
+          objectFit={'cover'}
           maxW={"none"}
         />
         <CardBody
@@ -128,7 +129,7 @@ const AnnouceCard = (data: IAnnouceInterface) => {
             <></>
           ) : (
             <Flex alignItems={"center"} gap={"8px"}>
-              <AvatarIcon />
+              <AvatarIcon name={user.name} />
               <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
                 {user.name}
               </Text>
@@ -179,10 +180,10 @@ const AnnouceCard = (data: IAnnouceInterface) => {
       </Card >
 
     ) : (
-        
+
       <Card
         as={"li"}
-        w={{ base: "290px", lg: "312px" }}
+        w={{ base: "100%", lg: "100%" }}
         h={"356px"}
         marginBottom={"85px"}
         bgColor={"transparent"}
@@ -191,13 +192,14 @@ const AnnouceCard = (data: IAnnouceInterface) => {
         minWidth={"none"}
         marginRight={{ base: "61px", lg: "0px" }}
         cursor={'pointer'}
-          onClick={() => viewAnnouncementDetails2(data)}
+        onClick={() => viewAnnouncementDetails2(data)}
       >
         <Image
           src={cover_img}
           alt={"Imagem de capa do anúncio"}
           w={{ lg: "100%" }}
-          h={{ lg: "152px" }}
+          h={{ lg: "250px" }}
+          maxH={'220px'}
           marginBottom={"16px"}
           objectFit={"cover"}
           maxW={"none"}
@@ -251,22 +253,12 @@ const AnnouceCard = (data: IAnnouceInterface) => {
             <></>
           ) : (
             <Flex alignItems={"center"} gap={"8px"}>
-              <AvatarIcon />
+                  <AvatarIcon name={userView?.name} />
               <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-                {announcementView?.user.name}
+                    {userView?.name}
               </Text>
             </Flex>
           )}
-        {pathname == "/advertiser" ? (
-          <></>
-        ) : (
-          <Flex alignItems={"center"} gap={"8px"}>
-            <AvatarIcon name={user.name}/>
-            <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-              {user.name}
-            </Text>
-          </Flex>
-        )}
 
           <Flex justifyContent={"space-between"} alignItems={"center"}>
             <Flex gap={"12px"}>
@@ -305,7 +297,7 @@ const AnnouceCard = (data: IAnnouceInterface) => {
               </Button>
               <Button variant={"outline1"}>Ver detalhes</Button>
             </Flex>
-          ) }
+          )}
         </CardBody>
       </Card >
     )}

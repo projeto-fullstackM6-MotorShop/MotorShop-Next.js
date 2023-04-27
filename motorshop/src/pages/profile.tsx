@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 const Profile = () => {
   const { user } = useAuth();
   const router = useRouter();
-  const { announcementView, announcementProfileView } = useAnnouncement()  
+  const { userView, announcementProfileView } = useAnnouncement()  
 
   const goForLogin = () => {
     if (!user) {
@@ -35,11 +35,11 @@ const Profile = () => {
 
             <AvatarIcon size="xl" />
             <Flex gap={'10px'} alignItems={'center'}>
-              <Heading fontSize={"sm"}>{announcementView?.user.name}</Heading>
+              <Heading fontSize={"sm"}>{userView?.name}</Heading>
               <Text padding={"5px"}
                 bgColor={"brand.4"}
                 borderRadius={"4px"}
-                color={"brand.1"}>{announcementView?.user.is_seller ? 'Anunciante' : ''}</Text>
+                color={"brand.1"}>{userView?.is_seller ? 'Anunciante' : ''}</Text>
             </Flex>
             <Text textAlign={"start"} color={"grey.3"}>
               Lorem Ipsum is simply dummy text of the printing and
