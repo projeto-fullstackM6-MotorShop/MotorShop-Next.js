@@ -116,7 +116,12 @@ const LoginPage = () => {
           )}
 
           <Flex w={"100%"} justifyContent={"flex-end"}>
-            <Link fontSize={"xxs"} color={"grey.2"} fontWeight={"normal"}>
+            <Link
+              fontSize={"xxs"}
+              color={"grey.2"}
+              fontWeight={"normal"}
+              onClick={() => router.push("/retrieve-password")}
+            >
               Esqueci minha senha
             </Link>
           </Flex>
