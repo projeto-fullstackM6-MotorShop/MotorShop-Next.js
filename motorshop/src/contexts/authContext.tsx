@@ -1,13 +1,16 @@
 import { IChildren } from "@/interfaces/misc";
 import {
+  IAddressUpdate,
   IRegisterUserData,
+  IUpdateUserData,
   IUserData,
   IUserLogin,
 } from "@/interfaces/usersTypes";
 import { api } from "@/services/api";
 import { Box, useToast } from "@chakra-ui/react";
+import { headers } from "next/dist/client/components/headers";
 import { useRouter } from "next/router";
-import { parseCookies, setCookie } from "nookies";
+import { destroyCookie, parseCookies, setCookie } from "nookies";
 import { createContext, useContext, useEffect, useState } from "react";
 
 interface AuthProviderData {
@@ -16,6 +19,9 @@ interface AuthProviderData {
   login: (userData: IUserLogin) => void;
   registerUser: (userData: IRegisterUserData) => void;
   getUserProfile: () => void;
+  patchUser: (data: IUpdateUserData) => void;
+  deleteUser: () => void;
+  patchAddress: (data: IAddressUpdate) => void;
 }
 
 export const AuthContext = createContext<AuthProviderData>(
@@ -35,88 +41,193 @@ export const AuthProvider = ({ children }: IChildren) => {
     getUserProfile();
   }, []);
 
-  const login = (userData: IUserLogin) => {
-    api
-      .post("/login", userData)
-      .then((res) => {
-        setCookie(null, "@motorshop:token", res.data.token);
+  const login = async (userData: IUserLogin) => {
+    try {
+      const response = await api.post("/login", userData);
 
-        toast({
-          title: "sucess",
-          variant: "solid",
-          position: "top-right",
-          isClosable: true,
-          render: () => (
-            <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
-              Login realizado com sucesso!
-            </Box>
-          ),
-        });
+      setCookie(null, "@motorshop:token", response.data.token);
 
-        setToken(res.data.token);
-        router.push("/");
-      })
-      .catch((err) => {
-        toast({
-          title: "error",
-          variant: "solid",
-          position: "top-right",
-          isClosable: true,
-          render: () => (
-            <Box bg={"alert.1"} color={"alert.3"} p={3}>
-              Verifique se o e-mail e senha estão corretos
-            </Box>
-          ),
-        });
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Login realizado com sucesso!
+          </Box>
+        ),
       });
+
+      setToken(response.data.token);
+      router.push("/");
+    } catch (error: any) {
+      console.error(error);
+      toast({
+        title: "error",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"alert.1"} color={"alert.3"} p={3}>
+            {error.response?.data ? error.response.data.message : error.message}
+          </Box>
+        ),
+      });
+    }
   };
 
-  const registerUser = (userData: IRegisterUserData) => {
-    api
-      .post("/user", userData)
-      .then((res) => {
-        toast({
-          title: "sucess",
-          variant: "solid",
-          position: "top-right",
-          isClosable: true,
-          render: () => (
-            <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
-              Usuário criado com sucesso!
-            </Box>
-          ),
-        });
+  const registerUser = async (userData: IRegisterUserData) => {
+    try {
+      await api.post("/user", userData);
 
-        router.push("/login");
-      })
-      .catch((err) => {
-        toast({
-          title: "error",
-          variant: "solid",
-          position: "top-right",
-          isClosable: true,
-          render: () => (
-            <Box bg={"alert.1"} color={"alert.3"} p={3}>
-              Verifique se preencheu todos os dados corretamente.
-            </Box>
-          ),
-        });
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Usuário criado com sucesso!
+          </Box>
+        ),
       });
+
+      router.push("/login");
+    } catch (error: any) {
+      console.error(error);
+      toast({
+        title: "error",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"alert.1"} color={"alert.3"} p={3}>
+            {error.response?.data ? error.response.data.message : error.message}
+          </Box>
+        ),
+      });
+    }
   };
 
   const getUserProfile = async () => {
-    api.defaults.headers.common.authorization = `Bearer ${token}`;
     try {
-      const response = await api.get("/user/profile");
+      const response = await api.get("/user/profile", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
       setUser(response.data);
     } catch (error) {
       console.error(error);
     }
   };
 
+  const patchUser = async (data: IUpdateUserData) => {
+    try {
+      await api.patch("/user", data, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Usuário atualizado com sucesso!
+          </Box>
+        ),
+      });
+
+      getUserProfile();
+    } catch (error: any) {
+      console.error(error);
+      toast({
+        title: "error",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"alert.1"} color={"alert.3"} p={3}>
+            {error.response?.data ? error.response.data.message : error.message}
+          </Box>
+        ),
+      });
+    }
+  };
+
+  const deleteUser = async () => {
+    try {
+      await api.delete("/user", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Usuário deletado com sucesso!
+          </Box>
+        ),
+      });
+
+      destroyCookie(null, "@motorshop:token");
+    } catch (error: any) {
+      console.error(error);
+    }
+  };
+
+  const patchAddress = async (data: IAddressUpdate) => {
+    try {
+      await api.patch("/user/address", data, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Endereço atualizado com sucesso!
+          </Box>
+        ),
+      });
+
+      getUserProfile();
+    } catch (error: any) {
+      console.error(error);
+      toast({
+        title: "error",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"alert.1"} color={"alert.3"} p={3}>
+            {error.response?.data ? error.response.data.message : error.message}
+          </Box>
+        ),
+      });
+    }
+  };
+
   return (
     <AuthContext.Provider
-      value={{ token, user, login, registerUser, getUserProfile }}
+      value={{
+        token,
+        user,
+        login,
+        registerUser,
+        getUserProfile,
+        patchUser,
+        deleteUser,
+        patchAddress,
+      }}
     >
       {children}
     </AuthContext.Provider>
