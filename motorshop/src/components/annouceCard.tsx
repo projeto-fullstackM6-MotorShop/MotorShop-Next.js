@@ -30,12 +30,8 @@ const AnnouceCard = (data: ICardPropInterface) => {
     updated_at,
     is_active,
     is_good_price,
-    user
+    user,
   } = data.data;
-
-  console.log(data)
-
-
 
   const router = useRouter();
   const pathname = router.pathname;
@@ -112,7 +108,7 @@ const AnnouceCard = (data: ICardPropInterface) => {
           <></>
         ) : (
           <Flex alignItems={"center"} gap={"8px"}>
-            <AvatarIcon name={user.name}/>
+            <AvatarIcon name={user.name} />
             <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
               {user.name}
             </Text>
