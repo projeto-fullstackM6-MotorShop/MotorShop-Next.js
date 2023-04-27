@@ -78,6 +78,14 @@ export interface IUserProfileData {
   createdAt: Date;
   updatedAt: Date;
   address: IAddressRegister;
-  annoucements: IAnnouceInterface[]
-  user?: IUserData
+  annoucements: IAnnouceInterface[];
+  user?: IUserData;
+}
+
+export interface IUserRetrievePassword {
+  email: string;
+}
+
+export interface IUserChangePassword {
+  password: string;
 }
