@@ -4,18 +4,146 @@ import { Box, Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useMediaQuery } from "react-responsive";
 import { useAuth } from "@/contexts/authContext";
+import { IAnnouceInterface } from "@/interfaces/annouce";
 
 const FilterCard = () => {
-  const { allModels, allColors, allYears, allFuels } =
+  const { allModels, allColors, allYears, allFuelTypes } =
     useContext(FilterContext);
   const { getUserProfile } = useAuth();
-  const { allBrands, getAllCars, setAllBrands, getAllAnnouncements } =
-    useAnnouncement();
+  const {
+    allBrands,
+    getAllCars,
+    setAllBrands,
+    getAllAnnouncements,
+    allAnnouncements,
+    setAllAnnouncements,
+  } = useAnnouncement();
 
   const [clearFilter, setClearFilter] = useState(false);
   const [isButtonClearFilterActive, setIsButtonClearFilterActive] =
     useState(false);
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 700 });
+  const [isFilterActive, setIsFilterActive] = useState(false);
+  let [minimumKm, setMinimumKm] = useState("");
+  let [maximumKm, setMaximumKm] = useState("");
+  let [minimumPrice, setMinimumPrice] = useState("");
+  let [maximumPrice, setMaximumPrice] = useState("");
+
+  const clearAllFilters = () => {
+    getAllCars();
+    getAllAnnouncements();
+    setIsButtonClearFilterActive(false);
+    setMinimumKm("");
+    setMaximumKm("");
+  };
+
+  const filterBrand = (array: IAnnouceInterface[]) => {
+    const uniqueBrand = new Set();
+    array.map((announcement) => uniqueBrand.add(announcement.brand));
+    const brandsArray: any = Array.from(uniqueBrand);
+    setAllBrands(brandsArray);
+  };
+
+  const getFilteredBrandCars = (brand: string) => {
+    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
+      return announcement.brand.toLowerCase() === brand.toLowerCase();
+    });
+    setAllAnnouncements(filteredAnnouncements);
+  };
+
+  const getFilteredYear = (year: string) => {
+    const FilteredCarsByYear = allAnnouncements.filter((announcement) => {
+      return announcement.fabrication_year.toLowerCase() === year.toLowerCase();
+    });
+
+    setAllAnnouncements(FilteredCarsByYear);
+    filterBrand(FilteredCarsByYear);
+  };
+
+  const getFilteredModelCars = (model: string) => {
+    const filteredCarByModel = allAnnouncements.filter((announcement) => {
+      return (
+        announcement.model.split(" ")[0].toLowerCase() === model.toLowerCase()
+      );
+    });
+    setAllAnnouncements(filteredCarByModel);
+    filterBrand(filteredCarByModel);
+  };
+
+  const getFilteredFuelTypeCars = (fuelType: string) => {
+    const filteredCarByFuelType = allAnnouncements.filter((announcement) => {
+      return announcement.fuel_type.toLowerCase() === fuelType.toLowerCase();
+    });
+
+    setAllAnnouncements(filteredCarByFuelType);
+    filterBrand(filteredCarByFuelType);
+  };
+
+  const getFilteredColor = (color: string) => {
+    const filteredCarByColor = allAnnouncements.filter((announcement) => {
+      return announcement.color.toLowerCase() === color.toLowerCase();
+    });
+    setAllAnnouncements(filteredCarByColor);
+    filterBrand(filteredCarByColor);
+  };
+
+  const getFilteredKm = (announcements: any) => {
+    const filteredByKm = announcements.filter((car: any) => {
+      if (minimumKm && maximumKm) {
+        return (
+          parseInt(car.km) >= parseInt(minimumKm) &&
+          parseInt(car.km) <= parseInt(maximumKm)
+        );
+      } else if (minimumKm) {
+        return parseInt(car.km) >= parseInt(minimumKm);
+      } else if (maximumKm) {
+        return parseInt(car.km) <= parseInt(maximumKm);
+      }
+    });
+    return filteredByKm;
+  };
+
+  const getFilteredPrice = (announcements: any) => {
+    const filteredByPrice = announcements.filter((car: any) => {
+      if (minimumPrice && maximumPrice) {
+        return (
+          car.price >= parseInt(minimumPrice) &&
+          car.price <= parseInt(maximumPrice)
+        );
+      } else if (minimumPrice) {
+        return car.price >= parseInt(minimumPrice);
+      } else if (maximumPrice) {
+        return car.price <= parseInt(maximumPrice);
+      }
+    });
+    return filteredByPrice;
+  };
+
+  useEffect(() => {
+    const filteredByKm = getFilteredKm(allAnnouncements);
+    const filteredByPrice = getFilteredPrice(allAnnouncements);
+
+    if (filteredByKm.length && filteredByPrice.length) {
+      // se houver filtragem por km e por preço
+      const filteredAnnouncements = filteredByKm.filter((car: any) =>
+        filteredByPrice.includes(car)
+      );
+      setAllAnnouncements(filteredAnnouncements);
+      filterBrand(filteredAnnouncements);
+    } else if (filteredByKm.length) {
+      // se houver apenas filtragem por km
+      setAllAnnouncements(filteredByKm);
+      filterBrand(filteredByKm);
+    } else if (filteredByPrice.length) {
+      // se houver apenas filtragem por preço
+      setAllAnnouncements(filteredByPrice);
+      filterBrand(filteredByPrice);
+    } else {
+      // se não houver filtros, busca todos os anúncios
+      getAllAnnouncements();
+      clearAllFilters();
+    }
+  }, [minimumKm, maximumKm, minimumPrice, maximumPrice]);
 
   useEffect(() => {
     getAllCars();
@@ -23,15 +151,11 @@ const FilterCard = () => {
     getAllAnnouncements();
   }, []);
 
-  const clearAllFilters = () => {
-    getAllCars();
-    setIsButtonClearFilterActive(false);
-  };
-
   return (
     <>
       <Flex justify="start" flexDirection="column" marginLeft={"20px"}>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="bold"
@@ -44,9 +168,10 @@ const FilterCard = () => {
             return (
               <Text
                 onClick={() => {
-                  setAllBrands([brand]),
-                    setClearFilter(true),
-                    setIsButtonClearFilterActive(true);
+                  setAllBrands([brand]);
+                  getFilteredBrandCars(brand);
+                  setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
                 }}
                 fontSize="xs"
                 fontFamily="heading"
@@ -61,6 +186,7 @@ const FilterCard = () => {
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="bold"
@@ -72,6 +198,10 @@ const FilterCard = () => {
           {allModels.map((model) => {
             return (
               <Text
+                onClick={() => {
+                  getFilteredModelCars(model), setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
+                }}
                 fontSize="xs"
                 fontFamily="heading"
                 fontWeight="semibold"
@@ -85,6 +215,7 @@ const FilterCard = () => {
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="bold"
@@ -93,22 +224,27 @@ const FilterCard = () => {
           Cor
         </Heading>
         <Box marginTop={"5px"}>
-          {allColors.map((model) => {
+          {allColors.map((color) => {
             return (
               <Text
+                onClick={() => {
+                  getFilteredColor(color), setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
+                }}
                 fontSize="xs"
                 fontFamily="heading"
                 fontWeight="semibold"
                 color={"grey.3"}
-                key={model}
+                key={color}
                 cursor={"pointer"}
               >
-                {model}
+                {color}
               </Text>
             );
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="semibold"
@@ -120,6 +256,10 @@ const FilterCard = () => {
           {allYears.map((model) => {
             return (
               <Text
+                onClick={() => {
+                  getFilteredYear(model), setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
+                }}
                 fontSize="xs"
                 fontFamily="heading"
                 fontWeight="semibold"
@@ -133,6 +273,7 @@ const FilterCard = () => {
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="semibold"
@@ -141,9 +282,13 @@ const FilterCard = () => {
           Combustível
         </Heading>
         <Box marginTop={"5px"}>
-          {allFuels.map((model) => {
+          {allFuelTypes.map((model) => {
             return (
               <Heading
+                onClick={() => {
+                  getFilteredFuelTypeCars(model), setIsFilterActive(true);
+                  setClearFilter(true), setIsButtonClearFilterActive(true);
+                }}
                 fontSize="xs"
                 fontFamily="heading"
                 fontWeight="semibold"
@@ -157,6 +302,7 @@ const FilterCard = () => {
           })}
         </Box>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="semibold"
@@ -168,6 +314,10 @@ const FilterCard = () => {
 
         <Flex width={"90%"} justify={"space-between"} maxW={"250px"}>
           <Input
+            onChange={(e) => {
+              setMinimumKm(e.target.value), setIsFilterActive(true);
+              setClearFilter(true), setIsButtonClearFilterActive(true);
+            }}
             placeholder="Minima"
             fontSize={"xs"}
             type="number"
@@ -176,6 +326,10 @@ const FilterCard = () => {
             borderRadius={"3px"}
           ></Input>
           <Input
+            onChange={(e) => {
+              setMaximumKm(e.target.value), setIsFilterActive(true);
+              setClearFilter(true), setIsButtonClearFilterActive(true);
+            }}
             placeholder="Máxima"
             fontSize={"xs"}
             type="number"
@@ -185,6 +339,7 @@ const FilterCard = () => {
           ></Input>
         </Flex>
         <Heading
+          marginTop={"17px"}
           fontSize="sm"
           fontFamily="heading"
           fontWeight="semibold"
@@ -195,6 +350,7 @@ const FilterCard = () => {
         </Heading>
         <Flex width={"90%"} justify={"space-between"} maxW={"250px"}>
           <Input
+            onChange={(e) => setMinimumPrice(e.target.value)}
             placeholder="Minimo"
             fontSize={"xs"}
             type="number"
@@ -204,6 +360,7 @@ const FilterCard = () => {
             borderRadius={"3px"}
           ></Input>
           <Input
+            onChange={(e) => setMaximumPrice(e.target.value)}
             placeholder="Máximo"
             fontSize={"xs"}
             type="number"
@@ -237,7 +394,9 @@ const FilterCard = () => {
               width={"90%"}
               maxW={"225px"}
               alignSelf={"center"}
-              onClick={() => clearAllFilters()}
+              onClick={() => {
+                clearAllFilters(), getAllAnnouncements();
+              }}
             >
               Limpar Filtros
             </Button>

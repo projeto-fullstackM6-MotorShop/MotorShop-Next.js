@@ -11,6 +11,7 @@ import { useAnnouncement } from "@/contexts/announcementContext";
 import CreateAnnouncementSucessModal from "@/components/createAnnouncementSucessModal";
 import { GetServerSideProps } from "next";
 import nookies from "nookies";
+import { useAuth } from "@/contexts/authContext";
 
 const Advertiser = () => {
   const { onOpen, isOpen } = useModal();

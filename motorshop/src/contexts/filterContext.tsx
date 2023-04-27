@@ -3,9 +3,12 @@ import {
   SetStateAction,
   createContext,
   useContext,
+  useEffect,
   useState,
 } from "react";
 import { IChildren } from "@/interfaces/misc";
+import { useAnnouncement } from "./announcementContext";
+import dataCar from "../../../dataTeste";
 
 interface filterProviderData {
   model: null | string;
@@ -16,15 +19,15 @@ interface filterProviderData {
   setyear: Dispatch<SetStateAction<null | string>>;
   fuel: null | string;
   setfuel: Dispatch<SetStateAction<null | string>>;
-
-  allModels: string[];
-  setallModels: Dispatch<SetStateAction<string[]>>;
+  allModels: never[];
+  setAllModels: Dispatch<SetStateAction<string[]>>;
   allColors: string[];
   setallColors: Dispatch<SetStateAction<string[]>>;
   allYears: string[];
-  setallYears: Dispatch<SetStateAction<string[]>>;
-  allFuels: string[];
-  setallFuels: Dispatch<SetStateAction<string[]>>;
+  setAllYears: Dispatch<SetStateAction<string[]>>;
+  allFuelTypes: string[];
+  setAllFuelTypes: Dispatch<SetStateAction<string[]>>;
+  getAllModels: () => Promise<void>;
 }
 
 export const FilterContext = createContext<filterProviderData>(
@@ -32,54 +35,75 @@ export const FilterContext = createContext<filterProviderData>(
 );
 
 export const FilterProvider = ({ children }: IChildren) => {
+  const { allAnnouncements, allBrands } = useAnnouncement();
+
   const [model, setmodel] = useState<string | null>(null);
-  const [allModels, setallModels] = useState([
-    "Civic",
-    "Corolla",
-    "Cruze",
-    "Fit",
-    "Gol",
-    "Ka",
-    "Onix",
-    "Pulse",
-  ]);
+  const [allModels, setAllModels] = useState([] as any);
 
   const [color, setcolor] = useState<string | null>(null);
-  const [allColors, setallColors] = useState([
-    "Azul",
-    "Branca",
-    "Cinza",
-    "Prata",
-    "Preta",
-    "Verde",
-  ]);
+  const [allColors, setallColors] = useState([] as any);
 
   const [year, setyear] = useState<string | null>(null);
-  const [allYears, setallYears] = useState([
-    "2022",
-    "2021",
-    "2018",
-    "2015",
-    "2013",
-    "2012",
-    "2010",
-  ]);
+  const [allYears, setAllYears] = useState([] as any);
 
   const [fuel, setfuel] = useState<string | null>(null);
-  const [allFuels, setallFuels] = useState([
-    "Diesel",
-    "Etanol",
-    "Gasolina",
-    "Flex",
-  ]);
+  const [allFuelTypes, setAllFuelTypes] = useState([] as any);
+
+  const getAllColors = () => {
+    const uniqueColors = new Set();
+    const colors = allAnnouncements.forEach((car) => {
+      uniqueColors.add(car.color);
+    });
+    const colorsArray = Array.from(uniqueColors);
+    setallColors(colorsArray);
+  };
+
+  const getAllyears = () => {
+    const uniqueYears = new Set();
+    const years = allAnnouncements.forEach((car) => {
+      uniqueYears.add(car.fabrication_year);
+    });
+    const yearsArray = Array.from(uniqueYears);
+    setAllYears(yearsArray);
+  };
+
+  const getAllFuelTypes = () => {
+    const uniqueFuelTypes = new Set();
+    const fuelType = allAnnouncements.forEach((car) => {
+      uniqueFuelTypes.add(car.fuel_type);
+    });
+    const fuelTypeArray = Array.from(uniqueFuelTypes);
+    setAllFuelTypes(fuelTypeArray);
+  };
+
+  const getAllModels = async () => {
+    const uniqueModels = new Set();
+    allAnnouncements.forEach((car) => {
+      const model = car.model.split(" ")[0];
+      const firstWord = parseInt(model);
+      const modelName =
+        firstWord.toString() === model ? car.model.split(" ")[1] : model;
+      uniqueModels.add(modelName);
+    });
+    const modelsArray = Array.from(uniqueModels);
+    setAllModels(modelsArray);
+  };
+
+  useEffect(() => {
+    getAllModels();
+    getAllColors();
+    getAllyears();
+    getAllFuelTypes();
+  }, [allAnnouncements]);
 
   return (
     <FilterContext.Provider
       value={{
+        getAllModels,
         model,
         setmodel,
         allModels,
-        setallModels,
+        setAllModels,
         color,
         setcolor,
         allColors,
@@ -87,11 +111,11 @@ export const FilterProvider = ({ children }: IChildren) => {
         year,
         setyear,
         allYears,
-        setallYears,
+        setAllYears,
         fuel,
         setfuel,
-        allFuels,
-        setallFuels,
+        allFuelTypes,
+        setAllFuelTypes,
       }}
     >
       {children}

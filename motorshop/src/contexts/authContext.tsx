@@ -21,6 +21,7 @@ interface AuthProviderData {
   login: (userData: IUserLogin) => void;
   registerUser: (userData: IRegisterUserData) => void;
   getUserProfile: () => void;
+  setToken: (value: string) => void;
   patchUser: (data: IUpdateUserData) => void;
   deleteUser: () => void;
   patchAddress: (data: IAddressUpdate) => void;
@@ -42,8 +43,11 @@ export const AuthProvider = ({ children }: IChildren) => {
   const router = useRouter();
 
   useEffect(() => {
-    getUserProfile();
-  }, []);
+    if (token) {
+      // setToken(cookies["@motorshop:token"]);
+      getUserProfile();
+    }
+  }, [token]);
 
   const login = async (userData: IUserLogin) => {
     try {
@@ -298,6 +302,7 @@ export const AuthProvider = ({ children }: IChildren) => {
         patchUser,
         deleteUser,
         patchAddress,
+        setToken,
         retrievePassword,
         changePassword,
       }}
