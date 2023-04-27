@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 const Profile = () => {
   const { user } = useAuth();
   const router = useRouter();
-  const { allAnnouncements } = useAnnouncement()
+  const { announcementView, announcementProfileView } = useAnnouncement()  
 
   const goForLogin = () => {
     if (!user) {
@@ -35,11 +35,11 @@ const Profile = () => {
 
             <AvatarIcon size="xl" />
             <Flex gap={'10px'} alignItems={'center'}>
-              <Heading fontSize={"sm"}>Nome Qualquer</Heading>
+              <Heading fontSize={"sm"}>{announcementView?.user.name}</Heading>
               <Text padding={"5px"}
                 bgColor={"brand.4"}
                 borderRadius={"4px"}
-                color={"brand.1"}>anunciante</Text>
+                color={"brand.1"}>{announcementView?.user.is_seller ? 'Anunciante' : ''}</Text>
             </Flex>
             <Text textAlign={"start"} color={"grey.3"}>
               Lorem Ipsum is simply dummy text of the printing and
@@ -48,9 +48,9 @@ const Profile = () => {
           </Box>
           <Heading mt={'25px'} mb={'30px'} w={'90%'} textAlign={'start'} fontSize={'lg'}>Anúncios</Heading>
           <SimpleGrid columns={4} spacing={30} mt={'20px'} w={'90%'}>
-            {allAnnouncements.length > 0 ? (
-              allAnnouncements.map((data: IAnnouceInterface) =>
-                <AnnouceCard data={data} key={data.id} />)
+            {announcementProfileView.length > 0 ? (
+              announcementProfileView.map((data: IAnnouceInterface) =>
+                <AnnouceCard {...data} key={data.id} />)
             ) : (<Text>Este usuario ainda nao possui anuncios</Text>)}
           </SimpleGrid>
 

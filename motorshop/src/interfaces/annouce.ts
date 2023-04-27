@@ -3,6 +3,7 @@ import { JsxElement } from "typescript";
 import { IUserData } from "./usersTypes";
 
 export interface IAnnouceInterface {
+  annoucements: any;
   id: string;
   brand: string;
   model: string;
@@ -20,6 +21,11 @@ export interface IAnnouceInterface {
   is_good_price: boolean;
   user: IUserData
   map?(arg0: (car: ICarBrand) => void): ReactNode;
+}
+
+export interface IAnnouceProfileCardView {
+  name: string
+  annouces: IAnnouceInterface[];
 }
 
 export interface IAnnouncementRequest {

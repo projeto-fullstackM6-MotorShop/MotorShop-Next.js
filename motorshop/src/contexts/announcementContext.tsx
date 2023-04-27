@@ -10,6 +10,7 @@ import { IChildren } from "@/interfaces/misc";
 import { api, carsApi } from "@/services/api";
 import { IAnnouceInterface, IAnnouncementRequest, ICardPropInterface } from "../interfaces/annouce";
 import { useAuth } from "./authContext";
+import { useRouter } from "next/router";
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
@@ -23,8 +24,12 @@ interface announcementProviderData {
   setAllBrands: Dispatch<SetStateAction<string[]>>;
   getAllAnnouncements: () => void;
   allAnnouncements: IAnnouceInterface[];
-  announcementView: ICardPropInterface | null
-  setannouncementView: Dispatch<SetStateAction<ICardPropInterface | null>>
+  announcementView: IAnnouceInterface | null
+  setannouncementView: Dispatch<SetStateAction<IAnnouceInterface | null>>
+  goForprofile: () => void
+  announcementProfileView: IAnnouceInterface[]
+  getAnnouncementsForProfile: () => Promise<void>
+
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -42,15 +47,19 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [isCreateAnnouncementOpen, setIsCreateAnnouncementOpen] =
     useState(false);
   const [allAnnouncements, setAllAnnouncements] = useState([]);
-  const [announcementView, setannouncementView] = useState<ICardPropInterface | null>(null)
+
+  const [announcementView, setannouncementView] = useState<IAnnouceInterface | null>(null)
+  const [announcementProfileView, setannouncementProfileView] = useState<IAnnouceInterface[]>([] as IAnnouceInterface[])
 
   const { token } = useAuth();
+  const router = useRouter();
 
   useEffect(() => {
     const brands = Object.keys(allCars);
     setAllBrands(brands);
     getAllAnnouncements();
-  }, [allCars]);
+    getAnnouncementsForProfile()
+  }, [allCars, announcementView]);
 
   const getAllCars = async () => {
     try {
@@ -82,7 +91,21 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
       console.error(error);
     }
   };
- 
+
+  const getAnnouncementsForProfile = async () => {
+    try {
+      const res = await api.get(`/profile/${announcementView?.user.id}`);
+      setannouncementProfileView(res.data);  
+      console.log(res.data.annoucements)
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const goForprofile = () => {
+    router.push("/profile");
+  };
+
 
   return (
     <AnnouncementContext.Provider
@@ -99,7 +122,10 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         getAllAnnouncements,
         allAnnouncements,
         announcementView,
-        setannouncementView
+        setannouncementView,
+        goForprofile,
+        announcementProfileView,
+        getAnnouncementsForProfile
       }}
     >
       {children}

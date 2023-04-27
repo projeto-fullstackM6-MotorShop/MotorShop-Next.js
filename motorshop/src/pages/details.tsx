@@ -21,10 +21,10 @@ const Details = () => {
   const { user } = useAuth();
   const router = useRouter();
 
-  const { announcementView } = useAnnouncement()
+  const { announcementView, goForprofile } = useAnnouncement()
 
-  useEffect(()=> {
-  
+  useEffect(() => {
+
   }, [announcementView])
 
 
@@ -32,7 +32,7 @@ const Details = () => {
     if (!user) {
       router.push("/login");
     }
-  };
+  }; 
 
   return (
     <>
@@ -70,7 +70,7 @@ const Details = () => {
                 padding={"20px"}
               >
                 <Heading color={"grey.0"} fontSize={"xs"} mt={"30px"}>
-                  {announcementView?.data.model}
+                  {announcementView?.model}
                 </Heading>
                 <Flex
                   justifyContent={"space-between"}
@@ -85,7 +85,7 @@ const Details = () => {
                       borderRadius={"4px"}
                       color={"brand.1"}
                     >
-                      {announcementView?.data.fabrication_year}
+                      {announcementView?.fabrication_year}
                     </Text>
                     <Text
                       padding={"5px"}
@@ -93,10 +93,10 @@ const Details = () => {
                       borderRadius={"4px"}
                       color={"brand.1"}
                     >
-                      {`${announcementView?.data.km} Km`}
+                      {`${announcementView?.km}Km`}
                     </Text>
                   </Flex>
-                  <Text>{`R$ ${announcementView?.data.price}`}</Text>
+                  <Text>{`R$ ${announcementView?.price}`}</Text>
                 </Flex>
                 <Button
                   variant={user ? "brand1" : "brandOpacity"}
@@ -120,7 +120,7 @@ const Details = () => {
                   Descrição
                 </Heading>
                 <Text w={"80%"}>
-                  {announcementView?.data.description}
+                  {announcementView?.description}
                 </Text>
               </Flex>
             </Box>
@@ -148,7 +148,7 @@ const Details = () => {
                       objectFit={"scale-down"}
                     />
                   </Box>
-                 
+
                 </SimpleGrid>
               </Flex>
 
@@ -161,12 +161,12 @@ const Details = () => {
                 borderRadius={"4px"}
               >
                 <AvatarIcon size="xl" />
-                <Heading fontSize={"sm"}>{announcementView?.data.user.name}</Heading>
+                <Heading fontSize={"sm"}>{announcementView?.user.name}</Heading>
                 <Text textAlign={"center"} color={"grey.3"}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industries
                 </Text>
-                <Button variant={"grey1"}> ver anuncios</Button>
+                <Button variant={"grey1"} onClick={ goForprofile }> ver anuncios</Button>
               </Flex>
             </Flex>
           </SimpleGrid>
@@ -316,7 +316,7 @@ const Details = () => {
           >
             <Flex gap={"10px"} mb={"15px"} align={"center"}>
               <AvatarIcon size="sm" />
-              <Heading fontSize={"sm"}>{user?.name }</Heading>
+              <Heading fontSize={"sm"}>{user?.name}</Heading>
             </Flex>
             <Center w={"100%"} h={"75%"}>
               <Textarea
