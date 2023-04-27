@@ -32,11 +32,24 @@ const FilterCard = () => {
     useState(false);
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 700 });
   const [isFilterActive, setIsFilterActive] = useState(false);
+  let [minimumKm, setMinimumKm] = useState("");
+  let [maximumKm, setMaximumKm] = useState("");
+  let [minimumPrice, setMinimumPrice] = useState("");
+  let [maximumPrice, setMaximumPrice] = useState("");
 
   const clearAllFilters = () => {
     getAllCars();
     getAllAnnouncements();
     setIsButtonClearFilterActive(false);
+    setMinimumKm("");
+    setMaximumKm("");
+  };
+
+  const filterBrand = (array: IAnnouceInterface[]) => {
+    const uniqueBrand = new Set();
+    array.map((announcement) => uniqueBrand.add(announcement.brand));
+    const brandsArray: any = Array.from(uniqueBrand);
+    setAllBrands(brandsArray);
   };
 
   const getFilteredBrandCars = (brand: string) => {
@@ -47,54 +60,90 @@ const FilterCard = () => {
   };
 
   const getFilteredYear = (year: string) => {
-    const filteredYears = allAnnouncements.filter((announcement) => {
+    const FilteredCarsByYear = allAnnouncements.filter((announcement) => {
       return announcement.fabrication_year.toLowerCase() === year.toLowerCase();
     });
 
-    setAllAnnouncements(filteredYears);
-
-    const filteredBrands: any = filteredYears.map(
-      (announcement) => announcement.brand
-    );
-    setAllBrands(filteredBrands);
+    setAllAnnouncements(FilteredCarsByYear);
+    filterBrand(FilteredCarsByYear);
   };
 
   const getFilteredModelCars = (model: string) => {
-    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
+    const filteredCarByModel = allAnnouncements.filter((announcement) => {
       return (
         announcement.model.split(" ")[0].toLowerCase() === model.toLowerCase()
       );
     });
-    setAllAnnouncements(filteredAnnouncements);
-
-    const filteredBrands: any = filteredAnnouncements.map(
-      (announcement) => announcement.brand
-    );
-    setAllBrands(filteredBrands);
+    setAllAnnouncements(filteredCarByModel);
+    filterBrand(filteredCarByModel);
   };
+
   const getFilteredFuelTypeCars = (fuelType: string) => {
-    const filteredYears = allAnnouncements.filter((announcement) => {
+    const filteredCarByFuelType = allAnnouncements.filter((announcement) => {
       return announcement.fuel_type.toLowerCase() === fuelType.toLowerCase();
     });
 
-    setAllAnnouncements(filteredYears);
-
-    const filteredBrands: any = filteredYears.map(
-      (announcement) => announcement.brand
-    );
-    setAllBrands(filteredBrands);
+    setAllAnnouncements(filteredCarByFuelType);
+    filterBrand(filteredCarByFuelType);
   };
 
   const getFilteredColor = (color: string) => {
-    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
+    const filteredCarByColor = allAnnouncements.filter((announcement) => {
       return announcement.color.toLowerCase() === color.toLowerCase();
     });
-    setAllAnnouncements(filteredAnnouncements);
+    setAllAnnouncements(filteredCarByColor);
+    filterBrand(filteredCarByColor);
+  };
 
-    const filteredBrands: any = filteredAnnouncements.map(
-      (announcement) => announcement.brand
-    );
-    setAllBrands(filteredBrands);
+  const getFilteredKm = () => {
+    getAllAnnouncements();
+    const filteredByKm = allAnnouncements.filter((car) => {
+      if (minimumKm && maximumKm) {
+        console.log(car);
+        return (
+          parseInt(car.km) >= parseInt(minimumKm) &&
+          parseInt(car.km) <= parseInt(maximumKm)
+        );
+      } else if (minimumKm) {
+        console.log(car);
+        return parseInt(car.km) >= parseInt(minimumKm);
+      } else if (maximumKm) {
+        console.log(car);
+        return parseInt(car.km) <= parseInt(maximumKm);
+      }
+    });
+    if (filteredByKm.length) {
+      setAllAnnouncements(filteredByKm);
+      filterBrand(filteredByKm);
+    }
+    if (!minimumKm && !maximumKm) {
+      getAllAnnouncements();
+      clearAllFilters();
+    }
+  };
+
+  const getFilteredPrice = () => {
+    getAllAnnouncements();
+    const filteredByPrice = allAnnouncements.filter((car) => {
+      if (minimumPrice && maximumPrice) {
+        return (
+          car.price >= parseInt(minimumPrice) &&
+          car.price <= parseInt(maximumPrice)
+        );
+      } else if (minimumPrice) {
+        return car.price >= parseInt(minimumPrice);
+      } else if (maximumPrice) {
+        return car.price <= parseInt(maximumPrice);
+      }
+    });
+    if (filteredByPrice.length) {
+      setAllAnnouncements(filteredByPrice);
+      filterBrand(filteredByPrice);
+    }
+    if (!minimumPrice && !maximumPrice) {
+      getAllAnnouncements();
+      clearAllFilters();
+    }
   };
 
   useEffect(() => {
@@ -102,6 +151,10 @@ const FilterCard = () => {
     getUserProfile();
     getAllAnnouncements();
   }, []);
+
+  useEffect(() => {
+    getFilteredKm();
+  }, [minimumKm, maximumKm]);
 
   return (
     <>
@@ -266,6 +319,10 @@ const FilterCard = () => {
 
         <Flex width={"90%"} justify={"space-between"} maxW={"250px"}>
           <Input
+            onChange={(e) => {
+              setMinimumKm(e.target.value), setIsFilterActive(true);
+              setClearFilter(true), setIsButtonClearFilterActive(true);
+            }}
             placeholder="Minima"
             fontSize={"xs"}
             type="number"
@@ -274,6 +331,10 @@ const FilterCard = () => {
             borderRadius={"3px"}
           ></Input>
           <Input
+            onChange={(e) => {
+              setMaximumKm(e.target.value), setIsFilterActive(true);
+              setClearFilter(true), setIsButtonClearFilterActive(true);
+            }}
             placeholder="Máxima"
             fontSize={"xs"}
             type="number"
@@ -294,6 +355,7 @@ const FilterCard = () => {
         </Heading>
         <Flex width={"90%"} justify={"space-between"} maxW={"250px"}>
           <Input
+            onChange={(e) => setMinimumPrice(e.target.value)}
             placeholder="Minimo"
             fontSize={"xs"}
             type="number"
@@ -303,6 +365,7 @@ const FilterCard = () => {
             borderRadius={"3px"}
           ></Input>
           <Input
+            onChange={(e) => setMaximumPrice(e.target.value)}
             placeholder="Máximo"
             fontSize={"xs"}
             type="number"
