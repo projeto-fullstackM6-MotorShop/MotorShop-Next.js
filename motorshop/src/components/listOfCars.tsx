@@ -6,12 +6,8 @@ import { useEffect } from "react";
 const ListOfCars = () => {
   const { allAnnouncements } = useAnnouncement();
 
-  useEffect(() => {
-    console.log(allAnnouncements)
-  })
-
   return (
-    <SimpleGrid columns={4} spacing={30} mt={'20px'} w={'90%'}>
+    <SimpleGrid columns={4} spacing={30} mt={"20px"} w={"90%"}>
       {allAnnouncements.map((announcement) => {
         return <AnnouceCard key={announcement.id} {...announcement} />;
       })}

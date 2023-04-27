@@ -7,22 +7,14 @@ import { useAuth } from "@/contexts/authContext";
 import { IAnnouceInterface } from "@/interfaces/annouce";
 
 const FilterCard = () => {
-  const {
-    allModels,
-    allColors,
-    allYears,
-    allFuelTypes,
-    getAllModels,
-    setAllModels,
-  } = useContext(FilterContext);
+  const { allModels, allColors, allYears, allFuelTypes } =
+    useContext(FilterContext);
   const { getUserProfile } = useAuth();
   const {
     allBrands,
     getAllCars,
     setAllBrands,
     getAllAnnouncements,
-    allCars,
-    setAllCars,
     allAnnouncements,
     setAllAnnouncements,
   } = useAnnouncement();
@@ -95,36 +87,24 @@ const FilterCard = () => {
     filterBrand(filteredCarByColor);
   };
 
-  const getFilteredKm = () => {
-    getAllAnnouncements();
-    const filteredByKm = allAnnouncements.filter((car) => {
+  const getFilteredKm = (announcements: any) => {
+    const filteredByKm = announcements.filter((car: any) => {
       if (minimumKm && maximumKm) {
-        console.log(car);
         return (
           parseInt(car.km) >= parseInt(minimumKm) &&
           parseInt(car.km) <= parseInt(maximumKm)
         );
       } else if (minimumKm) {
-        console.log(car);
         return parseInt(car.km) >= parseInt(minimumKm);
       } else if (maximumKm) {
-        console.log(car);
         return parseInt(car.km) <= parseInt(maximumKm);
       }
     });
-    if (filteredByKm.length) {
-      setAllAnnouncements(filteredByKm);
-      filterBrand(filteredByKm);
-    }
-    if (!minimumKm && !maximumKm) {
-      getAllAnnouncements();
-      clearAllFilters();
-    }
+    return filteredByKm;
   };
 
-  const getFilteredPrice = () => {
-    getAllAnnouncements();
-    const filteredByPrice = allAnnouncements.filter((car) => {
+  const getFilteredPrice = (announcements: any) => {
+    const filteredByPrice = announcements.filter((car: any) => {
       if (minimumPrice && maximumPrice) {
         return (
           car.price >= parseInt(minimumPrice) &&
@@ -136,25 +116,40 @@ const FilterCard = () => {
         return car.price <= parseInt(maximumPrice);
       }
     });
-    if (filteredByPrice.length) {
+    return filteredByPrice;
+  };
+
+  useEffect(() => {
+    const filteredByKm = getFilteredKm(allAnnouncements);
+    const filteredByPrice = getFilteredPrice(allAnnouncements);
+
+    if (filteredByKm.length && filteredByPrice.length) {
+      // se houver filtragem por km e por preço
+      const filteredAnnouncements = filteredByKm.filter((car: any) =>
+        filteredByPrice.includes(car)
+      );
+      setAllAnnouncements(filteredAnnouncements);
+      filterBrand(filteredAnnouncements);
+    } else if (filteredByKm.length) {
+      // se houver apenas filtragem por km
+      setAllAnnouncements(filteredByKm);
+      filterBrand(filteredByKm);
+    } else if (filteredByPrice.length) {
+      // se houver apenas filtragem por preço
       setAllAnnouncements(filteredByPrice);
       filterBrand(filteredByPrice);
-    }
-    if (!minimumPrice && !maximumPrice) {
+    } else {
+      // se não houver filtros, busca todos os anúncios
       getAllAnnouncements();
       clearAllFilters();
     }
-  };
+  }, [minimumKm, maximumKm, minimumPrice, maximumPrice]);
 
   useEffect(() => {
     getAllCars();
     getUserProfile();
     getAllAnnouncements();
   }, []);
-
-  useEffect(() => {
-    getFilteredKm();
-  }, [minimumKm, maximumKm]);
 
   return (
     <>
