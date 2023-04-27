@@ -116,7 +116,7 @@ export const AuthProvider = ({ children }: IChildren) => {
 
   const getUserProfile = async () => {
     try {
-      const response = await api.get("/user/profile", {
+      const response = await api.get("/profile", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

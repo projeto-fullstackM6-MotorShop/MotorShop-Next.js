@@ -82,18 +82,22 @@ const Header = () => {
                 justifyContent={"flex-end"}
                 gap={"0.5rem"}
               >
-                <AvatarIcon userName={user.name} />
+                <AvatarIcon name={user.name} />
                 <Text fontSize={"xs"} color={"grey.2"}>
                   {user.name}
                 </Text>
               </Flex>
             </MenuButton>
-            <MenuList>
+            <MenuList zIndex={"2000"}>
               <MenuItem onClick={openEditUserModal}>Editar Perfil</MenuItem>
               <MenuItem onClick={openEditAddressModal}>
                 Editar Endereço
               </MenuItem>
-              {user.is_seller && <MenuItem>Meus Anúncios</MenuItem>}
+              {user.is_seller && (
+                <MenuItem onClick={() => router.push("/advertiser")}>
+                  Meus Anúncios
+                </MenuItem>
+              )}
               <MenuItem onClick={onLogout}>Sair</MenuItem>
             </MenuList>
           </Menu>

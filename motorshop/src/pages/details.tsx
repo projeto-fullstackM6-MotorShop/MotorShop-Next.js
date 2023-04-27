@@ -1,6 +1,7 @@
 import AvatarIcon from "@/components/avatarIcon";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
 import {
   Box,
@@ -14,16 +15,24 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Details = () => {
   const { user } = useAuth();
   const router = useRouter();
 
+  const { announcementView, goForprofile } = useAnnouncement()
+
+  useEffect(() => {
+
+  }, [announcementView, user])
+
+
   const goForLogin = () => {
     if (!user) {
       router.push("/login");
     }
-  };
+  }; 
 
   return (
     <>
@@ -38,15 +47,16 @@ const Details = () => {
           mr={"10%"}
           direction={"column"}
         >
-          <SimpleGrid columns={2} spacing={15}>
+          <SimpleGrid columns={2} spacing={15} alignSelf={'center'}>
             <Box>
               <Flex
                 bgColor={"grey.11"}
-                maxW={"500px"}
+                w={"100%"}                
+                maxH={'450px'}
                 justify={"center"}
                 borderRadius={"4px"}
               >
-                <Img src="/frontSidePilotNear.png"></Img>
+                <Img src={announcementView?.cover_img} objectFit={'scale-down'}></Img>
               </Flex>
 
               <Flex
@@ -61,7 +71,7 @@ const Details = () => {
                 padding={"20px"}
               >
                 <Heading color={"grey.0"} fontSize={"xs"} mt={"30px"}>
-                  Mercedes Benz A 200 CGI ADVANCE SEDAN Mercedes Benz A 200
+                  {announcementView?.model}
                 </Heading>
                 <Flex
                   justifyContent={"space-between"}
@@ -69,25 +79,26 @@ const Details = () => {
                   mt={"50px"}
                   mb={"10px"}
                 >
-                  <Flex w={"100px"} justify={"space-between"} h={"30px"}>
+                  <Flex w={"130px"} justify={"space-between"} h={"30px"}>
                     <Text
                       padding={"5px"}
                       bgColor={"brand.4"}
                       borderRadius={"4px"}
                       color={"brand.1"}
                     >
-                      2013
+                      {announcementView?.fabrication_year}
                     </Text>
                     <Text
                       padding={"5px"}
                       bgColor={"brand.4"}
                       borderRadius={"4px"}
                       color={"brand.1"}
+                      
                     >
-                      0 km
+                      {`${announcementView?.km} Km`}
                     </Text>
                   </Flex>
-                  <Text>{`R$ ${"00.000,00"}`}</Text>
+                  <Text>{`R$ ${announcementView?.price}`}</Text>
                 </Flex>
                 <Button
                   variant={user ? "brand1" : "brandOpacity"}
@@ -111,24 +122,21 @@ const Details = () => {
                   Descrição
                 </Heading>
                 <Text w={"80%"}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industries
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
+                  {announcementView?.description}
                 </Text>
               </Flex>
             </Box>
 
-            <Flex direction={"column"} gap={"10px"}>
+            <Flex direction={"column"} gap={"10px"} w={'80%'}> 
               <Flex
                 direction={"column"}
                 bgColor={"grey.11"}
                 borderRadius={"4px"}
                 padding={"30px"}
+                
               >
                 <Heading mb={"10px"}>Fotos</Heading>
-                <SimpleGrid columns={3} spacing={3}>
+                <SimpleGrid columns={3} spacing={3}> 
                   <Box
                     w={"108px"}
                     h={"108px"}
@@ -136,7 +144,7 @@ const Details = () => {
                     cursor={"pointer"}
                   >
                     <Img
-                      src="/frontSidePilotNear.png"
+                      src={announcementView?.cover_img}
                       maxW={"110px"}
                       bgColor={"grey.6"}
                       borderRadius={"4px"}
@@ -150,7 +158,7 @@ const Details = () => {
                     cursor={"pointer"}
                   >
                     <Img
-                      src="/frontSidePilotNear.png"
+                      src={announcementView?.cover_img}
                       maxW={"110px"}
                       bgColor={"grey.6"}
                       borderRadius={"4px"}
@@ -164,7 +172,7 @@ const Details = () => {
                     cursor={"pointer"}
                   >
                     <Img
-                      src="/frontSidePilotNear.png"
+                      src={announcementView?.cover_img}
                       maxW={"110px"}
                       bgColor={"grey.6"}
                       borderRadius={"4px"}
@@ -178,7 +186,7 @@ const Details = () => {
                     cursor={"pointer"}
                   >
                     <Img
-                      src="/frontSidePilotNear.png"
+                      src={announcementView?.cover_img}
                       maxW={"110px"}
                       bgColor={"grey.6"}
                       borderRadius={"4px"}
@@ -192,7 +200,7 @@ const Details = () => {
                     cursor={"pointer"}
                   >
                     <Img
-                      src="/frontSidePilotNear.png"
+                      src={announcementView?.cover_img}
                       maxW={"110px"}
                       bgColor={"grey.6"}
                       borderRadius={"4px"}
@@ -206,13 +214,14 @@ const Details = () => {
                     cursor={"pointer"}
                   >
                     <Img
-                      src="/frontSidePilotNear.png"
+                      src={announcementView?.cover_img}
                       maxW={"110px"}
                       bgColor={"grey.6"}
                       borderRadius={"4px"}
                       objectFit={"scale-down"}
                     />
                   </Box>
+
                 </SimpleGrid>
               </Flex>
 
@@ -225,12 +234,14 @@ const Details = () => {
                 borderRadius={"4px"}
               >
                 <AvatarIcon size="xl" />
-                <Heading fontSize={"sm"}>Nome Qualquer</Heading>
+                <Heading fontSize={"sm"}>{announcementView?.user?.name}</Heading>
                 <Text textAlign={"center"} color={"grey.3"}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industries
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industries
                 </Text>
-                <Button variant={"grey1"}> ver anuncios</Button>
+                <Button variant={"grey1"} onClick={ goForprofile }> ver anuncios</Button>
               </Flex>
             </Flex>
           </SimpleGrid>
@@ -241,13 +252,14 @@ const Details = () => {
             gap={"20px"}
             overflowY={"auto"}
             h={"500px"}
-            mt={"20px"}
-            maxW={"50%"}
+            mt={"20px"}            
+            position={'relative'}
+            w={"50%"}
           >
             <Heading fontSize={"md"} mb={"20px"}>
               Comentarios
             </Heading>
-            <Box padding={"5px"} mb={"15px"}>
+            <Box padding={"5px"} mb={"15px"} >
               <Flex gap={"10px"} mb={"15px"} align={"center"}>
                 <AvatarIcon size="sm" />
                 <Heading fontSize={"sm"}>Nome usuario</Heading>
@@ -380,7 +392,7 @@ const Details = () => {
           >
             <Flex gap={"10px"} mb={"15px"} align={"center"}>
               <AvatarIcon size="sm" />
-              <Heading fontSize={"sm"}>Nome usuario</Heading>
+              <Heading fontSize={"sm"}>{user?.name}</Heading>
             </Flex>
             <Center w={"100%"} h={"75%"}>
               <Textarea

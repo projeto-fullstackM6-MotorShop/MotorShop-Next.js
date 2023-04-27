@@ -43,6 +43,7 @@ const registerUserSchema = yup.object().shape({
 const RegisterPage = () => {
   const [confirmPass, setConfirmPass] = useState("");
   const [unmatchPass, setUnmatchPass] = useState(false);
+  const [isSeller, setIsSeller] = useState(false);
 
   const { registerUser } = useAuth();
 
@@ -59,6 +60,11 @@ const RegisterPage = () => {
       setUnmatchPass(true);
     } else {
       setUnmatchPass(false);
+
+      if (isSeller) {
+        data.is_seller = true;
+      }
+
       registerUser(data);
     }
   };
@@ -67,7 +73,7 @@ const RegisterPage = () => {
     <>
       <Header />
 
-      <Center minH={"calc(100vh - 220px)"} m={"2rem 0"}>
+      <Center minH={"calc(100vh - 220px)"} p={"3rem 0"} bg={"grey.8"}>
         <FormControl
           as={"form"}
           maxW={"400px"}
@@ -76,6 +82,7 @@ const RegisterPage = () => {
           padding={"20px"}
           gap={"20px"}
           onSubmit={handleSubmit(OnSubmit)}
+          bg={"grey.11"}
         >
           <Heading variant={"healding_5_500"} color={"grey.0"}>
             Cadastro
@@ -89,7 +96,6 @@ const RegisterPage = () => {
           <Input
             fontSize={"xs"}
             placeholder={"Ex: Meu Nome Completo"}
-            // isInvalid={emailError}
             {...register("name")}
           />
           {errors.name && (
@@ -105,7 +111,6 @@ const RegisterPage = () => {
             fontSize={"xs"}
             type={"email"}
             placeholder={"Ex: meuemail@mail.com"}
-            // isInvalid={emailError}
             {...register("email")}
           />
           {errors.email && (
@@ -121,7 +126,6 @@ const RegisterPage = () => {
             fontSize={"xs"}
             type={"number"}
             placeholder={"Ex: 00000000000"}
-            // isInvalid={emailError}
             {...register("cpf")}
           />
           {errors.cpf && (
@@ -137,7 +141,6 @@ const RegisterPage = () => {
             fontSize={"xs"}
             type={"number"}
             placeholder={"Ex: 00000000000"}
-            // isInvalid={emailError}
             {...register("phone")}
           />
           {errors.phone && (
@@ -149,12 +152,7 @@ const RegisterPage = () => {
           <FormLabel fontSize={"xxs"} color={"grey.1"}>
             Data de nascimento
           </FormLabel>
-          <Input
-            fontSize={"xs"}
-            type={"date"}
-            // isInvalid={emailError}
-            {...register("birth_date")}
-          />
+          <Input fontSize={"xs"} type={"date"} {...register("birth_date")} />
           {errors.birth_date && (
             <Text fontSize={"xxs"} color={"alert.1"}>
               {errors.birth_date?.message}
@@ -168,7 +166,6 @@ const RegisterPage = () => {
             fontSize={"xs"}
             resize={"none"}
             placeholder={"Olá, me chamo Meu Nome, e estou aqui para..."}
-            // isInvalid={emailError}
             {...register("description")}
           />
           {errors.description && (
@@ -186,7 +183,6 @@ const RegisterPage = () => {
             fontSize={"xs"}
             type={"number"}
             placeholder={"Ex: 00000000"}
-            // isInvalid={emailError}
             {...register("address.zip_code")}
           />
           {errors.address?.zip_code && (
@@ -203,7 +199,6 @@ const RegisterPage = () => {
               <Input
                 fontSize={"xs"}
                 placeholder={"Ex: XX"}
-                // isInvalid={emailError}
                 {...register("address.state")}
               />
               {errors.address?.state && (
@@ -219,7 +214,6 @@ const RegisterPage = () => {
               <Input
                 fontSize={"xs"}
                 placeholder={"Ex: Nome da cidade"}
-                // isInvalid={emailError}
                 {...register("address.city")}
               />
               {errors.address?.city && (
@@ -236,7 +230,6 @@ const RegisterPage = () => {
           <Input
             fontSize={"xs"}
             placeholder={"Ex: Av. Minha Rua"}
-            // isInvalid={emailError}
             {...register("address.street")}
           />
           {errors.address?.street && (
@@ -254,7 +247,6 @@ const RegisterPage = () => {
                 fontSize={"xs"}
                 type={"number"}
                 placeholder={"Ex: 000"}
-                // isInvalid={emailError}
                 {...register("address.number")}
               />
               {errors.address?.number && (
@@ -270,7 +262,6 @@ const RegisterPage = () => {
               <Input
                 fontSize={"xs"}
                 placeholder={"Ex: Fica perto do ..."}
-                // isInvalid={emailError}
                 {...register("address.complement")}
               />
               {errors.address?.complement && (
@@ -285,10 +276,18 @@ const RegisterPage = () => {
             Tipo de conta
           </FormLabel>
           <Flex gap={"5px"}>
-            <Button w={"calc(100%/2)"} variant={"brand1"}>
+            <Button
+              w={"calc(100%/2)"}
+              variant={!isSeller ? "brand1" : "negative"}
+              onClick={() => setIsSeller(false)}
+            >
               Comprador
             </Button>
-            <Button w={"calc(100%/2)"} variant={"negative"}>
+            <Button
+              w={"calc(100%/2)"}
+              variant={isSeller ? "brand1" : "negative"}
+              onClick={() => setIsSeller(true)}
+            >
               Anuciante
             </Button>
           </Flex>
@@ -300,7 +299,6 @@ const RegisterPage = () => {
             fontSize={"xs"}
             type={"password"}
             placeholder={"Digite sua senha"}
-            // isInvalid={emailError}
             {...register("password")}
           />
           {errors.password && (
@@ -317,7 +315,6 @@ const RegisterPage = () => {
             type={"password"}
             placeholder={"Confirme sua senha"}
             onChange={(e) => setConfirmPass(e.target.value)}
-            // isInvalid={emailError}
           />
           {unmatchPass && (
             <Text fontSize={"xxs"} color={"alert.1"}>

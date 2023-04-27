@@ -8,8 +8,14 @@ import {
 } from "react";
 import { IChildren } from "@/interfaces/misc";
 import { api, carsApi } from "@/services/api";
-import { IAnnouceInterface, IAnnouncementRequest } from "../interfaces/annouce";
+import {
+  IAnnouceInterface,
+  IAnnouncementRequest,
+  ICardPropInterface,
+} from "../interfaces/annouce";
 import { useAuth } from "./authContext";
+import { useRouter } from "next/router";
+import { IUserData } from "@/interfaces/usersTypes";
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
@@ -25,6 +31,12 @@ interface announcementProviderData {
   allAnnouncements: IAnnouceInterface[];
   setAllCars: Dispatch<SetStateAction<IAnnouceInterface[]>>;
   setAllAnnouncements: Dispatch<SetStateAction<never[] | IAnnouceInterface[]>>;
+  announcementView: IAnnouceInterface | null;
+  setannouncementView: Dispatch<SetStateAction<IAnnouceInterface | null>>;
+  goForprofile: () => void;
+  announcementProfileView: IAnnouceInterface[];
+  getAnnouncementsForProfile: () => Promise<void>;
+  userView: IUserData | null;
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -32,7 +44,6 @@ export const AnnouncementContext = createContext<announcementProviderData>(
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
-  const { token } = useAuth();
   const [allCars, setAllCars] = useState([] as IAnnouceInterface[]);
   const [allBrands, setAllBrands] = useState([] as string[]);
   const [userAnnouncements, setUserAnnouncements] = useState(
@@ -44,11 +55,22 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     useState(false);
   const [allAnnouncements, setAllAnnouncements] = useState([] as any);
 
+  const [announcementView, setannouncementView] =
+    useState<IAnnouceInterface | null>(null);
+  const [userView, setuserView] = useState<IUserData | null>(null);
+  const [announcementProfileView, setannouncementProfileView] = useState<
+    IAnnouceInterface[]
+  >([] as IAnnouceInterface[]);
+
+  const { token } = useAuth();
+  const router = useRouter();
+
   useEffect(() => {
     const brands = Object.keys(allCars);
     setAllBrands(brands);
     getAllAnnouncements();
-  }, [allCars]);
+    getAnnouncementsForProfile();
+  }, [allCars, announcementView]);
 
   const getAllCars = async () => {
     try {
@@ -85,6 +107,22 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
+  const getAnnouncementsForProfile = async () => {
+    try {
+      const res = await api.get(`/profile/${announcementView?.user.id}`);
+      const res2 = await api.get(`/user/${announcementView?.user.id}`);
+      setuserView(res2.data);
+      setannouncementProfileView(res.data);
+      console.log(res.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const goForprofile = () => {
+    router.push("/profile");
+  };
+
   return (
     <AnnouncementContext.Provider
       value={{
@@ -101,6 +139,12 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         getAllAnnouncements,
         allAnnouncements,
         setAllAnnouncements,
+        announcementView,
+        setannouncementView,
+        goForprofile,
+        announcementProfileView,
+        getAnnouncementsForProfile,
+        userView,
       }}
     >
       {children}
