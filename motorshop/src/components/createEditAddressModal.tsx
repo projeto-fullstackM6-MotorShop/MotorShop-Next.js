@@ -32,7 +32,11 @@ const EditAddressModal = () => {
 
   const { onClose } = useModal();
 
-  const { register, handleSubmit } = useForm<IAddressUpdate>({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<IAddressUpdate>({
     resolver: yupResolver(updateAddressSchema),
   });
 
@@ -76,6 +80,11 @@ const EditAddressModal = () => {
               defaultValue={user?.address.zip_code}
               placeholder={"Digite seu cep"}
             />
+            {errors.zip_code && (
+              <Text fontSize={"xxs"} color={"alert.1"}>
+                {errors.zip_code?.message}
+              </Text>
+            )}
           </Box>
 
           <Flex gap={"5px"}>
@@ -95,6 +104,11 @@ const EditAddressModal = () => {
                 defaultValue={user?.address.state}
                 placeholder={"Digite seu estado"}
               />
+              {errors.state && (
+                <Text fontSize={"xxs"} color={"alert.1"}>
+                  {errors.state?.message}
+                </Text>
+              )}
             </Box>
             <Box>
               <FormLabel
@@ -112,6 +126,11 @@ const EditAddressModal = () => {
                 defaultValue={user?.address.city}
                 placeholder={"Digite sua cidade"}
               />
+              {errors.city && (
+                <Text fontSize={"xxs"} color={"alert.1"}>
+                  {errors.city?.message}
+                </Text>
+              )}
             </Box>
           </Flex>
 
@@ -131,6 +150,11 @@ const EditAddressModal = () => {
               defaultValue={user?.address.street}
               placeholder={"Digite sua rua"}
             />
+            {errors.street && (
+              <Text fontSize={"xxs"} color={"alert.1"}>
+                {errors.street?.message}
+              </Text>
+            )}
           </Box>
 
           <Flex gap={"5px"}>
@@ -150,6 +174,11 @@ const EditAddressModal = () => {
                 defaultValue={user?.address.number}
                 placeholder={"Digite o numero"}
               />
+              {errors.number && (
+                <Text fontSize={"xxs"} color={"alert.1"}>
+                  {errors.number?.message}
+                </Text>
+              )}
             </Box>
             <Box>
               <FormLabel
@@ -167,6 +196,11 @@ const EditAddressModal = () => {
                 defaultValue={user?.address.complement}
                 placeholder={"Digite o complemento"}
               />
+              {errors.complement && (
+                <Text fontSize={"xxs"} color={"alert.1"}>
+                  {errors.complement?.message}
+                </Text>
+              )}
             </Box>
           </Flex>
 

@@ -88,7 +88,7 @@ const Header = () => {
                 </Text>
               </Flex>
             </MenuButton>
-            <MenuList>
+            <MenuList zIndex={"2000"}>
               <MenuItem onClick={openEditUserModal}>Editar Perfil</MenuItem>
               <MenuItem onClick={openEditAddressModal}>
                 Editar Endereço
