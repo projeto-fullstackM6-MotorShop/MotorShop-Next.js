@@ -82,7 +82,7 @@ const Header = () => {
                 justifyContent={"flex-end"}
                 gap={"0.5rem"}
               >
-                <AvatarIcon userName={user.name} />
+                <AvatarIcon name={user.name} />
                 <Text fontSize={"xs"} color={"grey.2"}>
                   {user.name}
                 </Text>
