@@ -249,6 +249,16 @@ const AnnouceCard = (data: IAnnouceInterface) => {
           </Heading>
           <Text textStyle={"body_1_400"}>{description}</Text>
 
+        {pathname == "/advertiser" ? (
+          <></>
+        ) : (
+          <Flex alignItems={"center"} gap={"8px"}>
+            <AvatarIcon name={user.name} />
+            <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
+              {user.name}
+            </Text>
+          </Flex>
+        )}
           {pathname == "/advertiser" ? (
             <></>
           ) : (
