@@ -6,6 +6,11 @@ interface IAvatar {
 }
 
 const AvatarIcon = (props: IAvatar) => {
+  userName?: string;
+}
+
+const AvatarIcon = (props: IAvatar) => {
+  const userName = props.userName;
 
   let numberColor = Math.floor(Math.random() * 13);
 
