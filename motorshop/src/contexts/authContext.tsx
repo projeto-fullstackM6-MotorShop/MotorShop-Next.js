@@ -5,6 +5,7 @@ import {
   IUpdateUserData,
   IUserData,
   IUserLogin,
+  IUserRetrievePassword,
 } from "@/interfaces/usersTypes";
 import { api } from "@/services/api";
 import { Box, useToast } from "@chakra-ui/react";
@@ -22,6 +23,7 @@ interface AuthProviderData {
   patchUser: (data: IUpdateUserData) => void;
   deleteUser: () => void;
   patchAddress: (data: IAddressUpdate) => void;
+  retrievePassword: (data: IUserRetrievePassword) => void;
 }
 
 export const AuthContext = createContext<AuthProviderData>(
@@ -216,6 +218,37 @@ export const AuthProvider = ({ children }: IChildren) => {
     }
   };
 
+  const retrievePassword = async (data: IUserRetrievePassword) => {
+    try {
+      await api.post("/user/resetPassword", data);
+
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Email enviado com sucesso!
+          </Box>
+        ),
+      });
+    } catch (error: any) {
+      console.error(error);
+      toast({
+        title: "error",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"alert.1"} color={"alert.3"} p={3}>
+            {error.response?.data ? error.response.data.message : error.message}
+          </Box>
+        ),
+      });
+    }
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -227,6 +260,7 @@ export const AuthProvider = ({ children }: IChildren) => {
         patchUser,
         deleteUser,
         patchAddress,
+        retrievePassword,
       }}
     >
       {children}
