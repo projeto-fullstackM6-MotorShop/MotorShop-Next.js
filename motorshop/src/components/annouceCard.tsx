@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import AvatarIcon from "./avatarIcon";
+import { use } from "react";
 import { useAnnouncement } from "@/contexts/announcementContext";
 
 const AnnouceCard = (data: IAnnouceInterface) => {
@@ -256,6 +257,16 @@ const AnnouceCard = (data: IAnnouceInterface) => {
               </Text>
             </Flex>
           )}
+        {pathname == "/advertiser" ? (
+          <></>
+        ) : (
+          <Flex alignItems={"center"} gap={"8px"}>
+            <AvatarIcon name={user.name}/>
+            <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
+              {user.name}
+            </Text>
+          </Flex>
+        )}
 
           <Flex justifyContent={"space-between"} alignItems={"center"}>
             <Flex gap={"12px"}>
