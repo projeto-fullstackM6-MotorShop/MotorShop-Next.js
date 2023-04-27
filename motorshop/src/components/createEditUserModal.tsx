@@ -42,7 +42,11 @@ const EditUserModal = () => {
 
   const router = useRouter();
 
-  const { register, handleSubmit } = useForm<IUpdateUserData>({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<IUpdateUserData>({
     resolver: yupResolver(updateUserSchema),
   });
 
@@ -96,6 +100,11 @@ const EditUserModal = () => {
               defaultValue={user?.name}
               placeholder={"Digite seu nome"}
             />
+            {errors.name && (
+              <Text fontSize={"xxs"} color={"alert.1"}>
+                {errors.name?.message}
+              </Text>
+            )}
           </Box>
 
           <Box>
@@ -115,6 +124,11 @@ const EditUserModal = () => {
               defaultValue={user?.email}
               placeholder={"Digite seu email"}
             />
+            {errors.email && (
+              <Text fontSize={"xxs"} color={"alert.1"}>
+                {errors.email?.message}
+              </Text>
+            )}
           </Box>
 
           <Box>
@@ -134,6 +148,11 @@ const EditUserModal = () => {
               defaultValue={user?.cpf}
               placeholder={"Digite seu cpf"}
             />
+            {errors.cpf && (
+              <Text fontSize={"xxs"} color={"alert.1"}>
+                {errors.cpf?.message}
+              </Text>
+            )}
           </Box>
 
           <Box>
@@ -153,6 +172,11 @@ const EditUserModal = () => {
               defaultValue={user?.phone}
               placeholder={"Digite seu numero de celular"}
             />
+            {errors.phone && (
+              <Text fontSize={"xxs"} color={"alert.1"}>
+                {errors.phone?.message}
+              </Text>
+            )}
           </Box>
 
           <Box>
@@ -171,6 +195,11 @@ const EditUserModal = () => {
               defaultValue={user?.birth_date}
               placeholder={"Digite sua data de nascimento"}
             />
+            {errors.birth_date && (
+              <Text fontSize={"xxs"} color={"alert.1"}>
+                {errors.birth_date?.message}
+              </Text>
+            )}
           </Box>
 
           {!updatePass && (
@@ -199,6 +228,11 @@ const EditUserModal = () => {
                   {...register("password")}
                   placeholder={"Digite sua nova senha"}
                 />
+                {errors.password && (
+                  <Text fontSize={"xxs"} color={"alert.1"}>
+                    {errors.password?.message}
+                  </Text>
+                )}
               </Box>
               <Button
                 variant={"brand1"}

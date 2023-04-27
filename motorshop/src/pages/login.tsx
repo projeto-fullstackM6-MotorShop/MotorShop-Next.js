@@ -59,7 +59,7 @@ const LoginPage = () => {
     <>
       <Header />
 
-      <Center minH={"calc(100vh - 220px)"} m={"2rem 0"}>
+      <Center minH={"calc(100vh - 220px)"} p={"3rem 0"} bg={"grey.8"}>
         <FormControl
           as={"form"}
           maxW={"400px"}
@@ -68,6 +68,7 @@ const LoginPage = () => {
           padding={"20px"}
           gap={"20px"}
           onSubmit={handleSubmit(onSubmitFormLogin)}
+          bg={"grey.11"}
         >
           <Heading variant={"healding_5_500"} color={"grey.0"}>
             Login
@@ -110,7 +111,7 @@ const LoginPage = () => {
           </InputGroup>
           {errors.password && (
             <Text fontSize={"xxs"} color={"alert.1"}>
-              {errors.email?.message}
+              {errors.password?.message}
             </Text>
           )}
 
