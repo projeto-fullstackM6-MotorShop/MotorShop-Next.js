@@ -12,32 +12,36 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import { IUserRetrievePassword } from "@/interfaces/usersTypes";
+import { useRouter } from "next/router";
+import { IUserChangePassword } from "@/interfaces/usersTypes";
 import { useAuth } from "@/contexts/authContext";
 
-const retrievePasswordSchema = yup.object().shape({
-  email: yup.string().email().required(),
+const changePasswordSchema = yup.object().shape({
+  password: yup.string().required(),
 });
 
-const RetrievePassword = () => {
-  const { retrievePassword } = useAuth();
+const ChangePasswordPage = () => {
+  const { changePassword } = useAuth();
+
+  const router = useRouter();
+
+  const { token } = router.query;
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<IUserRetrievePassword>({
-    resolver: yupResolver(retrievePasswordSchema),
+  } = useForm<IUserChangePassword>({
+    resolver: yupResolver(changePasswordSchema),
   });
 
-  const onSubmit = (data: IUserRetrievePassword) => {
-    retrievePassword(data);
+  const onSubmit = (data: IUserChangePassword) => {
+    changePassword(data, token as string);
   };
 
   return (
     <>
       <Header />
-
       <Center minH={"calc(100vh - 220px)"} p={"3rem 0"} bg={"grey.8"}>
         <FormControl
           as={"form"}
@@ -50,21 +54,21 @@ const RetrievePassword = () => {
           bg={"grey.11"}
         >
           <Heading variant={"healding_5_500"} color={"grey.0"}>
-            Recuperação de senha
+            Alteração de senha
           </Heading>
 
-          <FormLabel fontSize={"xxs"} color={"grey.1"} htmlFor={"email"}>
-            Digite seu email
+          <FormLabel fontSize={"xxs"} color={"grey.1"} htmlFor={"password"}>
+            Digite sua nova senha
           </FormLabel>
           <Input
-            id={"email"}
-            type={"email"}
-            {...register("email")}
+            id={"password"}
+            type={"password"}
+            {...register("password")}
             fontSize={"xs"}
           />
-          {errors.email && (
+          {errors.password && (
             <Text fontSize={"xxs"} color={"alert.1"}>
-              {errors.email?.message}
+              {errors.password?.message}
             </Text>
           )}
 
@@ -78,4 +82,4 @@ const RetrievePassword = () => {
   );
 };
 
-export default RetrievePassword;
+export default ChangePasswordPage;

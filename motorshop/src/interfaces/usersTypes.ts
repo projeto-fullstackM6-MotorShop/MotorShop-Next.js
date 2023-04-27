@@ -85,3 +85,7 @@ export interface IUserProfileData {
 export interface IUserRetrievePassword {
   email: string;
 }
+
+export interface IUserChangePassword {
+  password: string;
+}

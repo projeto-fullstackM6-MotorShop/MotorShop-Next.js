@@ -3,6 +3,7 @@ import {
   IAddressUpdate,
   IRegisterUserData,
   IUpdateUserData,
+  IUserChangePassword,
   IUserData,
   IUserLogin,
   IUserRetrievePassword,
@@ -24,6 +25,7 @@ interface AuthProviderData {
   deleteUser: () => void;
   patchAddress: (data: IAddressUpdate) => void;
   retrievePassword: (data: IUserRetrievePassword) => void;
+  changePassword: (data: IUserChangePassword, retToken: string) => void;
 }
 
 export const AuthContext = createContext<AuthProviderData>(
@@ -249,6 +251,42 @@ export const AuthProvider = ({ children }: IChildren) => {
     }
   };
 
+  const changePassword = async (
+    data: IUserChangePassword,
+    retToken: string
+  ) => {
+    try {
+      await api.patch(`/user/resetPassword/${retToken}`, data);
+
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Senha alterada com sucesso!
+          </Box>
+        ),
+      });
+
+      router.push("/login");
+    } catch (error: any) {
+      console.error(error);
+      toast({
+        title: "error",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"alert.1"} color={"alert.3"} p={3}>
+            {error.response?.data ? error.response.data.message : error.message}
+          </Box>
+        ),
+      });
+    }
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -261,6 +299,7 @@ export const AuthProvider = ({ children }: IChildren) => {
         deleteUser,
         patchAddress,
         retrievePassword,
+        changePassword,
       }}
     >
       {children}
