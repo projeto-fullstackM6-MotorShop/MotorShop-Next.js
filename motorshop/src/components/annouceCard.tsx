@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import AvatarIcon from "./avatarIcon";
+import { use } from "react";
 
 const AnnouceCard = (data: ICardPropInterface) => {
   let {
@@ -29,7 +30,12 @@ const AnnouceCard = (data: ICardPropInterface) => {
     updated_at,
     is_active,
     is_good_price,
+    user
   } = data.data;
+
+  console.log(data)
+
+
 
   const router = useRouter();
   const pathname = router.pathname;
@@ -106,9 +112,9 @@ const AnnouceCard = (data: ICardPropInterface) => {
           <></>
         ) : (
           <Flex alignItems={"center"} gap={"8px"}>
-            <AvatarIcon />
+            <AvatarIcon name={user.name}/>
             <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-              {"Nome do Usuário"}
+              {user.name}
             </Text>
           </Flex>
         )}
