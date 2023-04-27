@@ -298,16 +298,14 @@ const AnnouceCard = (data: IAnnouceInterface) => {
             </Heading>
           </Flex>
 
-          {pathname == "/advertiser" ? (
+          {pathname == "/advertiser" && (
             <Flex>
               <Button variant={"outline1"} marginRight={"20px"}>
                 Edite
               </Button>
               <Button variant={"outline1"}>Ver detalhes</Button>
             </Flex>
-          ) : (
-            <></>
-          )}
+          ) }
         </CardBody>
       </Card >
     )}
