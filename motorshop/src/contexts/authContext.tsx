@@ -1,5 +1,6 @@
 import { IChildren } from "@/interfaces/misc";
 import {
+  IAddressUpdate,
   IRegisterUserData,
   IUpdateUserData,
   IUserData,
@@ -20,6 +21,7 @@ interface AuthProviderData {
   getUserProfile: () => void;
   patchUser: (data: IUpdateUserData) => void;
   deleteUser: () => void;
+  patchAddress: (data: IAddressUpdate) => void;
 }
 
 export const AuthContext = createContext<AuthProviderData>(
@@ -179,6 +181,41 @@ export const AuthProvider = ({ children }: IChildren) => {
     }
   };
 
+  const patchAddress = async (data: IAddressUpdate) => {
+    try {
+      await api.patch("/user/address", data, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Endereço atualizado com sucesso!
+          </Box>
+        ),
+      });
+
+      getUserProfile();
+    } catch (error: any) {
+      console.error(error);
+      toast({
+        title: "error",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"alert.1"} color={"alert.3"} p={3}>
+            {error.response?.data ? error.response.data.message : error.message}
+          </Box>
+        ),
+      });
+    }
+  };
+
   return (
     <AuthContext.Provider
       value={{
@@ -189,6 +226,7 @@ export const AuthProvider = ({ children }: IChildren) => {
         getUserProfile,
         patchUser,
         deleteUser,
+        patchAddress,
       }}
     >
       {children}

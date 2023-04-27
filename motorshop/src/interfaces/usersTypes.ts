@@ -10,6 +10,7 @@ export interface IUserData {
   is_seller: boolean;
   createdAt: Date;
   updatedAt: Date;
+  address: IAddressData;
 }
 
 export interface IRegisterUserData {
@@ -41,6 +42,19 @@ export interface IAddressRegister {
   city: string;
   street: string;
   number: string;
+  complement?: string;
+}
+
+export interface IAddressData extends IAddressRegister {
+  id: string;
+}
+
+export interface IAddressUpdate {
+  zip_code?: string;
+  state?: string;
+  city?: string;
+  street?: string;
+  number?: string;
   complement?: string;
 }
 export interface IUserLogin {

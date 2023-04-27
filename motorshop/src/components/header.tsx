@@ -16,6 +16,7 @@ import AvatarIcon from "./avatarIcon";
 import { destroyCookie } from "nookies";
 import { useModal } from "@/contexts/modalContext";
 import EditUserModal from "./createEditUserModal";
+import EditAddressModal from "./createEditAddressModal";
 
 const Header = () => {
   const { user } = useAuth();
@@ -32,6 +33,12 @@ const Header = () => {
 
   const openEditUserModal = () => {
     setModalType("editUser");
+
+    onOpen();
+  };
+
+  const openEditAddressModal = () => {
+    setModalType("editAddress");
 
     onOpen();
   };
@@ -83,7 +90,9 @@ const Header = () => {
             </MenuButton>
             <MenuList>
               <MenuItem onClick={openEditUserModal}>Editar Perfil</MenuItem>
-              <MenuItem>Editar Endereço</MenuItem>
+              <MenuItem onClick={openEditAddressModal}>
+                Editar Endereço
+              </MenuItem>
               {user.is_seller && <MenuItem>Meus Anúncios</MenuItem>}
               <MenuItem onClick={onLogout}>Sair</MenuItem>
             </MenuList>
@@ -111,7 +120,11 @@ const Header = () => {
           </HStack>
         )}
 
-        {modalType == "editUser" ? <EditUserModal /> : null}
+        {modalType == "editUser" ? (
+          <EditUserModal />
+        ) : modalType == "editAddress" ? (
+          <EditAddressModal />
+        ) : null}
       </Box>
     </>
   );
