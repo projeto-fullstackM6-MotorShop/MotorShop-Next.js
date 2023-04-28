@@ -101,7 +101,8 @@ const AnnouceCard = (data: IAnnouceInterface) => {
                 borderRadius={"3px"}
                 padding={"4px"}
                 position={"absolute"}
-                right={"21px"}
+                right={"0"}
+                top={"0"}
               >
                 $
               </Text>
