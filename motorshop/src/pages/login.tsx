@@ -1,5 +1,5 @@
 import { useAuth } from "@/contexts/authContext";
-import { IUserLogin } from "@/interfaces/usersTypes";
+import { IUserLogin } from "@/interfaces/users";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

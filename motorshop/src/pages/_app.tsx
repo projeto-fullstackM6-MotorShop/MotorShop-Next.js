@@ -1,4 +1,4 @@
-import { ChakraProvider, ModalContextProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import theme from "@/styles/global";
 import { FilterProvider } from "@/contexts/filterContext";

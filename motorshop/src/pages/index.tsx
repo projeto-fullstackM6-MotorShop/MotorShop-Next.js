@@ -4,7 +4,6 @@ import { Box, Button, Center, Flex, Heading, Image } from "@chakra-ui/react";
 import FilterCard from "@/components/filterCard";
 import ListOfCars from "@/components/listOfCars";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { useAuth } from "@/contexts/authContext";
 
 const Home = () => {
   return (
@@ -25,6 +24,8 @@ const Home = () => {
           alt="Logo"
           zIndex={"-1"}
           position={"absolute"}
+          objectFit={"cover"}
+          height={"35%"}
         />
         <Heading color={"grey.11"} fontWeight={"semibold"} fontSize={"xxxl"}>
           MotorShop

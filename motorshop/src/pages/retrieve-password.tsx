@@ -12,7 +12,7 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import { IUserRetrievePassword } from "@/interfaces/usersTypes";
+import { IUserRetrievePassword } from "@/interfaces/users";
 import { useAuth } from "@/contexts/authContext";
 
 const retrievePasswordSchema = yup.object().shape({

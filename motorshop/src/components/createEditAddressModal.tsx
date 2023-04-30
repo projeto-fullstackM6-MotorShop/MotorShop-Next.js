@@ -14,7 +14,7 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import { IAddressUpdate } from "@/interfaces/usersTypes";
+import { IAddressUpdate } from "@/interfaces/users";
 import { useModal } from "@/contexts/modalContext";
 import { useAuth } from "@/contexts/authContext";
 

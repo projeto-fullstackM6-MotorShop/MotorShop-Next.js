@@ -1,7 +1,6 @@
-import { Flex, SimpleGrid } from "@chakra-ui/react";
-import AnnouceCard from "./annouceCard";
+import { SimpleGrid } from "@chakra-ui/react";
+import AnnouceCard from "./annoucementCard";
 import { useAnnouncement } from "@/contexts/announcementContext";
-import { useEffect } from "react";
 
 const ListOfCars = () => {
   const { allAnnouncements } = useAnnouncement();

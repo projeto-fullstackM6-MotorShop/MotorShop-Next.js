@@ -1,6 +1,6 @@
 import GeneralModal from "./generalModal";
 import { useModal } from "@/contexts/modalContext";
-import { IUpdateUserData } from "@/interfaces/usersTypes";
+import { IUpdateUserData } from "@/interfaces/users";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";

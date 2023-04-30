@@ -1,17 +1,15 @@
 import { Flex, SimpleGrid } from "@chakra-ui/react";
-import AnnouceCard from "./annouceCard";
+import AnnouceCard from "./annoucementCard";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useEffect } from "react";
 
 const ProfileCars = () => {
   const { announcementProfileView } = useAnnouncement();
 
-  useEffect(() => {
-   
-  }, [announcementProfileView])
+  useEffect(() => {}, [announcementProfileView]);
 
   return (
-    <SimpleGrid columns={4} spacing={30} mt={'20px'} w={'90%'}>
+    <SimpleGrid columns={4} spacing={30} mt={"20px"} w={"90%"}>
       {announcementProfileView.map((announcement) => {
         return <AnnouceCard key={announcement.id} {...announcement} />;
       })}

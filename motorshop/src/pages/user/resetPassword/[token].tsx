@@ -13,7 +13,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { IUserChangePassword } from "@/interfaces/usersTypes";
+import { IUserChangePassword } from "@/interfaces/users";
 import { useAuth } from "@/contexts/authContext";
 
 const changePasswordSchema = yup.object().shape({

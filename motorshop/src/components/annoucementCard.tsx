@@ -1,8 +1,4 @@
-import {
-  IAnnouceInterface,
-  IAnnouceProfileCardView,
-  ICardPropInterface,
-} from "@/interfaces/annouce";
+import { IAnnoucementInterface } from "@/interfaces/annoucement";
 import {
   Box,
   Button,
@@ -15,21 +11,20 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import AvatarIcon from "./avatarIcon";
-import { use } from "react";
 import { useAnnouncement } from "@/contexts/announcementContext";
 
-const AnnouceCard = (data: IAnnouceInterface) => {
+const AnnouceCard = (data: IAnnoucementInterface) => {
   const { setannouncementView, userView, getAnnouncementsForProfile } =
     useAnnouncement();
 
-  const viewAnnouncementDetails = (data: IAnnouceInterface) => {
+  const viewAnnouncementDetails = (data: IAnnoucementInterface) => {
     getAnnouncementsForProfile();
     setannouncementView(data);
     console.log(data);
     router.push("/details");
   };
 
-  const viewAnnouncementDetails2 = (data: IAnnouceInterface) => {
+  const viewAnnouncementDetails2 = (data: IAnnoucementInterface) => {
     console.log(data);
     setannouncementView(data);
     router.push("/details");

@@ -9,34 +9,33 @@ import {
 import { IChildren } from "@/interfaces/misc";
 import { api, carsApi } from "@/services/api";
 import {
-  IAnnouceInterface,
+  IAnnoucementInterface,
   IAnnouncementRequest,
-  ICardPropInterface,
-} from "../interfaces/annouce";
+} from "../interfaces/annoucement";
 import { useAuth } from "./authContext";
 import { useRouter } from "next/router";
-import { IUserData } from "@/interfaces/usersTypes";
+import { IUserData } from "@/interfaces/users";
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
-  allCars: IAnnouceInterface[];
-  allBrands: string[];
-  CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
-  isCreateAnnouncementSucessOpen: boolean;
-  isCreateAnnouncementOpen: boolean;
-  setIsCreateAnnouncementOpen: Dispatch<SetStateAction<boolean>>;
-  setIsCreateAnnouncementSucessOpen: Dispatch<SetStateAction<boolean>>;
+  allCars: IAnnoucementInterface[];
   setAllBrands: Dispatch<SetStateAction<string[]>>;
-  getAllAnnouncements: () => void;
-  allAnnouncements: IAnnouceInterface[];
-  setAllCars: Dispatch<SetStateAction<IAnnouceInterface[]>>;
-  setAllAnnouncements: Dispatch<SetStateAction<never[] | IAnnouceInterface[]>>;
-  announcementView: IAnnouceInterface | null;
-  setannouncementView: Dispatch<SetStateAction<IAnnouceInterface | null>>;
-  goForprofile: () => void;
-  announcementProfileView: IAnnouceInterface[];
+  allBrands: string[];
+  setIsCreateAnnouncementSucessOpen: Dispatch<SetStateAction<boolean>>;
+  isCreateAnnouncementSucessOpen: boolean;
+  setIsCreateAnnouncementOpen: Dispatch<SetStateAction<boolean>>;
+  isCreateAnnouncementOpen: boolean;
+  setAllAnnouncements: Dispatch<SetStateAction<never[] | IAnnoucementInterface[]>>;
+  allAnnouncements: IAnnoucementInterface[];
+  setAllCars: Dispatch<SetStateAction<IAnnoucementInterface[]>>;
+  setannouncementView: Dispatch<SetStateAction<IAnnoucementInterface | null>>;
+  announcementView: IAnnoucementInterface | null;
   getAnnouncementsForProfile: () => Promise<void>;
+  announcementProfileView: IAnnoucementInterface[];
+  goForprofile: () => void;
   userView: IUserData | null;
+  CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
+  getAllAnnouncements: () => void;
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -44,10 +43,10 @@ export const AnnouncementContext = createContext<announcementProviderData>(
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
-  const [allCars, setAllCars] = useState([] as IAnnouceInterface[]);
+  const [allCars, setAllCars] = useState([] as IAnnoucementInterface[]);
   const [allBrands, setAllBrands] = useState([] as string[]);
   const [userAnnouncements, setUserAnnouncements] = useState(
-    [] as IAnnouceInterface[]
+    [] as IAnnoucementInterface[]
   );
   const [isCreateAnnouncementSucessOpen, setIsCreateAnnouncementSucessOpen] =
     useState(false);
@@ -56,11 +55,11 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [allAnnouncements, setAllAnnouncements] = useState([] as any);
 
   const [announcementView, setannouncementView] =
-    useState<IAnnouceInterface | null>(null);
+    useState<IAnnoucementInterface | null>(null);
   const [userView, setuserView] = useState<IUserData | null>(null);
   const [announcementProfileView, setannouncementProfileView] = useState<
-    IAnnouceInterface[]
-  >([] as IAnnouceInterface[]);
+    IAnnoucementInterface[]
+  >([] as IAnnoucementInterface[]);
 
   const { token } = useAuth();
   const router = useRouter();
@@ -74,7 +73,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
 
   const getAllCars = async () => {
     try {
-      const response = await carsApi.get<IAnnouceInterface[]>("/cars");
+      const response = await carsApi.get<IAnnoucementInterface[]>("/cars");
       setAllCars(response.data);
     } catch (error) {
       console.log(error);
@@ -94,7 +93,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
       setIsCreateAnnouncementOpen(false);
     } catch (error) {
       console.error(error);
-    } finally {
     }
   };
 

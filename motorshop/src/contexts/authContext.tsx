@@ -7,10 +7,9 @@ import {
   IUserData,
   IUserLogin,
   IUserRetrievePassword,
-} from "@/interfaces/usersTypes";
+} from "@/interfaces/users";
 import { api } from "@/services/api";
 import { Box, useToast } from "@chakra-ui/react";
-import { headers } from "next/dist/client/components/headers";
 import { useRouter } from "next/router";
 import { destroyCookie, parseCookies, setCookie } from "nookies";
 import { createContext, useContext, useEffect, useState } from "react";
@@ -44,7 +43,6 @@ export const AuthProvider = ({ children }: IChildren) => {
 
   useEffect(() => {
     if (token) {
-      // setToken(cookies["@motorshop:token"]);
       getUserProfile();
     }
   }, [token]);

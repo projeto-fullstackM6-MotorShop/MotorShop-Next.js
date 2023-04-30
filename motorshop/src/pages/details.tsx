@@ -21,18 +21,15 @@ const Details = () => {
   const { user } = useAuth();
   const router = useRouter();
 
-  const { announcementView, goForprofile } = useAnnouncement()
+  const { announcementView, goForprofile } = useAnnouncement();
 
-  useEffect(() => {
-
-  }, [announcementView, user])
-
+  useEffect(() => {}, [announcementView, user]);
 
   const goForLogin = () => {
     if (!user) {
       router.push("/login");
     }
-  }; 
+  };
 
   return (
     <>
@@ -47,16 +44,19 @@ const Details = () => {
           mr={"10%"}
           direction={"column"}
         >
-          <SimpleGrid columns={2} spacing={15} alignSelf={'center'}>
+          <SimpleGrid columns={2} spacing={15} alignSelf={"center"}>
             <Box>
               <Flex
                 bgColor={"grey.11"}
-                w={"100%"}                
-                maxH={'450px'}
+                w={"100%"}
+                maxH={"450px"}
                 justify={"center"}
                 borderRadius={"4px"}
               >
-                <Img src={announcementView?.cover_img} objectFit={'scale-down'}></Img>
+                <Img
+                  src={announcementView?.cover_img}
+                  objectFit={"scale-down"}
+                ></Img>
               </Flex>
 
               <Flex
@@ -93,7 +93,6 @@ const Details = () => {
                       bgColor={"brand.4"}
                       borderRadius={"4px"}
                       color={"brand.1"}
-                      
                     >
                       {`${announcementView?.km} Km`}
                     </Text>
@@ -121,22 +120,19 @@ const Details = () => {
                 <Heading w={"80%"} fontSize={"md"}>
                   Descrição
                 </Heading>
-                <Text w={"80%"}>
-                  {announcementView?.description}
-                </Text>
+                <Text w={"80%"}>{announcementView?.description}</Text>
               </Flex>
             </Box>
 
-            <Flex direction={"column"} gap={"10px"} w={'80%'}> 
+            <Flex direction={"column"} gap={"10px"} w={"80%"}>
               <Flex
                 direction={"column"}
                 bgColor={"grey.11"}
                 borderRadius={"4px"}
                 padding={"30px"}
-                
               >
                 <Heading mb={"10px"}>Fotos</Heading>
-                <SimpleGrid columns={3} spacing={3}> 
+                <SimpleGrid columns={3} spacing={3}>
                   <Box
                     w={"108px"}
                     h={"108px"}
@@ -221,7 +217,6 @@ const Details = () => {
                       objectFit={"scale-down"}
                     />
                   </Box>
-
                 </SimpleGrid>
               </Flex>
 
@@ -234,14 +229,19 @@ const Details = () => {
                 borderRadius={"4px"}
               >
                 <AvatarIcon size="xl" />
-                <Heading fontSize={"sm"}>{announcementView?.user?.name}</Heading>
+                <Heading fontSize={"sm"}>
+                  {announcementView?.user?.name}
+                </Heading>
                 <Text textAlign={"center"} color={"grey.3"}>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industries
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industries
                 </Text>
-                <Button variant={"grey1"} onClick={ goForprofile }> ver anuncios</Button>
+                <Button variant={"grey1"} onClick={goForprofile}>
+                  {" "}
+                  ver anuncios
+                </Button>
               </Flex>
             </Flex>
           </SimpleGrid>
@@ -252,14 +252,14 @@ const Details = () => {
             gap={"20px"}
             overflowY={"auto"}
             h={"500px"}
-            mt={"20px"}            
-            position={'relative'}
+            mt={"20px"}
+            position={"relative"}
             w={"50%"}
           >
             <Heading fontSize={"md"} mb={"20px"}>
               Comentarios
             </Heading>
-            <Box padding={"5px"} mb={"15px"} >
+            <Box padding={"5px"} mb={"15px"}>
               <Flex gap={"10px"} mb={"15px"} align={"center"}>
                 <AvatarIcon size="sm" />
                 <Heading fontSize={"sm"}>Nome usuario</Heading>

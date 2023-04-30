@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { IAnnouceInterface } from "./annouce";
+import { IAnnouceInterface } from "./annoucement";
 
 export interface IUserData {
   id: string;

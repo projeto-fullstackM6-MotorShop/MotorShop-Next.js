@@ -15,7 +15,7 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import { IRegisterUserData } from "@/interfaces/usersTypes";
+import { IRegisterUserData } from "@/interfaces/users";
 import { useAuth } from "@/contexts/authContext";
 import { useState } from "react";
 

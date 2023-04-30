@@ -1,9 +1,7 @@
 import { ReactNode } from "react";
-import { JsxElement } from "typescript";
-import { IUserData } from "./usersTypes";
-import { IUserData } from "./usersTypes";
+import { IUserData } from "./users";
 
-export interface IAnnouceInterface {
+export interface IAnnoucementInterface {
   annoucements: any;
   id: string;
   brand: string;
@@ -21,13 +19,12 @@ export interface IAnnouceInterface {
   is_active: boolean;
   is_good_price: boolean;
   user: IUserData;
-  user: IUserData
   map?(arg0: (car: ICarBrand) => void): ReactNode;
 }
 
 export interface IAnnouceProfileCardView {
-  name: string
-  annouces: IAnnouceInterface[];
+  name: string;
+  annouces: IAnnoucementInterface[];
 }
 
 export interface IAnnouncementRequest {
@@ -50,7 +47,7 @@ export interface IAnnouncementRequest {
 }
 
 export interface ICardPropInterface {
-  data: IAnnouceInterface;
+  data: IAnnoucementInterface;
 }
 
 export interface ICarBrand {

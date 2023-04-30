@@ -4,30 +4,49 @@ import { Box, Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useMediaQuery } from "react-responsive";
 import { useAuth } from "@/contexts/authContext";
-import { IAnnouceInterface } from "@/interfaces/annouce";
 
 const FilterCard = () => {
-  const { allModels, allColors, allYears, allFuelTypes } =
-    useContext(FilterContext);
+  const {
+    allModels,
+    allColors,
+    allYears,
+    allFuelTypes,
+    setClearFilter,
+    setMinimumKm,
+    minimumKm,
+    setMaximumKm,
+    maximumKm,
+    setMinimumPrice,
+    minimumPrice,
+    setMaximumPrice,
+    maximumPrice,
+    filterBrand,
+    getFilteredBrandCars,
+    getFilteredPrice,
+    getFilteredKm,
+    getFilteredColor,
+    getFilteredFuelTypeCars,
+    getFilteredModelCars,
+    getFilteredYear,
+    isFilterActive,
+    setIsFilterActive,
+  } = useContext(FilterContext);
+
   const { getUserProfile } = useAuth();
+
   const {
     allBrands,
     getAllCars,
     setAllBrands,
     getAllAnnouncements,
-    allAnnouncements,
     setAllAnnouncements,
+    allAnnouncements,
   } = useAnnouncement();
 
-  const [clearFilter, setClearFilter] = useState(false);
   const [isButtonClearFilterActive, setIsButtonClearFilterActive] =
     useState(false);
+
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 700 });
-  const [isFilterActive, setIsFilterActive] = useState(false);
-  let [minimumKm, setMinimumKm] = useState("");
-  let [maximumKm, setMaximumKm] = useState("");
-  let [minimumPrice, setMinimumPrice] = useState("");
-  let [maximumPrice, setMaximumPrice] = useState("");
 
   const clearAllFilters = () => {
     getAllCars();
@@ -37,109 +56,23 @@ const FilterCard = () => {
     setMaximumKm("");
   };
 
-  const filterBrand = (array: IAnnouceInterface[]) => {
-    const uniqueBrand = new Set();
-    array.map((announcement) => uniqueBrand.add(announcement.brand));
-    const brandsArray: any = Array.from(uniqueBrand);
-    setAllBrands(brandsArray);
-  };
-
-  const getFilteredBrandCars = (brand: string) => {
-    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
-      return announcement.brand.toLowerCase() === brand.toLowerCase();
-    });
-    setAllAnnouncements(filteredAnnouncements);
-  };
-
-  const getFilteredYear = (year: string) => {
-    const FilteredCarsByYear = allAnnouncements.filter((announcement) => {
-      return announcement.fabrication_year.toLowerCase() === year.toLowerCase();
-    });
-
-    setAllAnnouncements(FilteredCarsByYear);
-    filterBrand(FilteredCarsByYear);
-  };
-
-  const getFilteredModelCars = (model: string) => {
-    const filteredCarByModel = allAnnouncements.filter((announcement) => {
-      return (
-        announcement.model.split(" ")[0].toLowerCase() === model.toLowerCase()
-      );
-    });
-    setAllAnnouncements(filteredCarByModel);
-    filterBrand(filteredCarByModel);
-  };
-
-  const getFilteredFuelTypeCars = (fuelType: string) => {
-    const filteredCarByFuelType = allAnnouncements.filter((announcement) => {
-      return announcement.fuel_type.toLowerCase() === fuelType.toLowerCase();
-    });
-
-    setAllAnnouncements(filteredCarByFuelType);
-    filterBrand(filteredCarByFuelType);
-  };
-
-  const getFilteredColor = (color: string) => {
-    const filteredCarByColor = allAnnouncements.filter((announcement) => {
-      return announcement.color.toLowerCase() === color.toLowerCase();
-    });
-    setAllAnnouncements(filteredCarByColor);
-    filterBrand(filteredCarByColor);
-  };
-
-  const getFilteredKm = (announcements: any) => {
-    const filteredByKm = announcements.filter((car: any) => {
-      if (minimumKm && maximumKm) {
-        return (
-          parseInt(car.km) >= parseInt(minimumKm) &&
-          parseInt(car.km) <= parseInt(maximumKm)
-        );
-      } else if (minimumKm) {
-        return parseInt(car.km) >= parseInt(minimumKm);
-      } else if (maximumKm) {
-        return parseInt(car.km) <= parseInt(maximumKm);
-      }
-    });
-    return filteredByKm;
-  };
-
-  const getFilteredPrice = (announcements: any) => {
-    const filteredByPrice = announcements.filter((car: any) => {
-      if (minimumPrice && maximumPrice) {
-        return (
-          car.price >= parseInt(minimumPrice) &&
-          car.price <= parseInt(maximumPrice)
-        );
-      } else if (minimumPrice) {
-        return car.price >= parseInt(minimumPrice);
-      } else if (maximumPrice) {
-        return car.price <= parseInt(maximumPrice);
-      }
-    });
-    return filteredByPrice;
-  };
-
   useEffect(() => {
     const filteredByKm = getFilteredKm(allAnnouncements);
     const filteredByPrice = getFilteredPrice(allAnnouncements);
 
     if (filteredByKm.length && filteredByPrice.length) {
-      // se houver filtragem por km e por preço
       const filteredAnnouncements = filteredByKm.filter((car: any) =>
         filteredByPrice.includes(car)
       );
       setAllAnnouncements(filteredAnnouncements);
       filterBrand(filteredAnnouncements);
     } else if (filteredByKm.length) {
-      // se houver apenas filtragem por km
       setAllAnnouncements(filteredByKm);
       filterBrand(filteredByKm);
     } else if (filteredByPrice.length) {
-      // se houver apenas filtragem por preço
       setAllAnnouncements(filteredByPrice);
       filterBrand(filteredByPrice);
     } else {
-      // se não houver filtros, busca todos os anúncios
       getAllAnnouncements();
       clearAllFilters();
     }

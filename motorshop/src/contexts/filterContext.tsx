@@ -2,13 +2,12 @@ import {
   Dispatch,
   SetStateAction,
   createContext,
-  useContext,
   useEffect,
   useState,
 } from "react";
 import { IChildren } from "@/interfaces/misc";
 import { useAnnouncement } from "./announcementContext";
-import dataCar from "../../../dataTeste";
+import { IAnnoucementInterface } from "@/interfaces/annoucement";
 
 interface filterProviderData {
   model: null | string;
@@ -27,7 +26,26 @@ interface filterProviderData {
   setAllYears: Dispatch<SetStateAction<string[]>>;
   allFuelTypes: string[];
   setAllFuelTypes: Dispatch<SetStateAction<string[]>>;
+  setClearFilter: Dispatch<SetStateAction<boolean>>;
+  setMinimumKm: Dispatch<SetStateAction<string>>;
+  minimumKm: string;
+  setMaximumKm: Dispatch<SetStateAction<string>>;
+  maximumKm: string;
+  setMinimumPrice: Dispatch<SetStateAction<string>>;
+  minimumPrice: string;
+  setMaximumPrice: Dispatch<SetStateAction<string>>;
+  maximumPrice: string;
   getAllModels: () => Promise<void>;
+  filterBrand: (array: IAnnoucementInterface[]) => any;
+  getFilteredBrandCars: (brand: string) => any;
+  getFilteredPrice: (array: IAnnoucementInterface[]) => any;
+  getFilteredKm: (array: IAnnoucementInterface[]) => any;
+  getFilteredColor: (color: string) => any;
+  getFilteredFuelTypeCars: (fuelType: string) => any;
+  getFilteredModelCars: (model: string) => any;
+  getFilteredYear: (year: string) => any;
+  setIsFilterActive: Dispatch<SetStateAction<boolean>>;
+  isFilterActive: boolean;
 }
 
 export const FilterContext = createContext<filterProviderData>(
@@ -35,7 +53,8 @@ export const FilterContext = createContext<filterProviderData>(
 );
 
 export const FilterProvider = ({ children }: IChildren) => {
-  const { allAnnouncements, allBrands } = useAnnouncement();
+  const { allAnnouncements, allBrands, setAllBrands, setAllAnnouncements } =
+    useAnnouncement();
 
   const [model, setmodel] = useState<string | null>(null);
   const [allModels, setAllModels] = useState([] as any);
@@ -48,6 +67,16 @@ export const FilterProvider = ({ children }: IChildren) => {
 
   const [fuel, setfuel] = useState<string | null>(null);
   const [allFuelTypes, setAllFuelTypes] = useState([] as any);
+
+  const [clearFilter, setClearFilter] = useState(false);
+
+  let [minimumKm, setMinimumKm] = useState("");
+  let [maximumKm, setMaximumKm] = useState("");
+
+  let [minimumPrice, setMinimumPrice] = useState("");
+  let [maximumPrice, setMaximumPrice] = useState("");
+
+  const [isFilterActive, setIsFilterActive] = useState(false);
 
   const getAllColors = () => {
     const uniqueColors = new Set();
@@ -80,13 +109,92 @@ export const FilterProvider = ({ children }: IChildren) => {
     const uniqueModels = new Set();
     allAnnouncements.forEach((car) => {
       const model = car.model.split(" ")[0];
-      const firstWord = parseInt(model);
-      const modelName =
-        firstWord.toString() === model ? car.model.split(" ")[1] : model;
-      uniqueModels.add(modelName);
+      uniqueModels.add(model);
     });
     const modelsArray = Array.from(uniqueModels);
     setAllModels(modelsArray);
+  };
+
+  const filterBrand = (array: IAnnoucementInterface[]) => {
+    const uniqueBrand = new Set();
+    array.map((announcement) => uniqueBrand.add(announcement.brand));
+    const brandsArray: any = Array.from(uniqueBrand);
+    setAllBrands(brandsArray);
+  };
+
+  const getFilteredBrandCars = (brand: string) => {
+    const filteredAnnouncements = allAnnouncements.filter((announcement) => {
+      return announcement.brand.toLowerCase() === brand.toLowerCase();
+    });
+    setAllAnnouncements(filteredAnnouncements);
+  };
+
+  const getFilteredYear = (year: string) => {
+    const FilteredCarsByYear = allAnnouncements.filter((announcement) => {
+      return announcement.fabrication_year.toLowerCase() === year.toLowerCase();
+    });
+
+    setAllAnnouncements(FilteredCarsByYear);
+    filterBrand(FilteredCarsByYear);
+  };
+
+  const getFilteredModelCars = (model: string) => {
+    const filteredCarByModel = allAnnouncements.filter((announcement) => {
+      return (
+        announcement.model.split(" ")[0].toLowerCase() === model.toLowerCase()
+      );
+    });
+    setAllAnnouncements(filteredCarByModel);
+    filterBrand(filteredCarByModel);
+  };
+
+  const getFilteredFuelTypeCars = (fuelType: string) => {
+    const filteredCarByFuelType = allAnnouncements.filter((announcement) => {
+      return announcement.fuel_type.toLowerCase() === fuelType.toLowerCase();
+    });
+
+    setAllAnnouncements(filteredCarByFuelType);
+    filterBrand(filteredCarByFuelType);
+  };
+
+  const getFilteredColor = (color: string) => {
+    const filteredCarByColor = allAnnouncements.filter((announcement) => {
+      return announcement.color.toLowerCase() === color.toLowerCase();
+    });
+    setAllAnnouncements(filteredCarByColor);
+    filterBrand(filteredCarByColor);
+  };
+
+  const getFilteredKm = (announcements: any) => {
+    const filteredByKm = announcements.filter((car: any) => {
+      if (minimumKm && maximumKm) {
+        return (
+          parseInt(car.km) >= parseInt(minimumKm) &&
+          parseInt(car.km) <= parseInt(maximumKm)
+        );
+      } else if (minimumKm) {
+        return parseInt(car.km) >= parseInt(minimumKm);
+      } else if (maximumKm) {
+        return parseInt(car.km) <= parseInt(maximumKm);
+      }
+    });
+    return filteredByKm;
+  };
+
+  const getFilteredPrice = (announcements: any) => {
+    const filteredByPrice = announcements.filter((car: any) => {
+      if (minimumPrice && maximumPrice) {
+        return (
+          car.price >= parseInt(minimumPrice) &&
+          car.price <= parseInt(maximumPrice)
+        );
+      } else if (minimumPrice) {
+        return car.price >= parseInt(minimumPrice);
+      } else if (maximumPrice) {
+        return car.price <= parseInt(maximumPrice);
+      }
+    });
+    return filteredByPrice;
   };
 
   useEffect(() => {
@@ -116,6 +224,25 @@ export const FilterProvider = ({ children }: IChildren) => {
         setfuel,
         allFuelTypes,
         setAllFuelTypes,
+        setClearFilter,
+        setMinimumKm,
+        setMaximumKm,
+        setMinimumPrice,
+        setMaximumPrice,
+        minimumKm,
+        maximumKm,
+        minimumPrice,
+        maximumPrice,
+        filterBrand,
+        getFilteredBrandCars,
+        getFilteredPrice,
+        getFilteredKm,
+        getFilteredColor,
+        getFilteredFuelTypeCars,
+        getFilteredModelCars,
+        getFilteredYear,
+        isFilterActive,
+        setIsFilterActive,
       }}
     >
       {children}

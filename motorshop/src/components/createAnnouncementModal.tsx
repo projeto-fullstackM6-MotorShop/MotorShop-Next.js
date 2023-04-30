@@ -15,11 +15,10 @@ import { useAnnouncement } from "@/contexts/announcementContext";
 import { useEffect, useState } from "react";
 import dataCar from "../../../dataTeste";
 import { useModal } from "@/contexts/modalContext";
-import AnnouncementImage from "./announcementImage";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { IAnnouncementRequest } from "@/interfaces/annouce";
+import { IAnnouncementRequest } from "@/interfaces/annoucement";
 
 const CreateAnnouncementModal = () => {
   const { allCars, allBrands, CreateAnnouncement } = useAnnouncement();
