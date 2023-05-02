@@ -159,7 +159,7 @@ const CreateAnnouncementModal = () => {
         >
           {allBrands.map((brand) => {
             return (
-              <option value={brand} key={brand}>
+              <option defaultValue={brand} key={brand}>
                 {brand}
               </option>
             );
@@ -198,7 +198,7 @@ const CreateAnnouncementModal = () => {
               id="year"
               fontSize={"xs"}
               placeholder="2018"
-              value={yearValue}
+              defaultValue={yearValue}
               isDisabled
               type="text"
               {...register("fabrication_year")}
@@ -217,7 +217,7 @@ const CreateAnnouncementModal = () => {
               placeholder="Gasolina/Etanol"
               type="text"
               fontSize={"xs"}
-              value={fuelType}
+              defaultValue={fuelType}
               isDisabled
               {...register("fuel_type")}
             />
@@ -271,7 +271,7 @@ const CreateAnnouncementModal = () => {
               fontSize={"xs"}
               id="fipe"
               placeholder="R$ 48.000,00"
-              value={formattedFipeValue}
+              defaultValue={formattedFipeValue}
               isDisabled
               type="text"
               {...register("fipe")}
