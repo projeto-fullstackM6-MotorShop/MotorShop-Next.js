@@ -25,7 +25,9 @@ interface announcementProviderData {
   isCreateAnnouncementSucessOpen: boolean;
   setIsCreateAnnouncementOpen: Dispatch<SetStateAction<boolean>>;
   isCreateAnnouncementOpen: boolean;
-  setAllAnnouncements: Dispatch<SetStateAction<never[] | IAnnoucementInterface[]>>;
+  setAllAnnouncements: Dispatch<
+    SetStateAction<never[] | IAnnoucementInterface[]>
+  >;
   allAnnouncements: IAnnoucementInterface[];
   setAllCars: Dispatch<SetStateAction<IAnnoucementInterface[]>>;
   setannouncementView: Dispatch<SetStateAction<IAnnoucementInterface | null>>;
@@ -81,7 +83,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   };
 
   const CreateAnnouncement = async (data: IAnnouncementRequest) => {
-    console.log(data);
     try {
       const response = await api.post("/announcement", data, {
         headers: {
@@ -111,7 +112,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
       const res2 = await api.get(`/user/${announcementView?.user.id}`);
       setuserView(res2.data);
       setannouncementProfileView(res.data);
-      console.log(res.data);
     } catch (error) {
       console.error(error);
     }
