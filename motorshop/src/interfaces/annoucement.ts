@@ -20,6 +20,12 @@ export interface IAnnoucementInterface {
   is_good_price: boolean;
   user: IUserData;
   map?(arg0: (car: ICarBrand) => void): ReactNode;
+  image: [
+    {
+      id: string;
+      imageUrl: string;
+    }
+  ];
 }
 
 export interface IAnnouceProfileCardView {
@@ -38,12 +44,13 @@ export interface IAnnouncementRequest {
   fipe: number;
   description: string;
   cover_img: string;
-  image: string;
-  image2: string;
-  image3: string;
-  image4: string;
-  image5: string;
-  image6: string;
+  image?: string;
+  image2?: string;
+  image3?: string;
+  image4?: string;
+  image5?: string;
+  image6?: string;
+  images?: (string | undefined)[];
 }
 
 export interface ICardPropInterface {

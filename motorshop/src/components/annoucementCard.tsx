@@ -20,12 +20,10 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
   const viewAnnouncementDetails = (data: IAnnoucementInterface) => {
     getAnnouncementsForProfile();
     setannouncementView(data);
-    console.log(data);
     router.push("/details");
   };
 
   const viewAnnouncementDetails2 = (data: IAnnoucementInterface) => {
-    console.log(data);
     setannouncementView(data);
     router.push("/details");
   };

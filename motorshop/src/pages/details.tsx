@@ -14,6 +14,7 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
+import { imageOptimizer } from "next/dist/server/image-optimizer";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -133,90 +134,30 @@ const Details = () => {
               >
                 <Heading mb={"10px"}>Fotos</Heading>
                 <SimpleGrid columns={3} spacing={3}>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src={announcementView?.cover_img}
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src={announcementView?.cover_img}
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src={announcementView?.cover_img}
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src={announcementView?.cover_img}
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src={announcementView?.cover_img}
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
-                  <Box
-                    w={"108px"}
-                    h={"108px"}
-                    display={"flex"}
-                    cursor={"pointer"}
-                  >
-                    <Img
-                      src={announcementView?.cover_img}
-                      maxW={"110px"}
-                      bgColor={"grey.6"}
-                      borderRadius={"4px"}
-                      objectFit={"scale-down"}
-                    />
-                  </Box>
+                  {announcementView?.image.length ? (
+                    announcementView?.image.map((image) => {
+                      return (
+                        <Box
+                          key={image.id}
+                          w={"108px"}
+                          h={"108px"}
+                          display={"flex"}
+                          cursor={"pointer"}
+                          margin={"10px"}
+                        >
+                          <Img
+                            src={image.imageUrl}
+                            maxW={"110px"}
+                            bgColor={"grey.6"}
+                            borderRadius={"4px"}
+                            objectFit={"scale-down"}
+                          />
+                        </Box>
+                      );
+                    })
+                  ) : (
+                    <Text>Este anuncio não possui imagens de detalhes</Text>
+                  )}
                 </SimpleGrid>
               </Flex>
 

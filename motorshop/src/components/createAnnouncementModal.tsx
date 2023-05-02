@@ -77,12 +77,12 @@ const CreateAnnouncementModal = () => {
     cover_img: yup
       .string()
       .required("Adicione uma foto de capa para o anuncio."),
-    // image: yup.string().notRequired(),
-    // image2: yup.string().notRequired(),
-    // image3: yup.string().notRequired(),
-    // image4: yup.string().notRequired(),
-    // image5: yup.string().notRequired(),
-    // image6: yup.string().notRequired(),
+    image: yup.string().notRequired(),
+    image2: yup.string().notRequired(),
+    image3: yup.string().notRequired(),
+    image4: yup.string().notRequired(),
+    image5: yup.string().notRequired(),
+    image6: yup.string().notRequired(),
   });
 
   const {
@@ -94,7 +94,43 @@ const CreateAnnouncementModal = () => {
   });
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
-    CreateAnnouncement(formData);
+    const {
+      image,
+      image2,
+      image3,
+      image4,
+      image5,
+      image6,
+      ...dataWithoutImages
+    } = formData;
+    const images = [image, image2, image3, image4, image5, image6].filter(
+      Boolean
+    );
+    const {
+      brand,
+      model,
+      fabrication_year,
+      km,
+      color,
+      fuel_type,
+      price,
+      fipe,
+      description,
+      cover_img,
+    } = dataWithoutImages;
+    CreateAnnouncement({
+      brand,
+      model,
+      fabrication_year,
+      km,
+      color,
+      fuel_type,
+      price,
+      fipe,
+      description,
+      cover_img,
+      images,
+    });
   };
 
   return (
@@ -306,7 +342,7 @@ const CreateAnnouncementModal = () => {
             1º Imagem da galeria
           </FormLabel>
           <Input
-            // {...register("image")}
+            {...register("image")}
             marginBottom={"30px"}
             fontSize={"xs"}
             placeholder="https://image.com"
@@ -322,7 +358,7 @@ const CreateAnnouncementModal = () => {
             2º Imagem da galeria
           </FormLabel>
           <Input
-            // {...register("image2")}
+            {...register("image2")}
             marginBottom={"30px"}
             fontSize={"xs"}
             placeholder="https://image.com"
@@ -338,7 +374,7 @@ const CreateAnnouncementModal = () => {
               3º Imagem da galeria
             </FormLabel>
             <Input
-              // {...register("image3")}
+              {...register("image3")}
               marginBottom={"30px"}
               fontSize={"xs"}
               placeholder="https://image.com"
@@ -355,7 +391,7 @@ const CreateAnnouncementModal = () => {
               4º Imagem da galeria
             </FormLabel>
             <Input
-              // {...register("image4")}
+              {...register("image4")}
               marginBottom={"30px"}
               fontSize={"xs"}
               placeholder="https://image.com"
@@ -372,7 +408,7 @@ const CreateAnnouncementModal = () => {
               5º Imagem da galeria
             </FormLabel>
             <Input
-              // {...register("image5")}
+              {...register("image5")}
               marginBottom={"30px"}
               fontSize={"xs"}
               placeholder="https://image.com"
@@ -389,7 +425,7 @@ const CreateAnnouncementModal = () => {
               6º Imagem da galeria
             </FormLabel>
             <Input
-              // {...register("image6")}
+              {...register("image6")}
               marginBottom={"30px"}
               fontSize={"xs"}
               placeholder="https://image.com"
