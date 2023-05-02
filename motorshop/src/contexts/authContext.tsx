@@ -16,7 +16,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 interface AuthProviderData {
   token: string;
-  user: IUserData | null;
+  userLoged: IUserData | null;
   login: (userData: IUserLogin) => void;
   registerUser: (userData: IRegisterUserData) => void;
   getUserProfile: () => void;
@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }: IChildren) => {
   const cookies = parseCookies();
 
   const [token, setToken] = useState<string>(cookies["@motorshop:token"] || "");
-  const [user, setUser] = useState<IUserData | null>(null);
+  const [userLoged, setuserLoged] = useState<IUserData | null>(null);
 
   const toast = useToast();
   const router = useRouter();
@@ -122,7 +122,7 @@ export const AuthProvider = ({ children }: IChildren) => {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      setUser(response.data);
+      setuserLoged(response.data);
     } catch (error) {
       console.error(error);
     }
@@ -293,7 +293,7 @@ export const AuthProvider = ({ children }: IChildren) => {
     <AuthContext.Provider
       value={{
         token,
-        user,
+        userLoged,
         login,
         registerUser,
         getUserProfile,

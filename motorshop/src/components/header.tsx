@@ -19,7 +19,7 @@ import EditUserModal from "./createEditUserModal";
 import EditAddressModal from "./createEditAddressModal";
 
 const Header = () => {
-  const { user } = useAuth();
+  const { userLoged } = useAuth();
 
   const { onOpen, modalType, setModalType } = useModal();
 
@@ -64,7 +64,7 @@ const Header = () => {
           cursor={"pointer"}
         />
 
-        {user ? (
+        {userLoged ? (
           <Menu>
             <MenuButton
               as={Button}
@@ -82,9 +82,9 @@ const Header = () => {
                 justifyContent={"flex-end"}
                 gap={"0.5rem"}
               >
-                <AvatarIcon name={user.name} />
+                <AvatarIcon name={userLoged.name} />
                 <Text fontSize={"xs"} color={"grey.2"}>
-                  {user.name}
+                  {userLoged.name}
                 </Text>
               </Flex>
             </MenuButton>
@@ -93,7 +93,7 @@ const Header = () => {
               <MenuItem onClick={openEditAddressModal}>
                 Editar Endereço
               </MenuItem>
-              {user.is_seller && (
+              {userLoged.is_seller && (
                 <MenuItem onClick={() => router.push("/advertiser")}>
                   Meus Anúncios
                 </MenuItem>

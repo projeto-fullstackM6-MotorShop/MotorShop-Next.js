@@ -12,23 +12,37 @@ import {
 import { useRouter } from "next/router";
 import AvatarIcon from "./avatarIcon";
 import { useAnnouncement } from "@/contexts/announcementContext";
+import { useAuth } from "@/contexts/authContext";
 
 const AnnouceCard = (data: IAnnoucementInterface) => {
   const { setannouncementView, userView, getAnnouncementsForProfile } =
     useAnnouncement();
+  
+  const { userLoged } = useAuth()
 
   const viewAnnouncementDetails = (data: IAnnoucementInterface) => {
-    getAnnouncementsForProfile();
-    setannouncementView(data);
-    console.log(data);
-    router.push("/details");
+    if (pathname == '/') {
+      getAnnouncementsForProfile();
+      setannouncementView(data); 
+      if (userLoged?.name == user.name) {
+        router.push("/advertiser");  
+      } else {
+        router.push("/details");              
+      }
+    } 
   };
 
   const viewAnnouncementDetails2 = (data: IAnnoucementInterface) => {
-    console.log(data);
-    setannouncementView(data);
-    router.push("/details");
+    if (pathname.includes("profile")) {
+      setannouncementView(data);
+        router.push("/details");        
+    }
   };
+
+  const advertiserToDetails = (data: IAnnoucementInterface) => {
+    setannouncementView(data);
+    router.push("/details"); 
+  }
 
   let {
     id,
@@ -171,7 +185,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
                 <Button variant={"outline1"} marginRight={"20px"}>
                   Edite
                 </Button>
-                <Button variant={"outline1"}>Ver detalhes</Button>
+                <Button variant={"outline1"} onClick={() => advertiserToDetails(data)}>Ver detalhes</Button>
               </Flex>
             ) : (
               <></>
@@ -292,7 +306,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
                 <Button variant={"outline1"} marginRight={"20px"}>
                   Edite
                 </Button>
-                <Button variant={"outline1"}>Ver detalhes</Button>
+                  <Button variant={"outline1"} onClick={() => advertiserToDetails(data)}>Ver detalhes</Button>
               </Flex>
             )}
           </CardBody>

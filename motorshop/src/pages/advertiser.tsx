@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import ListOfCars from "@/components/listOfCars";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import AvatarIcon from "@/components/avatarIcon";
-import { Box, Button, Center, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { useModal } from "@/contexts/modalContext";
 import CreateAnnouncementModal from "@/components/createAnnouncementModal";
 import { useEffect } from "react";
@@ -12,6 +12,8 @@ import CreateAnnouncementSucessModal from "@/components/createAnnouncementSucess
 import { GetServerSideProps } from "next";
 import nookies from "nookies";
 import { useAuth } from "@/contexts/authContext";
+import { IAnnoucementInterface } from "@/interfaces/annoucement";
+import AnnouceCard from "@/components/annoucementCard";
 
 const Advertiser = () => {
   const { onOpen, isOpen } = useModal();
@@ -21,6 +23,7 @@ const Advertiser = () => {
     isCreateAnnouncementSucessOpen,
     setIsCreateAnnouncementOpen,
     isCreateAnnouncementOpen,
+    announcementProfileView
   } = useAnnouncement();
 
   useEffect(() => {
@@ -89,7 +92,15 @@ const Advertiser = () => {
         direction={'column'}
         alignItems={'center'}
       >
-        <ListOfCars />
+        <SimpleGrid columns={4} spacing={30} mt={"20px"} w={"90%"}>
+          {announcementProfileView.length > 0 ? (
+            announcementProfileView.map((data: IAnnoucementInterface) => (
+              <AnnouceCard {...data} key={data.id} />
+            ))
+          ) : (
+            <Text>Este usuario ainda nao possui anuncios</Text>
+          )}
+        </SimpleGrid>
 
         <Center p={"2rem 0"}>
           <Flex
