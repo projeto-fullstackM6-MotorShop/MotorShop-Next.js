@@ -20,6 +20,7 @@ import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncement
 const Advertiser = () => {
   const { onOpen, isOpen, modalType, setModalType } = useModal();
   const { userLoged } = useAuth()
+  const { getAnnouncementsForProfile } = useAnnouncement()
 
   const {
     getAllCars,
@@ -30,11 +31,13 @@ const Advertiser = () => {
     announcementProfileView,
     setisEditOrDeleteAnnouncementOpen,
     isEditOrDeleteAnnouncementOpen,
-    announcementView
+    announcementView,
+    getAllAnnouncements
   } = useAnnouncement();
 
   useEffect(() => {
-    getAllCars();
+    getAllCars();   
+    getAllAnnouncements()
   }, []);
 
   const opencreateAnnouncementModal = () => {

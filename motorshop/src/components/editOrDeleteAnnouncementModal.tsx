@@ -99,6 +99,7 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
     editAnnouncement(formData);
+    onClose();
   };
 
   return (
@@ -404,7 +405,7 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
             Cancelar
           </Button>
           <Button variant={"brandDisable"} onClick={handleSubmit(onFormSubmit)}>
-            Criar anuncio
+            Editar anuncio
           </Button>
         </Flex>
       </FormControl>
