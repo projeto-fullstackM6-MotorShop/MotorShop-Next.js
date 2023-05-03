@@ -67,7 +67,7 @@ const Advertiser = () => {
         <AvatarIcon size={"xl"} />
         <Flex alignItems={"center"}>
           <Heading as={"h6"} variant={"healding_6_600"} marginRight={"9px"}>
-            Clayson Roberto Eufrasio
+            {user?.name}
           </Heading>
           <Flex
             borderRadius={"4px"}
@@ -83,8 +83,7 @@ const Advertiser = () => {
           </Flex>
         </Flex>
         <Text textAlign={"start"} textStyle={"body_1_400"}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industries
+          {user?.description}
         </Text>
         <Button
           onClick={opencreateAnnouncementModal}
