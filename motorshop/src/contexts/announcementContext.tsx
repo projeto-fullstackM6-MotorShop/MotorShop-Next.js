@@ -15,6 +15,7 @@ import {
 import { useAuth } from "./authContext";
 import { useRouter } from "next/router";
 import { IUserData } from "@/interfaces/users";
+import { Box, Toast, useToast } from "@chakra-ui/react";
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
@@ -40,6 +41,8 @@ interface announcementProviderData {
   getAllAnnouncements: () => void;
   setisEditOrDeleteAnnouncementOpen: Dispatch<SetStateAction<boolean>>
   isEditOrDeleteAnnouncementOpen: boolean
+  getAnnouncementById: (id: string) => Promise<void>
+  editAnnouncement: (data: IAnnouncementRequest) => Promise<void>
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -69,13 +72,14 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
 
   const { token } = useAuth();
   const router = useRouter();
+  const toast = useToast();
 
   useEffect(() => {
     const brands = Object.keys(allCars);
     setAllBrands(brands);
     getAllAnnouncements();
     getAnnouncementsForProfile();
-  }, [allCars, announcementView]);
+  }, [allCars]);
 
   const getAllCars = async () => {
     try {
@@ -105,6 +109,38 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     try {
       const response = await api.get("/announcement");
       setAllAnnouncements(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const getAnnouncementById = async (id: string) => {
+    try {
+      const res = await api.get(`/announcement/${id}`);
+      setannouncementView(res.data)
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  const editAnnouncement = async (data: IAnnouncementRequest) => {
+    
+    try {
+      await api.patch(`/announcement/${announcementView?.id}`, data, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Informaçoes do anuncio atualizado com sucesso!
+          </Box>
+        ),
+      });
     } catch (error) {
       console.error(error);
     }
@@ -148,7 +184,9 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         getAnnouncementsForProfile,
         userView,
         setisEditOrDeleteAnnouncementOpen,
-        isEditOrDeleteAnnouncementOpen
+        isEditOrDeleteAnnouncementOpen,
+        getAnnouncementById,
+        editAnnouncement
       }}
     >
       {children}

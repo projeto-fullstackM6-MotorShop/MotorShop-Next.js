@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ListOfCars from "@/components/listOfCars";
@@ -18,6 +19,7 @@ import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncement
 
 const Advertiser = () => {
   const { onOpen, isOpen, modalType, setModalType } = useModal();
+  const { userLoged } = useAuth()
 
   const {
     getAllCars,
@@ -33,7 +35,7 @@ const Advertiser = () => {
 
   useEffect(() => {
     getAllCars();
-  }, [announcementView]);
+  }, []);
 
   const opencreateAnnouncementModal = () => {
     setIsCreateAnnouncementOpen(true);
@@ -67,7 +69,7 @@ const Advertiser = () => {
         <AvatarIcon size={"xl"} />
         <Flex alignItems={"center"}>
           <Heading as={"h6"} variant={"healding_6_600"} marginRight={"9px"}>
-            {user?.name}
+            {userLoged?.name}
           </Heading>
           <Flex
             borderRadius={"4px"}
@@ -83,7 +85,7 @@ const Advertiser = () => {
           </Flex>
         </Flex>
         <Text textAlign={"start"} textStyle={"body_1_400"}>
-          {user?.description}
+          {userLoged?.description}
         </Text>
         <Button
           onClick={opencreateAnnouncementModal}

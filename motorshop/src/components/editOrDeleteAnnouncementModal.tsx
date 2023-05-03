@@ -19,11 +19,11 @@ import { useModal } from "@/contexts/modalContext";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { IAnnoucementInterface, IAnnouncementRequest } from "@/interfaces/annoucement";
+import { IAnnouncementRequest } from "@/interfaces/annoucement";
 
-const EditOrDeleteAnnouncementModal = (data: any) => {
+const EditOrDeleteAnnouncementModal = (data:any) => {
 
-  const { allCars, allBrands, CreateAnnouncement, announcementView } = useAnnouncement();
+  const { allCars, allBrands, editAnnouncement, announcementView, getAnnouncementById } = useAnnouncement();
   const { onClose } = useModal();
 
   const [selectedBrand, setSelectedBrand] = useState("chevrolet" as any);
@@ -37,8 +37,8 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
 
   useEffect(() => {
     getFipe();
-    setCounter(2);    
-
+    setCounter(2);     
+    getAnnouncementById(data.id)
   }, [selectedCar]);
 
   const fipeToFormatt = +fipeValue;
@@ -69,18 +69,18 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
   };
 
   const formschema = yup.object().shape({
-    brand: yup.string().required("Escolha uma marca."),
-    model: yup.string().required("Escolha o modelo."),
+    brand: yup.string().notRequired(),
+    model: yup.string().notRequired(),
     fabrication_year: yup.string(),
-    km: yup.string().required("Informe a quilometragem."),
-    color: yup.string().required("Informe a cor do veículo."),
-    fuel_type: yup.string().default(fuelType),
-    price: yup.string().required("Informe o preço do veículo."),
+    km: yup.string().notRequired(),
+    color: yup.string().notRequired(),
+    fuel_type: yup.string(),
+    price: yup.string().notRequired(),
     fipe: yup.string(),
-    description: yup.string().required("Descreva o veículo."),
+    description: yup.string().notRequired(),
     cover_img: yup
       .string()
-      .required("Adicione uma foto de capa para o anuncio."),
+      .notRequired()
     // image: yup.string().notRequired(),
     // image2: yup.string().notRequired(),
     // image3: yup.string().notRequired(),
@@ -98,7 +98,7 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
   });
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
-    CreateAnnouncement(formData);
+    editAnnouncement(formData);
   };
 
   return (
