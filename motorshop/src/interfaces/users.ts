@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { IAnnouceInterface } from "./annoucement";
+import { IAnnoucementInterface } from "./annoucement";
 
 export interface IUserData {
   id: string;
@@ -8,6 +8,7 @@ export interface IUserData {
   cpf: string;
   phone: string;
   birth_date: string;
+  description: string;
   is_seller: boolean;
   createdAt: Date;
   updatedAt: Date;
@@ -78,7 +79,7 @@ export interface IUserProfileData {
   createdAt: Date;
   updatedAt: Date;
   address: IAddressRegister;
-  annoucements: IAnnouceInterface[];
+  annoucements: IAnnoucementInterface[];
   user?: IUserData;
 }
 
