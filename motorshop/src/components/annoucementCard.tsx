@@ -13,36 +13,50 @@ import { useRouter } from "next/router";
 import AvatarIcon from "./avatarIcon";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
+import { useModal } from "@/contexts/modalContext";
 
 const AnnouceCard = (data: IAnnoucementInterface) => {
-  const { setannouncementView, userView, getAnnouncementsForProfile } =
-    useAnnouncement();
-  
+  const {
+    setannouncementView,
+    userView,
+    getAnnouncementsForProfile,
+    setisEditOrDeleteAnnouncementOpen,    
+  } = useAnnouncement();
+
+  const { onOpen, isOpen, modalType, setModalType } = useModal()
   const { userLoged } = useAuth()
 
   const viewAnnouncementDetails = (data: IAnnoucementInterface) => {
     if (pathname == '/') {
       getAnnouncementsForProfile();
-      setannouncementView(data); 
+      setannouncementView(data);
       if (userLoged?.name == user.name) {
-        router.push("/advertiser");  
+        router.push("/advertiser");
       } else {
-        router.push("/details");              
+        router.push("/details");
       }
-    } 
+    }
   };
 
   const viewAnnouncementDetails2 = (data: IAnnoucementInterface) => {
     if (pathname.includes("profile")) {
       setannouncementView(data);
-        router.push("/details");        
+      router.push("/details");
     }
   };
 
   const advertiserToDetails = (data: IAnnoucementInterface) => {
     setannouncementView(data);
-    router.push("/details"); 
+    router.push("/details");
   }
+
+
+  const openEditOrDeleteAnnouncementModal = () => {
+    setisEditOrDeleteAnnouncementOpen(true);
+    setannouncementView(data);
+    setModalType('editOrDelAnnounce')
+    onOpen();
+  };
 
   let {
     id,
@@ -182,7 +196,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
             {pathname.includes("advertiser") ? (
               <Flex>
-                <Button variant={"outline1"} marginRight={"20px"}>
+                <Button variant={"outline1"} marginRight={"20px"} onClick={()=> openEditOrDeleteAnnouncementModal()}>
                   Edite
                 </Button>
                 <Button variant={"outline1"} onClick={() => advertiserToDetails(data)}>Ver detalhes</Button>
@@ -303,10 +317,10 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
             {pathname == "/advertiser" && (
               <Flex>
-                <Button variant={"outline1"} marginRight={"20px"}>
+                  <Button variant={"outline1"} marginRight={"20px"} onClick={() => openEditOrDeleteAnnouncementModal()}>
                   Edite
                 </Button>
-                  <Button variant={"outline1"} onClick={() => advertiserToDetails(data)}>Ver detalhes</Button>
+                <Button variant={"outline1"} onClick={() => advertiserToDetails(data)}>Ver detalhes</Button>
               </Flex>
             )}
           </CardBody>

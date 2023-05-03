@@ -19,11 +19,13 @@ import { useModal } from "@/contexts/modalContext";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { IAnnouncementRequest } from "@/interfaces/annoucement";
+import { IAnnoucementInterface, IAnnouncementRequest } from "@/interfaces/annoucement";
 
-const CreateAnnouncementModal = () => {
-  const { allCars, allBrands, CreateAnnouncement } = useAnnouncement();
+const EditOrDeleteAnnouncementModal = (data: any) => {
+
+  const { allCars, allBrands, CreateAnnouncement, announcementView } = useAnnouncement();
   const { onClose } = useModal();
+
   const [selectedBrand, setSelectedBrand] = useState("chevrolet" as any);
   const allSelectedBrandsCars = [allCars[selectedBrand]];
   const [selectedCar, setSelectedCar] = useState("");
@@ -35,7 +37,8 @@ const CreateAnnouncementModal = () => {
 
   useEffect(() => {
     getFipe();
-    setCounter(2);
+    setCounter(2);    
+
   }, [selectedCar]);
 
   const fipeToFormatt = +fipeValue;
@@ -68,12 +71,12 @@ const CreateAnnouncementModal = () => {
   const formschema = yup.object().shape({
     brand: yup.string().required("Escolha uma marca."),
     model: yup.string().required("Escolha o modelo."),
-    fabrication_year: yup.string().default(yearValue),
+    fabrication_year: yup.string(),
     km: yup.string().required("Informe a quilometragem."),
     color: yup.string().required("Informe a cor do veículo."),
     fuel_type: yup.string().default(fuelType),
     price: yup.string().required("Informe o preço do veículo."),
-    fipe: yup.string().default(fipeValue),
+    fipe: yup.string(),
     description: yup.string().required("Descreva o veículo."),
     cover_img: yup
       .string()
@@ -115,43 +118,29 @@ const CreateAnnouncementModal = () => {
         <FormLabel fontSize={"xs"} fontWeight={"bold"} htmlFor="brand">
           Marca
         </FormLabel>
-        <Select
+        <Input
           fontSize={"xs"}
           marginBottom={"30px"}
           id="brand"
-          {...register("brand")}
-          onChange={(e) => setSelectedBrand(e.target.value)}
-        >
-          {allBrands.map((brand) => {
-            return (
-              <option value={brand} key={brand}>
-                {brand}
-              </option>
-            );
-          })}
-        </Select>
+          value={announcementView?.brand}
+        isDisabled
+          {...register("brand")}     
+        >       
+        </Input>
         <Text className="errorMessage">{errors.brand?.message}</Text>
 
         <FormLabel htmlFor="model" fontSize={"xs"} fontWeight={"bold"}>
           Modelo
         </FormLabel>
-        <Select
+        <Input
           fontSize={"xs"}
           id="model"
-          {...register("model")}
-          onChange={(e) => {
-            setSelectedCar(e.target.value), getFipe();
-          }}
-        >
-          {allSelectedBrandsCars.map((car: any) => {
-            return (
-              car &&
-              car.map((element: any) => {
-                return <option key={element.name}>{element.name}</option>;
-              })
-            );
-          })}
-        </Select>
+          value={announcementView?.model}
+          isDisabled
+          type="text"
+          {...register("model")}               
+        >   
+        </Input>
         <Text className="errorMessage">{errors.model?.message}</Text>
 
         <Flex>
@@ -163,7 +152,7 @@ const CreateAnnouncementModal = () => {
               id="year"
               fontSize={"xs"}
               placeholder="2018"
-              value={yearValue}
+              value={announcementView?.fabrication_year}
               isDisabled
               type="text"
               {...register("fabrication_year")}
@@ -182,7 +171,7 @@ const CreateAnnouncementModal = () => {
               placeholder="Gasolina/Etanol"
               type="text"
               fontSize={"xs"}
-              value={fuelType}
+              value={announcementView?.fuel_type}
               isDisabled
               {...register("fuel_type")}
             />
@@ -201,6 +190,7 @@ const CreateAnnouncementModal = () => {
               id="km"
               fontSize={"xs"}
               placeholder="30.000"
+              defaultValue={announcementView?.km}
               type="text"
               {...register("km")}
             />
@@ -217,6 +207,7 @@ const CreateAnnouncementModal = () => {
               id="color"
               fontSize={"xs"}
               placeholder="Branco"
+              defaultValue={announcementView?.color}
               type="text"
               {...register("color")}
             />
@@ -255,6 +246,7 @@ const CreateAnnouncementModal = () => {
               placeholder="R$ 50.000,00"
               type="text"
               fontSize={"xs"}
+              defaultValue={announcementView?.price}
               {...register("price")}
             />
             <Text className="errorMessage" textStyle={"error"}>
@@ -271,6 +263,7 @@ const CreateAnnouncementModal = () => {
             fontSize={"xs"}
             id="description"
             placeholder="Descrição..."
+            defaultValue={announcementView?.description}
             {...register("description")}
           ></Textarea>
           <Text className="errorMessage" textStyle={"error"}>
@@ -419,4 +412,4 @@ const CreateAnnouncementModal = () => {
   );
 };
 
-export default CreateAnnouncementModal;
+export default EditOrDeleteAnnouncementModal;

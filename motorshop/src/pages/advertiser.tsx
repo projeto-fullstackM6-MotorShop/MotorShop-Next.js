@@ -14,32 +14,41 @@ import nookies from "nookies";
 import { useAuth } from "@/contexts/authContext";
 import { IAnnoucementInterface } from "@/interfaces/annoucement";
 import AnnouceCard from "@/components/annoucementCard";
+import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncementModal";
 
 const Advertiser = () => {
-  const { onOpen, isOpen } = useModal();
+  const { onOpen, isOpen, modalType, setModalType } = useModal();
+
   const {
     getAllCars,
     allCars,
     isCreateAnnouncementSucessOpen,
     setIsCreateAnnouncementOpen,
     isCreateAnnouncementOpen,
-    announcementProfileView
+    announcementProfileView,
+    setisEditOrDeleteAnnouncementOpen,
+    isEditOrDeleteAnnouncementOpen,
+    announcementView
   } = useAnnouncement();
 
   useEffect(() => {
     getAllCars();
-  }, []);
+  }, [announcementView]);
 
   const opencreateAnnouncementModal = () => {
     setIsCreateAnnouncementOpen(true);
+    setModalType('createAnnounce')
     onOpen();
   };
 
   return (
     <>
       <Header />
-      {isCreateAnnouncementOpen && <CreateAnnouncementModal />}
+
+      {modalType == 'createAnnounce' && <CreateAnnouncementModal />}
       {isCreateAnnouncementSucessOpen && <CreateAnnouncementSucessModal />}
+      {modalType == 'editOrDelAnnounce' && <EditOrDeleteAnnouncementModal {...announcementProfileView} />}
+
       <Box h={"277px"} bgColor={"brand.1"}></Box>
       <Flex
         paddingLeft={"28px"}

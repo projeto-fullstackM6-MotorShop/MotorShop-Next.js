@@ -88,12 +88,13 @@ const Details = () => {
                   mt={"50px"}
                   mb={"10px"}
                 >
-                  <Flex w={"130px"} justify={"space-between"} h={"30px"}>
+                  <Flex justify={"space-between"} h={"30px"}>
                     <Text
                       padding={"5px"}
                       bgColor={"brand.4"}
                       borderRadius={"4px"}
                       color={"brand.1"}
+                      mr={'5px'}
                     >
                       {announcementView?.fabrication_year}
                     </Text>
@@ -146,7 +147,7 @@ const Details = () => {
                 padding={"30px"}
               >
                 <Heading mb={"10px"}>Fotos</Heading>
-                <SimpleGrid columns={3} spacing={3}>
+                {/* <SimpleGrid columns={3} spacing={3}>
                   {announcementView?.image.length ? (
                     announcementView?.image.map((image) => {
                       return (
@@ -171,7 +172,7 @@ const Details = () => {
                   ) : (
                     <Text>Este anuncio não possui imagens de detalhes</Text>
                   )}
-                </SimpleGrid>
+                </SimpleGrid> */}
               </Flex>
 
               <Flex

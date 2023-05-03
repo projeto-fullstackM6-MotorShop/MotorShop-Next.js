@@ -38,6 +38,8 @@ interface announcementProviderData {
   userView: IUserData | null;
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
   getAllAnnouncements: () => void;
+  setisEditOrDeleteAnnouncementOpen: Dispatch<SetStateAction<boolean>>
+  isEditOrDeleteAnnouncementOpen: boolean
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -53,6 +55,8 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [isCreateAnnouncementSucessOpen, setIsCreateAnnouncementSucessOpen] =
     useState(false);
   const [isCreateAnnouncementOpen, setIsCreateAnnouncementOpen] =
+    useState(false);
+  const [isEditOrDeleteAnnouncementOpen, setisEditOrDeleteAnnouncementOpen] =
     useState(false);
   const [allAnnouncements, setAllAnnouncements] = useState([] as any);
 
@@ -143,6 +147,8 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         announcementProfileView,
         getAnnouncementsForProfile,
         userView,
+        setisEditOrDeleteAnnouncementOpen,
+        isEditOrDeleteAnnouncementOpen
       }}
     >
       {children}

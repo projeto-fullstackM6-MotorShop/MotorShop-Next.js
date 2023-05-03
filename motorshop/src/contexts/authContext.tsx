@@ -263,7 +263,7 @@ export const AuthProvider = ({ children }: IChildren) => {
       toast({
         title: "sucess",
         variant: "solid",
-        position: "top-right",
+        position: "top",
         isClosable: true,
         render: () => (
           <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
@@ -278,7 +278,7 @@ export const AuthProvider = ({ children }: IChildren) => {
       toast({
         title: "error",
         variant: "solid",
-        position: "top-right",
+        position: "top",
         isClosable: true,
         render: () => (
           <Box bg={"alert.1"} color={"alert.3"} p={3}>
