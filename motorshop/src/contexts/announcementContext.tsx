@@ -34,7 +34,6 @@ interface announcementProviderData {
   announcementView: IAnnoucementInterface | null;
   getAnnouncementsForProfile: () => Promise<void>;
   announcementProfileView: IAnnoucementInterface[];
-  goForprofile: () => void;
   userView: IUserData | null;
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
   getAllAnnouncements: () => void;
@@ -117,10 +116,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
-  const goForprofile = () => {
-    router.push("/profile");
-  };
-
   return (
     <AnnouncementContext.Provider
       value={{
@@ -139,7 +134,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         setAllAnnouncements,
         announcementView,
         setannouncementView,
-        goForprofile,
         announcementProfileView,
         getAnnouncementsForProfile,
         userView,

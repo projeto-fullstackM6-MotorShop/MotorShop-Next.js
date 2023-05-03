@@ -14,17 +14,14 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import { imageOptimizer } from "next/dist/server/image-optimizer";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 const Details = () => {
   const { user } = useAuth();
+
+  const { announcementView } = useAnnouncement();
+
   const router = useRouter();
-
-  const { announcementView, goForprofile } = useAnnouncement();
-
-  useEffect(() => {}, [announcementView, user]);
 
   const goForLogin = () => {
     if (!user) {
@@ -35,76 +32,75 @@ const Details = () => {
   return (
     <>
       <Header />
-      <Box bgColor={"grey.8"} h={"1700px"} zIndex={1}>
+
+      <Box bgColor={"grey.8"} h={"1800px"}>
         <Box w={"100%"} h={"550px"} bgColor={"brand.1"} zIndex={-1} />
-        <Flex
-          position={"absolute"}
-          top={"120px"}
-          w={"80%"}
-          ml={"10%"}
-          mr={"10%"}
-          direction={"column"}
-        >
-          <SimpleGrid columns={2} spacing={15} alignSelf={"center"}>
-            <Box>
+
+        <Box position={"absolute"} top={"120px"} w={"100%"}>
+          <Flex w={"80%"} m={"0 auto"} justifyContent={"space-between"}>
+            <Box w={"58%"}>
               <Flex
                 bgColor={"grey.11"}
-                w={"100%"}
-                maxH={"450px"}
+                h={"355px"}
                 justify={"center"}
+                align={"center"}
                 borderRadius={"4px"}
               >
                 <Img
                   src={announcementView?.cover_img}
                   objectFit={"scale-down"}
-                ></Img>
+                  h={"100%"}
+                  w={"100%"}
+                />
               </Flex>
 
               <Flex
                 bgColor={"grey.11"}
-                h={"239px"}
-                mb={"10px"}
-                mt={"10px"}
-                direction={"column"}
-                borderRadius={"4px"}
-                align={"center"}
-                position={"relative"}
+                h={"250px"}
+                mb={"20px"}
+                mt={"20px"}
                 padding={"20px"}
+                borderRadius={"4px"}
+                direction={"column"}
+                justify={"space-around"}
               >
-                <Heading color={"grey.0"} fontSize={"xs"} mt={"30px"}>
+                <Heading
+                  variant={"healding_6_600"}
+                  color={"grey.1"}
+                  whiteSpace={"nowrap"}
+                  textOverflow={"ellipsis"}
+                >
                   {announcementView?.model}
                 </Heading>
-                <Flex
-                  justifyContent={"space-between"}
-                  w={"100%"}
-                  mt={"50px"}
-                  mb={"10px"}
-                >
-                  <Flex w={"130px"} justify={"space-between"} h={"30px"}>
+                <Flex justifyContent={"space-between"}>
+                  <Flex w={"50%"} gap={"8px"}>
                     <Text
-                      padding={"5px"}
-                      bgColor={"brand.4"}
-                      borderRadius={"4px"}
+                      variant={"body_2_500"}
+                      p={"5px"}
+                      bg={"brand.4"}
                       color={"brand.1"}
                     >
                       {announcementView?.fabrication_year}
                     </Text>
                     <Text
-                      padding={"5px"}
-                      bgColor={"brand.4"}
-                      borderRadius={"4px"}
+                      variant={"body_2_500"}
+                      p={"5px"}
+                      bg={"brand.4"}
                       color={"brand.1"}
                     >
-                      {`${announcementView?.km} Km`}
+                      {`${announcementView?.km} KM`}
                     </Text>
                   </Flex>
-                  <Text>{`R$ ${announcementView?.price}`}</Text>
+                  <Text variant={"healding_7_500"} color={"grey.1"}>
+                    {`${announcementView?.price.toLocaleString("pt-BR", {
+                      style: "currency",
+                      currency: "BRL",
+                    })}`}
+                  </Text>
                 </Flex>
                 <Button
+                  w={"fit-content"}
                   variant={user ? "brand1" : "brandOpacity"}
-                  position={"absolute"}
-                  bottom={"10px"}
-                  left={"20px"}
                   onClick={goForLogin}
                 >
                   Comprar
@@ -113,52 +109,71 @@ const Details = () => {
 
               <Flex
                 bgColor={"grey.11"}
-                direction={"column"}
-                padding={"30px"}
-                gap={"15px"}
+                h={"200px"}
+                mb={"20px"}
+                padding={"20px"}
                 borderRadius={"4px"}
+                direction={"column"}
+                gap={"10px"}
               >
-                <Heading w={"80%"} fontSize={"md"}>
+                <Heading variant={"healding_6_600"} color={"grey.1"}>
                   Descrição
                 </Heading>
-                <Text w={"80%"}>{announcementView?.description}</Text>
+                <Text
+                  variant={"body_1_400"}
+                  color={"grey.2"}
+                  overflowY={"auto"}
+                >
+                  {announcementView?.description}
+                </Text>
               </Flex>
             </Box>
 
-            <Flex direction={"column"} gap={"10px"} w={"80%"}>
+            <Flex direction={"column"} gap={"10px"} w={"38%"}>
               <Flex
-                direction={"column"}
                 bgColor={"grey.11"}
+                mb={"20px"}
+                padding={"20px"}
                 borderRadius={"4px"}
-                padding={"30px"}
+                direction={"column"}
               >
-                <Heading mb={"10px"}>Fotos</Heading>
-                <SimpleGrid columns={3} spacing={3}>
-                  {announcementView?.image.length ? (
-                    announcementView?.image.map((image) => {
+                <Heading
+                  variant={"healding_6_600"}
+                  color={"grey.1"}
+                  mb={"10px"}
+                >
+                  Fotos
+                </Heading>
+                {announcementView?.image.length ? (
+                  <SimpleGrid columns={3} spacing={3}>
+                    {announcementView?.image.map((image) => {
                       return (
                         <Box
                           key={image.id}
                           w={"108px"}
                           h={"108px"}
-                          display={"flex"}
                           cursor={"pointer"}
-                          margin={"10px"}
                         >
                           <Img
                             src={image.imageUrl}
-                            maxW={"110px"}
-                            bgColor={"grey.6"}
                             borderRadius={"4px"}
-                            objectFit={"scale-down"}
+                            w={"100%"}
+                            h={"100%"}
+                            objectFit={"cover"}
                           />
                         </Box>
                       );
-                    })
-                  ) : (
-                    <Text>Este anuncio não possui imagens de detalhes</Text>
-                  )}
-                </SimpleGrid>
+                    })}
+                  </SimpleGrid>
+                ) : (
+                  <Text
+                    variant={"body_1_400"}
+                    color={"grey.2"}
+                    textAlign={"center"}
+                  >
+                    Este anuncio não possui imagens de detalhes
+                  </Text>
+                )}
               </Flex>
 
               <Flex
@@ -169,196 +184,102 @@ const Details = () => {
                 gap={"20px"}
                 borderRadius={"4px"}
               >
-                <AvatarIcon size="xl" />
-                <Heading fontSize={"sm"}>
+                <AvatarIcon size="xl" name={announcementView?.user.name} />
+                <Heading variant={"healding_6_600"} color={"grey.1"}>
                   {announcementView?.user?.name}
                 </Heading>
-                <Text textAlign={"center"} color={"grey.3"}>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industries
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industries
+                <Text
+                  textAlign={"center"}
+                  variant={"body_1_400"}
+                  color={"grey.2"}
+                >
+                  {announcementView?.user.description}
                 </Text>
-                <Button variant={"grey1"} onClick={goForprofile}>
-                  {" "}
-                  ver anuncios
+                <Button
+                  variant={"grey1"}
+                  onClick={() => router.push("/profile")}
+                >
+                  Ver todos anúncios
                 </Button>
               </Flex>
             </Flex>
-          </SimpleGrid>
-          <Box
-            bgColor={"grey.11"}
-            borderRadius={"4px"}
-            padding={"15px"}
-            gap={"20px"}
-            overflowY={"auto"}
-            h={"500px"}
-            mt={"20px"}
-            position={"relative"}
-            w={"50%"}
-          >
-            <Heading fontSize={"md"} mb={"20px"}>
-              Comentarios
-            </Heading>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-            <Box padding={"5px"} mb={"15px"}>
-              <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" />
-                <Heading fontSize={"sm"}>Nome usuario</Heading>
-              </Flex>
-              <Text>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industries standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Text>
-            </Box>
-          </Box>
+          </Flex>
 
-          <Box
-            position={"relative"}
-            mt={"20px"}
-            padding={"15px"}
-            w={"50%"}
-            h={"230px"}
-            bgColor={"grey.11"}
-            borderRadius={"4px"}
-          >
-            <Flex gap={"10px"} mb={"15px"} align={"center"}>
-              <AvatarIcon size="sm" />
-              <Heading fontSize={"sm"}>{user?.name}</Heading>
-            </Flex>
-            <Center w={"100%"} h={"75%"}>
-              <Textarea
-                placeholder="Digite seu comentario"
-                size={"xs"}
-                w={"90%"}
-                h={"80%"}
-                resize={"none"}
-              />
-            </Center>
-            <Button
-              position={"absolute"}
-              right={"50px"}
-              bottom={"50px"}
-              variant={user ? "brand1" : "disable"}
-              size={"sm"}
-              fontSize={"xxs"}
-              padding={"4px 15px"}
-              onClick={goForLogin}
+          <Flex w={"80%"} m={"0 auto"} direction={"column"}>
+            <Box
+              bgColor={"grey.11"}
+              borderRadius={"4px"}
+              padding={"20px"}
+              h={"600px"}
+              w={"58%"}
+              overflowY={"auto"}
             >
-              Comentar
-            </Button>
-          </Box>
-        </Flex>
+              <Heading variant={"healding_6_600"} color={"grey.1"} mb={"20px"}>
+                Comentarios
+              </Heading>
+
+              <Box padding={"5px"}>
+                <Flex gap={"10px"} mb={"15px"} align={"center"}>
+                  <AvatarIcon size="sm" />
+                  <Text variant={"body_2_500"} color={"grey.1"}>
+                    Nome usuario
+                  </Text>
+                </Flex>
+                <Text
+                  variant={"body_2_400"}
+                  color={"grey.2"}
+                  textAlign={"justify"}
+                >
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industries
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </Text>
+              </Box>
+            </Box>
+
+            <Box
+              mt={"20px"}
+              padding={"20px"}
+              w={"58%"}
+              h={"230px"}
+              bgColor={"grey.11"}
+              borderRadius={"4px"}
+              position={"relative"}
+            >
+              <Flex gap={"10px"} mb={"15px"} align={"center"}>
+                <AvatarIcon size="sm" name={user ? user.name : ""} />
+                <Text variant={"body_2_500"} color={"grey.1"}>
+                  {user?.name || "Nome de usuário"}
+                </Text>
+              </Flex>
+              <Center w={"100%"} h={"75%"}>
+                <Textarea
+                  placeholder="Digite seu comentario"
+                  size={"xs"}
+                  w={"100%"}
+                  h={"80%"}
+                  resize={"none"}
+                />
+              </Center>
+              <Button
+                position={"absolute"}
+                right={"50px"}
+                bottom={"50px"}
+                variant={user ? "brand1" : "disable"}
+                size={"sm"}
+                fontSize={"xxs"}
+                padding={"4px 15px"}
+                onClick={goForLogin}
+              >
+                Comentar
+              </Button>
+            </Box>
+          </Flex>
+        </Box>
       </Box>
+
       <Footer />
     </>
   );
