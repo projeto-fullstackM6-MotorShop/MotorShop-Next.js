@@ -23,7 +23,7 @@ import { IAnnouncementRequest } from "@/interfaces/annoucement";
 const CreateAnnouncementModal = () => {
   const { allCars, allBrands, CreateAnnouncement } = useAnnouncement();
   const { onClose } = useModal();
-  const [selectedBrand, setSelectedBrand] = useState("chevrolet" as any);
+  const [selectedBrand, setSelectedBrand] = useState("" as any);
   const allSelectedBrandsCars = [allCars[selectedBrand]];
   const [selectedCar, setSelectedCar] = useState("");
   const [fipeValue, setFipeValue] = useState("");
@@ -208,7 +208,7 @@ const CreateAnnouncementModal = () => {
             <Input
               id="year"
               fontSize={"xs"}
-              // placeholder="2018"
+              placeholder="2018"
               value={yearValue}
               isDisabled
               type="text"

@@ -2,6 +2,7 @@ import {
   Dispatch,
   SetStateAction,
   createContext,
+  useContext,
   useEffect,
   useState,
 } from "react";
@@ -35,6 +36,9 @@ interface filterProviderData {
   minimumPrice: string;
   setMaximumPrice: Dispatch<SetStateAction<string>>;
   maximumPrice: string;
+  setIsFilterOpen: Dispatch<SetStateAction<boolean>>;
+  isFilterOpen: boolean;
+  isFilterActive: boolean;
   getAllModels: () => Promise<void>;
   filterBrand: (array: IAnnoucementInterface[]) => any;
   getFilteredBrandCars: (brand: string) => any;
@@ -45,7 +49,6 @@ interface filterProviderData {
   getFilteredModelCars: (model: string) => any;
   getFilteredYear: (year: string) => any;
   setIsFilterActive: Dispatch<SetStateAction<boolean>>;
-  isFilterActive: boolean;
 }
 
 export const FilterContext = createContext<filterProviderData>(
@@ -77,6 +80,8 @@ export const FilterProvider = ({ children }: IChildren) => {
   let [maximumPrice, setMaximumPrice] = useState("");
 
   const [isFilterActive, setIsFilterActive] = useState(false);
+
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const getAllColors = () => {
     const uniqueColors = new Set();
@@ -243,9 +248,13 @@ export const FilterProvider = ({ children }: IChildren) => {
         getFilteredYear,
         isFilterActive,
         setIsFilterActive,
+        setIsFilterOpen,
+        isFilterOpen,
       }}
     >
       {children}
     </FilterContext.Provider>
   );
 };
+
+export const useFilter = () => useContext(FilterContext);

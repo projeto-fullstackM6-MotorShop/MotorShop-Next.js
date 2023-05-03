@@ -20,11 +20,13 @@ import EditUserModal from "./createEditUserModal";
 import EditAddressModal from "./createEditAddressModal";
 import { useMediaQuery } from "react-responsive";
 import { HamburgerIcon } from "@chakra-ui/icons";
+import { useFilter } from "@/contexts/filterContext";
 
 const Header = () => {
   const { user } = useAuth();
 
   const { onOpen, modalType, setModalType } = useModal();
+  const { setIsFilterOpen } = useFilter();
 
   const router = useRouter();
 
@@ -46,7 +48,7 @@ const Header = () => {
     onOpen();
   };
 
-  const isSmallScreen = useMediaQuery({ maxDeviceWidth: 1346 });
+  const isSmallScreen = useMediaQuery({ maxDeviceWidth: 1048 });
   const pathname = router.pathname;
 
   return (
@@ -100,7 +102,11 @@ const Header = () => {
                   Meus Anúncios
                 </MenuItem>
               )}
-              {pathname == "/" && <MenuItem>Filtros</MenuItem>}
+              {pathname == "/" && (
+                <MenuItem onClick={() => setIsFilterOpen(true)}>
+                  Filtros
+                </MenuItem>
+              )}
               <MenuItem onClick={onLogout}>Sair</MenuItem>
             </MenuList>
           </Menu>
