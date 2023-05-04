@@ -20,7 +20,7 @@ import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncement
 
 const Advertiser = () => {
   const { onOpen, isOpen, modalType, setModalType } = useModal();
-  const { userLoged } = useAuth() 
+  const { userLoged } = useAuth()
   const {
     getAllCars,
     allCars,
@@ -32,23 +32,20 @@ const Advertiser = () => {
     isEditOrDeleteAnnouncementOpen,
     announcementView,
     getAllAnnouncements,
-    profileToRechargePage,
-    cookieProfileView
+    toRechargePage
   } = useAnnouncement();
 
   useEffect(() => {
     getAllCars();
-    getAllAnnouncements()         
-      profileToRechargePage()          
-  }, [cookieProfileView ]);
-  
+    getAllAnnouncements()
+    toRechargePage(userLoged?.id)
+  }, []);
+
   const opencreateAnnouncementModal = () => {
     setIsCreateAnnouncementOpen(true);
     setModalType('createAnnounce')
     onOpen();
   };
-  
-   
 
   return (
     <>
@@ -120,13 +117,33 @@ const Advertiser = () => {
         </SimpleGrid>
 
         <Center p={"2rem 0"}>
-          <Pagination />
+          <Flex
+            gap={"2rem"}
+            alignItems={"center"}
+            flexDirection={{ base: "column", lg: "row" }}
+          >
+            <Heading color={"grey.3"} fontSize={"md"} fontWeight={"semibold"}>
+              1 de 2
+            </Heading>
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              variant={"unstyled"}
+              bg={"transparent"}
+              color={"brand.1"}
+              fontSize={"md"}
+              iconSpacing={1}
+              display={"flex"}
+              alignItems={"center"}
+            >
+              Seguinte
+            </Button>
+          </Flex>
         </Center>
       </Flex>
       <Footer />
     </>
   );
-};
+};   
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const cookies = nookies.get(ctx);

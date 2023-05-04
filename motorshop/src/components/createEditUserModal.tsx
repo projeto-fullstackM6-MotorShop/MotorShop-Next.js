@@ -49,7 +49,7 @@ const EditUserModal = () => {
   } = useForm<IUpdateUserData>({
     resolver: yupResolver(updateUserSchema),
   });
-
+  
   const onSubmit = (data: IUpdateUserData) => {
     patchUser(data);
 

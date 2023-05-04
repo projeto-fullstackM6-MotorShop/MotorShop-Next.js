@@ -14,11 +14,14 @@ import AvatarIcon from "./avatarIcon";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
 import { useModal } from "@/contexts/modalContext";
-import EditOrDeleteAnnouncementModal from "./editOrDeleteAnnouncementModal";
 import { useCallback, useEffect } from "react";
-import { destroyCookie, setCookie } from "nookies";
 
+<<<<<<< HEAD
 const AnnouceCard = (data: IAnnoucementInterface) => {
+=======
+const AnnouceCard = (data: IAnnoucementInterface) => { 
+  
+>>>>>>> 4c839b801f2320b96ba0b948c0f592d2a5185af2
   const {
     setannouncementView,
     userView,
@@ -26,6 +29,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
     setisEditOrDeleteAnnouncementOpen,
     getAnnouncementById,
     announcementView,
+<<<<<<< HEAD
   } = useAnnouncement();
 
   const { onOpen, isOpen, modalType, setModalType } = useModal();
@@ -59,6 +63,15 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
     onOpen();
   }, []);
 
+=======
+    announcementProfileView,
+    toRechargePage
+  } = useAnnouncement();
+  
+  const { onOpen, isOpen, modalType, setModalType } = useModal()
+  const { userLoged } = useAuth()
+   
+>>>>>>> 4c839b801f2320b96ba0b948c0f592d2a5185af2
   let {
     id,
     brand,
@@ -78,13 +91,53 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
     user,
   } = data;
 
+
+  const toMyAnnounces = () => {
+    toRechargePage(userLoged!.id)
+    router.push(`/announces/advertiser/${userLoged!.id}`)
+  }
+
+  const viewAnnouncementDetails = () => {
+    if (pathname == '/') {
+      if (userLoged?.name == user.name) {
+        getAnnouncementsForProfile();
+        setannouncementView(data);   
+        toMyAnnounces()
+      } else {
+        setannouncementView(data);   
+        router.push("/details");
+      }
+    }
+  };
+
+  const viewAnnouncementDetails2 = () => {
+    if (pathname.includes("profile")) { 
+      setannouncementView(data);
+      router.push("/details");
+    }
+  };
+
+  const advertiserToDetails = () => {
+    setannouncementView(data);
+    router.push("/details");
+  }
+
+  const openEditOrDeleteAnnouncementModal = useCallback(async () => {
+    setannouncementView(data);
+    setisEditOrDeleteAnnouncementOpen(true);
+    setModalType('editOrDelAnnounce')
+    onOpen();
+  }, []);
+
+
+
   const router = useRouter();
   const pathname = router.pathname;
 
   price = +price;
 
   return (
-    <>
+    <>     
       {pathname == "/" ? (
         <Card
           as={"li"}
@@ -233,15 +286,20 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
           border={"none"}
           boxShadow={"none"}
           minWidth={"none"}
+<<<<<<< HEAD
           marginRight={{ base: "61px", lg: "0px" }}
           cursor={"pointer"}
           onClick={() => viewAnnouncementDetails()}
+=======
+          marginRight={{ base: "61px", lg: "0px" }}        
+          onClick={() => viewAnnouncementDetails2()}
+>>>>>>> 4c839b801f2320b96ba0b948c0f592d2a5185af2
         >
           <Image
             src={cover_img}
             alt={"Imagem de capa do anúncio"}
-            w={{ lg: "100%" }}
-            h={{ lg: "250px" }}
+              w={{ lg: "100%" }}
+              h={{ lg: "152px" }}
             maxH={"220px"}
             marginBottom={"16px"}
             objectFit={"cover"}
@@ -297,7 +355,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
               <Flex alignItems={"center"} gap={"8px"}>
                 <AvatarIcon name={userView?.name} />
                 <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-                  {userView?.name}
+                      {userView?.name}
                 </Text>
               </Flex>
             )}
@@ -332,7 +390,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
               </Heading>
             </Flex>
 
-            {pathname == "/advertiser" && (
+            {pathname.includes('advertiser') && (
               <Flex>
                 <Button
                   variant={"outline1"}

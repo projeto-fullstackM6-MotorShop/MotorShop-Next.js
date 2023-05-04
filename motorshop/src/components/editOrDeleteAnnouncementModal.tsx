@@ -2,6 +2,8 @@
 import {
   Box,
   Button,
+  Center,
+  CloseButton,
   Flex,
   FormControl,
   FormLabel,
@@ -20,10 +22,21 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { IAnnouncementRequest } from "@/interfaces/annoucement";
+import { useRouter } from "next/router";
 
-const EditOrDeleteAnnouncementModal = (data:any) => {
+const EditOrDeleteAnnouncementModal = (data: any) => {
 
-  const { allCars, allBrands, editAnnouncement, announcementView, getAnnouncementById } = useAnnouncement();
+  const router = useRouter();
+
+  const { allCars,
+    editAnnouncement,
+    announcementView,
+    getAnnouncementById,
+    getAnnouncementsForProfile,
+    setdeleteAnnounceModal,
+    deleteAnnounceModal,
+    deleteAnnounce
+  } = useAnnouncement();
   const { onClose } = useModal();
 
   const [selectedBrand, setSelectedBrand] = useState("chevrolet" as any);
@@ -37,7 +50,7 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
 
   useEffect(() => {
     getFipe();
-    setCounter(2);     
+    setCounter(2);
 
   }, [selectedCar]);
 
@@ -66,6 +79,12 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
   const closeModal = () => {
     setCounter(2);
     onClose();
+  };
+
+  const onDeleteAnnounce = () => { 
+    deleteAnnounce()
+    onClose();
+    router.reload()    
   };
 
   const formschema = yup.object().shape({
@@ -99,12 +118,14 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
     editAnnouncement(formData);
+    getAnnouncementsForProfile()
     onClose();
+    router.reload()
   };
 
   return (
     <GeneralModal>
-      <FormControl padding={"24px"}>
+      <FormControl padding={"24px"} >
         <Heading
           color={"grey.0"}
           fontSize={"sm"}
@@ -124,9 +145,9 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
           marginBottom={"30px"}
           id="brand"
           value={announcementView?.brand}
-        isDisabled
-          {...register("brand")}     
-        >       
+          isDisabled
+          {...register("brand")}
+        >
         </Input>
         <Text className="errorMessage">{errors.brand?.message}</Text>
 
@@ -139,8 +160,8 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
           value={announcementView?.model}
           isDisabled
           type="text"
-          {...register("model")}               
-        >   
+          {...register("model")}
+        >
         </Input>
         <Text className="errorMessage">{errors.model?.message}</Text>
 
@@ -405,10 +426,51 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
           <Button variant={"negative"} onClick={() => closeModal()}>
             Cancelar
           </Button>
+          <Button variant={"alert"} onClick={() => setdeleteAnnounceModal(true)}>
+            Excluir anuncio
+          </Button>
           <Button variant={"brandDisable"} onClick={handleSubmit(onFormSubmit)}>
             Editar anuncio
           </Button>
         </Flex>
+
+        {deleteAnnounceModal && (
+          <GeneralModal>
+            <Center width={"100%"}>
+              <FormControl
+                as={"form"}
+                display={"flex"}
+                flexDirection={"column"}
+                gap={"2rem"}
+                width={"80%"}
+                padding={'15px'}                
+              >
+                <Flex justifyContent={"space-between"} alignItems={"center"}>
+                  <Heading variant={"healding_7_500"}>Excluir Anuncio</Heading>
+                  <CloseButton onClick={() => setdeleteAnnounceModal(!deleteAnnounceModal)} />
+                </Flex>
+
+                <Heading variant={"healding_7_600"} textAlign={"center"}>
+                  Deseja excluir o anuncio?
+                  esta ação não pode ser desfeita!
+                </Heading>
+
+                <Flex justifyContent={"space-around"}>
+                  <Button variant={"sucess"} onClick={() => onDeleteAnnounce()}>
+                    Sim
+                  </Button>
+                  <Button
+                    variant={"alert"}
+                    onClick={() => setdeleteAnnounceModal(!deleteAnnounceModal)}
+                  >
+                    Não
+                  </Button>
+                </Flex>
+
+              </FormControl>
+            </Center>
+          </GeneralModal>
+        )}
       </FormControl>
     </GeneralModal>
   );
