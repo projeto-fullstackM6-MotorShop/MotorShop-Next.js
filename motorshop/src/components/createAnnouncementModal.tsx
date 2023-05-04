@@ -94,7 +94,6 @@ const CreateAnnouncementModal = () => {
   });
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
-    console.log(formData);
     const {
       image,
       image2,

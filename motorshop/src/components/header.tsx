@@ -173,6 +173,11 @@ const Header = () => {
                   Cadastrar
                 </Text>
               </MenuItem>
+              {pathname == "/" && (
+                <MenuItem onClick={() => setIsFilterOpen(true)}>
+                  Filtros
+                </MenuItem>
+              )}
             </MenuList>
           </Menu>
         )}
