@@ -5,7 +5,10 @@ import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
 import { useComment } from "@/contexts/commentContext";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import {
   Box,
   Button,
@@ -17,18 +20,35 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
+import { ICreateCommentData } from "@/interfaces/comments";
+
+const makeACommentSchema = yup.object().shape({
+  comment: yup.string().required().max(280),
+});
 
 const Details = () => {
+  const [textAreaLength, setTextAreaLength] = useState(0);
+  const [controller, setController] = useState(false);
+
   const { userLoged } = useAuth();
 
   const { announcementView, allAnnouncements, setannouncementView } =
     useAnnouncement();
 
-  const { commentsOfAnnoucement, getAllCommentsOfAnnoucement } = useComment();
+  const { commentsOfAnnoucement, getAllCommentsOfAnnoucement, createComment } =
+    useComment();
 
   const router = useRouter();
 
   const { annoucementId } = router.query;
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<ICreateCommentData>({
+    resolver: yupResolver(makeACommentSchema),
+  });
 
   useEffect(() => {
     if (annoucementId) {
@@ -39,12 +59,16 @@ const Details = () => {
     if (announcementView) {
       getAllCommentsOfAnnoucement(announcementView!.id);
     }
-  }, [annoucementId, announcementView]);
+  }, [annoucementId, announcementView, controller]);
 
   const goForLogin = () => {
     if (!userLoged) {
       router.push("/login");
     }
+  };
+
+  const makeAComment = (data: ICreateCommentData) => {
+    createComment(data, annoucementId as string);
   };
 
   return (
@@ -272,27 +296,47 @@ const Details = () => {
                   {userLoged?.name || "Nome de usuário"}
                 </Text>
               </Flex>
-              <Center w={"100%"} h={"75%"}>
+              <Center
+                as={"form"}
+                w={"100%"}
+                h={"75%"}
+                onSubmit={handleSubmit(makeAComment)}
+              >
                 <Textarea
                   placeholder="Digite seu comentario"
                   size={"xs"}
                   w={"100%"}
                   h={"80%"}
                   resize={"none"}
+                  {...register("comment")}
+                  onChange={(evt) => setTextAreaLength(evt.target.value.length)}
                 />
+                <Button
+                  position={"absolute"}
+                  right={"50px"}
+                  bottom={"50px"}
+                  variant={userLoged ? "brand1" : "disable"}
+                  size={"sm"}
+                  fontSize={"xxs"}
+                  padding={"4px 15px"}
+                  type={userLoged ? "submit" : "button"}
+                  zIndex={2}
+                  onClick={goForLogin}
+                >
+                  Comentar
+                </Button>
+                <Text
+                  fontSize={"xxs"}
+                  color={textAreaLength < 280 ? "grey.3" : "alert.1"}
+                  position={"absolute"}
+                  right={"50px"}
+                  bottom={"8px"}
+                >
+                  {textAreaLength < 280
+                    ? `Total de caracteres: ${textAreaLength}`
+                    : `Você estourou o limite de caracteres, no máximo 280. Atualmente ${textAreaLength}.`}
+                </Text>
               </Center>
-              <Button
-                position={"absolute"}
-                right={"50px"}
-                bottom={"50px"}
-                variant={userLoged ? "brand1" : "disable"}
-                size={"sm"}
-                fontSize={"xxs"}
-                padding={"4px 15px"}
-                onClick={goForLogin}
-              >
-                Comentar
-              </Button>
             </Box>
           </Flex>
         </Box>

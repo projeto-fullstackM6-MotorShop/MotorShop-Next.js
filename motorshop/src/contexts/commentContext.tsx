@@ -27,11 +27,11 @@ export const CommentProvider = ({ children }: IChildren) => {
     annoucementId: string
   ) => {
     try {
-      const response = await api.post(`/comment/${annoucementId}`, data, {
+      await api.post(`/comment/${annoucementId}`, data, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      getAllCommentsOfAnnoucement(response.data.id);
+      getAllCommentsOfAnnoucement(annoucementId);
     } catch (error: any) {
       console.error(error);
     }
