@@ -37,6 +37,7 @@ interface announcementProviderData {
   userView: IUserData | null;
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
   getAllAnnouncements: () => void;
+  getAnnoucementById: (annoucementId: string) => void;
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -116,6 +117,16 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
+  const getAnnoucementById = async (annoucementId: string) => {
+    try {
+      const response = await api.get(`/announcement/${annoucementId}`);
+
+      setannouncementView(response.data);
+    } catch (error: any) {
+      console.log(error);
+    }
+  };
+
   return (
     <AnnouncementContext.Provider
       value={{
@@ -137,6 +148,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         announcementProfileView,
         getAnnouncementsForProfile,
         userView,
+        getAnnoucementById,
       }}
     >
       {children}

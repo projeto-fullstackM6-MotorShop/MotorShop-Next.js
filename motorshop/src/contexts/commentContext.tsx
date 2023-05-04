@@ -39,9 +39,7 @@ export const CommentProvider = ({ children }: IChildren) => {
 
   const getAllCommentsOfAnnoucement = async (annoucementId: string) => {
     try {
-      const response = await api.get(`/comment/${annoucementId}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const response = await api.get(`/comment/${annoucementId}`);
 
       setCommentsOfAnnoucement(response.data);
     } catch (error: any) {

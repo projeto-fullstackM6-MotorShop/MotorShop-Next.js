@@ -20,13 +20,13 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
   const viewAnnouncementDetails = (data: IAnnoucementInterface) => {
     getAnnouncementsForProfile();
     setannouncementView(data);
-    router.push("/details");
+    router.push(`/details/${data.id}`);
   };
 
-  const viewAnnouncementDetails2 = (data: IAnnoucementInterface) => {
-    setannouncementView(data);
-    router.push("/details");
-  };
+  // const viewAnnouncementDetails2 = (data: IAnnoucementInterface) => {
+  //   setannouncementView(data);
+  //   router.push("/details");
+  // };
 
   let {
     id,
@@ -195,7 +195,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
           minWidth={"none"}
           marginRight={{ base: "61px", lg: "0px" }}
           cursor={"pointer"}
-          onClick={() => viewAnnouncementDetails2(data)}
+          onClick={() => viewAnnouncementDetails(data)}
         >
           <Image
             src={cover_img}

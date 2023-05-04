@@ -3,6 +3,9 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
+import { useComment } from "@/contexts/commentContext";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 import {
   Box,
   Button,
@@ -14,14 +17,29 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import { useRouter } from "next/router";
 
 const Details = () => {
   const { user } = useAuth();
 
-  const { announcementView } = useAnnouncement();
+  const { announcementView, allAnnouncements, setannouncementView } =
+    useAnnouncement();
+
+  const { commentsOfAnnoucement, getAllCommentsOfAnnoucement } = useComment();
 
   const router = useRouter();
+
+  const { annoucementId } = router.query;
+
+  useEffect(() => {
+    if (annoucementId) {
+      setannouncementView(
+        allAnnouncements.find((annoucement) => annoucement.id == annoucementId)!
+      );
+    }
+    if (announcementView) {
+      getAllCommentsOfAnnoucement(announcementView!.id);
+    }
+  }, [annoucementId, announcementView]);
 
   const goForLogin = () => {
     if (!user) {
@@ -218,25 +236,25 @@ const Details = () => {
                 Comentarios
               </Heading>
 
-              <Box padding={"5px"}>
-                <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                  <AvatarIcon size="sm" />
-                  <Text variant={"body_2_500"} color={"grey.1"}>
-                    Nome usuario
-                  </Text>
-                </Flex>
-                <Text
-                  variant={"body_2_400"}
-                  color={"grey.2"}
-                  textAlign={"justify"}
-                >
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industries
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </Text>
-              </Box>
+              {commentsOfAnnoucement.map((comment) => {
+                return (
+                  <Box padding={"5px"} key={comment.id}>
+                    <Flex gap={"10px"} mb={"15px"} align={"center"}>
+                      <AvatarIcon size="sm" name={comment.user.name} />
+                      <Text variant={"body_2_500"} color={"grey.1"}>
+                        {comment.user.name}
+                      </Text>
+                    </Flex>
+                    <Text
+                      variant={"body_2_400"}
+                      color={"grey.2"}
+                      textAlign={"justify"}
+                    >
+                      {comment.comment}
+                    </Text>
+                  </Box>
+                );
+              })}
             </Box>
 
             <Box
