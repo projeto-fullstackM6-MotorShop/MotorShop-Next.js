@@ -15,6 +15,19 @@ export interface IUserData {
   address: IAddressData;
 }
 
+export interface IUserWithoutAddress {
+  id: string;
+  name: string;
+  email: string;
+  cpf: string;
+  phone: string;
+  birth_date: string;
+  description: string;
+  is_seller: boolean;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
 export interface IRegisterUserData {
   name: string;
   email: string;

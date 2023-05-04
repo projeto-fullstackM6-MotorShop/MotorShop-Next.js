@@ -18,7 +18,6 @@ import { IUserData } from "@/interfaces/users";
 import { Box, useToast } from "@chakra-ui/react";
 import { destroyCookie, parseCookies, setCookie } from "nookies";
 
-
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
   allCars: IAnnoucementInterface[];
@@ -40,7 +39,6 @@ interface announcementProviderData {
   userView: IUserData | null;
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
   getAllAnnouncements: () => void;
-
   currentCars: IAnnoucementInterface[];
   handlePreviousPage: () => void;
   handleNextPage: () => void;
@@ -48,15 +46,14 @@ interface announcementProviderData {
   currentPage: number;
   numPageEnd: number;
   numCountPage: number;
-
-  setisEditOrDeleteAnnouncementOpen: Dispatch<SetStateAction<boolean>>
-  isEditOrDeleteAnnouncementOpen: boolean
-  getAnnouncementById: (id: string) => Promise<void>
-  editAnnouncement: (data: IAnnouncementRequest) => Promise<void>
-  toRechargePage: (id: string | string[] | undefined) => Promise<void>
-  setdeleteAnnounceModal: Dispatch<SetStateAction<boolean>>
-  deleteAnnounceModal: boolean
-  deleteAnnounce: () => Promise<void>
+  setisEditOrDeleteAnnouncementOpen: Dispatch<SetStateAction<boolean>>;
+  isEditOrDeleteAnnouncementOpen: boolean;
+  getAnnouncementById: (id: string) => Promise<void>;
+  editAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
+  toRechargePage: (id: string | string[] | undefined) => Promise<void>;
+  setdeleteAnnounceModal: Dispatch<SetStateAction<boolean>>;
+  deleteAnnounceModal: boolean;
+  deleteAnnounce: () => Promise<void>;
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -64,6 +61,14 @@ export const AnnouncementContext = createContext<announcementProviderData>(
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
+  const cookies = parseCookies();
+
+  const [cookieProfileView, setcookieProfileView] = useState<string>(
+    cookies["@motorshop:profileId"] || ""
+  );
+  const [cookieAnnounceView, setcookieAnnounceView] = useState<string>(
+    cookies["@motorshop:announceId"] || ""
+  );
 
   const [allCars, setAllCars] = useState([] as IAnnoucementInterface[]);
   const [allBrands, setAllBrands] = useState([] as string[]);
@@ -83,9 +88,9 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [userView, setuserView] = useState<IUserData | null>(null);
   const [announcementProfileView, setannouncementProfileView] = useState<
     IAnnoucementInterface[]
-    >([] as IAnnoucementInterface[]);
-  
-  const [deleteAnnounceModal, setdeleteAnnounceModal]=useState(false)
+  >([] as IAnnoucementInterface[]);
+
+  const [deleteAnnounceModal, setdeleteAnnounceModal] = useState(false);
 
   const { token } = useAuth();
   const router = useRouter();
@@ -94,7 +99,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   useEffect(() => {
     const brands = Object.keys(allCars);
     setAllBrands(brands);
-    getAllAnnouncements();     
+    getAllAnnouncements();
   }, [allCars]);
 
   const getAllCars = async () => {
@@ -133,20 +138,19 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const getAnnouncementById = async (id: string) => {
     try {
       const res = await api.get(`/announcement/${id}`);
-      setannouncementView(res.data)
+      setannouncementView(res.data);
     } catch (error) {
       console.error(error);
     }
-  }
+  };
 
   const editAnnouncement = async (data: IAnnouncementRequest) => {
-    
     try {
       await api.patch(`/announcement/${announcementView?.id}`, data, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      getAnnouncementsForProfile()
+      getAnnouncementsForProfile();
 
       toast({
         title: "sucess",
@@ -168,50 +172,75 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     try {
       const res = await api.get(`/profile/${announcementView?.user.id}`);
       const res2 = await api.get(`/user/${announcementView?.user.id}`);
-      setuserView(res2.data);   
-      setannouncementProfileView(res.data);        
+      setuserView(res2.data);
+      setannouncementProfileView(res.data);
+
+      destroyCookie(null, "@motorshop:profileId");
+      setCookie(null, "@motorshop:profileId", res2.data.id);
+      setcookieProfileView(res2.data.id);
     } catch (error) {
       console.error(error);
     }
   };
 
+  const getAnnoucementById = async (annoucementId: string) => {
+    try {
+      const response = await api.get(`/announcement/${annoucementId}`);
+
+      setannouncementView(response.data);
+    } catch (error: any) {
+      console.log(error);
+    }
+  };
+
   const deleteAnnounce = async () => {
-    try {      
+    try {
       await api.delete(`/announcement/${announcementView?.id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
     } catch (error) {
       console.error(error);
     }
-  }
+  };
 
-  const toRechargePage = async (id: string | string[] | undefined ) => {
-    try {      
-      const res = await api.get(`/profile/${id}`);     
+  const toRechargePage = async (id: string | string[] | undefined) => {
+    try {
+      const res = await api.get(`/profile/${id}`);
       setannouncementProfileView(res.data);
-    } catch(error) {
-      console.log(error)
+    } catch (error) {
+      console.log(error);
     }
-  }
+  };
 
+  const profileToRechargePage = async () => {
+    try {
+      const res = await api.get(`/profile/${cookieProfileView}`);
+      setannouncementProfileView(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-  const [currentPage, setCurrentPage] = useState(0)
+  const [currentPage, setCurrentPage] = useState(0);
 
-  const startIndex = currentPage * 12
-  const endIndex = startIndex + 12
-  const currentCars: IAnnoucementInterface[] = allAnnouncements.slice(startIndex, endIndex)
+  const startIndex = currentPage * 12;
+  const endIndex = startIndex + 12;
+  const currentCars: IAnnoucementInterface[] = allAnnouncements.slice(
+    startIndex,
+    endIndex
+  );
 
   const handlePreviousPage = () => {
-    setCurrentPage(currentPage - 1)
-    setNumCountPage(numCountPage - 1)
-  }
+    setCurrentPage(currentPage - 1);
+    setNumCountPage(numCountPage - 1);
+  };
 
   const handleNextPage = () => {
-    setCurrentPage(currentPage + 1)
-    setNumCountPage(numCountPage + 1)
-  }
+    setCurrentPage(currentPage + 1);
+    setNumCountPage(numCountPage + 1);
+  };
 
-  const [numCountPage, setNumCountPage] = useState(1)
+  const [numCountPage, setNumCountPage] = useState(1);
 
   const numPageEnd = Math.ceil(allAnnouncements.length / 12);
 
@@ -232,7 +261,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         allAnnouncements,
         setAllAnnouncements,
         announcementView,
-        setannouncementView, 
+        setannouncementView,
         announcementProfileView,
         getAnnouncementsForProfile,
         userView,
@@ -250,7 +279,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         toRechargePage,
         setdeleteAnnounceModal,
         deleteAnnounceModal,
-        deleteAnnounce
+        deleteAnnounce,
       }}
     >
       {children}

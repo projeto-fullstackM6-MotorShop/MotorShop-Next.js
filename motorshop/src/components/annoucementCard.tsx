@@ -16,22 +16,21 @@ import { useAuth } from "@/contexts/authContext";
 import { useModal } from "@/contexts/modalContext";
 import { useCallback, useEffect } from "react";
 
-const AnnouceCard = (data: IAnnoucementInterface) => { 
-  
+const AnnouceCard = (data: IAnnoucementInterface) => {
   const {
     setannouncementView,
     userView,
     getAnnouncementsForProfile,
-    setisEditOrDeleteAnnouncementOpen,  
+    setisEditOrDeleteAnnouncementOpen,
     getAnnouncementById,
     announcementView,
     announcementProfileView,
-    toRechargePage
+    toRechargePage,
   } = useAnnouncement();
-  
-  const { onOpen, isOpen, modalType, setModalType } = useModal()
-  const { userLoged } = useAuth()
-   
+
+  const { onOpen, isOpen, modalType, setModalType } = useModal();
+  const { userLoged } = useAuth();
+
   let {
     id,
     brand,
@@ -51,45 +50,35 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
     user,
   } = data;
 
-
   const toMyAnnounces = () => {
-    toRechargePage(userLoged!.id)
-    router.push(`/announces/advertiser/${userLoged!.id}`)
-  }
-
-  const viewAnnouncementDetails = () => {
-    if (pathname == '/') {
-      if (userLoged?.name == user.name) {
-        getAnnouncementsForProfile();
-        setannouncementView(data);   
-        toMyAnnounces()
-      } else {
-        setannouncementView(data);   
-        router.push("/details");
-      }
-    }
+    toRechargePage(userLoged!.id);
+    router.push(`/announces/advertiser/${userLoged!.id}`);
   };
 
-  const viewAnnouncementDetails2 = () => {
-    if (pathname.includes("profile")) { 
-      setannouncementView(data);
-      router.push("/details");
+  const viewAnnouncementDetails = () => {
+    if (pathname == "/") {
+      if (userLoged?.name == user.name) {
+        getAnnouncementsForProfile();
+        setannouncementView(data);
+        toMyAnnounces();
+      } else {
+        setannouncementView(data);
+        router.push(`/details/${data.id}`);
+      }
     }
   };
 
   const advertiserToDetails = () => {
     setannouncementView(data);
-    router.push("/details");
-  }
+    router.push(`/details/${data.id}`);
+  };
 
   const openEditOrDeleteAnnouncementModal = useCallback(async () => {
     setannouncementView(data);
     setisEditOrDeleteAnnouncementOpen(true);
-    setModalType('editOrDelAnnounce')
+    setModalType("editOrDelAnnounce");
     onOpen();
   }, []);
-
-
 
   const router = useRouter();
   const pathname = router.pathname;
@@ -97,7 +86,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
   price = +price;
 
   return (
-    <>     
+    <>
       {pathname == "/" ? (
         <Card
           as={"li"}
@@ -217,10 +206,19 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
             {pathname.includes("advertiser") ? (
               <Flex>
-                <Button variant={"outline1"} marginRight={"20px"} onClick={()=> openEditOrDeleteAnnouncementModal()}>
+                <Button
+                  variant={"outline1"}
+                  marginRight={"20px"}
+                  onClick={() => openEditOrDeleteAnnouncementModal()}
+                >
                   Edite
                 </Button>
-                <Button variant={"outline1"} onClick={() => advertiserToDetails()}>Ver detalhes</Button>
+                <Button
+                  variant={"outline1"}
+                  onClick={() => advertiserToDetails()}
+                >
+                  Ver detalhes
+                </Button>
               </Flex>
             ) : (
               <></>
@@ -237,14 +235,15 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
           border={"none"}
           boxShadow={"none"}
           minWidth={"none"}
-          marginRight={{ base: "61px", lg: "0px" }}        
-          onClick={() => viewAnnouncementDetails2()}
+          marginRight={{ base: "61px", lg: "0px" }}
+          cursor={"pointer"}
+          onClick={() => viewAnnouncementDetails()}
         >
           <Image
             src={cover_img}
             alt={"Imagem de capa do anúncio"}
-              w={{ lg: "100%" }}
-              h={{ lg: "152px" }}
+            w={{ lg: "100%" }}
+            h={{ lg: "152px" }}
             maxH={"220px"}
             marginBottom={"16px"}
             objectFit={"cover"}
@@ -300,7 +299,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
               <Flex alignItems={"center"} gap={"8px"}>
                 <AvatarIcon name={userView?.name} />
                 <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-                      {userView?.name}
+                  {userView?.name}
                 </Text>
               </Flex>
             )}
@@ -335,12 +334,21 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
               </Heading>
             </Flex>
 
-            {pathname.includes('advertiser') && (
+            {pathname.includes("advertiser") && (
               <Flex>
-                  <Button variant={"outline1"} marginRight={"20px"} onClick={() => openEditOrDeleteAnnouncementModal()}>
+                <Button
+                  variant={"outline1"}
+                  marginRight={"20px"}
+                  onClick={() => openEditOrDeleteAnnouncementModal()}
+                >
                   Edite
                 </Button>
-                <Button variant={"outline1"} onClick={() => advertiserToDetails()}>Ver detalhes</Button>
+                <Button
+                  variant={"outline1"}
+                  onClick={() => advertiserToDetails()}
+                >
+                  Ver detalhes
+                </Button>
               </Flex>
             )}
           </CardBody>
