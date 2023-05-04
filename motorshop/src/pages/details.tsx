@@ -1,8 +1,10 @@
 import AvatarIcon from "@/components/avatarIcon";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import ModalAnnouncementPhotoDetail from "@/components/modalAnnouncementPhotoDetail";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
+import { useModal } from "@/contexts/modalContext";
 import {
   Box,
   Button,
@@ -14,15 +16,15 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import { imageOptimizer } from "next/dist/server/image-optimizer";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Details = () => {
   const { user } = useAuth();
   const router = useRouter();
 
   const { announcementView, goForprofile } = useAnnouncement();
+  const { onOpen, isOpen, detailImageModal, setDetailImageModal } = useModal();
 
   useEffect(() => {}, [announcementView, user]);
 
@@ -32,9 +34,15 @@ const Details = () => {
     }
   };
 
+  const setImageAndOpenImageDetailModal = (imageUrl: string) => {
+    setDetailImageModal(imageUrl);
+    onOpen();
+  };
+
   return (
     <>
       <Header />
+      <ModalAnnouncementPhotoDetail></ModalAnnouncementPhotoDetail>
       <Box bgColor={"grey.8"} h={"1700px"} zIndex={1}>
         <Box w={"100%"} h={"550px"} bgColor={"brand.1"} zIndex={-1} />
         <Flex
@@ -57,6 +65,10 @@ const Details = () => {
                 <Img
                   src={announcementView?.cover_img}
                   objectFit={"scale-down"}
+                  onClick={() =>
+                    announcementView?.cover_img &&
+                    setImageAndOpenImageDetailModal(announcementView?.cover_img)
+                  }
                 ></Img>
               </Flex>
 
@@ -151,6 +163,9 @@ const Details = () => {
                             bgColor={"grey.6"}
                             borderRadius={"4px"}
                             objectFit={"scale-down"}
+                            onClick={() =>
+                              setImageAndOpenImageDetailModal(image.imageUrl)
+                            }
                           />
                         </Box>
                       );
