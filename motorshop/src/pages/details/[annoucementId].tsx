@@ -23,6 +23,7 @@ import {
 import { ICreateCommentData } from "@/interfaces/comments";
 import { useModal } from "@/contexts/modalContext";
 import ModalAnnouncementPhotoDetail from "@/components/modalAnnouncementPhotoDetail";
+import { TimeIcon } from "@chakra-ui/icons";
 
 const makeACommentSchema = yup.object().shape({
   comment: yup.string().required().max(280),
@@ -74,6 +75,34 @@ const Details = () => {
     setModalType("biggerPhoto");
     setDetailImageModal(imageUrl);
     onOpen();
+  };
+
+  const verifyTimeOfComment = (createdAt: string) => {
+    const atualDate = new Date().getTime();
+    const createdDate = new Date(createdAt).getTime();
+
+    const seconds = Math.floor(atualDate / 1000);
+    const oldSeconds = Math.floor(createdDate / 1000);
+
+    const diference = seconds - oldSeconds;
+
+    let output = "";
+
+    if (diference < 60) {
+      output = `${diference} segundos atrás`;
+    } else if (diference < 3600) {
+      output = `${Math.floor(diference / 60)} minutos atrás`;
+    } else if (diference < 86400) {
+      output = `${Math.floor(diference / 3600)} horas atrás`;
+    } else if (diference < 2620800) {
+      output = `${Math.floor(diference / 86400)} dias atrás`;
+    } else if (diference < 31449600) {
+      output = `${Math.floor(diference / 2620800)} meses atrás`;
+    } else {
+      output = `${Math.floor(diference / 31449600)} anos atrás`;
+    }
+
+    return output;
   };
 
   return (
@@ -283,6 +312,11 @@ const Details = () => {
                       <Text variant={"body_2_500"} color={"grey.1"}>
                         {comment.user.name}
                       </Text>
+                      <TimeIcon fontSize={"xxs"} />
+                      <Text
+                        variant={"body_1_400"}
+                        color={"grey.3"}
+                      >{`há ${verifyTimeOfComment(comment.createdAt)}`}</Text>
                     </Flex>
                     <Text
                       variant={"body_2_400"}
