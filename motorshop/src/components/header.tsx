@@ -5,6 +5,7 @@ import {
   Button,
   Flex,
   HStack,
+  IconButton,
   Image,
   Menu,
   MenuButton,
@@ -17,11 +18,15 @@ import { destroyCookie } from "nookies";
 import { useModal } from "@/contexts/modalContext";
 import EditUserModal from "./createEditUserModal";
 import EditAddressModal from "./createEditAddressModal";
+import { useMediaQuery } from "react-responsive";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { useFilter } from "@/contexts/filterContext";
 
 const Header = () => {
   const { user } = useAuth();
 
   const { onOpen, modalType, setModalType } = useModal();
+  const { setIsFilterOpen } = useFilter();
 
   const router = useRouter();
 
@@ -42,6 +47,9 @@ const Header = () => {
 
     onOpen();
   };
+
+  const isSmallScreen = useMediaQuery({ maxDeviceWidth: 1048 });
+  const pathname = router.pathname;
 
   return (
     <>
@@ -64,18 +72,14 @@ const Header = () => {
           cursor={"pointer"}
         />
 
-        {user ? (
+        {user && isSmallScreen ? (
           <Menu>
             <MenuButton
-              as={Button}
-              bg={"transparent"}
-              borderLeft={"2px solid"}
-              borderRadius={"0"}
-              borderColor={"grey.6"}
-              h={"100%"}
-              paddingLeft={"2rem"}
-              _hover={{ bg: "trasparent" }}
-              _active={{ bg: "trasparent" }}
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+              border={"none"}
             >
               <Flex
                 alignItems={"center"}
@@ -98,10 +102,86 @@ const Header = () => {
                   Meus Anúncios
                 </MenuItem>
               )}
+              {pathname == "/" && (
+                <MenuItem onClick={() => setIsFilterOpen(true)}>
+                  Filtros
+                </MenuItem>
+              )}
               <MenuItem onClick={onLogout}>Sair</MenuItem>
             </MenuList>
           </Menu>
         ) : (
+          user && (
+            <Menu>
+              <MenuButton
+                as={Button}
+                bg={"transparent"}
+                borderLeft={"2px solid"}
+                borderRadius={"0"}
+                borderColor={"grey.6"}
+                h={"100%"}
+                paddingLeft={"2rem"}
+                _hover={{ bg: "trasparent" }}
+                _active={{ bg: "trasparent" }}
+              >
+                <Flex
+                  alignItems={"center"}
+                  justifyContent={"flex-end"}
+                  gap={"0.5rem"}
+                >
+                  <AvatarIcon name={user.name} />
+                  <Text fontSize={"xs"} color={"grey.2"}>
+                    {user.name}
+                  </Text>
+                </Flex>
+              </MenuButton>
+              <MenuList zIndex={"2000"}>
+                <MenuItem onClick={openEditUserModal}>Editar Perfil</MenuItem>
+                <MenuItem onClick={openEditAddressModal}>
+                  Editar Endereço
+                </MenuItem>
+                {user.is_seller && (
+                  <MenuItem onClick={() => router.push("/advertiser")}>
+                    Meus Anúncios
+                  </MenuItem>
+                )}
+                <MenuItem onClick={onLogout}>Sair</MenuItem>
+              </MenuList>
+            </Menu>
+          )
+        )}
+        {!user && isSmallScreen && (
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              aria-label="Options"
+              icon={<HamburgerIcon />}
+              variant="outline"
+              border={"none"}
+            ></MenuButton>
+            <MenuList zIndex={"2000"}>
+              <MenuItem>
+                <Text variant={"light"} onClick={() => router.push("/login")}>
+                  Fazer login
+                </Text>
+              </MenuItem>
+              <MenuItem>
+                <Text
+                  variant={"outline2"}
+                  onClick={() => router.push("/register")}
+                >
+                  Cadastrar
+                </Text>
+              </MenuItem>
+              {pathname == "/" && (
+                <MenuItem onClick={() => setIsFilterOpen(true)}>
+                  Filtros
+                </MenuItem>
+              )}
+            </MenuList>
+          </Menu>
+        )}
+        {!user && !isSmallScreen && (
           <HStack h={"100%"} display={{ base: "none", md: "flex" }}>
             <Flex
               borderLeft={"2px solid"}
@@ -123,7 +203,6 @@ const Header = () => {
             </Flex>
           </HStack>
         )}
-
         {modalType == "editUser" ? (
           <EditUserModal />
         ) : modalType == "editAddress" ? (
