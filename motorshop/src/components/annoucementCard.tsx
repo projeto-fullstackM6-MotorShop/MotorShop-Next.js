@@ -64,6 +64,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
         setannouncementView(data);   
         toMyAnnounces()
       } else {
+        setannouncementView(data);   
         router.push("/details");
       }
     }
@@ -236,8 +237,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
           border={"none"}
           boxShadow={"none"}
           minWidth={"none"}
-          marginRight={{ base: "61px", lg: "0px" }}
-          cursor={"pointer"}
+          marginRight={{ base: "61px", lg: "0px" }}        
           onClick={() => viewAnnouncementDetails2()}
         >
           <Image

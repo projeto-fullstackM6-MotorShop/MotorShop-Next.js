@@ -54,6 +54,9 @@ interface announcementProviderData {
   getAnnouncementById: (id: string) => Promise<void>
   editAnnouncement: (data: IAnnouncementRequest) => Promise<void>
   toRechargePage: (id: string | string[] | undefined) => Promise<void>
+  setdeleteAnnounceModal: Dispatch<SetStateAction<boolean>>
+  deleteAnnounceModal: boolean
+  deleteAnnounce: () => Promise<void>
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -80,7 +83,9 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [userView, setuserView] = useState<IUserData | null>(null);
   const [announcementProfileView, setannouncementProfileView] = useState<
     IAnnoucementInterface[]
-  >([] as IAnnoucementInterface[]);
+    >([] as IAnnoucementInterface[]);
+  
+  const [deleteAnnounceModal, setdeleteAnnounceModal]=useState(false)
 
   const { token } = useAuth();
   const router = useRouter();
@@ -170,6 +175,16 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
+  const deleteAnnounce = async () => {
+    try {      
+      await api.delete(`/announcement/${announcementView?.id}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   const toRechargePage = async (id: string | string[] | undefined ) => {
     try {      
       const res = await api.get(`/profile/${id}`);     
@@ -179,9 +194,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   }
 
-  const goForprofile = () => {
-    router.push("/profile");
-  };
 
   const [currentPage, setCurrentPage] = useState(0)
 
@@ -197,7 +209,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const handleNextPage = () => {
     setCurrentPage(currentPage + 1)
     setNumCountPage(numCountPage + 1)
-
   }
 
   const [numCountPage, setNumCountPage] = useState(1)
@@ -236,7 +247,10 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         isEditOrDeleteAnnouncementOpen,
         getAnnouncementById,
         editAnnouncement,
-        toRechargePage
+        toRechargePage,
+        setdeleteAnnounceModal,
+        deleteAnnounceModal,
+        deleteAnnounce
       }}
     >
       {children}
