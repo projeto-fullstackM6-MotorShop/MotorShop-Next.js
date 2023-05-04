@@ -2,20 +2,20 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ListOfCars from "@/components/listOfCars";
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import AvatarIcon from "@/components/avatarIcon";
-import { Box, Button, Center, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
-import { useModal } from "@/contexts/modalContext";
 import CreateAnnouncementModal from "@/components/createAnnouncementModal";
-import { useEffect } from "react";
-import { useAnnouncement } from "@/contexts/announcementContext";
 import CreateAnnouncementSucessModal from "@/components/createAnnouncementSucessModal";
-import { GetServerSideProps } from "next";
 import nookies from "nookies";
-import { useAuth } from "@/contexts/authContext";
-import { IAnnoucementInterface } from "@/interfaces/annoucement";
 import AnnouceCard from "@/components/annoucementCard";
 import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncementModal";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import { Box, Button, Center, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import { useModal } from "@/contexts/modalContext";
+import { useEffect } from "react";
+import { useAnnouncement } from "@/contexts/announcementContext";
+import { GetServerSideProps } from "next";
+import { useAuth } from "@/contexts/authContext";
+import { IAnnoucementInterface } from "@/interfaces/annoucement";
 import { useRouter } from "next/router";
 
 const Advertiser = () => {
@@ -54,7 +54,7 @@ const Advertiser = () => {
 
       {modalType == 'createAnnounce' && <CreateAnnouncementModal />}
       {isCreateAnnouncementSucessOpen && <CreateAnnouncementSucessModal />}
-      {/* {modalType == 'editOrDelAnnounce' && <EditOrDeleteAnnouncementModal {...announcementProfileView} />} */}  
+      {modalType == 'editOrDelAnnounce' && <EditOrDeleteAnnouncementModal {...announcementProfileView} />}  
 
       <Box h={"277px"} bgColor={"brand.1"}></Box>
       <Flex

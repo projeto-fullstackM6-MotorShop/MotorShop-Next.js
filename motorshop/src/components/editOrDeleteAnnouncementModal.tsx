@@ -105,7 +105,7 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
 
   return (
     <GeneralModal>
-      <FormControl padding={"24px"}>
+      <FormControl padding={"24px"} >
         <Heading
           color={"grey.0"}
           fontSize={"sm"}
@@ -405,6 +405,9 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
         <Flex marginTop={"56px"} justifyContent={"flex-end"} gap={"20px"}>
           <Button variant={"negative"} onClick={() => closeModal()}>
             Cancelar
+          </Button>
+          <Button variant={"negative"} onClick={() => closeModal()}>
+            Excluir anuncio
           </Button>
           <Button variant={"brandDisable"} onClick={handleSubmit(onFormSubmit)}>
             Editar anuncio

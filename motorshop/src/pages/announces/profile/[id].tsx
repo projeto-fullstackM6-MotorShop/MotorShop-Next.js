@@ -61,8 +61,7 @@ const Profile = () => {
               </Text>
             </Flex>
             <Text textAlign={"start"} color={"grey.3"}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industries
+              {userView?.description}
             </Text>
           </Box>
           <Heading

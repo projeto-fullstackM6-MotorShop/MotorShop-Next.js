@@ -14,9 +14,7 @@ import AvatarIcon from "./avatarIcon";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
 import { useModal } from "@/contexts/modalContext";
-import EditOrDeleteAnnouncementModal from "./editOrDeleteAnnouncementModal";
 import { useCallback, useEffect } from "react";
-import { destroyCookie, setCookie } from "nookies";
 
 const AnnouceCard = (data: IAnnoucementInterface) => { 
   
@@ -61,9 +59,9 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
   const viewAnnouncementDetails = () => {
     if (pathname == '/') {
-      getAnnouncementsForProfile();
-      setannouncementView(data);   
       if (userLoged?.name == user.name) {
+        getAnnouncementsForProfile();
+        setannouncementView(data);   
         toMyAnnounces()
       } else {
         router.push("/details");
@@ -98,8 +96,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
   price = +price;
 
   return (
-    <>
-      {modalType == 'editOrDelAnnounce' && <EditOrDeleteAnnouncementModal {...data} />}
+    <>     
       {pathname == "/" ? (
         <Card
           as={"li"}
@@ -246,8 +243,8 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
           <Image
             src={cover_img}
             alt={"Imagem de capa do anúncio"}
-            w={{ lg: "100%" }}
-            h={{ lg: "250px" }}
+              w={{ lg: "100%" }}
+              h={{ lg: "152px" }}
             maxH={"220px"}
             marginBottom={"16px"}
             objectFit={"cover"}

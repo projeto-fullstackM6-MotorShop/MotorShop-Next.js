@@ -2,9 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/login": "pages/login.js",
-  "/details": "pages/details.js",
-  "/announces/advertiser/[id]": "pages/announces/advertiser/[id].js",
-  "/announces/profile/[id]": "pages/announces/profile/[id].js"
+  "/": "pages/index.js"
 }

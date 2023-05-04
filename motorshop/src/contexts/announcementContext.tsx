@@ -163,7 +163,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     try {
       const res = await api.get(`/profile/${announcementView?.user.id}`);
       const res2 = await api.get(`/user/${announcementView?.user.id}`);
-      setuserView(res2.data);
+      setuserView(res2.data);   
       setannouncementProfileView(res.data);        
     } catch (error) {
       console.error(error);
@@ -225,15 +225,13 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         announcementProfileView,
         getAnnouncementsForProfile,
         userView,
-
         currentCars,
         handleNextPage,
         handlePreviousPage,
         endIndex,
         currentPage,
         numPageEnd,
-        numCountPage
-
+        numCountPage,
         setisEditOrDeleteAnnouncementOpen,
         isEditOrDeleteAnnouncementOpen,
         getAnnouncementById,
