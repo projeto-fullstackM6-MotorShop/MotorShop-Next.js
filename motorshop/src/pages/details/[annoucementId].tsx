@@ -21,6 +21,8 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { ICreateCommentData } from "@/interfaces/comments";
+import { useModal } from "@/contexts/modalContext";
+import ModalAnnouncementPhotoDetail from "@/components/modalAnnouncementPhotoDetail";
 
 const makeACommentSchema = yup.object().shape({
   comment: yup.string().required().max(280),
@@ -28,7 +30,6 @@ const makeACommentSchema = yup.object().shape({
 
 const Details = () => {
   const [textAreaLength, setTextAreaLength] = useState(0);
-  const [controller, setController] = useState(false);
 
   const { userLoged } = useAuth();
 
@@ -38,15 +39,13 @@ const Details = () => {
   const { commentsOfAnnoucement, getAllCommentsOfAnnoucement, createComment } =
     useComment();
 
+  const { onOpen, setDetailImageModal, setModalType, modalType } = useModal();
+
   const router = useRouter();
 
   const { annoucementId } = router.query;
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<ICreateCommentData>({
+  const { register, handleSubmit } = useForm<ICreateCommentData>({
     resolver: yupResolver(makeACommentSchema),
   });
 
@@ -59,7 +58,7 @@ const Details = () => {
     if (announcementView) {
       getAllCommentsOfAnnoucement(announcementView!.id);
     }
-  }, [annoucementId, announcementView, controller]);
+  }, [annoucementId, announcementView]);
 
   const goForLogin = () => {
     if (!userLoged) {
@@ -71,9 +70,17 @@ const Details = () => {
     createComment(data, annoucementId as string);
   };
 
+  const setImageAndOpenImageDetailModal = (imageUrl: string) => {
+    setModalType("biggerPhoto");
+    setDetailImageModal(imageUrl);
+    onOpen();
+  };
+
   return (
     <>
       <Header />
+
+      {modalType == "biggerPhoto" && <ModalAnnouncementPhotoDetail />}
 
       <Box bgColor={"grey.8"} h={"1800px"}>
         <Box w={"100%"} h={"550px"} bgColor={"brand.1"} zIndex={-1} />
@@ -93,6 +100,10 @@ const Details = () => {
                   objectFit={"scale-down"}
                   h={"100%"}
                   w={"100%"}
+                  onClick={() =>
+                    announcementView?.cover_img &&
+                    setImageAndOpenImageDetailModal(announcementView?.cover_img)
+                  }
                 />
               </Flex>
 
@@ -202,6 +213,10 @@ const Details = () => {
                             w={"100%"}
                             h={"100%"}
                             objectFit={"cover"}
+                            onClick={() =>
+                              image?.imageUrl &&
+                              setImageAndOpenImageDetailModal(image?.imageUrl)
+                            }
                           />
                         </Box>
                       );
