@@ -38,7 +38,7 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
   useEffect(() => {
     getFipe();
     setCounter(2);     
-    getAnnouncementById(data.id)
+
   }, [selectedCar]);
 
   const fipeToFormatt = +fipeValue;
@@ -80,7 +80,7 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
     description: yup.string().notRequired(),
     cover_img: yup
       .string()
-      .notRequired()
+      .required("O anuncio precisa de uma foto de capa.")
     // image: yup.string().notRequired(),
     // image2: yup.string().notRequired(),
     // image3: yup.string().notRequired(),
@@ -282,6 +282,7 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
             placeholder="https://image.com"
             type="text"
             {...register("cover_img")}
+            defaultValue={announcementView?.cover_img}
           />
           <Text
             className="errorMessage"

@@ -19,9 +19,7 @@ import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncement
 
 const Advertiser = () => {
   const { onOpen, isOpen, modalType, setModalType } = useModal();
-  const { userLoged } = useAuth()
-  const { getAnnouncementsForProfile } = useAnnouncement()
-
+  const { userLoged } = useAuth() 
   const {
     getAllCars,
     allCars,
@@ -32,19 +30,24 @@ const Advertiser = () => {
     setisEditOrDeleteAnnouncementOpen,
     isEditOrDeleteAnnouncementOpen,
     announcementView,
-    getAllAnnouncements
+    getAllAnnouncements,
+    profileToRechargePage,
+    cookieProfileView
   } = useAnnouncement();
 
   useEffect(() => {
-    getAllCars();   
-    getAllAnnouncements()
-  }, []);
-
+    getAllCars();
+    getAllAnnouncements()         
+      profileToRechargePage()          
+  }, [cookieProfileView ]);
+  
   const opencreateAnnouncementModal = () => {
     setIsCreateAnnouncementOpen(true);
     setModalType('createAnnounce')
     onOpen();
   };
+  
+   
 
   return (
     <>

@@ -15,7 +15,9 @@ import {
 import { useAuth } from "./authContext";
 import { useRouter } from "next/router";
 import { IUserData } from "@/interfaces/users";
-import { Box, Toast, useToast } from "@chakra-ui/react";
+import { Box, useToast } from "@chakra-ui/react";
+import { destroyCookie, parseCookies, setCookie } from "nookies";
+
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
@@ -43,6 +45,8 @@ interface announcementProviderData {
   isEditOrDeleteAnnouncementOpen: boolean
   getAnnouncementById: (id: string) => Promise<void>
   editAnnouncement: (data: IAnnouncementRequest) => Promise<void>
+  profileToRechargePage: () => Promise<void>
+  cookieProfileView: string
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -50,6 +54,12 @@ export const AnnouncementContext = createContext<announcementProviderData>(
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
+
+  const cookies = parseCookies();
+
+  const [cookieProfileView, setcookieProfileView] = useState<string>(cookies["@motorshop:profileId"] || "");
+  const [cookieAnnounceView, setcookieAnnounceView] = useState<string>(cookies["@motorshop:announceId"] || "");
+
   const [allCars, setAllCars] = useState([] as IAnnoucementInterface[]);
   const [allBrands, setAllBrands] = useState([] as string[]);
   const [userAnnouncements, setUserAnnouncements] = useState(
@@ -77,8 +87,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   useEffect(() => {
     const brands = Object.keys(allCars);
     setAllBrands(brands);
-    getAllAnnouncements();
-    getAnnouncementsForProfile();
+    getAllAnnouncements();     
   }, [allCars]);
 
   const getAllCars = async () => {
@@ -130,6 +139,8 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         headers: { Authorization: `Bearer ${token}` },
       });
 
+      getAnnouncementsForProfile()
+
       toast({
         title: "sucess",
         variant: "solid",
@@ -151,11 +162,25 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
       const res = await api.get(`/profile/${announcementView?.user.id}`);
       const res2 = await api.get(`/user/${announcementView?.user.id}`);
       setuserView(res2.data);
-      setannouncementProfileView(res.data);
+      setannouncementProfileView(res.data);  
+
+      destroyCookie(null, "@motorshop:profileId");
+      setCookie(null, "@motorshop:profileId", res2.data.id);
+      setcookieProfileView(res2.data.id)
+      
     } catch (error) {
       console.error(error);
     }
   };
+
+  const profileToRechargePage = async () => {
+    try {      
+      const res = await api.get(`/profile/${cookieProfileView}`);
+      setannouncementProfileView(res.data);
+    } catch(error) {
+      console.log(error)
+    }
+  }
 
   const goForprofile = () => {
     router.push("/profile");
@@ -186,7 +211,9 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         setisEditOrDeleteAnnouncementOpen,
         isEditOrDeleteAnnouncementOpen,
         getAnnouncementById,
-        editAnnouncement
+        editAnnouncement,
+        profileToRechargePage,
+        cookieProfileView
       }}
     >
       {children}

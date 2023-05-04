@@ -16,8 +16,9 @@ import { useAuth } from "@/contexts/authContext";
 import { useModal } from "@/contexts/modalContext";
 import EditOrDeleteAnnouncementModal from "./editOrDeleteAnnouncementModal";
 import { useCallback, useEffect } from "react";
+import { destroyCookie, setCookie } from "nookies";
 
-const AnnouceCard = (data: IAnnoucementInterface) => {
+const AnnouceCard = (data: IAnnoucementInterface) => { 
 
   
   const {
@@ -28,14 +29,17 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
     getAnnouncementById,
     announcementView
   } = useAnnouncement();
-
+  
   const { onOpen, isOpen, modalType, setModalType } = useModal()
   const { userLoged } = useAuth()
+   
 
   const viewAnnouncementDetails = () => {
     if (pathname == '/') {
       getAnnouncementsForProfile();
       setannouncementView(data);
+      destroyCookie(null, "@motorshop:profileId");
+      setCookie(null, "@motorshop:profileId",data.id);
       if (userLoged?.name == user.name) {
         router.push("/advertiser");
       } else {
@@ -53,6 +57,8 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
   const advertiserToDetails = () => {
     setannouncementView(data);
+    destroyCookie(null, "@motorshop:profileId");
+    setCookie(null, "@motorshop:profileId", data.id);
     router.push("/details");
   }
 
