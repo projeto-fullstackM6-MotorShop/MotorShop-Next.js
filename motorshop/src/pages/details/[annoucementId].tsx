@@ -19,7 +19,7 @@ import {
 } from "@chakra-ui/react";
 
 const Details = () => {
-  const { user } = useAuth();
+  const { userLoged } = useAuth();
 
   const { announcementView, allAnnouncements, setannouncementView } =
     useAnnouncement();
@@ -42,7 +42,7 @@ const Details = () => {
   }, [annoucementId, announcementView]);
 
   const goForLogin = () => {
-    if (!user) {
+    if (!userLoged) {
       router.push("/login");
     }
   };
@@ -118,7 +118,7 @@ const Details = () => {
                 </Flex>
                 <Button
                   w={"fit-content"}
-                  variant={user ? "brand1" : "brandOpacity"}
+                  variant={userLoged ? "brand1" : "brandOpacity"}
                   onClick={goForLogin}
                 >
                   Comprar
@@ -267,9 +267,9 @@ const Details = () => {
               position={"relative"}
             >
               <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                <AvatarIcon size="sm" name={user ? user.name : ""} />
+                <AvatarIcon size="sm" name={userLoged ? userLoged.name : ""} />
                 <Text variant={"body_2_500"} color={"grey.1"}>
-                  {user?.name || "Nome de usuário"}
+                  {userLoged?.name || "Nome de usuário"}
                 </Text>
               </Flex>
               <Center w={"100%"} h={"75%"}>
@@ -285,7 +285,7 @@ const Details = () => {
                 position={"absolute"}
                 right={"50px"}
                 bottom={"50px"}
-                variant={user ? "brand1" : "disable"}
+                variant={userLoged ? "brand1" : "disable"}
                 size={"sm"}
                 fontSize={"xxs"}
                 padding={"4px 15px"}

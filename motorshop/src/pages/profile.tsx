@@ -9,12 +9,12 @@ import { Box, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 const Profile = () => {
-  const { user } = useAuth();
+  const { userLoged } = useAuth();
   const router = useRouter();
   const { userView, announcementProfileView } = useAnnouncement();
 
   const goForLogin = () => {
-    if (!user) {
+    if (!userLoged) {
       router.push("/login");
     }
   };
