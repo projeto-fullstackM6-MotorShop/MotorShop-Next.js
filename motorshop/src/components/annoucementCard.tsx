@@ -19,7 +19,6 @@ import { useCallback, useEffect } from "react";
 import { destroyCookie, setCookie } from "nookies";
 
 const AnnouceCard = (data: IAnnoucementInterface) => { 
-
   
   const {
     setannouncementView,
@@ -27,48 +26,14 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
     getAnnouncementsForProfile,
     setisEditOrDeleteAnnouncementOpen,  
     getAnnouncementById,
-    announcementView
+    announcementView,
+    announcementProfileView,
+    toRechargePage
   } = useAnnouncement();
   
   const { onOpen, isOpen, modalType, setModalType } = useModal()
   const { userLoged } = useAuth()
    
-
-  const viewAnnouncementDetails = () => {
-    if (pathname == '/') {
-      getAnnouncementsForProfile();
-      setannouncementView(data);
-      destroyCookie(null, "@motorshop:profileId");
-      setCookie(null, "@motorshop:profileId",data.id);
-      if (userLoged?.name == user.name) {
-        router.push("/advertiser");
-      } else {
-        router.push("/details");
-      }
-    }
-  };
-
-  const viewAnnouncementDetails2 = () => {
-    if (pathname.includes("profile")) {
-      setannouncementView(data);
-      router.push("/details");
-    }
-  };
-
-  const advertiserToDetails = () => {
-    setannouncementView(data);
-    destroyCookie(null, "@motorshop:profileId");
-    setCookie(null, "@motorshop:profileId", data.id);
-    router.push("/details");
-  }
-
-  const openEditOrDeleteAnnouncementModal = useCallback(async () => {
-    setannouncementView(data);
-    setisEditOrDeleteAnnouncementOpen(true);
-    setModalType('editOrDelAnnounce')
-    onOpen();
-  }, []);
-
   let {
     id,
     brand,
@@ -88,6 +53,45 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
     user,
   } = data;
 
+
+  const toMyAnnounces = () => {
+    toRechargePage(userLoged!.id)
+    router.push(`/announces/advertiser/${userLoged!.id}`)
+  }
+
+  const viewAnnouncementDetails = () => {
+    if (pathname == '/') {
+      getAnnouncementsForProfile();
+      setannouncementView(data);   
+      if (userLoged?.name == user.name) {
+        toMyAnnounces()
+      } else {
+        router.push("/details");
+      }
+    }
+  };
+
+  const viewAnnouncementDetails2 = () => {
+    if (pathname.includes("profile")) { 
+      setannouncementView(data);
+      router.push("/details");
+    }
+  };
+
+  const advertiserToDetails = () => {
+    setannouncementView(data);
+    router.push("/details");
+  }
+
+  const openEditOrDeleteAnnouncementModal = useCallback(async () => {
+    setannouncementView(data);
+    setisEditOrDeleteAnnouncementOpen(true);
+    setModalType('editOrDelAnnounce')
+    onOpen();
+  }, []);
+
+
+
   const router = useRouter();
   const pathname = router.pathname;
 
@@ -95,6 +99,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
   return (
     <>
+      {modalType == 'editOrDelAnnounce' && <EditOrDeleteAnnouncementModal {...data} />}
       {pathname == "/" ? (
         <Card
           as={"li"}
@@ -298,7 +303,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
               <Flex alignItems={"center"} gap={"8px"}>
                 <AvatarIcon name={userView?.name} />
                 <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-                  {userView?.name}
+                      {userView?.name}
                 </Text>
               </Flex>
             )}
@@ -333,7 +338,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
               </Heading>
             </Flex>
 
-            {pathname == "/advertiser" && (
+            {pathname.includes('advertiser') && (
               <Flex>
                   <Button variant={"outline1"} marginRight={"20px"} onClick={() => openEditOrDeleteAnnouncementModal()}>
                   Edite

@@ -37,7 +37,6 @@ interface announcementProviderData {
   announcementView: IAnnoucementInterface | null;
   getAnnouncementsForProfile: () => Promise<void>;
   announcementProfileView: IAnnoucementInterface[];
-  goForprofile: () => void;
   userView: IUserData | null;
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
   getAllAnnouncements: () => void;
@@ -45,8 +44,7 @@ interface announcementProviderData {
   isEditOrDeleteAnnouncementOpen: boolean
   getAnnouncementById: (id: string) => Promise<void>
   editAnnouncement: (data: IAnnouncementRequest) => Promise<void>
-  profileToRechargePage: () => Promise<void>
-  cookieProfileView: string
+  toRechargePage: (id: string | string[] | undefined) => Promise<void>
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -54,11 +52,6 @@ export const AnnouncementContext = createContext<announcementProviderData>(
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
-
-  const cookies = parseCookies();
-
-  const [cookieProfileView, setcookieProfileView] = useState<string>(cookies["@motorshop:profileId"] || "");
-  const [cookieAnnounceView, setcookieAnnounceView] = useState<string>(cookies["@motorshop:announceId"] || "");
 
   const [allCars, setAllCars] = useState([] as IAnnoucementInterface[]);
   const [allBrands, setAllBrands] = useState([] as string[]);
@@ -162,29 +155,20 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
       const res = await api.get(`/profile/${announcementView?.user.id}`);
       const res2 = await api.get(`/user/${announcementView?.user.id}`);
       setuserView(res2.data);
-      setannouncementProfileView(res.data);  
-
-      destroyCookie(null, "@motorshop:profileId");
-      setCookie(null, "@motorshop:profileId", res2.data.id);
-      setcookieProfileView(res2.data.id)
-      
+      setannouncementProfileView(res.data);        
     } catch (error) {
       console.error(error);
     }
   };
 
-  const profileToRechargePage = async () => {
+  const toRechargePage = async (id: string | string[] | undefined ) => {
     try {      
-      const res = await api.get(`/profile/${cookieProfileView}`);
+      const res = await api.get(`/profile/${id}`);     
       setannouncementProfileView(res.data);
     } catch(error) {
       console.log(error)
     }
   }
-
-  const goForprofile = () => {
-    router.push("/profile");
-  };
 
   return (
     <AnnouncementContext.Provider
@@ -203,8 +187,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         allAnnouncements,
         setAllAnnouncements,
         announcementView,
-        setannouncementView,
-        goForprofile,
+        setannouncementView, 
         announcementProfileView,
         getAnnouncementsForProfile,
         userView,
@@ -212,8 +195,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         isEditOrDeleteAnnouncementOpen,
         getAnnouncementById,
         editAnnouncement,
-        profileToRechargePage,
-        cookieProfileView
+        toRechargePage
       }}
     >
       {children}

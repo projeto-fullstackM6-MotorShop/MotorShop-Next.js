@@ -23,7 +23,7 @@ import { IAnnouncementRequest } from "@/interfaces/annoucement";
 
 const EditOrDeleteAnnouncementModal = (data:any) => {
 
-  const { allCars, allBrands, editAnnouncement, announcementView, getAnnouncementById } = useAnnouncement();
+  const { allCars, allBrands, editAnnouncement, announcementView, getAnnouncementById, getAnnouncementsForProfile } = useAnnouncement();
   const { onClose } = useModal();
 
   const [selectedBrand, setSelectedBrand] = useState("chevrolet" as any);
@@ -99,6 +99,7 @@ const EditOrDeleteAnnouncementModal = (data:any) => {
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
     editAnnouncement(formData);
+    getAnnouncementsForProfile()
     onClose();
   };
 

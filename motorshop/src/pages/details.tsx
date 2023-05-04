@@ -24,7 +24,7 @@ const Details = () => {
   const router = useRouter();
 
   const { onOpen, isOpen, detailImageModal, setDetailImageModal } = useModal();
-  const { announcementView, goForprofile, userView } = useAnnouncement();
+  const { announcementView, userView } = useAnnouncement();
 
   useEffect(() => {}, [announcementView, userLoged]);
 
@@ -38,11 +38,12 @@ const Details = () => {
     setDetailImageModal(imageUrl);
     onOpen();
   };
+
   const detailsOrAdvertiser = () => {
     if (userLoged?.name == userView?.name) {
-      router.push("/advertiser");
+      router.push(`/announces/advertiser/${userLoged!.id}`);
     } else {
-      goForprofile();
+      router.push(`/announces/profile/${userView?.id}`);
     }
   };
 
