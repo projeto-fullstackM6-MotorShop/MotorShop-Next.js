@@ -4160,7 +4160,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO DRIVE GSR 1.3 8V Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "66557",
     motor: "1",
@@ -4169,7 +4169,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Working HARD 1.4 Fire Flex 8V CS",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "65777",
     motor: "1",
@@ -4178,7 +4178,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Grand Siena ATTRACTIVE 1.0 Flex 8V 4p",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "59012",
     motor: "1",
@@ -4187,7 +4187,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "PULSE DRIVE 1.3 8V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "106190",
     motor: "1",
@@ -4196,7 +4196,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Working HARD 1.4 Fire Flex 8V CD",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "77475",
     motor: "1",
@@ -4205,7 +4205,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Palio Week. Adv/Adv TRYON 1.8 mpi Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "68832",
     motor: "1",
@@ -4214,7 +4214,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Fiorino Working 1.4 Flex 8V 2p",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "80306",
     motor: "1",
@@ -4223,7 +4223,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Fiorino Working 1.4 Flex 8V 2p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95027",
     motor: "1",
@@ -4232,7 +4232,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "MOBI DRIVE GSR 1.0 Flex 6V 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "54131",
     motor: "1",
@@ -4241,7 +4241,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Freedom 1.8 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "119347",
     motor: "1",
@@ -4250,7 +4250,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Endurance 1.8 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "118301",
     motor: "1",
@@ -4259,7 +4259,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Grand Siena ATTRACTIVE 1.0 Flex 8V 4p",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "57398",
     motor: "1",
@@ -4268,7 +4268,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "MOBI EASY 1.0 Fire Flex 5p.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "50996",
     motor: "1",
@@ -4277,7 +4277,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS DRIVE 1.3 8V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "88864",
     motor: "1",
@@ -4286,7 +4286,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS HGT 1.8 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "105506",
     motor: "1",
@@ -4295,7 +4295,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Volc  ano 1.3 Flex 8V CD Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "122310",
     motor: "1",
@@ -4304,7 +4304,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Ranch 1.3 Flex 8V CD Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "124847",
     motor: "1",
@@ -4313,7 +4313,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Grand Siena 1.4 EVO Flex 8V 4p",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "74814",
     motor: "1",
@@ -4322,7 +4322,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Grand Siena 1.0 EVO Flex 8V 4p",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "68439",
     motor: "1",
@@ -4331,7 +4331,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Working HARD 1.4 Fire Flex 8V CE",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "65994",
     motor: "1",
@@ -4340,7 +4340,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "MOBI LIKE 1.0 Fire Flex 5p.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "65601",
     motor: "1",
@@ -4349,7 +4349,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "500e ICON (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "255669",
     motor: "3",
@@ -4358,7 +4358,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO HGT 1.8 16V Flex Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "74945",
     motor: "1",
@@ -4367,7 +4367,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Freedom 1.4 Flex 8V CD",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "87141",
     motor: "1",
@@ -4376,7 +4376,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Fiorino Endurance EVO 1.4 Flex 8V 2p",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "107492",
     motor: "1",
@@ -4385,7 +4385,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO TREKKING 1.3 8V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "84136",
     motor: "1",
@@ -4394,7 +4394,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Endurance 1.8 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "120175",
     motor: "1",
@@ -4403,7 +4403,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Endurance 1.8 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "103578",
     motor: "1",
@@ -4412,7 +4412,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO TREKKING 1.8 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "99800",
     motor: "1",
@@ -4421,7 +4421,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Opening Edition 1.3 Flex 8V CD",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "100053",
     motor: "1",
@@ -4430,7 +4430,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO TREKKING 1.8 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "99012",
     motor: "1",
@@ -4439,7 +4439,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Doblo Adv/Adv TRYON/LOCKER 1.8 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "81717",
     motor: "1",
@@ -4448,7 +4448,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Grand Siena ATTRAC. 1.4 EVO F.Flex 8V",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "60769",
     motor: "1",
@@ -4457,7 +4457,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO DRIVE 1.0 6V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "78743",
     motor: "1",
@@ -4466,7 +4466,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Freedom 1.4 Flex 8V CS",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "72945",
     motor: "1",
@@ -4475,7 +4475,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS PRECISION 1.8 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "100743",
     motor: "1",
@@ -4484,7 +4484,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "PULSE AUDACE 1.0 Turbo 200 Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "119574",
     motor: "1",
@@ -4493,7 +4493,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Working 1.4 mpi Fire Flex 8V CS",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "64282",
     motor: "1",
@@ -4502,7 +4502,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "PULSE AUDACE 1.0 Turbo 200 Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "118947",
     motor: "1",
@@ -4511,7 +4511,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Fiorino Furgão Work. HARD 1.4 Flex 8V 2p",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "82668",
     motor: "1",
@@ -4520,7 +4520,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Grand Siena 1.0 EVO Flex 8V 4p",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "68412",
     motor: "1",
@@ -4529,7 +4529,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO PRECISION 1.8 16V Flex Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "69110",
     motor: "1",
@@ -4538,7 +4538,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS DRIVE 1.3 8V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "90321",
     motor: "1",
@@ -4547,7 +4547,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Volc  ano 1.3 T270 4x2 Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "170946",
     motor: "1",
@@ -4556,7 +4556,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Fiorino Furgão EVO 1.4 Flex 8V 2p",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "80680",
     motor: "1",
@@ -4565,7 +4565,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS HGT 1.8 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "96469",
     motor: "1",
@@ -4574,7 +4574,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Palio Week. ATTRACTIVE 1.4 Fire Flex 8V",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "56354",
     motor: "1",
@@ -4583,7 +4583,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS DRIVE 1.8 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "82326",
     motor: "1",
@@ -4592,7 +4592,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Volc  ano 1.3 Flex 8V CD",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "115043",
     motor: "1",
@@ -4601,7 +4601,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO DRIVE 1.0 6V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "80622",
     motor: "1",
@@ -4610,7 +4610,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Freedom 1.3 Flex 8V CD",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "112049",
     motor: "1",
@@ -4619,7 +4619,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "PULSE DRIVE 1.3 8V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "98318",
     motor: "1",
@@ -4628,7 +4628,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS DRIVE 1.3 8V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "86968",
     motor: "1",
@@ -4637,7 +4637,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS 1.8 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "84305",
     motor: "1",
@@ -4646,7 +4646,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Endurance 1.3 T270 4x2 Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "141320",
     motor: "1",
@@ -4655,7 +4655,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "PULSE DRIVE 1.0 Turbo 200 Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "114056",
     motor: "1",
@@ -4664,7 +4664,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS 1.3 8V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "84916",
     motor: "1",
@@ -4673,7 +4673,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS PRECISION 1.8 16V Flex Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "73814",
     motor: "1",
@@ -4682,7 +4682,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Doblo Adv/Adv TRYON/LOCKER 1.8 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "85928",
     motor: "1",
@@ -4691,7 +4691,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Working HARD 1.4 Fire Flex 8V CS",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "66237",
     motor: "1",
@@ -4700,7 +4700,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS DRIVE 1.8 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "82900",
     motor: "1",
@@ -4709,7 +4709,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO HGT 1.8 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "100469",
     motor: "1",
@@ -4718,7 +4718,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Freedom 1.8 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "114921",
     motor: "1",
@@ -4727,7 +4727,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO HGT 1.8 16V Flex Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "69770",
     motor: "1",
@@ -4736,7 +4736,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Volc  ano 1.3 Flex 8V CD Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "123314",
     motor: "1",
@@ -4745,7 +4745,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Endurance 1.4 Flex 8V CD",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "106366",
     motor: "1",
@@ -4754,7 +4754,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Endurance 1.8 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "103394",
     motor: "1",
@@ -4763,7 +4763,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO DRIVE GSR 1.3 8V Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "66892",
     motor: "1",
@@ -4772,7 +4772,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS 1.8 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "83636",
     motor: "1",
@@ -4781,7 +4781,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO TREKKING 1.3 8V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85985",
     motor: "1",
@@ -4790,7 +4790,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Palio Week. Adv/Adv TRYON 1.8 mpi Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "73938",
     motor: "1",
@@ -4799,7 +4799,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Volc  ano 2.4 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "123949",
     motor: "1",
@@ -4808,7 +4808,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Toro Endurance 1.8 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "128141",
     motor: "1",
@@ -4817,7 +4817,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Palio Weekend Adventure LOCKER 1.8 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "72265",
     motor: "1",
@@ -4826,7 +4826,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Freedom 1.3 Flex 8V  CS Plus",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103912",
     motor: "1",
@@ -4835,7 +4835,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Fiorino Furgão Work. HARD 1.4 Flex 8V 2p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "80853",
     motor: "1",
@@ -4844,7 +4844,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Grand Siena 1.0 EVO Flex 8V 4p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "59162",
     motor: "1",
@@ -4853,7 +4853,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Strada Opening Edition 1.3 Flex 8V CD",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "104885",
     motor: "1",
@@ -4862,7 +4862,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "MOBI DRIVE 1.0 Flex 6V 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "51568",
     motor: "1",
@@ -4871,7 +4871,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO PRECISION 1.8 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "76209",
     motor: "1",
@@ -4880,7 +4880,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "MOBI EASY COMFORT 1.0 Flex 5p.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "52487",
     motor: "1",
@@ -4889,7 +4889,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "MOBI EASY 1.0 Fire Flex 5p.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "52353",
     motor: "1",
@@ -4898,7 +4898,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS DRIVE GSR 1.3 8V Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "66956",
     motor: "1",
@@ -4907,7 +4907,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "ARGO DRIVE GSR 1.3 8V Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "72409",
     motor: "1",
@@ -4916,7 +4916,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "UNO CIAO 1.0 Fire Flex 8V 5p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88531",
     motor: "1",
@@ -4925,7 +4925,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "500e ICON (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "255975",
     motor: "3",
@@ -4934,7 +4934,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "CRONOS 1.3 8V Flex",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84500",
     motor: "1",
@@ -4943,7 +4943,7 @@ const dataCar = [
   {
     marca: "Fiat",
     modelo: "Grand Siena 1.0 EVO Flex 8V 4p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "68280",
     motor: "1",
@@ -4952,7 +4952,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EDGE ST 2.7 V6 24V AWD Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "318151",
     motor: "1",
@@ -4961,7 +4961,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex  Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58375",
     motor: "1",
@@ -4970,7 +4970,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Style 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61120",
     motor: "1",
@@ -4979,7 +4979,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLT 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "145680",
     motor: "1",
@@ -4988,7 +4988,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 S TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "56300",
     motor: "1",
@@ -4997,7 +4997,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE PLUS 1.5 Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "84580",
     motor: "1",
@@ -5006,7 +5006,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "63889",
     motor: "1",
@@ -5015,7 +5015,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 2.0 16V/SE/SE Plus Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73622",
     motor: "1",
@@ -5024,7 +5024,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL Style 1.0 EcoBoost Aut . 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69874",
     motor: "1",
@@ -5033,7 +5033,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Plus 1.6 16V Flex Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63626",
     motor: "1",
@@ -5042,7 +5042,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SEL TiVCT Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "52710",
     motor: "1",
@@ -5051,7 +5051,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54543",
     motor: "1",
@@ -5060,7 +5060,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "69727",
     motor: "1",
@@ -5069,7 +5069,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 100Anos Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "69915",
     motor: "1",
@@ -5078,7 +5078,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "85356",
     motor: "1",
@@ -5087,7 +5087,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61147",
     motor: "1",
@@ -5096,7 +5096,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "73106",
     motor: "1",
@@ -5105,7 +5105,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport  100Anos 1.5 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "86610",
     motor: "1",
@@ -5114,7 +5114,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82815",
     motor: "1",
@@ -5123,7 +5123,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82121",
     motor: "1",
@@ -5132,7 +5132,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan TITANIUM 12V Flex 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81098",
     motor: "1",
@@ -5141,7 +5141,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "84047",
     motor: "1",
@@ -5150,7 +5150,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium Hybrid 2.0 145cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "154408",
     motor: "2",
@@ -5159,7 +5159,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82917",
     motor: "1",
@@ -5168,7 +5168,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86982",
     motor: "1",
@@ -5177,7 +5177,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "66012",
     motor: "1",
@@ -5186,7 +5186,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport STORM 2.0 4WD 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "107428",
     motor: "1",
@@ -5195,7 +5195,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "92902",
     motor: "1",
@@ -5204,7 +5204,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SE/SE PLUS TiVCT Flex 4p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "57085",
     motor: "1",
@@ -5213,7 +5213,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY Titanium 1.5 GTDi EcoBo. Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "220216",
     motor: "1",
@@ -5222,7 +5222,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58091",
     motor: "1",
@@ -5231,7 +5231,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 FREESTYLE 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63258",
     motor: "1",
@@ -5240,7 +5240,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "98028",
     motor: "1",
@@ -5249,7 +5249,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium 2.0 GTDI Eco. Awd Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "155862",
     motor: "1",
@@ -5258,7 +5258,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "97454",
     motor: "1",
@@ -5267,7 +5267,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 1.6 S/SE/SE Plus Flex 8V/16V  5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76985",
     motor: "1",
@@ -5276,7 +5276,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE Direct 1.5 Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "88492",
     motor: "1",
@@ -5285,7 +5285,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "64097",
     motor: "1",
@@ -5294,7 +5294,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "66251",
     motor: "1",
@@ -5303,7 +5303,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "69497",
     motor: "1",
@@ -5312,7 +5312,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88136",
     motor: "1",
@@ -5321,7 +5321,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 FREESTYLE 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "66233",
     motor: "1",
@@ -5330,7 +5330,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "81396",
     motor: "1",
@@ -5339,7 +5339,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE 1.6 16V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58660",
     motor: "1",
@@ -5348,7 +5348,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "65402",
     motor: "1",
@@ -5357,7 +5357,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Maverick Lariat FX4 2.0 EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "247178",
     motor: "1",
@@ -5366,7 +5366,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "91213",
     motor: "1",
@@ -5375,7 +5375,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE 1.6 16V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59560",
     motor: "1",
@@ -5384,7 +5384,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "75492",
     motor: "1",
@@ -5393,7 +5393,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SEL TiCVT Flex 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "52055",
     motor: "1",
@@ -5402,7 +5402,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Plus 1.6 16V Flex Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61690",
     motor: "1",
@@ -5411,7 +5411,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "66315",
     motor: "1",
@@ -5420,7 +5420,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang GT Premium 5.0 V8",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "412845",
     motor: "1",
@@ -5429,7 +5429,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang GT Premium 5.0 V8",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "417667",
     motor: "1",
@@ -5438,7 +5438,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang MACH 1 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "572190",
     motor: "1",
@@ -5447,7 +5447,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "91595",
     motor: "1",
@@ -5456,7 +5456,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "65190",
     motor: "1",
@@ -5465,7 +5465,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion SEL 2.0 Ecobo. 16V 248cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "115245",
     motor: "1",
@@ -5474,7 +5474,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta TIT./TIT.Plus 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75093",
     motor: "1",
@@ -5483,7 +5483,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE 1.6 16V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59247",
     motor: "1",
@@ -5492,7 +5492,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta TIT./TIT.Plus 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "81407",
     motor: "1",
@@ -5501,7 +5501,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang Black Shanow 5.0 V8",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "446309",
     motor: "1",
@@ -5510,7 +5510,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62846",
     motor: "1",
@@ -5519,7 +5519,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang Black Shanow 5.0 V8",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "459729",
     motor: "1",
@@ -5528,7 +5528,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL Style 1.0 EcoBoost Aut . 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "65695",
     motor: "1",
@@ -5537,7 +5537,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SE/SE Plus TiVCT Flex 5p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "57524",
     motor: "1",
@@ -5546,7 +5546,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback TIT./T.PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78808",
     motor: "1",
@@ -5555,7 +5555,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL Style 1.0 EcoBoost Aut . 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70432",
     motor: "1",
@@ -5564,7 +5564,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang Black Shanow 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "472584",
     motor: "1",
@@ -5573,7 +5573,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus TITA/TITA Plus 2.0  Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "84344",
     motor: "1",
@@ -5582,7 +5582,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 2.0 16V/SE/SE Plus Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70668",
     motor: "1",
@@ -5591,7 +5591,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "68510",
     motor: "1",
@@ -5600,7 +5600,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "69696",
     motor: "1",
@@ -5609,7 +5609,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 S TiVCT Flex 5p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "53566",
     motor: "1",
@@ -5618,7 +5618,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan TITANIUM 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "79446",
     motor: "1",
@@ -5627,7 +5627,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EDGE ST 2.7 V6 24V AWD Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "353812",
     motor: "1",
@@ -5636,7 +5636,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "59224",
     motor: "1",
@@ -5645,7 +5645,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium 2.0 GTDI Eco. Awd Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "154679",
     motor: "1",
@@ -5654,7 +5654,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62508",
     motor: "1",
@@ -5663,7 +5663,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger TROPIVAN 2.5 16V 4X2 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "158599",
     motor: "1",
@@ -5672,7 +5672,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport  100Anos 1.5 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "88158",
     motor: "1",
@@ -5681,7 +5681,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61125",
     motor: "1",
@@ -5690,7 +5690,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY Titanium 1.5 GTDi EcoBo. Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "222594",
     motor: "1",
@@ -5699,7 +5699,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "73945",
     motor: "1",
@@ -5708,7 +5708,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium Hybrid 2.0 145cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "155000",
     motor: "2",
@@ -5717,7 +5717,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback SE/SE PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71099",
     motor: "1",
@@ -5726,7 +5726,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86112",
     motor: "1",
@@ -5735,7 +5735,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport  100Anos 1.5 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "89377",
     motor: "1",
@@ -5744,7 +5744,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60135",
     motor: "1",
@@ -5753,7 +5753,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SE/SE Plus TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "57618",
     motor: "1",
@@ -5762,7 +5762,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "70526",
     motor: "1",
@@ -5771,7 +5771,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE PLUS 1.5 Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82136",
     motor: "1",
@@ -5780,7 +5780,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "89832",
     motor: "1",
@@ -5789,7 +5789,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE PLUS 1.5 Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "83510",
     motor: "1",
@@ -5798,7 +5798,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Plus 1.6 16V Flex Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63695",
     motor: "1",
@@ -5807,7 +5807,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92155",
     motor: "1",
@@ -5816,7 +5816,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY SEL 1.5 GTDi EcoBoost Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "166510",
     motor: "1",
@@ -5825,7 +5825,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE Direct 1.5 Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "85975",
     motor: "1",
@@ -5834,7 +5834,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY SEL 1.5 GTDi EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "181959",
     motor: "1",
@@ -5843,7 +5843,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback TIT./T.PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75226",
     motor: "1",
@@ -5852,7 +5852,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger TROPIVAN 2.5 16V 4X2 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "159867",
     motor: "1",
@@ -5861,7 +5861,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "74625",
     motor: "1",
@@ -5870,7 +5870,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EDGE ST 2.7 V6 24V AWD Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "351004",
     motor: "1",
@@ -5879,7 +5879,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "70110",
     motor: "1",
@@ -5888,7 +5888,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54561",
     motor: "1",
@@ -5897,7 +5897,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY Titanium 1.5 GTDi EcoBo. Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "219228",
     motor: "1",
@@ -5906,7 +5906,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "64439",
     motor: "1",
@@ -5915,7 +5915,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta TIT./TIT.Plus 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76660",
     motor: "1",
@@ -5924,7 +5924,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Style 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59723",
     motor: "1",
@@ -5933,7 +5933,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan TITANIUM 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "78179",
     motor: "1",
@@ -5942,7 +5942,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59890",
     motor: "1",
@@ -5951,7 +5951,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82021",
     motor: "1",
@@ -5960,7 +5960,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 FREESTYLE 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63764",
     motor: "1",
@@ -5969,7 +5969,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang MACH 1 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "557845",
     motor: "1",
@@ -5978,7 +5978,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60230",
     motor: "1",
@@ -5987,7 +5987,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "84017",
     motor: "1",
@@ -5996,7 +5996,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "88632",
     motor: "1",
@@ -6005,7 +6005,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex  Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62695",
     motor: "1",
@@ -6014,7 +6014,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59287",
     motor: "1",
@@ -6023,7 +6023,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 2.0 16V/SE/SE Plus Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73011",
     motor: "1",
@@ -6032,7 +6032,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL Style 1.0 EcoBoost Aut . 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71943",
     motor: "1",
@@ -6041,7 +6041,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "88478",
     motor: "1",
@@ -6050,7 +6050,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL Style 1.0 EcoBoost Aut . 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71511",
     motor: "1",
@@ -6059,7 +6059,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE 1.6 16V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58004",
     motor: "1",
@@ -6068,7 +6068,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "64036",
     motor: "1",
@@ -6077,7 +6077,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "69625",
     motor: "1",
@@ -6086,7 +6086,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Maverick Lariat FX4 2.0 EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "237475",
     motor: "1",
@@ -6095,7 +6095,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Maverick Lariat FX4 2.0 EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "238248",
     motor: "1",
@@ -6104,7 +6104,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54723",
     motor: "1",
@@ -6113,7 +6113,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82974",
     motor: "1",
@@ -6122,7 +6122,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Maverick Lariat FX4 2.0 EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "243984",
     motor: "1",
@@ -6131,7 +6131,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan TITANIUM 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "78133",
     motor: "1",
@@ -6140,7 +6140,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SE/SE Plus TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "55147",
     motor: "1",
@@ -6149,7 +6149,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex  Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58842",
     motor: "1",
@@ -6158,7 +6158,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SEL TiVCT Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "52731",
     motor: "1",
@@ -6167,7 +6167,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "87043",
     motor: "1",
@@ -6176,7 +6176,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY Titanium 1.5 GTDi EcoBo. Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "216651",
     motor: "1",
@@ -6185,7 +6185,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63493",
     motor: "1",
@@ -6194,7 +6194,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback SE/SE PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69165",
     motor: "1",
@@ -6203,7 +6203,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Maverick Lariat FX4 2.0 EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "238252",
     motor: "1",
@@ -6212,7 +6212,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang MACH 1 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "580000",
     motor: "1",
@@ -6221,7 +6221,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang MACH 1 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "585484",
     motor: "1",
@@ -6230,7 +6230,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus TITA/TITA Plus 2.0  Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "81643",
     motor: "1",
@@ -6239,7 +6239,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "70535",
     motor: "1",
@@ -6248,7 +6248,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "73223",
     motor: "1",
@@ -6257,7 +6257,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan TITANIUM 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "79145",
     motor: "1",
@@ -6266,7 +6266,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SEL TiCVT Flex 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "52929",
     motor: "1",
@@ -6275,7 +6275,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "70528",
     motor: "1",
@@ -6284,7 +6284,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "86406",
     motor: "1",
@@ -6293,7 +6293,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EDGE ST 2.7 V6 24V AWD Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "294579",
     motor: "1",
@@ -6302,7 +6302,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY SEL 1.5 GTDi EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "181304",
     motor: "1",
@@ -6311,7 +6311,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 FREESTYLE 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "64000",
     motor: "1",
@@ -6320,7 +6320,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta TIT./TIT.Plus 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76548",
     motor: "1",
@@ -6329,7 +6329,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY SEL 1.5 GTDi EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "181686",
     motor: "1",
@@ -6338,7 +6338,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE Direct 1.5 Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "87119",
     motor: "1",
@@ -6347,7 +6347,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 1.6 S/SE/SE Plus Flex 8V/16V  5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "77020",
     motor: "1",
@@ -6356,7 +6356,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback TIT./T.PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78183",
     motor: "1",
@@ -6365,7 +6365,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Style 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59958",
     motor: "1",
@@ -6374,7 +6374,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Plus 1.6 16V Flex Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "64011",
     motor: "1",
@@ -6383,7 +6383,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "87220",
     motor: "1",
@@ -6392,7 +6392,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Style 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60272",
     motor: "1",
@@ -6401,7 +6401,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLT 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "144245",
     motor: "1",
@@ -6410,7 +6410,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 TITANIUM 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "74095",
     motor: "1",
@@ -6419,7 +6419,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium 2.0 GTDI Eco. Awd Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "152757",
     motor: "1",
@@ -6428,7 +6428,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "86715",
     motor: "1",
@@ -6437,7 +6437,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback SE/SE PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70120",
     motor: "1",
@@ -6446,7 +6446,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SE/SE PLUS TiVCT Flex 4p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "58875",
     motor: "1",
@@ -6455,7 +6455,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY Titanium 1.5 GTDi EcoBo. Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "217182",
     motor: "1",
@@ -6464,7 +6464,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback TIT./T.PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75705",
     motor: "1",
@@ -6473,7 +6473,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus TITA/TITA Plus 2.0  Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82054",
     motor: "1",
@@ -6482,7 +6482,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "68354",
     motor: "1",
@@ -6491,7 +6491,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "86052",
     motor: "1",
@@ -6500,7 +6500,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger Limited 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "162600",
     motor: "1",
@@ -6509,7 +6509,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger Limited 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "167984",
     motor: "1",
@@ -6518,7 +6518,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59564",
     motor: "1",
@@ -6527,7 +6527,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "64103",
     motor: "1",
@@ -6536,7 +6536,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SE/SE Plus TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "58171",
     motor: "1",
@@ -6545,7 +6545,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SEL TiVCT Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "51729",
     motor: "1",
@@ -6554,7 +6554,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium 2.0 GTDI Eco. Awd Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "149773",
     motor: "1",
@@ -6563,7 +6563,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang GT Premium 5.0 V8",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "412436",
     motor: "1",
@@ -6572,7 +6572,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE PLUS 1.5 Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "81747",
     motor: "1",
@@ -6581,7 +6581,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang GT Premium 5.0 V8",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "419164",
     motor: "1",
@@ -6590,7 +6590,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Bronco Sport Wildtrak 2.0 Tb 16V AWD Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "270203",
     motor: "1",
@@ -6599,7 +6599,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 FREESTYLE 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "60751",
     motor: "1",
@@ -6608,7 +6608,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex  Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63196",
     motor: "1",
@@ -6617,7 +6617,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54884",
     motor: "1",
@@ -6626,7 +6626,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang MACH 1 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "590167",
     motor: "1",
@@ -6635,7 +6635,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62896",
     motor: "1",
@@ -6644,7 +6644,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "62125",
     motor: "1",
@@ -6653,7 +6653,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback SE/SE PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71457",
     motor: "1",
@@ -6662,7 +6662,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 1.6 S/SE/SE Plus Flex 8V/16V  5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74189",
     motor: "1",
@@ -6671,7 +6671,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "87143",
     motor: "1",
@@ -6680,7 +6680,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 FREESTYLE 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63914",
     motor: "1",
@@ -6689,7 +6689,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "70901",
     motor: "1",
@@ -6698,7 +6698,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan TITANIUM 12V Flex 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81740",
     motor: "1",
@@ -6707,7 +6707,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 TITANIUM 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "71649",
     motor: "1",
@@ -6716,7 +6716,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion SEL 2.0 Ecobo. 16V 248cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "114020",
     motor: "1",
@@ -6725,7 +6725,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "71804",
     motor: "1",
@@ -6734,7 +6734,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "67728",
     motor: "1",
@@ -6743,7 +6743,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium Hybrid 2.0 145cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "157116",
     motor: "2",
@@ -6752,7 +6752,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62886",
     motor: "1",
@@ -6761,7 +6761,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "85055",
     motor: "1",
@@ -6770,7 +6770,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SE/SE PLUS TiVCT Flex 4p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "58666",
     motor: "1",
@@ -6779,7 +6779,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58458",
     motor: "1",
@@ -6788,7 +6788,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "65140",
     motor: "1",
@@ -6797,7 +6797,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 2.0 16V/SE/SE Plus Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71024",
     motor: "1",
@@ -6806,7 +6806,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54578",
     motor: "1",
@@ -6815,7 +6815,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Style 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63104",
     motor: "1",
@@ -6824,7 +6824,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback TIT./T.PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80426",
     motor: "1",
@@ -6833,7 +6833,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63494",
     motor: "1",
@@ -6842,7 +6842,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60723",
     motor: "1",
@@ -6851,7 +6851,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 S TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "54488",
     motor: "1",
@@ -6860,7 +6860,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 100Anos Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "67952",
     motor: "1",
@@ -6869,7 +6869,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta TIT./TIT.Plus 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72900",
     motor: "1",
@@ -6878,7 +6878,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex  Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61021",
     motor: "1",
@@ -6887,7 +6887,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLT 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "151311",
     motor: "1",
@@ -6896,7 +6896,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "65100",
     motor: "1",
@@ -6905,7 +6905,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 FREESTYLE 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63727",
     motor: "1",
@@ -6914,7 +6914,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger TROPIVAN 2.5 16V 4X2 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "154855",
     motor: "1",
@@ -6923,7 +6923,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SE/SE PLUS TiVCT Flex 4p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "59516",
     motor: "1",
@@ -6932,7 +6932,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport STORM 2.0 4WD 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "109711",
     motor: "1",
@@ -6941,7 +6941,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "62912",
     motor: "1",
@@ -6950,7 +6950,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SEL TiCVT Flex 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "52929",
     motor: "1",
@@ -6959,7 +6959,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE 1.6 16V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60044",
     motor: "1",
@@ -6968,7 +6968,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY Titanium 1.5 GTDi EcoBo. Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "216994",
     motor: "1",
@@ -6977,7 +6977,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang MACH 1 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "566985",
     motor: "1",
@@ -6986,7 +6986,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60588",
     motor: "1",
@@ -6995,7 +6995,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport  100Anos 1.5 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "86600",
     motor: "1",
@@ -7004,7 +7004,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Plus 1.6 16V Flex Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61201",
     motor: "1",
@@ -7013,7 +7013,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger TROPIVAN 2.5 16V 4X2 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "159697",
     motor: "1",
@@ -7022,7 +7022,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "65087",
     motor: "1",
@@ -7031,7 +7031,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "68490",
     motor: "1",
@@ -7040,7 +7040,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "68308",
     motor: "1",
@@ -7049,7 +7049,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLS 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "134610",
     motor: "1",
@@ -7058,7 +7058,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 1.6 S/SE/SE Plus Flex 8V/16V  5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75441",
     motor: "1",
@@ -7067,7 +7067,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus TITA/TITA Plus 2.0  Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "87504",
     motor: "1",
@@ -7076,7 +7076,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "89566",
     motor: "1",
@@ -7085,7 +7085,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta TIT./TIT.Plus 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76815",
     motor: "1",
@@ -7094,7 +7094,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54472",
     motor: "1",
@@ -7103,7 +7103,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger Limited 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "166689",
     motor: "1",
@@ -7112,7 +7112,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus TITA/TITA Plus 2.0  Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "85736",
     motor: "1",
@@ -7121,7 +7121,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61900",
     motor: "1",
@@ -7130,7 +7130,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus TITA/TITA Plus 2.0  Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "85055",
     motor: "1",
@@ -7139,7 +7139,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion SEL 2.0 Ecobo. 16V 248cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "114932",
     motor: "1",
@@ -7148,7 +7148,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SE/SE PLUS TiVCT Flex 4p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "59045",
     motor: "1",
@@ -7157,7 +7157,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 S TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "51943",
     motor: "1",
@@ -7166,7 +7166,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium 2.0 GTDI Eco. Awd Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "152900",
     motor: "1",
@@ -7175,7 +7175,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger Limited 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "140925",
     motor: "1",
@@ -7184,7 +7184,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Style 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61908",
     motor: "1",
@@ -7193,7 +7193,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "62838",
     motor: "1",
@@ -7202,7 +7202,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLS 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "134285",
     motor: "1",
@@ -7211,7 +7211,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 100Anos Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "67534",
     motor: "1",
@@ -7220,7 +7220,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport  100Anos 1.5 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "86721",
     motor: "1",
@@ -7229,7 +7229,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SEL TiCVT Flex 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "51923",
     motor: "1",
@@ -7238,7 +7238,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex  Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63006",
     motor: "1",
@@ -7247,7 +7247,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SEL TiCVT Flex 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "53930",
     motor: "1",
@@ -7256,7 +7256,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "76873",
     motor: "1",
@@ -7265,7 +7265,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport STORM 2.0 4WD 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "105088",
     motor: "1",
@@ -7274,7 +7274,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "83131",
     motor: "1",
@@ -7283,7 +7283,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "66752",
     motor: "1",
@@ -7292,7 +7292,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Bronco Sport Wildtrak 2.0 Tb 16V AWD Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "268020",
     motor: "1",
@@ -7301,7 +7301,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "70945",
     motor: "1",
@@ -7310,7 +7310,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "64460",
     motor: "1",
@@ -7319,7 +7319,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SEL TiCVT Flex 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "50867",
     motor: "1",
@@ -7328,7 +7328,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60563",
     motor: "1",
@@ -7337,7 +7337,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport STORM 2.0 4WD 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "106370",
     motor: "1",
@@ -7346,7 +7346,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLS 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "130904",
     motor: "1",
@@ -7355,7 +7355,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "62177",
     motor: "1",
@@ -7364,7 +7364,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SE/SE Plus TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "57849",
     motor: "1",
@@ -7373,7 +7373,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang Black Shanow 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "473050",
     motor: "1",
@@ -7382,7 +7382,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61854",
     motor: "1",
@@ -7391,7 +7391,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "87090",
     motor: "1",
@@ -7400,7 +7400,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion SEL 2.0 Ecobo. 16V 248cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "114457",
     motor: "1",
@@ -7409,7 +7409,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80631",
     motor: "1",
@@ -7418,7 +7418,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport STORM 2.0 4WD 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "106585",
     motor: "1",
@@ -7427,7 +7427,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLS 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "136614",
     motor: "1",
@@ -7436,7 +7436,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 S TiVCT Flex 5p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "53564",
     motor: "1",
@@ -7445,7 +7445,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY SEL 1.5 GTDi EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "178455",
     motor: "1",
@@ -7454,7 +7454,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Plus 1.6 16V Flex Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62680",
     motor: "1",
@@ -7463,7 +7463,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "82850",
     motor: "1",
@@ -7472,7 +7472,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger TROPIVAN 2.5 16V 4X2 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "156093",
     motor: "1",
@@ -7481,7 +7481,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 1.6 S/SE/SE Plus Flex 8V/16V  5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78201",
     motor: "1",
@@ -7490,7 +7490,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLS 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "141205",
     motor: "1",
@@ -7499,7 +7499,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex  Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59312",
     motor: "1",
@@ -7508,7 +7508,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE Direct 1.5 Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "90217",
     motor: "1",
@@ -7517,7 +7517,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "86891",
     motor: "1",
@@ -7526,7 +7526,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SE/SE PLUS TiVCT Flex 4p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "58911",
     motor: "1",
@@ -7535,7 +7535,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger Limited 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "147830",
     motor: "1",
@@ -7544,7 +7544,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL Style 1.0 EcoBoost Aut . 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71588",
     motor: "1",
@@ -7553,7 +7553,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback SE/SE PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72056",
     motor: "1",
@@ -7562,7 +7562,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 TITANIUM 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "74900",
     motor: "1",
@@ -7571,7 +7571,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan TITANIUM 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "77900",
     motor: "1",
@@ -7580,7 +7580,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Bronco Sport Wildtrak 2.0 Tb 16V AWD Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "271956",
     motor: "1",
@@ -7589,7 +7589,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE 1.6 16V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59312",
     motor: "1",
@@ -7598,7 +7598,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "87929",
     motor: "1",
@@ -7607,7 +7607,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY Titanium 1.5 GTDi EcoBo. Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "221630",
     motor: "1",
@@ -7616,7 +7616,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium Hybrid 2.0 145cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "155673",
     motor: "2",
@@ -7625,7 +7625,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport  100Anos 1.5 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "90056",
     motor: "1",
@@ -7634,7 +7634,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE PLUS 1.5 Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "81573",
     motor: "1",
@@ -7643,7 +7643,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "70320",
     motor: "1",
@@ -7652,7 +7652,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Bronco Sport Wildtrak 2.0 Tb 16V AWD Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "275619",
     motor: "1",
@@ -7661,7 +7661,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger TROPIVAN 2.5 16V 4X2 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "161145",
     motor: "1",
@@ -7670,7 +7670,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang GT Premium 5.0 V8",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "411466",
     motor: "1",
@@ -7679,7 +7679,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SEL TiVCT Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "52070",
     motor: "1",
@@ -7688,7 +7688,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "71290",
     motor: "1",
@@ -7697,7 +7697,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "89651",
     motor: "1",
@@ -7706,7 +7706,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 1.6 S/SE/SE Plus Flex 8V/16V  5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74769",
     motor: "1",
@@ -7715,7 +7715,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "72516",
     motor: "1",
@@ -7724,7 +7724,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "73283",
     motor: "1",
@@ -7733,7 +7733,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 TITANIUM 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "74266",
     motor: "1",
@@ -7742,7 +7742,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Bronco Sport Wildtrak 2.0 Tb 16V AWD Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "274766",
     motor: "1",
@@ -7751,7 +7751,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92128",
     motor: "1",
@@ -7760,7 +7760,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE Direct 1.5 Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "88010",
     motor: "1",
@@ -7769,7 +7769,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 S TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "54402",
     motor: "1",
@@ -7778,7 +7778,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "84358",
     motor: "1",
@@ -7787,7 +7787,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "71169",
     motor: "1",
@@ -7796,7 +7796,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SEL TiCVT Flex 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "50717",
     motor: "1",
@@ -7805,7 +7805,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLT 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "140172",
     motor: "1",
@@ -7814,7 +7814,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 TITANIUM 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "72700",
     motor: "1",
@@ -7823,7 +7823,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLT 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "137508",
     motor: "1",
@@ -7832,7 +7832,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 2.0 16V/SE/SE Plus Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71760",
     motor: "1",
@@ -7841,7 +7841,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88130",
     motor: "1",
@@ -7850,7 +7850,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "63374",
     motor: "1",
@@ -7859,7 +7859,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "87365",
     motor: "1",
@@ -7868,7 +7868,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82126",
     motor: "1",
@@ -7877,7 +7877,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion SEL 2.0 Ecobo. 16V 248cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "119895",
     motor: "1",
@@ -7886,7 +7886,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "73467",
     motor: "1",
@@ -7895,7 +7895,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "67468",
     motor: "1",
@@ -7904,7 +7904,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "86909",
     motor: "1",
@@ -7913,7 +7913,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 1.6 S/SE/SE Plus Flex 8V/16V  5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75626",
     motor: "1",
@@ -7922,7 +7922,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "67788",
     motor: "1",
@@ -7931,7 +7931,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang Black Shanow 5.0 V8",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "464563",
     motor: "1",
@@ -7940,7 +7940,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Plus 1.6 16V Flex Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62183",
     motor: "1",
@@ -7949,7 +7949,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63745",
     motor: "1",
@@ -7958,7 +7958,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLT 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "133625",
     motor: "1",
@@ -7967,7 +7967,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium 2.0 GTDI Eco. Awd Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "152163",
     motor: "1",
@@ -7976,7 +7976,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan TITANIUM 12V Flex 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80894",
     motor: "1",
@@ -7985,7 +7985,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 2.0 16V/SE/SE Plus Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70396",
     motor: "1",
@@ -7994,7 +7994,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "84226",
     motor: "1",
@@ -8003,7 +8003,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 S TiVCT Flex 5p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "52694",
     motor: "1",
@@ -8012,7 +8012,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Plus 1.6 16V Flex Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "64204",
     motor: "1",
@@ -8021,7 +8021,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EDGE ST 2.7 V6 24V AWD Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "351004",
     motor: "1",
@@ -8030,7 +8030,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EDGE ST 2.7 V6 24V AWD Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "301103",
     motor: "1",
@@ -8039,7 +8039,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback SE/SE PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70781",
     motor: "1",
@@ -8048,7 +8048,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang GT Premium 5.0 V8",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "413880",
     motor: "1",
@@ -8057,7 +8057,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE PLUS 1.5 Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82211",
     motor: "1",
@@ -8066,7 +8066,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger Limited 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "159492",
     motor: "1",
@@ -8075,7 +8075,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 2.0 16V/SE/SE Plus Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73438",
     motor: "1",
@@ -8084,7 +8084,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 100Anos Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "69931",
     motor: "1",
@@ -8093,7 +8093,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "68606",
     motor: "1",
@@ -8102,7 +8102,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "97537",
     motor: "1",
@@ -8111,7 +8111,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "72006",
     motor: "1",
@@ -8120,7 +8120,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Style 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60853",
     motor: "1",
@@ -8129,7 +8129,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SEL TiVCT Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "51913",
     motor: "1",
@@ -8138,7 +8138,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE 1.6 16V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58561",
     motor: "1",
@@ -8147,7 +8147,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54288",
     motor: "1",
@@ -8156,7 +8156,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta TIT./TIT.Plus 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "79335",
     motor: "1",
@@ -8165,7 +8165,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "65917",
     motor: "1",
@@ -8174,7 +8174,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Bronco Sport Wildtrak 2.0 Tb 16V AWD Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "274525",
     motor: "1",
@@ -8183,7 +8183,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 TITANIUM 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "71608",
     motor: "1",
@@ -8192,7 +8192,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SEL TiVCT Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "51417",
     motor: "1",
@@ -8201,7 +8201,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium Hybrid 2.0 145cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "147196",
     motor: "2",
@@ -8210,7 +8210,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "62639",
     motor: "1",
@@ -8219,7 +8219,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "97515",
     motor: "1",
@@ -8228,7 +8228,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "70521",
     motor: "1",
@@ -8237,7 +8237,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger TROPIVAN 2.5 16V 4X2 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "160661",
     motor: "1",
@@ -8246,7 +8246,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE PLUS 1.5 Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "81772",
     motor: "1",
@@ -8255,7 +8255,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex  Aut. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62627",
     motor: "1",
@@ -8264,7 +8264,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "72617",
     motor: "1",
@@ -8273,7 +8273,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "66107",
     motor: "1",
@@ -8282,7 +8282,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63598",
     motor: "1",
@@ -8291,7 +8291,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE Style 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60157",
     motor: "1",
@@ -8300,7 +8300,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger Limited 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "152042",
     motor: "1",
@@ -8309,7 +8309,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang GT Premium 5.0 V8",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "412321",
     motor: "1",
@@ -8318,7 +8318,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport STORM 2.0 4WD 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108723",
     motor: "1",
@@ -8327,7 +8327,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger TROPIVAN 2.5 16V 4X2 Flex",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "157341",
     motor: "1",
@@ -8336,7 +8336,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Maverick Lariat FX4 2.0 EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "236895",
     motor: "1",
@@ -8345,7 +8345,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "96932",
     motor: "1",
@@ -8354,7 +8354,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 TITANIUM 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "72886",
     motor: "1",
@@ -8363,7 +8363,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "57166",
     motor: "1",
@@ -8372,7 +8372,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96223",
     motor: "1",
@@ -8381,7 +8381,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL 1.6 16V Flex Mec. 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "64120",
     motor: "1",
@@ -8390,7 +8390,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EDGE ST 2.7 V6 24V AWD Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "312113",
     motor: "1",
@@ -8399,7 +8399,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY SEL 1.5 GTDi EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "181732",
     motor: "1",
@@ -8408,7 +8408,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SE/SE Plus TiVCT Flex 5p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "57006",
     motor: "1",
@@ -8417,7 +8417,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SE 1.6 16V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59160",
     motor: "1",
@@ -8426,7 +8426,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54522",
     motor: "1",
@@ -8435,7 +8435,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SE/SE PLUS TiVCT Flex 4p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "58521",
     motor: "1",
@@ -8444,7 +8444,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE PLUS 1.5 Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "83090",
     motor: "1",
@@ -8453,7 +8453,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium 2.0 GTDI Eco. Awd Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "155403",
     motor: "1",
@@ -8462,7 +8462,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus TITA/TITA Plus 2.0  Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "83675",
     motor: "1",
@@ -8471,7 +8471,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "65776",
     motor: "1",
@@ -8480,7 +8480,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "97097",
     motor: "1",
@@ -8489,7 +8489,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63348",
     motor: "1",
@@ -8498,7 +8498,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang GT Premium 5.0 V8",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "419908",
     motor: "1",
@@ -8507,7 +8507,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "89525",
     motor: "1",
@@ -8516,7 +8516,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback TIT./T.PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80831",
     motor: "1",
@@ -8525,7 +8525,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport TITANIUM 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "86174",
     motor: "1",
@@ -8534,7 +8534,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL Style 1.0 EcoBoost Aut . 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "66521",
     motor: "1",
@@ -8543,7 +8543,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang MACH 1 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "587451",
     motor: "1",
@@ -8552,7 +8552,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 S TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "56018",
     motor: "1",
@@ -8561,7 +8561,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "66422",
     motor: "1",
@@ -8570,7 +8570,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 FREESTYLE 12V Flex 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "62378",
     motor: "1",
@@ -8579,7 +8579,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion SEL 2.0 Ecobo. 16V 248cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "117264",
     motor: "1",
@@ -8588,7 +8588,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61230",
     motor: "1",
@@ -8597,7 +8597,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "64851",
     motor: "1",
@@ -8606,7 +8606,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SE/SE PLUS TiVCT Flex 4p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "58362",
     motor: "1",
@@ -8615,7 +8615,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport  100Anos 1.5 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "87817",
     motor: "1",
@@ -8624,7 +8624,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SE/SE Plus TiVCT Flex 5p",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "57880",
     motor: "1",
@@ -8633,7 +8633,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLS 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "132017",
     motor: "1",
@@ -8642,7 +8642,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLS 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "130726",
     motor: "1",
@@ -8651,7 +8651,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion SEL 2.0 Ecobo. 16V 248cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "120154",
     motor: "1",
@@ -8660,7 +8660,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium Hybrid 2.0 145cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "156132",
     motor: "2",
@@ -8669,7 +8669,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium Hybrid 2.0 145cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "157116",
     motor: "2",
@@ -8678,7 +8678,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EDGE ST 2.7 V6 24V AWD Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "351004",
     motor: "1",
@@ -8687,7 +8687,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "63652",
     motor: "1",
@@ -8696,7 +8696,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 100Anos Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "67033",
     motor: "1",
@@ -8705,7 +8705,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta SEL Style 1.0 EcoBoost Aut . 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72160",
     motor: "1",
@@ -8714,7 +8714,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92120",
     motor: "1",
@@ -8723,7 +8723,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY SEL 1.5 GTDi EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "181010",
     motor: "1",
@@ -8732,7 +8732,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 1.6 S/SE/SE Plus Flex 8V/16V  5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "77824",
     motor: "1",
@@ -8741,7 +8741,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport STORM 2.0 4WD 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "103204",
     motor: "1",
@@ -8750,7 +8750,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium Hybrid 2.0 145cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "153165",
     motor: "2",
@@ -8759,7 +8759,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLS 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "124620",
     motor: "1",
@@ -8768,7 +8768,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka+ Sedan 1.0 SEL TiCVT Flex 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54467",
     motor: "1",
@@ -8777,7 +8777,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback TIT./T.PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80216",
     motor: "1",
@@ -8786,7 +8786,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport  100Anos 1.5 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "89632",
     motor: "1",
@@ -8795,7 +8795,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 FreeStyle 12V Flex 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58392",
     motor: "1",
@@ -8804,7 +8804,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion SEL 2.0 Ecobo. 16V 248cv Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "115915",
     motor: "1",
@@ -8813,7 +8813,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback TIT./T.PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "77172",
     motor: "1",
@@ -8822,7 +8822,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Bronco Sport Wildtrak 2.0 Tb 16V AWD Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "267841",
     motor: "1",
@@ -8831,7 +8831,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SEL 12V Flex 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62348",
     motor: "1",
@@ -8840,7 +8840,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE Plus 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "68760",
     motor: "1",
@@ -8849,7 +8849,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE Direct 1.5 Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "94196",
     motor: "1",
@@ -8858,7 +8858,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "83970",
     motor: "1",
@@ -8867,7 +8867,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus TITA/TITA Plus 2.0  Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "86930",
     motor: "1",
@@ -8876,7 +8876,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "86169",
     motor: "1",
@@ -8885,7 +8885,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang Black Shanow 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "468792",
     motor: "1",
@@ -8894,7 +8894,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "62550",
     motor: "1",
@@ -8903,7 +8903,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE Direct 1.5 Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "91592",
     motor: "1",
@@ -8912,7 +8912,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "65210",
     motor: "1",
@@ -8921,7 +8921,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang Black Shanow 5.0 V8",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "463321",
     motor: "1",
@@ -8930,7 +8930,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLT 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "144283",
     motor: "1",
@@ -8939,7 +8939,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "90311",
     motor: "1",
@@ -8948,7 +8948,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE 2.0 16V Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82523",
     motor: "1",
@@ -8957,7 +8957,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63312",
     motor: "1",
@@ -8966,7 +8966,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SEL TiVCT Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "51890",
     motor: "1",
@@ -8975,7 +8975,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback SE/SE PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69513",
     motor: "1",
@@ -8984,7 +8984,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fusion Titanium 2.0 GTDI Eco. Awd Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "146942",
     motor: "1",
@@ -8993,7 +8993,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Bronco Sport Wildtrak 2.0 Tb 16V AWD Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "276004",
     motor: "1",
@@ -9002,7 +9002,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus 2.0 16V/SE/SE Plus Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71285",
     motor: "1",
@@ -9011,7 +9011,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SE/SE Plus TiVCT Flex 5p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "57284",
     motor: "1",
@@ -9020,7 +9020,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Focus Fastback SE/SE PLUS 2.0 Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69935",
     motor: "1",
@@ -9029,7 +9029,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger XLT 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "143896",
     motor: "1",
@@ -9038,7 +9038,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport FREESTYLE 1.5 12V Flex 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "85697",
     motor: "1",
@@ -9047,7 +9047,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport SE Direct 1.5 Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "84985",
     motor: "1",
@@ -9056,7 +9056,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY SEL 1.5 GTDi EcoBoost Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "181254",
     motor: "1",
@@ -9065,7 +9065,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 SE 12V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "61887",
     motor: "1",
@@ -9074,7 +9074,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 100Anos Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "69911",
     motor: "1",
@@ -9083,7 +9083,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 Sedan SE Plus 12V Flex 4p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63783",
     motor: "1",
@@ -9092,7 +9092,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 100Anos Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "69800",
     motor: "1",
@@ -9101,7 +9101,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ranger Limited 2.5 16V 4x2 CD Flex",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "169475",
     motor: "1",
@@ -9110,7 +9110,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "EcoSport STORM 2.0 4WD 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "110348",
     motor: "1",
@@ -9119,7 +9119,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.0 SEL TiVCT Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "51854",
     motor: "1",
@@ -9128,7 +9128,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang MACH 1 5.0 V8",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "558121",
     motor: "1",
@@ -9137,7 +9137,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 TITANIUM 12V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "72000",
     motor: "1",
@@ -9146,7 +9146,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "TERRITORY Titanium 1.5 GTDi EcoBo. Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "217125",
     motor: "1",
@@ -9155,7 +9155,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Ka 1.5 100Anos Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "68414",
     motor: "1",
@@ -9164,7 +9164,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Fiesta TIT./TIT.Plus 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76472",
     motor: "1",
@@ -9173,7 +9173,7 @@ const dataCar = [
   {
     marca: "Ford",
     modelo: "Mustang Black Shanow 5.0 V8",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "476539",
     motor: "1",
@@ -9182,109 +9182,109 @@ const dataCar = [
   {
     marca: "Chevrolet",
     modelo: "COBALT 1.8 8V Econo.Flex 4p Aut.",
-    motor: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "73787",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "COBALT LTZ 1.8 8V Econo.Flex 4p Aut.",
-    motor: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "78829",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "COBALT LTZ 1.4 8V FlexPower/EconoFlex 4p",
-    motor: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "76963",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "CRUZE HB Black Bow Tie 1.4 TB Flex Aut.",
-    motor: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "95830",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "CRUZE Black Bow Tie 1.4 TB Flex 4p Aut",
-    motor: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "94906",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "CRUZE LT 1.4 16V Turbo Flex 4p Aut.",
-    motor: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "140627",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "Camaro SS Conversível 6.2 V8 16V",
-    motor: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "533458",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "Camaro SS 6.2 V8 16V",
-    motor: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "486002",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "COBALT ELITE 1.8 8V Econo.Flex 4p Aut.",
-    motor: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "68599",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "COBALT LTZ 1.8 8V Econo.Flex 4p Mec.",
-    motor: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "76036",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
     marca: "Chevrolet",
     modelo: "BOLT EV Premier 203cv (Elétrico)",
-    motor: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "282045",
-    moerr: "3",
+    motor: "3",
     type: "Elétrico",
   },
   {
     marca: "Chevrolet",
     modelo: "COBALT LT 1.4 8V FlexPower/EconoFlex 4p",
-    motor: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "67790",
-    moerr: "1",
+    motor: "1",
     type: "Flex",
   },
   {
@@ -11414,7 +11414,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16v Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73962",
     motor: "1",
@@ -11423,7 +11423,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98240",
     motor: "1",
@@ -11432,7 +11432,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style1.0 Flex 12V Mec. 4P",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "66161",
     motor: "1",
@@ -11441,7 +11441,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GL 2.0 16V 2WD Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "152695",
     motor: "1",
@@ -11450,7 +11450,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "99896",
     motor: "1",
@@ -11459,7 +11459,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "AZERA 3.0 V6 24V 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "287630",
     motor: "1",
@@ -11468,7 +11468,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95997",
     motor: "1",
@@ -11477,7 +11477,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60129",
     motor: "1",
@@ -11486,7 +11486,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70255",
     motor: "1",
@@ -11495,7 +11495,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Comfort 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "121303",
     motor: "1",
@@ -11504,7 +11504,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "59890",
     motor: "1",
@@ -11513,7 +11513,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Premium 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "79622",
     motor: "1",
@@ -11522,7 +11522,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evol. Bluelink 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "79426",
     motor: "1",
@@ -11531,7 +11531,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92044",
     motor: "1",
@@ -11540,7 +11540,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "112594",
     motor: "1",
@@ -11549,7 +11549,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited Edition 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "114033",
     motor: "1",
@@ -11558,7 +11558,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93911",
     motor: "1",
@@ -11567,7 +11567,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77140",
     motor: "1",
@@ -11576,7 +11576,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88145",
     motor: "1",
@@ -11585,7 +11585,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70656",
     motor: "1",
@@ -11594,7 +11594,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94356",
     motor: "1",
@@ -11603,7 +11603,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Launch Edition 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "106645",
     motor: "1",
@@ -11612,7 +11612,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sense 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "73140",
     motor: "1",
@@ -11621,7 +11621,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61135",
     motor: "1",
@@ -11630,7 +11630,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Premium 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "79129",
     motor: "1",
@@ -11639,7 +11639,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Ultimate 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "168677",
     motor: "1",
@@ -11648,7 +11648,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sense 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "73740",
     motor: "1",
@@ -11657,7 +11657,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comf./C.Plus/C.Style 1.0 Flex 12V",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60804",
     motor: "1",
@@ -11666,7 +11666,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "AZERA 3.0 V6 24V 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "290751",
     motor: "1",
@@ -11675,7 +11675,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "AZERA 3.0 V6 24V 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "287630",
     motor: "1",
@@ -11684,7 +11684,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "78900",
     motor: "1",
@@ -11693,7 +11693,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95337",
     motor: "1",
@@ -11702,7 +11702,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Prestige 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "123696",
     motor: "1",
@@ -11711,7 +11711,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta 1 Million 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "103128",
     motor: "1",
@@ -11720,7 +11720,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta 1 Million 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "106899",
     motor: "1",
@@ -11729,7 +11729,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81417",
     motor: "1",
@@ -11738,7 +11738,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Launch Edition 1.6 Flex 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "81861",
     motor: "1",
@@ -11747,7 +11747,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91491",
     motor: "1",
@@ -11756,7 +11756,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84400",
     motor: "1",
@@ -11765,7 +11765,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta 1 Million 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "101912",
     motor: "1",
@@ -11774,7 +11774,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72610",
     motor: "1",
@@ -11783,7 +11783,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "76843",
     motor: "1",
@@ -11792,7 +11792,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85228",
     motor: "1",
@@ -11801,7 +11801,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95208",
     motor: "1",
@@ -11810,7 +11810,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "126633",
     motor: "1",
@@ -11819,7 +11819,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "75596",
     motor: "1",
@@ -11828,7 +11828,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84037",
     motor: "1",
@@ -11837,7 +11837,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GL 2.0 16V 2WD Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "154168",
     motor: "1",
@@ -11846,7 +11846,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sense 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "69976",
     motor: "1",
@@ -11855,7 +11855,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94148",
     motor: "1",
@@ -11864,7 +11864,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GLS 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "196722",
     motor: "1",
@@ -11873,7 +11873,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sport 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103144",
     motor: "1",
@@ -11882,7 +11882,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84797",
     motor: "1",
@@ -11891,7 +11891,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sport 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103695",
     motor: "1",
@@ -11900,7 +11900,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 R spec 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73302",
     motor: "1",
@@ -11909,7 +11909,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69605",
     motor: "1",
@@ -11918,7 +11918,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88343",
     motor: "1",
@@ -11927,7 +11927,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69769",
     motor: "1",
@@ -11936,7 +11936,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69914",
     motor: "1",
@@ -11945,7 +11945,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70237",
     motor: "1",
@@ -11954,7 +11954,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GL 1.6 Turbo 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "127853",
     motor: "1",
@@ -11963,7 +11963,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Sport 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "102096",
     motor: "1",
@@ -11972,7 +11972,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74585",
     motor: "1",
@@ -11981,7 +11981,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S 1 Million 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73650",
     motor: "1",
@@ -11990,7 +11990,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "AZERA 3.0 V6 24V 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "287945",
     motor: "1",
@@ -11999,7 +11999,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "79655",
     motor: "1",
@@ -12008,7 +12008,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution Bluelink 1.0 Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "70415",
     motor: "1",
@@ -12017,7 +12017,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72187",
     motor: "1",
@@ -12026,7 +12026,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe/GLS 3.3 V6 4X4 Tiptronic",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "178446",
     motor: "1",
@@ -12035,7 +12035,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Action 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108768",
     motor: "1",
@@ -12044,7 +12044,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70634",
     motor: "1",
@@ -12053,7 +12053,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75200",
     motor: "1",
@@ -12062,7 +12062,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85277",
     motor: "1",
@@ -12071,7 +12071,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "77201",
     motor: "1",
@@ -12080,7 +12080,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "97430",
     motor: "1",
@@ -12089,7 +12089,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GL 1.6 Turbo 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "131201",
     motor: "1",
@@ -12098,7 +12098,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "90735",
     motor: "1",
@@ -12107,7 +12107,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe 3.5 V6 4X4 Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "334676",
     motor: "1",
@@ -12116,7 +12116,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73129",
     motor: "1",
@@ -12125,7 +12125,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86951",
     motor: "1",
@@ -12134,7 +12134,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "88581",
     motor: "1",
@@ -12143,7 +12143,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution Bluelink 1.0 Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82485",
     motor: "1",
@@ -12152,7 +12152,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75930",
     motor: "1",
@@ -12161,7 +12161,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "91766",
     motor: "1",
@@ -12170,7 +12170,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "92823",
     motor: "1",
@@ -12179,7 +12179,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "79653",
     motor: "1",
@@ -12188,7 +12188,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91600",
     motor: "1",
@@ -12197,7 +12197,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86631",
     motor: "1",
@@ -12206,7 +12206,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comf./C.Plus/C.Style 1.0 Flex 12V",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60872",
     motor: "1",
@@ -12215,7 +12215,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "100825",
     motor: "1",
@@ -12224,7 +12224,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75521",
     motor: "1",
@@ -12233,7 +12233,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74617",
     motor: "1",
@@ -12242,7 +12242,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "89056",
     motor: "1",
@@ -12251,7 +12251,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Sport 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "105830",
     motor: "1",
@@ -12260,7 +12260,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "66958",
     motor: "1",
@@ -12269,7 +12269,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93542",
     motor: "1",
@@ -12278,7 +12278,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80619",
     motor: "1",
@@ -12287,7 +12287,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77985",
     motor: "1",
@@ -12296,7 +12296,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Launch Edition 1.6 Flex 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "80891",
     motor: "1",
@@ -12305,7 +12305,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 R spec 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73575",
     motor: "1",
@@ -12314,7 +12314,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta N Line 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "165800",
     motor: "1",
@@ -12323,7 +12323,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84565",
     motor: "1",
@@ -12332,7 +12332,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Action 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "106947",
     motor: "1",
@@ -12341,7 +12341,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "68876",
     motor: "1",
@@ -12350,7 +12350,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86599",
     motor: "1",
@@ -12359,7 +12359,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evolution 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96256",
     motor: "1",
@@ -12368,7 +12368,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94285",
     motor: "1",
@@ -12377,7 +12377,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Pulse Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "104283",
     motor: "1",
@@ -12386,7 +12386,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Platinum 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "151840",
     motor: "1",
@@ -12395,7 +12395,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72902",
     motor: "1",
@@ -12404,7 +12404,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style1.0 Flex 12V Mec. 4P",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "66325",
     motor: "1",
@@ -12413,7 +12413,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "97207",
     motor: "1",
@@ -12422,7 +12422,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84909",
     motor: "1",
@@ -12431,7 +12431,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Style/C.Plus1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73732",
     motor: "1",
@@ -12440,7 +12440,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88691",
     motor: "1",
@@ -12449,7 +12449,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62832",
     motor: "1",
@@ -12458,7 +12458,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78341",
     motor: "1",
@@ -12467,7 +12467,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76781",
     motor: "1",
@@ -12476,7 +12476,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "101327",
     motor: "1",
@@ -12485,7 +12485,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107856",
     motor: "1",
@@ -12494,7 +12494,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69180",
     motor: "1",
@@ -12503,7 +12503,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92515",
     motor: "1",
@@ -12512,7 +12512,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93096",
     motor: "1",
@@ -12521,7 +12521,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson Limited 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "223870",
     motor: "1",
@@ -12530,7 +12530,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81740",
     motor: "1",
@@ -12539,7 +12539,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "77629",
     motor: "1",
@@ -12548,7 +12548,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "68965",
     motor: "1",
@@ -12557,7 +12557,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Pulse Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "103311",
     motor: "1",
@@ -12566,7 +12566,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107999",
     motor: "1",
@@ -12575,7 +12575,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81189",
     motor: "1",
@@ -12584,7 +12584,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80900",
     motor: "1",
@@ -12593,7 +12593,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81050",
     motor: "1",
@@ -12602,7 +12602,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution Bluelink 1.0 Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "76521",
     motor: "1",
@@ -12611,7 +12611,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86111",
     motor: "1",
@@ -12620,7 +12620,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited Edition 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "113656",
     motor: "1",
@@ -12629,7 +12629,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98657",
     motor: "1",
@@ -12638,7 +12638,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78213",
     motor: "1",
@@ -12647,7 +12647,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80694",
     motor: "1",
@@ -12656,7 +12656,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75778",
     motor: "1",
@@ -12665,7 +12665,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Pulse Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "103395",
     motor: "1",
@@ -12674,7 +12674,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92810",
     motor: "1",
@@ -12683,7 +12683,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103949",
     motor: "1",
@@ -12692,7 +12692,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "66698",
     motor: "1",
@@ -12701,7 +12701,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91202",
     motor: "1",
@@ -12710,7 +12710,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "56695",
     motor: "1",
@@ -12719,7 +12719,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92900",
     motor: "1",
@@ -12728,7 +12728,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91105",
     motor: "1",
@@ -12737,7 +12737,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GLS 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "201683",
     motor: "1",
@@ -12746,7 +12746,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Premium 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "79984",
     motor: "1",
@@ -12755,7 +12755,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe 3.5 V6 4X4 Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "322338",
     motor: "1",
@@ -12764,7 +12764,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86976",
     motor: "1",
@@ -12773,7 +12773,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "90051",
     motor: "1",
@@ -12782,7 +12782,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85074",
     motor: "1",
@@ -12791,7 +12791,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80747",
     motor: "1",
@@ -12800,7 +12800,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart Plus 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107326",
     motor: "1",
@@ -12809,7 +12809,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson Limited 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "218722",
     motor: "1",
@@ -12818,7 +12818,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81431",
     motor: "1",
@@ -12827,7 +12827,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson Limited 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "221445",
     motor: "1",
@@ -12836,7 +12836,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96306",
     motor: "1",
@@ -12845,7 +12845,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style1.0 Flex 12V Mec. 4P",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "68617",
     motor: "1",
@@ -12854,7 +12854,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Action 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108814",
     motor: "1",
@@ -12863,7 +12863,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Comfort 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "123028",
     motor: "1",
@@ -12872,7 +12872,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Action 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108711",
     motor: "1",
@@ -12881,7 +12881,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Platinum 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "150866",
     motor: "1",
@@ -12890,7 +12890,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "75856",
     motor: "1",
@@ -12899,7 +12899,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "100098",
     motor: "1",
@@ -12908,7 +12908,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "127620",
     motor: "1",
@@ -12917,7 +12917,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96332",
     motor: "1",
@@ -12926,7 +12926,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80690",
     motor: "1",
@@ -12935,7 +12935,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "66718",
     motor: "1",
@@ -12944,7 +12944,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sense 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "68225",
     motor: "1",
@@ -12953,7 +12953,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80152",
     motor: "1",
@@ -12962,7 +12962,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited Edition 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "113291",
     motor: "1",
@@ -12971,7 +12971,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evolution 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96385",
     motor: "1",
@@ -12980,7 +12980,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "99789",
     motor: "1",
@@ -12989,7 +12989,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77014",
     motor: "1",
@@ -12998,7 +12998,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe 3.5 V6 4X4 Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "319782",
     motor: "1",
@@ -13007,7 +13007,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80627",
     motor: "1",
@@ -13016,7 +13016,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69230",
     motor: "1",
@@ -13025,7 +13025,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103802",
     motor: "1",
@@ -13034,7 +13034,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91589",
     motor: "1",
@@ -13043,7 +13043,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 R spec 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73612",
     motor: "1",
@@ -13052,7 +13052,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "134840",
     motor: "1",
@@ -13061,7 +13061,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "107990",
     motor: "1",
@@ -13070,7 +13070,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S 1 Million 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73885",
     motor: "1",
@@ -13079,7 +13079,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96362",
     motor: "1",
@@ -13088,7 +13088,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evol. Bluelink 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82205",
     motor: "1",
@@ -13097,7 +13097,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Prestige 2.0 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "123809",
     motor: "1",
@@ -13106,7 +13106,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta 1 Million 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "104804",
     motor: "1",
@@ -13115,7 +13115,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "64890",
     motor: "1",
@@ -13124,7 +13124,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "79073",
     motor: "1",
@@ -13133,7 +13133,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "76613",
     motor: "1",
@@ -13142,7 +13142,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Sport 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "105499",
     motor: "1",
@@ -13151,7 +13151,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Prestige 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "124154",
     motor: "1",
@@ -13160,7 +13160,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sport 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103140",
     motor: "1",
@@ -13169,7 +13169,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107940",
     motor: "1",
@@ -13178,7 +13178,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85940",
     motor: "1",
@@ -13187,7 +13187,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70738",
     motor: "1",
@@ -13196,7 +13196,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Style/C.Plus1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74056",
     motor: "1",
@@ -13205,7 +13205,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "129907",
     motor: "1",
@@ -13214,7 +13214,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84537",
     motor: "1",
@@ -13223,7 +13223,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91010",
     motor: "1",
@@ -13232,7 +13232,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "125884",
     motor: "1",
@@ -13241,7 +13241,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80520",
     motor: "1",
@@ -13250,7 +13250,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Ultimate 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "169532",
     motor: "1",
@@ -13259,7 +13259,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "78477",
     motor: "1",
@@ -13268,7 +13268,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "111529",
     motor: "1",
@@ -13277,7 +13277,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16v Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72334",
     motor: "1",
@@ -13286,7 +13286,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GLS 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "195536",
     motor: "1",
@@ -13295,7 +13295,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "77418",
     motor: "1",
@@ -13304,7 +13304,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited Edition 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "113298",
     motor: "1",
@@ -13313,7 +13313,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evolution 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95276",
     motor: "1",
@@ -13322,7 +13322,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evol. Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95963",
     motor: "1",
@@ -13331,7 +13331,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "56877",
     motor: "1",
@@ -13340,7 +13340,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93967",
     motor: "1",
@@ -13349,7 +13349,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80054",
     motor: "1",
@@ -13358,7 +13358,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77717",
     motor: "1",
@@ -13367,7 +13367,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "AZERA 3.0 V6 24V 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "288959",
     motor: "1",
@@ -13376,7 +13376,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sport 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "99736",
     motor: "1",
@@ -13385,7 +13385,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77101",
     motor: "1",
@@ -13394,7 +13394,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "103895",
     motor: "1",
@@ -13403,7 +13403,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "90976",
     motor: "1",
@@ -13412,7 +13412,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson Limited 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "223561",
     motor: "1",
@@ -13421,7 +13421,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81863",
     motor: "1",
@@ -13430,7 +13430,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited Edition 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "112535",
     motor: "1",
@@ -13439,7 +13439,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81040",
     motor: "1",
@@ -13448,7 +13448,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69669",
     motor: "1",
@@ -13457,7 +13457,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "97311",
     motor: "1",
@@ -13466,7 +13466,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond Plus 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "102451",
     motor: "1",
@@ -13475,7 +13475,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "93814",
     motor: "1",
@@ -13484,7 +13484,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60898",
     motor: "1",
@@ -13493,7 +13493,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16v Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72950",
     motor: "1",
@@ -13502,7 +13502,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GLS 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "201733",
     motor: "1",
@@ -13511,7 +13511,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80155",
     motor: "1",
@@ -13520,7 +13520,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "90778",
     motor: "1",
@@ -13529,7 +13529,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16v Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72153",
     motor: "1",
@@ -13538,7 +13538,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103956",
     motor: "1",
@@ -13547,7 +13547,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GL 2.0 16V 2WD Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "154517",
     motor: "1",
@@ -13556,7 +13556,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Comfort 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "121236",
     motor: "1",
@@ -13565,7 +13565,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86521",
     motor: "1",
@@ -13574,7 +13574,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60834",
     motor: "1",
@@ -13583,7 +13583,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "79999",
     motor: "1",
@@ -13592,7 +13592,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sport 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103283",
     motor: "1",
@@ -13601,7 +13601,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77285",
     motor: "1",
@@ -13610,7 +13610,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson Limited 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "223990",
     motor: "1",
@@ -13619,7 +13619,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92286",
     motor: "1",
@@ -13628,7 +13628,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "100976",
     motor: "1",
@@ -13637,7 +13637,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Action 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "104756",
     motor: "1",
@@ -13646,7 +13646,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Sport 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "104882",
     motor: "1",
@@ -13655,7 +13655,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107326",
     motor: "1",
@@ -13664,7 +13664,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "111476",
     motor: "1",
@@ -13673,7 +13673,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Launch Edition 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108067",
     motor: "1",
@@ -13682,7 +13682,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16v Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72640",
     motor: "1",
@@ -13691,7 +13691,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S 1 Million 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "75265",
     motor: "1",
@@ -13700,7 +13700,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evol. Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96067",
     motor: "1",
@@ -13709,7 +13709,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Style/C.Plus1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74012",
     motor: "1",
@@ -13718,7 +13718,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "83907",
     motor: "1",
@@ -13727,7 +13727,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe/GLS 3.3 V6 4X4 Tiptronic",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "179150",
     motor: "1",
@@ -13736,7 +13736,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Launch Edition 1.6 Flex 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "81396",
     motor: "1",
@@ -13745,7 +13745,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "99176",
     motor: "1",
@@ -13754,7 +13754,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Premium 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78254",
     motor: "1",
@@ -13763,7 +13763,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Style/C.Plus1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72857",
     motor: "1",
@@ -13772,7 +13772,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84859",
     motor: "1",
@@ -13781,7 +13781,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Premium 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78894",
     motor: "1",
@@ -13790,7 +13790,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77845",
     motor: "1",
@@ -13799,7 +13799,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Pulse Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "105101",
     motor: "1",
@@ -13808,7 +13808,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "90016",
     motor: "1",
@@ -13817,7 +13817,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 R spec 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72831",
     motor: "1",
@@ -13826,7 +13826,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "98935",
     motor: "1",
@@ -13835,7 +13835,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "56269",
     motor: "1",
@@ -13844,7 +13844,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Premium 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78289",
     motor: "1",
@@ -13853,7 +13853,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63747",
     motor: "1",
@@ -13862,7 +13862,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80496",
     motor: "1",
@@ -13871,7 +13871,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GLS 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "201797",
     motor: "1",
@@ -13880,7 +13880,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "87111",
     motor: "1",
@@ -13889,7 +13889,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70218",
     motor: "1",
@@ -13898,7 +13898,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Style/C.Plus1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73349",
     motor: "1",
@@ -13907,7 +13907,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77856",
     motor: "1",
@@ -13916,7 +13916,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "87592",
     motor: "1",
@@ -13925,7 +13925,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "74242",
     motor: "1",
@@ -13934,7 +13934,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Comfort 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "121335",
     motor: "1",
@@ -13943,7 +13943,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "69679",
     motor: "1",
@@ -13952,7 +13952,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "67170",
     motor: "1",
@@ -13961,7 +13961,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S 1 Million 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "72384",
     motor: "1",
@@ -13970,7 +13970,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 1 Million 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "70395",
     motor: "1",
@@ -13979,7 +13979,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "67544",
     motor: "1",
@@ -13988,7 +13988,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe 3.5 V6 4X4 Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "346389",
     motor: "1",
@@ -13997,7 +13997,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "99119",
     motor: "1",
@@ -14006,7 +14006,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "104056",
     motor: "1",
@@ -14015,7 +14015,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "135978",
     motor: "1",
@@ -14024,7 +14024,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "72085",
     motor: "1",
@@ -14033,7 +14033,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "96078",
     motor: "1",
@@ -14042,7 +14042,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 Flex 12 Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "74721",
     motor: "1",
@@ -14051,7 +14051,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GL 1.6 Turbo 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "135952",
     motor: "1",
@@ -14060,7 +14060,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "126638",
     motor: "1",
@@ -14069,7 +14069,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GL 2.0 16V 2WD Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "154990",
     motor: "1",
@@ -14078,7 +14078,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "134678",
     motor: "1",
@@ -14087,7 +14087,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Launch Edition 1.6 Flex 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "81927",
     motor: "1",
@@ -14096,7 +14096,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "91455",
     motor: "1",
@@ -14105,7 +14105,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Platinum 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "150412",
     motor: "1",
@@ -14114,7 +14114,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Launch Edition 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "101596",
     motor: "1",
@@ -14123,7 +14123,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evol. Bluelink 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "79665",
     motor: "1",
@@ -14132,7 +14132,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "93799",
     motor: "1",
@@ -14141,7 +14141,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "104440",
     motor: "1",
@@ -14150,7 +14150,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "98410",
     motor: "1",
@@ -14159,7 +14159,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "91811",
     motor: "1",
@@ -14168,7 +14168,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sense 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "78755",
     motor: "1",
@@ -14177,7 +14177,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "78733",
     motor: "1",
@@ -14186,7 +14186,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta 1 Million 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "104831",
     motor: "1",
@@ -14195,7 +14195,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "99689",
     motor: "1",
@@ -14204,7 +14204,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GLS 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "133081",
     motor: "1",
@@ -14213,7 +14213,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond Plus 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "98728",
     motor: "1",
@@ -14222,7 +14222,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GLS 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "128928",
     motor: "1",
@@ -14231,7 +14231,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "78350",
     motor: "1",
@@ -14240,7 +14240,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 R spec 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "73208",
     motor: "1",
@@ -14249,7 +14249,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "101013",
     motor: "1",
@@ -14258,7 +14258,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson Limited 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "224058",
     motor: "1",
@@ -14267,7 +14267,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "101403",
     motor: "1",
@@ -14276,7 +14276,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Comfort 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "121041",
     motor: "1",
@@ -14285,7 +14285,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "92815",
     motor: "1",
@@ -14294,7 +14294,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "61205",
     motor: "1",
@@ -14303,7 +14303,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "62718",
     motor: "1",
@@ -14312,7 +14312,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "93117",
     motor: "1",
@@ -14321,7 +14321,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond Plus 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "99867",
     motor: "1",
@@ -14330,7 +14330,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "80291",
     motor: "1",
@@ -14339,7 +14339,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "127086",
     motor: "1",
@@ -14348,7 +14348,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Prestige 2.0 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "119514",
     motor: "1",
@@ -14357,7 +14357,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "74992",
     motor: "1",
@@ -14366,7 +14366,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 Flex 12 Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "74295",
     motor: "1",
@@ -14375,7 +14375,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GL 1.6 Turbo 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "123845",
     motor: "1",
@@ -14384,7 +14384,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart Plus 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "108358",
     motor: "1",
@@ -14393,7 +14393,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "80386",
     motor: "1",
@@ -14402,7 +14402,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Launch Edition 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "106176",
     motor: "1",
@@ -14411,7 +14411,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "98613",
     motor: "1",
@@ -14420,7 +14420,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evol. Bluelink 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "85785",
     motor: "1",
@@ -14429,7 +14429,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sense 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "73203",
     motor: "1",
@@ -14438,7 +14438,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond Plus 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "99196",
     motor: "1",
@@ -14447,7 +14447,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "73160",
     motor: "1",
@@ -14456,7 +14456,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "70030",
     motor: "1",
@@ -14465,7 +14465,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "78363",
     motor: "1",
@@ -14474,7 +14474,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Pulse Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "103820",
     motor: "1",
@@ -14483,7 +14483,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Ultimate 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "164316",
     motor: "1",
@@ -14492,7 +14492,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style1.0 Flex 12V Mec. 4P",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "69415",
     motor: "1",
@@ -14501,7 +14501,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "94470",
     motor: "1",
@@ -14510,7 +14510,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "101246",
     motor: "1",
@@ -14519,7 +14519,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Prestige 2.0 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "120186",
     motor: "1",
@@ -14528,7 +14528,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "93101",
     motor: "1",
@@ -14537,7 +14537,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sense 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "73986",
     motor: "1",
@@ -14546,7 +14546,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "80949",
     motor: "1",
@@ -14555,7 +14555,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "89623",
     motor: "1",
@@ -14564,7 +14564,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "101484",
     motor: "1",
@@ -14573,7 +14573,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85090",
     motor: "1",
@@ -14582,7 +14582,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "56016",
     motor: "1",
@@ -14591,7 +14591,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "66939",
     motor: "1",
@@ -14600,7 +14600,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evolution 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96940",
     motor: "1",
@@ -14609,7 +14609,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76449",
     motor: "1",
@@ -14618,7 +14618,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta N Line 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "163657",
     motor: "1",
@@ -14627,7 +14627,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "102378",
     motor: "1",
@@ -14636,7 +14636,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "100644",
     motor: "1",
@@ -14645,7 +14645,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evolution 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "95141",
     motor: "1",
@@ -14654,7 +14654,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 Flex 12 Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "86078",
     motor: "1",
@@ -14663,7 +14663,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "60604",
     motor: "1",
@@ -14672,7 +14672,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution Bluelink 1.0 Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "81021",
     motor: "1",
@@ -14681,7 +14681,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "70120",
     motor: "1",
@@ -14690,7 +14690,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "95897",
     motor: "1",
@@ -14699,7 +14699,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "81784",
     motor: "1",
@@ -14708,7 +14708,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "60050",
     motor: "1",
@@ -14717,7 +14717,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta 1 Million 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "104913",
     motor: "1",
@@ -14726,7 +14726,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GL 2.0 16V 2WD Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "154476",
     motor: "1",
@@ -14735,7 +14735,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comf./C.Plus/C.Style 1.0 Flex 12V",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "62198",
     motor: "1",
@@ -14744,7 +14744,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "136293",
     motor: "1",
@@ -14753,7 +14753,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "AZERA 3.0 V6 24V 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "287960",
     motor: "1",
@@ -14762,7 +14762,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "74793",
     motor: "1",
@@ -14771,7 +14771,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "75976",
     motor: "1",
@@ -14780,7 +14780,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe/GLS 3.3 V6 4X4 Tiptronic",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "180987",
     motor: "1",
@@ -14789,7 +14789,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson Limited 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "224255",
     motor: "1",
@@ -14798,7 +14798,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution Bluelink 1.0 Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "80662",
     motor: "1",
@@ -14807,7 +14807,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta 1 Million 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "105279",
     motor: "1",
@@ -14816,7 +14816,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "135651",
     motor: "1",
@@ -14825,7 +14825,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Ultimate 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "168044",
     motor: "1",
@@ -14834,7 +14834,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GL 1.6 Turbo 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "125833",
     motor: "1",
@@ -14843,7 +14843,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "59705",
     motor: "1",
@@ -14852,7 +14852,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sport 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "97296",
     motor: "1",
@@ -14861,7 +14861,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "87594",
     motor: "1",
@@ -14870,7 +14870,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Style/C.Plus1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "73107",
     motor: "1",
@@ -14879,7 +14879,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "88315",
     motor: "1",
@@ -14888,7 +14888,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "74918",
     motor: "1",
@@ -14897,7 +14897,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson Limited 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "223631",
     motor: "1",
@@ -14906,7 +14906,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16v Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "70169",
     motor: "1",
@@ -14915,7 +14915,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "131596",
     motor: "1",
@@ -14924,7 +14924,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comf./C.Plus/C.Style 1.0 Flex 12V",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "61178",
     motor: "1",
@@ -14933,7 +14933,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "82805",
     motor: "1",
@@ -14942,7 +14942,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GLS 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "134145",
     motor: "1",
@@ -14951,7 +14951,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "95771",
     motor: "1",
@@ -14960,7 +14960,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "94411",
     motor: "1",
@@ -14969,7 +14969,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "80755",
     motor: "1",
@@ -14978,7 +14978,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Launch Edition 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "106574",
     motor: "1",
@@ -14987,7 +14987,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "76970",
     motor: "1",
@@ -14996,7 +14996,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited Edition 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "113129",
     motor: "1",
@@ -15005,7 +15005,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "73822",
     motor: "1",
@@ -15014,7 +15014,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 1 Million 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "70024",
     motor: "1",
@@ -15023,7 +15023,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "61832",
     motor: "1",
@@ -15032,7 +15032,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "129673",
     motor: "1",
@@ -15041,7 +15041,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "90721",
     motor: "1",
@@ -15050,7 +15050,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evol. Bluelink 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "83770",
     motor: "1",
@@ -15059,7 +15059,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Action 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "107358",
     motor: "1",
@@ -15068,7 +15068,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "98860",
     motor: "1",
@@ -15077,7 +15077,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "96891",
     motor: "1",
@@ -15086,7 +15086,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "60348",
     motor: "1",
@@ -15095,7 +15095,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond Plus 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "100170",
     motor: "1",
@@ -15104,7 +15104,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited Edition 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "111216",
     motor: "1",
@@ -15113,7 +15113,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "95531",
     motor: "1",
@@ -15122,7 +15122,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "104876",
     motor: "1",
@@ -15131,7 +15131,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "72182",
     motor: "1",
@@ -15140,7 +15140,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "95699",
     motor: "1",
@@ -15149,7 +15149,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "98376",
     motor: "1",
@@ -15158,7 +15158,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "108184",
     motor: "1",
@@ -15167,7 +15167,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "75138",
     motor: "1",
@@ -15176,7 +15176,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "87294",
     motor: "1",
@@ -15185,7 +15185,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "94821",
     motor: "1",
@@ -15194,7 +15194,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S 1 Million 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "75156",
     motor: "1",
@@ -15203,7 +15203,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "102960",
     motor: "1",
@@ -15212,7 +15212,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "127164",
     motor: "1",
@@ -15221,7 +15221,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Sport 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "102709",
     motor: "1",
@@ -15230,7 +15230,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "88612",
     motor: "1",
@@ -15239,7 +15239,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta 1 Million 1.6 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "103390",
     motor: "1",
@@ -15248,7 +15248,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "72505",
     motor: "1",
@@ -15257,7 +15257,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "80478",
     motor: "1",
@@ -15266,7 +15266,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "80460",
     motor: "1",
@@ -15275,7 +15275,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "91945",
     motor: "1",
@@ -15284,7 +15284,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "107948",
     motor: "1",
@@ -15293,7 +15293,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "92527",
     motor: "1",
@@ -15302,7 +15302,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16v Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "70949",
     motor: "1",
@@ -15311,7 +15311,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "80575",
     motor: "1",
@@ -15320,7 +15320,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 1 Million 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "73102",
     motor: "1",
@@ -15329,7 +15329,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "76471",
     motor: "1",
@@ -15338,7 +15338,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16v Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "70984",
     motor: "1",
@@ -15347,7 +15347,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "81849",
     motor: "1",
@@ -15356,7 +15356,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "77976",
     motor: "1",
@@ -15365,7 +15365,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond Plus 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "101997",
     motor: "1",
@@ -15374,7 +15374,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "97714",
     motor: "1",
@@ -15383,7 +15383,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "94718",
     motor: "1",
@@ -15392,7 +15392,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "62227",
     motor: "1",
@@ -15401,7 +15401,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "101328",
     motor: "1",
@@ -15410,7 +15410,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "100164",
     motor: "1",
@@ -15419,7 +15419,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "89289",
     motor: "1",
@@ -15428,7 +15428,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "76965",
     motor: "1",
@@ -15437,7 +15437,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "79182",
     motor: "1",
@@ -15446,7 +15446,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "112196",
     motor: "1",
@@ -15455,7 +15455,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "93245",
     motor: "1",
@@ -15464,7 +15464,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "80520",
     motor: "1",
@@ -15473,7 +15473,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "80486",
     motor: "1",
@@ -15482,7 +15482,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "58975",
     motor: "1",
@@ -15491,7 +15491,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "91785",
     motor: "1",
@@ -15500,7 +15500,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "83659",
     motor: "1",
@@ -15509,7 +15509,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 R spec 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "73899",
     motor: "1",
@@ -15518,7 +15518,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GL 2.0 16V 2WD Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "152739",
     motor: "1",
@@ -15527,7 +15527,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "96984",
     motor: "1",
@@ -15536,7 +15536,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 Flex 12 Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "74129",
     motor: "1",
@@ -15545,7 +15545,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "67990",
     motor: "1",
@@ -15554,7 +15554,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "92699",
     motor: "1",
@@ -15563,7 +15563,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart Plus 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "106231",
     motor: "1",
@@ -15572,7 +15572,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 1 Million 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70854",
     motor: "1",
@@ -15581,7 +15581,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Ultimate 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "170533",
     motor: "1",
@@ -15590,7 +15590,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91645",
     motor: "1",
@@ -15599,7 +15599,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "73096",
     motor: "1",
@@ -15608,7 +15608,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "111574",
     motor: "1",
@@ -15617,7 +15617,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77812",
     motor: "1",
@@ -15626,7 +15626,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "100090",
     motor: "1",
@@ -15635,7 +15635,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81186",
     motor: "1",
@@ -15644,7 +15644,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Prestige 2.0 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "119042",
     motor: "1",
@@ -15653,7 +15653,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Launch Edition 1.6 Flex 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "80955",
     motor: "1",
@@ -15662,7 +15662,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe 3.5 V6 4X4 Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "320004",
     motor: "1",
@@ -15671,7 +15671,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69790",
     motor: "1",
@@ -15680,7 +15680,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70571",
     motor: "1",
@@ -15689,7 +15689,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style1.0 Flex 12V Mec. 4P",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "68273",
     motor: "1",
@@ -15698,7 +15698,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe/GLS 3.3 V6 4X4 Tiptronic",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "174571",
     motor: "1",
@@ -15707,7 +15707,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "79075",
     motor: "1",
@@ -15716,7 +15716,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 R spec 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73998",
     motor: "1",
@@ -15725,7 +15725,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GL 2.0 16V 2WD Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "154549",
     motor: "1",
@@ -15734,7 +15734,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 Flex 12 Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85489",
     motor: "1",
@@ -15743,7 +15743,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71033",
     motor: "1",
@@ -15752,7 +15752,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93101",
     motor: "1",
@@ -15761,7 +15761,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Pulse Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "103555",
     motor: "1",
@@ -15770,7 +15770,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "92323",
     motor: "1",
@@ -15779,7 +15779,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C.Style/C.Plus 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69643",
     motor: "1",
@@ -15788,7 +15788,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe 3.5 V6 4X4 Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "335684",
     motor: "1",
@@ -15797,7 +15797,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "99321",
     motor: "1",
@@ -15806,7 +15806,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evol. Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96730",
     motor: "1",
@@ -15815,7 +15815,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94573",
     motor: "1",
@@ -15824,7 +15824,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comf./C.Plus/C.Style 1.0 Flex 12V",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61626",
     motor: "1",
@@ -15833,7 +15833,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort 1.0 TB Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94490",
     motor: "1",
@@ -15842,7 +15842,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "65726",
     motor: "1",
@@ -15851,7 +15851,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GLS 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "135218",
     motor: "1",
@@ -15860,7 +15860,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "101016",
     motor: "1",
@@ -15869,7 +15869,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "AZERA 3.0 V6 24V 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "285655",
     motor: "1",
@@ -15878,7 +15878,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart Plus 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "104665",
     motor: "1",
@@ -15887,7 +15887,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "75256",
     motor: "1",
@@ -15896,7 +15896,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92321",
     motor: "1",
@@ -15905,7 +15905,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108988",
     motor: "1",
@@ -15914,7 +15914,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63098",
     motor: "1",
@@ -15923,7 +15923,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe/GLS 3.3 V6 4X4 Tiptronic",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "181691",
     motor: "1",
@@ -15932,7 +15932,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Prestige 2.0 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "122152",
     motor: "1",
@@ -15941,7 +15941,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80409",
     motor: "1",
@@ -15950,7 +15950,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "81000",
     motor: "1",
@@ -15959,7 +15959,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Action 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108731",
     motor: "1",
@@ -15968,7 +15968,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "58458",
     motor: "1",
@@ -15977,7 +15977,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74510",
     motor: "1",
@@ -15986,7 +15986,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart Plus 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "104424",
     motor: "1",
@@ -15995,7 +15995,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S 1 Million 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72238",
     motor: "1",
@@ -16004,7 +16004,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Action 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "106776",
     motor: "1",
@@ -16013,7 +16013,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103540",
     motor: "1",
@@ -16022,7 +16022,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91680",
     motor: "1",
@@ -16031,7 +16031,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comf./C.Plus/C.Style 1.0 Flex 12V",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62688",
     motor: "1",
@@ -16040,7 +16040,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86718",
     motor: "1",
@@ -16049,7 +16049,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "101510",
     motor: "1",
@@ -16058,7 +16058,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "100031",
     motor: "1",
@@ -16067,7 +16067,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84694",
     motor: "1",
@@ -16076,7 +16076,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81647",
     motor: "1",
@@ -16085,7 +16085,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evolution 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96330",
     motor: "1",
@@ -16094,7 +16094,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94894",
     motor: "1",
@@ -16103,7 +16103,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Style/C.Plus1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73521",
     motor: "1",
@@ -16112,7 +16112,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "102698",
     motor: "1",
@@ -16121,7 +16121,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart Plus 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "104972",
     motor: "1",
@@ -16130,7 +16130,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82985",
     motor: "1",
@@ -16139,7 +16139,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61752",
     motor: "1",
@@ -16148,7 +16148,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evol. Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95482",
     motor: "1",
@@ -16157,7 +16157,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Launch Edition 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107454",
     motor: "1",
@@ -16166,7 +16166,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited Edition 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "115289",
     motor: "1",
@@ -16175,7 +16175,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GL 1.6 Turbo 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "126839",
     motor: "1",
@@ -16184,7 +16184,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe 3.5 V6 4X4 Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "315944",
     motor: "1",
@@ -16193,7 +16193,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "101442",
     motor: "1",
@@ -16202,7 +16202,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91179",
     motor: "1",
@@ -16211,7 +16211,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77479",
     motor: "1",
@@ -16220,7 +16220,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Ultimate 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "167874",
     motor: "1",
@@ -16229,7 +16229,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "87291",
     motor: "1",
@@ -16238,7 +16238,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Sport 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "105542",
     motor: "1",
@@ -16247,7 +16247,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Platinum 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "147596",
     motor: "1",
@@ -16256,7 +16256,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sport 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "104660",
     motor: "1",
@@ -16265,7 +16265,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comf./C.Plus/C.Style 1.0 Flex 12V",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60099",
     motor: "1",
@@ -16274,7 +16274,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "81017",
     motor: "1",
@@ -16283,7 +16283,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82056",
     motor: "1",
@@ -16292,7 +16292,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "77826",
     motor: "1",
@@ -16301,7 +16301,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GL 1.6 Turbo 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "124835",
     motor: "1",
@@ -16310,7 +16310,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GLS 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "138491",
     motor: "1",
@@ -16319,7 +16319,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 Flex 12 Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85562",
     motor: "1",
@@ -16328,7 +16328,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "89030",
     motor: "1",
@@ -16337,7 +16337,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92940",
     motor: "1",
@@ -16346,7 +16346,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe/GLS 3.3 V6 4X4 Tiptronic",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "181675",
     motor: "1",
@@ -16355,7 +16355,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Comfort 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "121450",
     motor: "1",
@@ -16364,7 +16364,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Pulse Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "103543",
     motor: "1",
@@ -16373,7 +16373,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "55296",
     motor: "1",
@@ -16382,7 +16382,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style1.0 Flex 12V Mec. 4P",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "67145",
     motor: "1",
@@ -16391,7 +16391,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80785",
     motor: "1",
@@ -16400,7 +16400,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 1 Million 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70836",
     motor: "1",
@@ -16409,7 +16409,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "71776",
     motor: "1",
@@ -16418,7 +16418,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "104776",
     motor: "1",
@@ -16427,7 +16427,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76776",
     motor: "1",
@@ -16436,7 +16436,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "134580",
     motor: "1",
@@ -16445,7 +16445,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart Plus 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "103297",
     motor: "1",
@@ -16454,7 +16454,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "68834",
     motor: "1",
@@ -16463,7 +16463,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "AZERA 3.0 V6 24V 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "287630",
     motor: "1",
@@ -16472,7 +16472,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62667",
     motor: "1",
@@ -16481,7 +16481,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "89548",
     motor: "1",
@@ -16490,7 +16490,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "76324",
     motor: "1",
@@ -16499,7 +16499,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 Flex 12 Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "72682",
     motor: "1",
@@ -16508,7 +16508,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evol. Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95202",
     motor: "1",
@@ -16517,7 +16517,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style 1.6 Flex 16V Mec.4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70567",
     motor: "1",
@@ -16526,7 +16526,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93056",
     motor: "1",
@@ -16535,7 +16535,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88850",
     motor: "1",
@@ -16544,7 +16544,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Launch Edition 1.6 Flex 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "79815",
     motor: "1",
@@ -16553,7 +16553,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96963",
     motor: "1",
@@ -16562,7 +16562,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "99952",
     motor: "1",
@@ -16571,7 +16571,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Limited 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "86123",
     motor: "1",
@@ -16580,7 +16580,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62063",
     motor: "1",
@@ -16589,7 +16589,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution Bluelink 1.0 Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "70225",
     motor: "1",
@@ -16598,7 +16598,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "83896",
     motor: "1",
@@ -16607,7 +16607,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style1.0 Flex 12V Mec. 4P",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "65923",
     motor: "1",
@@ -16616,7 +16616,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Launch Edition 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108212",
     motor: "1",
@@ -16625,7 +16625,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "67125",
     motor: "1",
@@ -16634,7 +16634,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "100976",
     motor: "1",
@@ -16643,7 +16643,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GL 2.0 16V 2WD Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "151347",
     motor: "1",
@@ -16652,7 +16652,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "79146",
     motor: "1",
@@ -16661,7 +16661,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98389",
     motor: "1",
@@ -16670,7 +16670,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "92618",
     motor: "1",
@@ -16679,7 +16679,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85996",
     motor: "1",
@@ -16688,7 +16688,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70895",
     motor: "1",
@@ -16697,7 +16697,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84953",
     motor: "1",
@@ -16706,7 +16706,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80056",
     motor: "1",
@@ -16715,7 +16715,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94290",
     motor: "1",
@@ -16724,7 +16724,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96940",
     motor: "1",
@@ -16733,7 +16733,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Limited 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "133636",
     motor: "1",
@@ -16742,7 +16742,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evol. Bluelink 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85711",
     motor: "1",
@@ -16751,7 +16751,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Plus/C.Style1.0 Flex 12V Mec. 4P",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "64116",
     motor: "1",
@@ -16760,7 +16760,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76701",
     motor: "1",
@@ -16769,7 +16769,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74673",
     motor: "1",
@@ -16778,7 +16778,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95856",
     motor: "1",
@@ -16787,7 +16787,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GLS 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "136299",
     motor: "1",
@@ -16796,7 +16796,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "76350",
     motor: "1",
@@ -16805,7 +16805,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Premium 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80120",
     motor: "1",
@@ -16814,7 +16814,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Launch Edition 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "107159",
     motor: "1",
@@ -16823,7 +16823,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Prestige 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "123478",
     motor: "1",
@@ -16832,7 +16832,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94702",
     motor: "1",
@@ -16841,7 +16841,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94668",
     motor: "1",
@@ -16850,7 +16850,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GLS 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "133605",
     motor: "1",
@@ -16859,7 +16859,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Launch Edition 1.6 Flex 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "82370",
     motor: "1",
@@ -16868,7 +16868,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe/GLS 3.3 V6 4X4 Tiptronic",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "172151",
     motor: "1",
@@ -16877,7 +16877,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S 1 Million 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74814",
     motor: "1",
@@ -16886,7 +16886,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Ultimate 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "167364",
     motor: "1",
@@ -16895,7 +16895,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93590",
     motor: "1",
@@ -16904,7 +16904,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "88292",
     motor: "1",
@@ -16913,7 +16913,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "55748",
     motor: "1",
@@ -16922,7 +16922,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82299",
     motor: "1",
@@ -16931,7 +16931,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Launch Edition 1.6 Flex 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "82139",
     motor: "1",
@@ -16940,7 +16940,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88784",
     motor: "1",
@@ -16949,7 +16949,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evolution 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95209",
     motor: "1",
@@ -16958,7 +16958,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "57002",
     motor: "1",
@@ -16967,7 +16967,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "96980",
     motor: "1",
@@ -16976,7 +16976,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96536",
     motor: "1",
@@ -16985,7 +16985,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61656",
     motor: "1",
@@ -16994,7 +16994,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61116",
     motor: "1",
@@ -17003,7 +17003,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91808",
     motor: "1",
@@ -17012,7 +17012,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S 1 Million 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72264",
     motor: "1",
@@ -17021,7 +17021,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 1 Million 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70570",
     motor: "1",
@@ -17030,7 +17030,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "87213",
     motor: "1",
@@ -17039,7 +17039,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S C.Style/C.Plus1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73754",
     motor: "1",
@@ -17048,7 +17048,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "98504",
     motor: "1",
@@ -17057,7 +17057,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "80838",
     motor: "1",
@@ -17066,7 +17066,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72833",
     motor: "1",
@@ -17075,7 +17075,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72592",
     motor: "1",
@@ -17084,7 +17084,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Sport 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "105623",
     motor: "1",
@@ -17093,7 +17093,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85061",
     motor: "1",
@@ -17102,7 +17102,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76457",
     motor: "1",
@@ -17111,7 +17111,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Platinum 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "150162",
     motor: "1",
@@ -17120,7 +17120,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "74153",
     motor: "1",
@@ -17129,7 +17129,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution Bluelink 1.0 Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80696",
     motor: "1",
@@ -17138,7 +17138,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 C./C.Plus/C.Style 1.6 Flex 16V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "69985",
     motor: "1",
@@ -17147,7 +17147,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comf./C.Plus/C.Style 1.0 Flex 12V",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61936",
     motor: "1",
@@ -17156,7 +17156,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evol. Bluelink 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "83036",
     motor: "1",
@@ -17165,7 +17165,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Sport 2.0 16V Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "105142",
     motor: "1",
@@ -17174,7 +17174,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Platinum 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "150436",
     motor: "1",
@@ -17183,7 +17183,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 1 Million 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72030",
     motor: "1",
@@ -17192,7 +17192,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe/GLS 3.3 V6 4X4 Tiptronic",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "179516",
     motor: "1",
@@ -17201,7 +17201,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GLS 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "199445",
     motor: "1",
@@ -17210,7 +17210,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evol. Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96940",
     motor: "1",
@@ -17219,7 +17219,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82585",
     motor: "1",
@@ -17228,7 +17228,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GLS 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "201990",
     motor: "1",
@@ -17237,7 +17237,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77140",
     motor: "1",
@@ -17246,7 +17246,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond Plus 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "101079",
     motor: "1",
@@ -17255,7 +17255,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85072",
     motor: "1",
@@ -17264,7 +17264,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Unique 1.0 Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "56310",
     motor: "1",
@@ -17273,7 +17273,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91809",
     motor: "1",
@@ -17282,7 +17282,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "90718",
     motor: "1",
@@ -17291,7 +17291,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Comfort 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "117596",
     motor: "1",
@@ -17300,7 +17300,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.6 Flex 16V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "83692",
     motor: "1",
@@ -17309,7 +17309,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84586",
     motor: "1",
@@ -17318,7 +17318,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78837",
     motor: "1",
@@ -17327,7 +17327,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74550",
     motor: "1",
@@ -17336,7 +17336,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93568",
     motor: "1",
@@ -17345,7 +17345,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Diamond Plus 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98588",
     motor: "1",
@@ -17354,7 +17354,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "79021",
     motor: "1",
@@ -17363,7 +17363,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Ultimate 2.0 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "167356",
     motor: "1",
@@ -17372,7 +17372,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "93448",
     motor: "1",
@@ -17381,7 +17381,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 R spec 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72581",
     motor: "1",
@@ -17390,7 +17390,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98422",
     motor: "1",
@@ -17399,7 +17399,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Smart Plus 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107196",
     motor: "1",
@@ -17408,7 +17408,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Premium 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "76748",
     motor: "1",
@@ -17417,7 +17417,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sport 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "102356",
     motor: "1",
@@ -17426,7 +17426,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evolution 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95396",
     motor: "1",
@@ -17435,7 +17435,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "80698",
     motor: "1",
@@ -17444,7 +17444,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Style 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78448",
     motor: "1",
@@ -17453,7 +17453,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GLS 1.6 Turbo 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "201890",
     motor: "1",
@@ -17462,7 +17462,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 TB Flex 12V Aut",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "90854",
     motor: "1",
@@ -17471,7 +17471,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Copa do Mundo 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74450",
     motor: "1",
@@ -17480,7 +17480,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Tucson GL 1.6 Turbo 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "134117",
     motor: "1",
@@ -17489,7 +17489,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Sense 1.0 Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "72897",
     motor: "1",
@@ -17498,7 +17498,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Pulse Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "104303",
     motor: "1",
@@ -17507,7 +17507,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94514",
     motor: "1",
@@ -17516,7 +17516,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Platinum 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "150854",
     motor: "1",
@@ -17525,7 +17525,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evol. Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "92800",
     motor: "1",
@@ -17534,7 +17534,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "83896",
     motor: "1",
@@ -17543,7 +17543,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Evol. Bluelink 1.0 Flex 12 Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85588",
     motor: "1",
@@ -17552,7 +17552,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "79769",
     motor: "1",
@@ -17561,7 +17561,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20X Evol. Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94909",
     motor: "1",
@@ -17570,7 +17570,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution Bluelink 1.0 Flex 12V Mec",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82454",
     motor: "1",
@@ -17579,7 +17579,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Comfort 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "118596",
     motor: "1",
@@ -17588,7 +17588,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Comfort Plus 1.0 TB Flex 12V Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61964",
     motor: "1",
@@ -17597,7 +17597,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evol. Bluelink 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "85365",
     motor: "1",
@@ -17606,7 +17606,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Platinum 1.0 TB 12V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "153250",
     motor: "1",
@@ -17615,7 +17615,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Creta Attitude Plus 1.6 16V Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "92453",
     motor: "1",
@@ -17624,7 +17624,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "111440",
     motor: "1",
@@ -17633,7 +17633,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "99440",
     motor: "1",
@@ -17642,7 +17642,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Diamond 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "97662",
     motor: "1",
@@ -17651,7 +17651,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "Santa Fe 3.5 V6 4X4 Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "305057",
     motor: "1",
@@ -17660,7 +17660,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Evolution 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "89648",
     motor: "1",
@@ -17669,7 +17669,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Vision Bluelink 1.6 Flex 16V Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77479",
     motor: "1",
@@ -17678,7 +17678,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Diamond Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94706",
     motor: "1",
@@ -17687,7 +17687,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Vision Bluelink 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "83469",
     motor: "1",
@@ -17696,7 +17696,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 1 Million 1.6 Flex 16V Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73189",
     motor: "1",
@@ -17705,7 +17705,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "ix35 GLS 2.0 16V 2WD Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "135659",
     motor: "1",
@@ -17714,7 +17714,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20S Premium 1.6 Flex 16V Aut. 4p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78225",
     motor: "1",
@@ -17723,7 +17723,7 @@ const dataCar = [
   {
     marca: "Hyundai",
     modelo: "HB20 Platinum Plus 1.0 TB Flex 12V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "117188",
     motor: "1",
@@ -17732,7 +17732,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Esp.Ed. 1.6 16v Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "76482",
     motor: "1",
@@ -17741,7 +17741,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH S 1.0 12V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "46641",
     motor: "1",
@@ -17750,7 +17750,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103404",
     motor: "1",
@@ -17759,7 +17759,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "104774",
     motor: "1",
@@ -17768,7 +17768,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.0  12V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "68594",
     motor: "1",
@@ -17777,7 +17777,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SL 1.6 16V FlexStar 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "115013",
     motor: "1",
@@ -17786,7 +17786,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH S 1.0 12V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "46137",
     motor: "1",
@@ -17795,7 +17795,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S Direct 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "95648",
     motor: "1",
@@ -17804,7 +17804,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SV 1.6 16V FlexStar 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "109925",
     motor: "1",
@@ -17813,7 +17813,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S Direct 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "95256",
     motor: "1",
@@ -17822,7 +17822,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SV 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "92471",
     motor: "1",
@@ -17831,7 +17831,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S Direct 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "94134",
     motor: "1",
@@ -17840,7 +17840,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed.1.6 16V Flex 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "92650",
     motor: "1",
@@ -17849,7 +17849,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.0 12V Flex 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "59006",
     motor: "1",
@@ -17858,7 +17858,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA 1.0 12V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "58214",
     motor: "1",
@@ -17867,7 +17867,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "112595",
     motor: "1",
@@ -17876,7 +17876,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107308",
     motor: "1",
@@ -17885,7 +17885,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.0  12V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "63284",
     motor: "1",
@@ -17894,7 +17894,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SL 1.6 16V FlexStar 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "124451",
     motor: "1",
@@ -17903,7 +17903,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "105784",
     motor: "1",
@@ -17912,7 +17912,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS UCL 1.6 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108692",
     motor: "1",
@@ -17921,7 +17921,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL Direct 1.6 16V Flex  Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "73162",
     motor: "1",
@@ -17930,7 +17930,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Special Ed. 1.6 16V FlexStart Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "71848",
     motor: "1",
@@ -17939,7 +17939,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72076",
     motor: "1",
@@ -17948,7 +17948,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS XPlay 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "136813",
     motor: "1",
@@ -17957,7 +17957,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98322",
     motor: "1",
@@ -17966,7 +17966,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Premium 1.6 16v Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "78068",
     motor: "1",
@@ -17975,7 +17975,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "74927",
     motor: "1",
@@ -17984,7 +17984,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "121196",
     motor: "1",
@@ -17993,7 +17993,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94141",
     motor: "1",
@@ -18002,7 +18002,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108887",
     motor: "1",
@@ -18011,7 +18011,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "96735",
     motor: "1",
@@ -18020,7 +18020,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "LEAF Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "297563",
     motor: "3",
@@ -18029,7 +18029,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed. 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "98366",
     motor: "1",
@@ -18038,7 +18038,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "60950",
     motor: "1",
@@ -18047,7 +18047,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "100573",
     motor: "1",
@@ -18056,7 +18056,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra S 2.0 FlexStart 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "90120",
     motor: "1",
@@ -18065,7 +18065,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "118860",
     motor: "1",
@@ -18074,7 +18074,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "105615",
     motor: "1",
@@ -18083,7 +18083,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Special Ed. 1.6 16V FlexStart Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "70639",
     motor: "1",
@@ -18092,7 +18092,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL Direct 1.6 16V Flex  Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "72801",
     motor: "1",
@@ -18101,7 +18101,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH S 1.0 12V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "45785",
     motor: "1",
@@ -18110,7 +18110,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "125680",
     motor: "1",
@@ -18119,7 +18119,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA S 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "63579",
     motor: "1",
@@ -18128,7 +18128,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72914",
     motor: "1",
@@ -18137,7 +18137,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "97024",
     motor: "1",
@@ -18146,7 +18146,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "131664",
     motor: "1",
@@ -18155,7 +18155,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.0 12V Flex 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "58203",
     motor: "1",
@@ -18164,7 +18164,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.0 12V Flex 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "58489",
     motor: "1",
@@ -18173,7 +18173,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra S 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "86294",
     motor: "1",
@@ -18182,7 +18182,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "123712",
     motor: "1",
@@ -18191,7 +18191,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V FlexStar 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94455",
     motor: "1",
@@ -18200,7 +18200,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed. 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "98672",
     motor: "1",
@@ -18209,7 +18209,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "70816",
     motor: "1",
@@ -18218,7 +18218,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SL 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "101169",
     motor: "1",
@@ -18227,7 +18227,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "144276",
     motor: "1",
@@ -18236,7 +18236,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Active S 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "99128",
     motor: "1",
@@ -18245,7 +18245,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103512",
     motor: "1",
@@ -18254,7 +18254,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "77046",
     motor: "1",
@@ -18263,7 +18263,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SL 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "101873",
     motor: "1",
@@ -18272,7 +18272,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "99491",
     motor: "1",
@@ -18281,7 +18281,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "105887",
     motor: "1",
@@ -18290,7 +18290,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed.1.6 16V Flex 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "95162",
     motor: "1",
@@ -18299,7 +18299,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "120934",
     motor: "1",
@@ -18308,7 +18308,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "97126",
     motor: "1",
@@ -18317,7 +18317,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra S 2.0 FlexStart 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "89891",
     motor: "1",
@@ -18326,7 +18326,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "70397",
     motor: "1",
@@ -18335,7 +18335,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "75450",
     motor: "1",
@@ -18344,7 +18344,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107708",
     motor: "1",
@@ -18353,7 +18353,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "72365",
     motor: "1",
@@ -18362,7 +18362,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA S 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "64215",
     motor: "1",
@@ -18371,7 +18371,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Esp.Ed. 1.6 16v Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "78293",
     motor: "1",
@@ -18380,7 +18380,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Special Ed. 1.6 16V FlexStart Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "70010",
     motor: "1",
@@ -18389,7 +18389,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed.1.6 16V Flex 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "91024",
     motor: "1",
@@ -18398,7 +18398,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SV 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "92111",
     motor: "1",
@@ -18407,7 +18407,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Premium 1.6 16v Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "78610",
     motor: "1",
@@ -18416,7 +18416,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SL 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "73742",
     motor: "1",
@@ -18425,7 +18425,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA 1.0 12V FlexStart 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "60418",
     motor: "1",
@@ -18434,7 +18434,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S Direct 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "95420",
     motor: "1",
@@ -18443,7 +18443,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "69492",
     motor: "1",
@@ -18452,7 +18452,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Active S 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103985",
     motor: "1",
@@ -18461,7 +18461,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "67973",
     motor: "1",
@@ -18470,7 +18470,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA S 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "63220",
     motor: "1",
@@ -18479,7 +18479,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Special Ed. 1.6 16V FlexStart Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "72501",
     motor: "1",
@@ -18488,7 +18488,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SL 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "70328",
     motor: "1",
@@ -18497,7 +18497,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SV 2.0 FlexStart 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98552",
     motor: "1",
@@ -18506,7 +18506,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.0  12V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "68281",
     motor: "1",
@@ -18515,7 +18515,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "111563",
     motor: "1",
@@ -18524,7 +18524,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA 1.0 12V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "59238",
     motor: "1",
@@ -18533,7 +18533,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed. 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "96720",
     motor: "1",
@@ -18542,7 +18542,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA S 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "61567",
     motor: "1",
@@ -18551,7 +18551,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "114970",
     motor: "1",
@@ -18560,7 +18560,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Active S 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "109080",
     motor: "1",
@@ -18569,7 +18569,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL Direct 1.6 16V Flex  Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "71651",
     motor: "1",
@@ -18578,7 +18578,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Active S 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "113672",
     motor: "1",
@@ -18587,7 +18587,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "125132",
     motor: "1",
@@ -18596,7 +18596,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "69923",
     motor: "1",
@@ -18605,7 +18605,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "104192",
     motor: "1",
@@ -18614,7 +18614,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed. 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "95521",
     motor: "1",
@@ -18623,7 +18623,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Esp.Ed. 1.6 16v Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "76632",
     motor: "1",
@@ -18632,7 +18632,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "72316",
     motor: "1",
@@ -18641,7 +18641,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SL 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "102548",
     motor: "1",
@@ -18650,7 +18650,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "GT-R 3.8 V6 BiTurbo Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "950424",
     motor: "1",
@@ -18659,7 +18659,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SL 1.6 16V FlexStar 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "127100",
     motor: "1",
@@ -18668,7 +18668,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SL 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "74106",
     motor: "1",
@@ -18677,7 +18677,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "64913",
     motor: "1",
@@ -18686,7 +18686,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL Direct 1.6 16V Flex  Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "72224",
     motor: "1",
@@ -18695,7 +18695,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.0  12V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "68439",
     motor: "1",
@@ -18704,7 +18704,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S Direct 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "94622",
     motor: "1",
@@ -18713,7 +18713,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS XPlay 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "135876",
     motor: "1",
@@ -18722,7 +18722,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "143714",
     motor: "1",
@@ -18731,7 +18731,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS XPlay 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "134902",
     motor: "1",
@@ -18740,7 +18740,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "78854",
     motor: "1",
@@ -18749,7 +18749,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE PLUS 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "82921",
     motor: "1",
@@ -18758,7 +18758,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Premium 1.6 16v Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "84610",
     motor: "1",
@@ -18767,7 +18767,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "LEAF Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "298859",
     motor: "3",
@@ -18776,7 +18776,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "66437",
     motor: "1",
@@ -18785,7 +18785,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "73215",
     motor: "1",
@@ -18794,7 +18794,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "69011",
     motor: "1",
@@ -18803,7 +18803,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS XPlay 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "134633",
     motor: "1",
@@ -18812,7 +18812,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "GT-R 3.8 V6 BiTurbo Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "898322",
     motor: "1",
@@ -18821,7 +18821,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SV 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "92873",
     motor: "1",
@@ -18830,7 +18830,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V FlexStar 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "97149",
     motor: "1",
@@ -18839,7 +18839,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "111679",
     motor: "1",
@@ -18848,7 +18848,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "69244",
     motor: "1",
@@ -18857,7 +18857,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS XPlay 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "134310",
     motor: "1",
@@ -18866,7 +18866,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "61098",
     motor: "1",
@@ -18875,7 +18875,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH S 1.0 12V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "45381",
     motor: "1",
@@ -18884,7 +18884,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "66632",
     motor: "1",
@@ -18893,7 +18893,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "78035",
     motor: "1",
@@ -18902,7 +18902,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V FlexStar 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "92612",
     motor: "1",
@@ -18911,7 +18911,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH S 1.0 12V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "46916",
     motor: "1",
@@ -18920,7 +18920,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SV 2.0 FlexStart 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "98382",
     motor: "1",
@@ -18929,7 +18929,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SV 1.6 16V FlexStar 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "107566",
     motor: "1",
@@ -18938,7 +18938,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "99557",
     motor: "1",
@@ -18947,7 +18947,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra S 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "87055",
     motor: "1",
@@ -18956,7 +18956,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S Direct 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "95135",
     motor: "1",
@@ -18965,7 +18965,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "69755",
     motor: "1",
@@ -18974,7 +18974,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA S 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "64327",
     motor: "1",
@@ -18983,7 +18983,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA 1.0 12V FlexStart 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "60967",
     motor: "1",
@@ -18992,7 +18992,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "GT-R 3.8 V6 BiTurbo Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "935398",
     motor: "1",
@@ -19001,7 +19001,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "GT-R 3.8 V6 BiTurbo Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "942881",
     motor: "1",
@@ -19010,7 +19010,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "107596",
     motor: "1",
@@ -19019,7 +19019,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed. 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "94197",
     motor: "1",
@@ -19028,7 +19028,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "LEAF Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "299626",
     motor: "3",
@@ -19037,7 +19037,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "124920",
     motor: "1",
@@ -19046,7 +19046,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE PLUS 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "82263",
     motor: "1",
@@ -19055,7 +19055,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL Direct 1.6 16V Flex  Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "70519",
     motor: "1",
@@ -19064,7 +19064,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "GT-R 3.8 V6 BiTurbo Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "891193",
     motor: "1",
@@ -19073,7 +19073,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra S 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "85515",
     motor: "1",
@@ -19082,7 +19082,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "LEAF Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "300373",
     motor: "3",
@@ -19091,7 +19091,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "72881",
     motor: "1",
@@ -19100,7 +19100,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SL 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "72716",
     motor: "1",
@@ -19109,7 +19109,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SL 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "97758",
     motor: "1",
@@ -19118,7 +19118,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SV 1.6 16V FlexStar 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "112255",
     motor: "1",
@@ -19127,7 +19127,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed.1.6 16V Flex 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "91805",
     motor: "1",
@@ -19136,7 +19136,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Active S 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "111976",
     motor: "1",
@@ -19145,7 +19145,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Esp.Ed. 1.6 16v Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "76700",
     motor: "1",
@@ -19154,7 +19154,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SL 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "71692",
     motor: "1",
@@ -19163,7 +19163,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH S 1.0 12V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "verde",
     valor: "46399",
     motor: "1",
@@ -19172,7 +19172,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Active S 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "110916",
     motor: "1",
@@ -19181,7 +19181,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Premium 1.6 16v Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "80800",
     motor: "1",
@@ -19190,7 +19190,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "68093",
     motor: "1",
@@ -19199,7 +19199,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "70281",
     motor: "1",
@@ -19208,7 +19208,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "103548",
     motor: "1",
@@ -19217,7 +19217,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra S 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "86514",
     motor: "1",
@@ -19226,7 +19226,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "122687",
     motor: "1",
@@ -19235,7 +19235,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "107769",
     motor: "1",
@@ -19244,7 +19244,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE PLUS 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "78057",
     motor: "1",
@@ -19253,7 +19253,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "69284",
     motor: "1",
@@ -19262,7 +19262,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "64091",
     motor: "1",
@@ -19271,7 +19271,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SV 1.6 16V FlexStar 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "107437",
     motor: "1",
@@ -19280,7 +19280,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "142833",
     motor: "1",
@@ -19289,7 +19289,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "126148",
     motor: "1",
@@ -19298,7 +19298,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SL 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "69550",
     motor: "1",
@@ -19307,7 +19307,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SL 1.6 16V FlexStar 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "verde",
     valor: "114569",
     motor: "1",
@@ -19316,7 +19316,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.0 12V Flex 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "58456",
     motor: "1",
@@ -19325,7 +19325,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL Direct 1.6 16V Flex  Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "71083",
     motor: "1",
@@ -19334,7 +19334,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SV 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "verde",
     valor: "94026",
     motor: "1",
@@ -19343,7 +19343,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS XPlay 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "verde",
     valor: "132588",
     motor: "1",
@@ -19352,7 +19352,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "74245",
     motor: "1",
@@ -19361,7 +19361,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "97093",
     motor: "1",
@@ -19370,7 +19370,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "64230",
     motor: "1",
@@ -19379,7 +19379,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SL 1.6 16V FlexStar 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "116168",
     motor: "1",
@@ -19388,7 +19388,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "64100",
     motor: "1",
@@ -19397,7 +19397,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SL 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "102795",
     motor: "1",
@@ -19406,7 +19406,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SL 1.6 16V FlexStar 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "114526",
     motor: "1",
@@ -19415,7 +19415,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SV 1.6 16V FlexStar 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "113326",
     motor: "1",
@@ -19424,7 +19424,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Esp.Ed. 1.6 16v Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "76365",
     motor: "1",
@@ -19433,7 +19433,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "69886",
     motor: "1",
@@ -19442,7 +19442,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "72672",
     motor: "1",
@@ -19451,7 +19451,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "131331",
     motor: "1",
@@ -19460,7 +19460,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.0  12V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "63876",
     motor: "1",
@@ -19469,7 +19469,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Special Ed. 1.6 16V FlexStart Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "68507",
     motor: "1",
@@ -19478,7 +19478,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Esp.Ed. 1.6 16v Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "77379",
     motor: "1",
@@ -19487,7 +19487,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "131775",
     motor: "1",
@@ -19496,7 +19496,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "63523",
     motor: "1",
@@ -19505,7 +19505,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "70349",
     motor: "1",
@@ -19514,7 +19514,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "114952",
     motor: "1",
@@ -19523,7 +19523,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA S 1.6 16V FlexStart 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "63854",
     motor: "1",
@@ -19532,7 +19532,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "116997",
     motor: "1",
@@ -19541,7 +19541,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "143915",
     motor: "1",
@@ -19550,7 +19550,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE PLUS 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "75804",
     motor: "1",
@@ -19559,7 +19559,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "124197",
     motor: "1",
@@ -19568,7 +19568,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS UCL 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "110000",
     motor: "1",
@@ -19577,7 +19577,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "111930",
     motor: "1",
@@ -19586,7 +19586,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "122224",
     motor: "1",
@@ -19595,7 +19595,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "73848",
     motor: "1",
@@ -19604,7 +19604,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "GT-R 3.8 V6 BiTurbo Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "955152",
     motor: "1",
@@ -19613,7 +19613,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed. 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "95637",
     motor: "1",
@@ -19622,7 +19622,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL Direct 1.6 16V Flex  Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "72723",
     motor: "1",
@@ -19631,7 +19631,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "78744",
     motor: "1",
@@ -19640,7 +19640,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "branca",
     valor: "70925",
     motor: "1",
@@ -19649,7 +19649,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "71429",
     motor: "1",
@@ -19658,7 +19658,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA S 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "62526",
     motor: "1",
@@ -19667,7 +19667,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.0 12V Flex 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "58675",
     motor: "1",
@@ -19676,7 +19676,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS XPlay 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "135106",
     motor: "1",
@@ -19685,7 +19685,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "120180",
     motor: "1",
@@ -19694,7 +19694,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "93775",
     motor: "1",
@@ -19703,7 +19703,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "112634",
     motor: "1",
@@ -19712,7 +19712,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "112965",
     motor: "1",
@@ -19721,7 +19721,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "131037",
     motor: "1",
@@ -19730,7 +19730,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "112852",
     motor: "1",
@@ -19739,7 +19739,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Esp.Ed. 1.6 16v Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "75528",
     motor: "1",
@@ -19748,7 +19748,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS UCL 1.6 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "112457",
     motor: "1",
@@ -19757,7 +19757,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "LEAF Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "298516",
     motor: "3",
@@ -19766,7 +19766,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "72400",
     motor: "1",
@@ -19775,7 +19775,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.0 12V Flex 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "branca",
     valor: "58524",
     motor: "1",
@@ -19784,7 +19784,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V FlexStar 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "branca",
     valor: "102244",
     motor: "1",
@@ -19793,7 +19793,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "branca",
     valor: "112056",
     motor: "1",
@@ -19802,7 +19802,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SL 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "69799",
     motor: "1",
@@ -19811,7 +19811,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "61335",
     motor: "1",
@@ -19820,7 +19820,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE PLUS 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "81794",
     motor: "1",
@@ -19829,7 +19829,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "LEAF Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "300991",
     motor: "3",
@@ -19838,7 +19838,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed. 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "98312",
     motor: "1",
@@ -19847,7 +19847,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SL 1.6 16V FlexStar 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "126995",
     motor: "1",
@@ -19856,7 +19856,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "71310",
     motor: "1",
@@ -19865,7 +19865,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA 1.0 12V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "59320",
     motor: "1",
@@ -19874,7 +19874,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "121105",
     motor: "1",
@@ -19883,7 +19883,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "99623",
     motor: "1",
@@ -19892,7 +19892,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed.1.6 16V Flex 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "93391",
     motor: "1",
@@ -19901,7 +19901,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "145584",
     motor: "1",
@@ -19910,7 +19910,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "70304",
     motor: "1",
@@ -19919,7 +19919,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Special Ed. 1.6 16V FlexStart Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "69716",
     motor: "1",
@@ -19928,7 +19928,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS XPlay 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "132169",
     motor: "1",
@@ -19937,7 +19937,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "112630",
     motor: "1",
@@ -19946,7 +19946,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S Direct 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "95457",
     motor: "1",
@@ -19955,7 +19955,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS UCL 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "109670",
     motor: "1",
@@ -19964,7 +19964,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra S 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "86259",
     motor: "1",
@@ -19973,7 +19973,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed.1.6 16V Flex 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "91345",
     motor: "1",
@@ -19982,7 +19982,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S Direct 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "96010",
     motor: "1",
@@ -19991,7 +19991,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Premium 1.6 16v Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "83689",
     motor: "1",
@@ -20000,7 +20000,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "LEAF Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "292616",
     motor: "3",
@@ -20009,7 +20009,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "143360",
     motor: "1",
@@ -20018,7 +20018,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE PLUS 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "77347",
     motor: "1",
@@ -20027,7 +20027,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "73464",
     motor: "1",
@@ -20036,7 +20036,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS UCL 1.6 16V Flex 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "110632",
     motor: "1",
@@ -20045,7 +20045,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SL 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "70150",
     motor: "1",
@@ -20054,7 +20054,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SL 1.6 16V FlexStar 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "128195",
     motor: "1",
@@ -20063,7 +20063,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "131297",
     motor: "1",
@@ -20072,7 +20072,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed.1.6 16V Flex 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "92787",
     motor: "1",
@@ -20081,7 +20081,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "LEAF Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "299864",
     motor: "3",
@@ -20090,7 +20090,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "111276",
     motor: "1",
@@ -20099,7 +20099,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Premium 1.6 16v Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "86656",
     motor: "1",
@@ -20108,7 +20108,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "121574",
     motor: "1",
@@ -20117,7 +20117,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed.1.6 16V Flex 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "92174",
     motor: "1",
@@ -20126,7 +20126,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA 1.0 12V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "58259",
     motor: "1",
@@ -20135,7 +20135,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "137497",
     motor: "1",
@@ -20144,7 +20144,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS UCL 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "109011",
     motor: "1",
@@ -20153,7 +20153,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SL 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "104709",
     motor: "1",
@@ -20162,7 +20162,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Special Ed. 1.6 16V FlexStart Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "70731",
     motor: "1",
@@ -20171,7 +20171,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH S 1.0 12V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "46632",
     motor: "1",
@@ -20180,7 +20180,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.0  12V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "65599",
     motor: "1",
@@ -20189,7 +20189,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "72854",
     motor: "1",
@@ -20198,7 +20198,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "71790",
     motor: "1",
@@ -20207,7 +20207,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "69406",
     motor: "1",
@@ -20216,7 +20216,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS UCL 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "110264",
     motor: "1",
@@ -20225,7 +20225,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Esp.Ed. 1.6 16v Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "77998",
     motor: "1",
@@ -20234,7 +20234,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA 1.0 12V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "57531",
     motor: "1",
@@ -20243,7 +20243,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "59672",
     motor: "1",
@@ -20252,7 +20252,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Premium 1.6 16v Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "79712",
     motor: "1",
@@ -20261,7 +20261,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.0  12V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "64566",
     motor: "1",
@@ -20270,7 +20270,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "124106",
     motor: "1",
@@ -20279,7 +20279,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "72556",
     motor: "1",
@@ -20288,7 +20288,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "68867",
     motor: "1",
@@ -20297,7 +20297,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V FlexStar 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "95210",
     motor: "1",
@@ -20306,7 +20306,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE PLUS 1.6 16V Flex Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "75159",
     motor: "1",
@@ -20315,7 +20315,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "101069",
     motor: "1",
@@ -20324,7 +20324,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SL 2.0 FlexStart 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "106891",
     motor: "1",
@@ -20333,7 +20333,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "68506",
     motor: "1",
@@ -20342,7 +20342,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "prata",
     valor: "98604",
     motor: "1",
@@ -20351,7 +20351,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.6 16V Flex Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "prata",
     valor: "67721",
     motor: "1",
@@ -20360,7 +20360,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL 1.6 16V FlexStart 4p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "prata",
     valor: "68422",
     motor: "1",
@@ -20369,7 +20369,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.0 12V Flex 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "57849",
     motor: "1",
@@ -20378,7 +20378,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SL Direct 1.6 16V Flex  Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "73383",
     motor: "1",
@@ -20387,7 +20387,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.0 12V Flex 5p",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "59544",
     motor: "1",
@@ -20396,7 +20396,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "65390",
     motor: "1",
@@ -20405,7 +20405,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra S 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "prata",
     valor: "89922",
     motor: "1",
@@ -20414,7 +20414,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SV 1.6 16V FlexStar 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "117189",
     motor: "1",
@@ -20423,7 +20423,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE 1.0  12V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "68314",
     motor: "1",
@@ -20432,7 +20432,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SV 2.0 FlexStart 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "97823",
     motor: "1",
@@ -20441,7 +20441,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE Premium 1.6 16v Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "85791",
     motor: "1",
@@ -20450,7 +20450,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "130934",
     motor: "1",
@@ -20459,7 +20459,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "124595",
     motor: "1",
@@ -20468,7 +20468,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SV 1.6 16V FlexStar 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "109260",
     motor: "1",
@@ -20477,7 +20477,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Special Ed. 1.6 16V Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "98885",
     motor: "1",
@@ -20486,7 +20486,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS SV 1.6 16V FlexStar 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "113521",
     motor: "1",
@@ -20495,7 +20495,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA 1.0 12V FlexStart 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "61521",
     motor: "1",
@@ -20504,7 +20504,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA SV 1.6 16V FlexStart 4p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "67407",
     motor: "1",
@@ -20513,7 +20513,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Active S 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "109952",
     motor: "1",
@@ -20522,7 +20522,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SV 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "93037",
     motor: "1",
@@ -20531,7 +20531,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "96858",
     motor: "1",
@@ -20540,7 +20540,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Sense 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "104126",
     motor: "1",
@@ -20549,7 +20549,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V FlexStar 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "95681",
     motor: "1",
@@ -20558,7 +20558,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA V-DRIVE PLUS 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "81854",
     motor: "1",
@@ -20567,7 +20567,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH S 1.0 12V Flex 5p",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "46809",
     motor: "1",
@@ -20576,7 +20576,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "MARCH SV 1.6 16V FlexStart 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "69526",
     motor: "1",
@@ -20585,7 +20585,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Active S 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "112266",
     motor: "1",
@@ -20594,7 +20594,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V FlexStar 5p Mec.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "100539",
     motor: "1",
@@ -20603,7 +20603,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS S 1.6 16V FlexStar 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "95620",
     motor: "1",
@@ -20612,7 +20612,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Special Ed. 1.6 16V FlexStart Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "68786",
     motor: "1",
@@ -20621,7 +20621,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "GT-R 3.8 V6 BiTurbo Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "958027",
     motor: "1",
@@ -20630,7 +20630,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "Sentra SL 2.0 FlexStart 16V Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "101086",
     motor: "1",
@@ -20639,7 +20639,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA S 1.6 16V FlexStart 4p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "63318",
     motor: "1",
@@ -20648,7 +20648,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "VERSA Advance 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "112702",
     motor: "1",
@@ -20657,7 +20657,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS Exclusive 1.6 16V Flex Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "135497",
     motor: "1",
@@ -20666,7 +20666,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "KICKS UCL 1.6 16V Flex 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "azul",
     valor: "109389",
     motor: "1",
@@ -20675,7 +20675,7 @@ const dataCar = [
   {
     marca: "Nissan",
     modelo: "GT-R 3.8 V6 BiTurbo Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "949421",
     motor: "1",
@@ -20684,7 +20684,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active 1.2 Flex 12V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "54376",
     motor: "1",
@@ -20693,7 +20693,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like 1.6 Flex 16V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "78197",
     motor: "1",
@@ -20702,7 +20702,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Bus. Pro 1.6 TB Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "67552",
     motor: "1",
@@ -20711,7 +20711,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "5008 Griffe 1.6 Turbo 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "161136",
     motor: "1",
@@ -20720,7 +20720,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.2 Flex 12V 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "53778",
     motor: "1",
@@ -20729,7 +20729,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Crossway 1.6 Flex 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "97308",
     motor: "1",
@@ -20738,7 +20738,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Allure 1.6 Turbo 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "176756",
     motor: "1",
@@ -20747,7 +20747,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Crossway 1.6 Flex 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "99425",
     motor: "1",
@@ -20756,7 +20756,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "e-208 GT 5p Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "269990",
     motor: "3",
@@ -20765,7 +20765,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure 1.6 Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "82552",
     motor: "1",
@@ -20774,7 +20774,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "97119",
     motor: "1",
@@ -20783,7 +20783,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "e-208 GT 5p Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "265799",
     motor: "3",
@@ -20792,7 +20792,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "89990",
     motor: "1",
@@ -20801,7 +20801,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure 1.6 Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "azul",
     valor: "81547",
     motor: "1",
@@ -20810,7 +20810,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like 1.6 Flex 16V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "azul",
     valor: "84498",
     motor: "1",
@@ -20819,7 +20819,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.2 Flex 12V 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "azul",
     valor: "53507",
     motor: "1",
@@ -20828,7 +20828,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 SKYWALKER 1.6 Turbo Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "121121",
     motor: "1",
@@ -20837,7 +20837,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure 1.6 Flex 16V 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "86030",
     motor: "1",
@@ -20846,7 +20846,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Essencial 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98456",
     motor: "1",
@@ -20855,7 +20855,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Allure 1.2 Flex 12V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "69327",
     motor: "1",
@@ -20864,7 +20864,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107512",
     motor: "1",
@@ -20873,7 +20873,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure 1.6 Flex 16V 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "89500",
     motor: "1",
@@ -20882,7 +20882,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "e-208 GT 5p Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "269924",
     motor: "3",
@@ -20891,7 +20891,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "Partner Furgão 1.6 16V/ 1.6 16V Flex 3p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "90591",
     motor: "1",
@@ -20900,7 +20900,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Crossway 1.6 Flex 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "99419",
     motor: "1",
@@ -20909,7 +20909,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 GT Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "259327",
     motor: "1",
@@ -20918,7 +20918,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.2 Flex 12V 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "52598",
     motor: "1",
@@ -20927,7 +20927,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 GT Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "264491",
     motor: "1",
@@ -20936,7 +20936,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "5008 Griffe 1.6 Turbo 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "162080",
     motor: "1",
@@ -20945,7 +20945,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91169",
     motor: "1",
@@ -20954,7 +20954,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Allure 1.2 Flex 12V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "68014",
     motor: "1",
@@ -20963,7 +20963,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "97900",
     motor: "1",
@@ -20972,7 +20972,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "89510",
     motor: "1",
@@ -20981,7 +20981,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sed. Bus./Allure 1.6 TB Flex 16V Aut",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62325",
     motor: "1",
@@ -20990,7 +20990,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 GT 1.6 THP Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "88819",
     motor: "1",
@@ -20999,7 +20999,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active 1.2 Flex 12V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "54728",
     motor: "1",
@@ -21008,7 +21008,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Griffe Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "219392",
     motor: "1",
@@ -21017,7 +21017,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like Essencial 1.6 Flex 16V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81220",
     motor: "1",
@@ -21026,7 +21026,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sed. Bus./Allure 1.6 TB Flex 16V Aut",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63563",
     motor: "1",
@@ -21035,7 +21035,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "E-Expert Cargo 136cv (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "329000",
     motor: "3",
@@ -21044,7 +21044,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure 1.6 Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "79639",
     motor: "1",
@@ -21053,7 +21053,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.6 Flex 16V 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "86969",
     motor: "1",
@@ -21062,7 +21062,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 GT Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "261731",
     motor: "1",
@@ -21071,7 +21071,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sedan Griffe 1.6 TB Flex 16V 4p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "85040",
     motor: "1",
@@ -21080,7 +21080,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "5008 Griffe 1.6 Turbo 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "160775",
     motor: "1",
@@ -21089,7 +21089,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "75077",
     motor: "1",
@@ -21098,7 +21098,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "Partner Furgão 1.6 16V/ 1.6 16V Flex 3p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94716",
     motor: "1",
@@ -21107,7 +21107,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Allure 1.2 Flex 12V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "68409",
     motor: "1",
@@ -21116,7 +21116,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.2 Flex 12V 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54799",
     motor: "1",
@@ -21125,7 +21125,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 GT 1.6 THP Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "89524",
     motor: "1",
@@ -21134,7 +21134,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "82624",
     motor: "1",
@@ -21143,7 +21143,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "5008 Griffe Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "200752",
     motor: "1",
@@ -21152,7 +21152,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "Partner Rapid Busin. Pack 1.4 Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "104263",
     motor: "1",
@@ -21161,7 +21161,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Business 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "65471",
     motor: "1",
@@ -21170,7 +21170,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Style 1.6 Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74796",
     motor: "1",
@@ -21179,7 +21179,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "Partner Rapid Busin. Pack 1.4 Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "106495",
     motor: "1",
@@ -21188,7 +21188,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Inconcert 1.6 Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "62895",
     motor: "1",
@@ -21197,7 +21197,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Griffe 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "78275",
     motor: "1",
@@ -21206,7 +21206,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like 1.6 Flex 16V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "84798",
     motor: "1",
@@ -21215,7 +21215,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "97982",
     motor: "1",
@@ -21224,7 +21224,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "74996",
     motor: "1",
@@ -21233,7 +21233,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sedan Griffe 1.6 TB Flex 16V 4p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "84360",
     motor: "1",
@@ -21242,7 +21242,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sed. Bus./Allure 1.6 TB Flex 16V Aut",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "63296",
     motor: "1",
@@ -21251,7 +21251,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Pack 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "107069",
     motor: "1",
@@ -21260,7 +21260,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Allure 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "102731",
     motor: "1",
@@ -21269,7 +21269,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Allure 1.2 Flex 12V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "70322",
     motor: "1",
@@ -21278,7 +21278,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like 1.0 Flex 6V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "88668",
     motor: "1",
@@ -21287,7 +21287,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "121874",
     motor: "1",
@@ -21296,7 +21296,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.2 Flex 12V 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "53386",
     motor: "1",
@@ -21305,7 +21305,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Allure 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "206189",
     motor: "1",
@@ -21314,7 +21314,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Allure 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108940",
     motor: "1",
@@ -21323,7 +21323,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sedan Griffe 1.6 TB Flex 16V 4p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "87000",
     motor: "1",
@@ -21332,7 +21332,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Business 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "67984",
     motor: "1",
@@ -21341,7 +21341,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "120400",
     motor: "1",
@@ -21350,7 +21350,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Style 1.6 Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "72704",
     motor: "1",
@@ -21359,7 +21359,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Bus. Pro 1.6 TB Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "67393",
     motor: "1",
@@ -21368,7 +21368,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sed. Bus. Pro 1.6 TB Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61054",
     motor: "1",
@@ -21377,7 +21377,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Griffe 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "247927",
     motor: "1",
@@ -21386,7 +21386,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "Partner Furgão 1.6 16V/ 1.6 16V Flex 3p",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "94917",
     motor: "1",
@@ -21395,7 +21395,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Pack Bus. 1.6 Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "79049",
     motor: "1",
@@ -21404,7 +21404,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Style 1.6 Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "73227",
     motor: "1",
@@ -21413,7 +21413,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Pack Bus. 1.6 Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "78422",
     motor: "1",
@@ -21422,7 +21422,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 GT Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "268541",
     motor: "1",
@@ -21431,7 +21431,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "82054",
     motor: "1",
@@ -21440,7 +21440,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Griffe 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "249107",
     motor: "1",
@@ -21449,7 +21449,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 SKYWALKER 1.6 Turbo Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "111343",
     motor: "1",
@@ -21458,7 +21458,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 GT Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "269238",
     motor: "1",
@@ -21467,7 +21467,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "114545",
     motor: "1",
@@ -21476,7 +21476,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Bus. Pro 1.6 TB Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "67454",
     motor: "1",
@@ -21485,7 +21485,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "118636",
     motor: "1",
@@ -21494,7 +21494,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Griffe Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "221385",
     motor: "1",
@@ -21503,7 +21503,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108248",
     motor: "1",
@@ -21512,7 +21512,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "82894",
     motor: "1",
@@ -21521,7 +21521,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like Essencial 1.6 Flex 16V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "82772",
     motor: "1",
@@ -21530,7 +21530,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Pack Bus. 1.6 Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "77800",
     motor: "1",
@@ -21539,7 +21539,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "75677",
     motor: "1",
@@ -21548,7 +21548,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Flex 16V 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "108420",
     motor: "1",
@@ -21557,7 +21557,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Pack Bus. 1.6 Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "79596",
     motor: "1",
@@ -21566,7 +21566,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Griffe 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "82148",
     motor: "1",
@@ -21575,7 +21575,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Essencial 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95545",
     motor: "1",
@@ -21584,7 +21584,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.6 Flex 16V 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "88020",
     motor: "1",
@@ -21593,7 +21593,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Crossway 1.6 Flex 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "97854",
     motor: "1",
@@ -21602,7 +21602,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.2 Flex 12V 5p Mec.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "54111",
     motor: "1",
@@ -21611,7 +21611,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sed. Bus./Allure 1.6 TB Flex 16V Aut",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61200",
     motor: "1",
@@ -21620,7 +21620,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Pack 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "108410",
     motor: "1",
@@ -21629,7 +21629,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Griffe 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "254042",
     motor: "1",
@@ -21638,7 +21638,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Essencial 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "99502",
     motor: "1",
@@ -21647,7 +21647,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Crossway 1.6 Flex 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "100220",
     motor: "1",
@@ -21656,7 +21656,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Flex 16V 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "107010",
     motor: "1",
@@ -21665,7 +21665,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure 1.6 Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "74225",
     motor: "1",
@@ -21674,7 +21674,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Essencial 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "91620",
     motor: "1",
@@ -21683,7 +21683,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "73305",
     motor: "1",
@@ -21692,7 +21692,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Business 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "67812",
     motor: "1",
@@ -21701,7 +21701,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "104940",
     motor: "1",
@@ -21710,7 +21710,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Crossway 1.6 Flex 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "98636",
     motor: "1",
@@ -21719,7 +21719,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Style 1.0 Flex 6V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "95985",
     motor: "1",
@@ -21728,7 +21728,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like 1.6 Flex 16V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "77607",
     motor: "1",
@@ -21737,7 +21737,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Essencial 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "98713",
     motor: "1",
@@ -21746,7 +21746,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Style 1.6 Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "74153",
     motor: "1",
@@ -21755,7 +21755,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Style 1.6 Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "71640",
     motor: "1",
@@ -21764,7 +21764,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sed. Bus. Pro 1.6 TB Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61357",
     motor: "1",
@@ -21773,7 +21773,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Allure 1.6 Turbo 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "175209",
     motor: "1",
@@ -21782,7 +21782,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Griffe Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "221147",
     motor: "1",
@@ -21791,7 +21791,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Inconcert 1.6 Flex 16V 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "64082",
     motor: "1",
@@ -21800,7 +21800,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Pack Bus. 1.6 Flex Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "80318",
     motor: "1",
@@ -21809,7 +21809,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "72724",
     motor: "1",
@@ -21818,7 +21818,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sed. Bus. Pro 1.6 TB Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "61542",
     motor: "1",
@@ -21827,7 +21827,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Griffe Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "74482",
     motor: "1",
@@ -21836,7 +21836,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Flex 16V 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "107560",
     motor: "1",
@@ -21845,7 +21845,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Bus. 1.6 Flex 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "81319",
     motor: "1",
@@ -21854,7 +21854,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like 1.6 Flex 16V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "83591",
     motor: "1",
@@ -21863,7 +21863,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 GT 1.6 THP Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "90245",
     motor: "1",
@@ -21872,7 +21872,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active 1.2 Flex 12V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "56102",
     motor: "1",
@@ -21881,7 +21881,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Allure 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "100556",
     motor: "1",
@@ -21890,7 +21890,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "93719",
     motor: "1",
@@ -21899,7 +21899,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "120946",
     motor: "1",
@@ -21908,7 +21908,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "Partner Rapid Busin. Pack 1.4 Flex Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "104550",
     motor: "1",
@@ -21917,7 +21917,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Crossway 1.6 Flex 16V 5p Aut.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "98086",
     motor: "1",
@@ -21926,7 +21926,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Like Essencial 1.6 Flex 16V 5p Mec.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "81572",
     motor: "1",
@@ -21935,7 +21935,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 GT Pack 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "261790",
     motor: "1",
@@ -21944,7 +21944,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "121427",
     motor: "1",
@@ -21953,7 +21953,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Griffe 1.6 Turbo Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "98933",
     motor: "1",
@@ -21962,7 +21962,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active 1.6 Flex 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "89652",
     motor: "1",
@@ -21971,7 +21971,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "408 Sed. Bus. Pro 1.6 TB Flex Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "60988",
     motor: "1",
@@ -21980,7 +21980,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 Active Pack 1.6 Flex 16V 5p Aut.",
-    Ano: "2021",
+    ano: "2021",
     cor: "preta",
     valor: "87670",
     motor: "1",
@@ -21989,7 +21989,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "e-208 GT 5p Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "274762",
     motor: "3",
@@ -21998,7 +21998,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "E-Expert Cargo 136cv (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "329165",
     motor: "3",
@@ -22007,7 +22007,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "208 GT 1.6 THP Flex 16V 5p Mec.",
-    Ano: "2020",
+    ano: "2020",
     cor: "preta",
     valor: "90885",
     motor: "1",
@@ -22016,7 +22016,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "308 Bus. Pro 1.6 TB Flex 5p Aut.",
-    Ano: "2019",
+    ano: "2019",
     cor: "preta",
     valor: "68492",
     motor: "1",
@@ -22025,7 +22025,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "2008 Allure Pack 1.6 Flex 16V Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "103900",
     motor: "1",
@@ -22034,7 +22034,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "3008 Griffe 1.6 Turbo 16V 5p Aut.",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "247885",
     motor: "1",
@@ -22043,7 +22043,7 @@ const dataCar = [
   {
     marca: "Peugeot",
     modelo: "e-208 GT 5p Aut. (Elétrico)",
-    Ano: "2022",
+    ano: "2022",
     cor: "preta",
     valor: "266934",
     motor: "3",

@@ -28,7 +28,7 @@ const updateAddressSchema = yup.object().shape({
 });
 
 const EditAddressModal = () => {
-  const { user, patchAddress } = useAuth();
+  const { userLoged, patchAddress } = useAuth();
 
   const { onClose } = useModal();
 
@@ -77,7 +77,7 @@ const EditAddressModal = () => {
               id={"zip_code"}
               fontSize={"xs"}
               {...register("zip_code")}
-              defaultValue={user?.address.zip_code}
+              defaultValue={userLoged?.address.zip_code}
               placeholder={"Digite seu cep"}
             />
             {errors.zip_code && (
@@ -101,7 +101,7 @@ const EditAddressModal = () => {
                 id={"state"}
                 fontSize={"xs"}
                 {...register("state")}
-                defaultValue={user?.address.state}
+                defaultValue={userLoged?.address.state}
                 placeholder={"Digite seu estado"}
               />
               {errors.state && (
@@ -123,7 +123,7 @@ const EditAddressModal = () => {
                 id={"city"}
                 fontSize={"xs"}
                 {...register("city")}
-                defaultValue={user?.address.city}
+                defaultValue={userLoged?.address.city}
                 placeholder={"Digite sua cidade"}
               />
               {errors.city && (
@@ -147,7 +147,7 @@ const EditAddressModal = () => {
               id={"street"}
               fontSize={"xs"}
               {...register("street")}
-              defaultValue={user?.address.street}
+              defaultValue={userLoged?.address.street}
               placeholder={"Digite sua rua"}
             />
             {errors.street && (
@@ -171,7 +171,7 @@ const EditAddressModal = () => {
                 id={"number"}
                 fontSize={"xs"}
                 {...register("number")}
-                defaultValue={user?.address.number}
+                defaultValue={userLoged?.address.number}
                 placeholder={"Digite o numero"}
               />
               {errors.number && (
@@ -193,7 +193,7 @@ const EditAddressModal = () => {
                 id={"complement"}
                 fontSize={"xs"}
                 {...register("complement")}
-                defaultValue={user?.address.complement}
+                defaultValue={userLoged?.address.complement}
                 placeholder={"Digite o complemento"}
               />
               {errors.complement && (

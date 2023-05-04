@@ -15,6 +15,9 @@ import {
 import { useAuth } from "./authContext";
 import { useRouter } from "next/router";
 import { IUserData } from "@/interfaces/users";
+import { Box, useToast } from "@chakra-ui/react";
+import { destroyCookie, parseCookies, setCookie } from "nookies";
+
 
 interface announcementProviderData {
   getAllCars: () => Promise<void>;
@@ -38,6 +41,7 @@ interface announcementProviderData {
   userView: IUserData | null;
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
   getAllAnnouncements: () => void;
+
   currentCars: IAnnoucementInterface[];
   handlePreviousPage: () => void;
   handleNextPage: () => void;
@@ -45,6 +49,14 @@ interface announcementProviderData {
   currentPage: number;
   numPageEnd: number;
   numCountPage: number;
+
+  setisEditOrDeleteAnnouncementOpen: Dispatch<SetStateAction<boolean>>
+  isEditOrDeleteAnnouncementOpen: boolean
+  getAnnouncementById: (id: string) => Promise<void>
+  editAnnouncement: (data: IAnnouncementRequest) => Promise<void>
+  profileToRechargePage: () => Promise<void>
+  cookieProfileView: string
+
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -52,6 +64,12 @@ export const AnnouncementContext = createContext<announcementProviderData>(
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
+
+  const cookies = parseCookies();
+
+  const [cookieProfileView, setcookieProfileView] = useState<string>(cookies["@motorshop:profileId"] || "");
+  const [cookieAnnounceView, setcookieAnnounceView] = useState<string>(cookies["@motorshop:announceId"] || "");
+
   const [allCars, setAllCars] = useState([] as IAnnoucementInterface[]);
   const [allBrands, setAllBrands] = useState([] as string[]);
   const [userAnnouncements, setUserAnnouncements] = useState(
@@ -60,6 +78,8 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [isCreateAnnouncementSucessOpen, setIsCreateAnnouncementSucessOpen] =
     useState(false);
   const [isCreateAnnouncementOpen, setIsCreateAnnouncementOpen] =
+    useState(false);
+  const [isEditOrDeleteAnnouncementOpen, setisEditOrDeleteAnnouncementOpen] =
     useState(false);
   const [allAnnouncements, setAllAnnouncements] = useState([] as any);
 
@@ -72,13 +92,13 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
 
   const { token } = useAuth();
   const router = useRouter();
+  const toast = useToast();
 
   useEffect(() => {
     const brands = Object.keys(allCars);
     setAllBrands(brands);
-    getAllAnnouncements();
-    getAnnouncementsForProfile();
-  }, [allCars, announcementView]);
+    getAllAnnouncements();     
+  }, [allCars]);
 
   const getAllCars = async () => {
     try {
@@ -113,16 +133,64 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
+  const getAnnouncementById = async (id: string) => {
+    try {
+      const res = await api.get(`/announcement/${id}`);
+      setannouncementView(res.data)
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  const editAnnouncement = async (data: IAnnouncementRequest) => {
+    
+    try {
+      await api.patch(`/announcement/${announcementView?.id}`, data, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      getAnnouncementsForProfile()
+
+      toast({
+        title: "sucess",
+        variant: "solid",
+        position: "top-right",
+        isClosable: true,
+        render: () => (
+          <Box bg={"sucess.1"} color={"sucess.3"} p={3}>
+            Informaçoes do anuncio atualizado com sucesso!
+          </Box>
+        ),
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   const getAnnouncementsForProfile = async () => {
     try {
       const res = await api.get(`/profile/${announcementView?.user.id}`);
       const res2 = await api.get(`/user/${announcementView?.user.id}`);
       setuserView(res2.data);
-      setannouncementProfileView(res.data);
+      setannouncementProfileView(res.data);  
+
+      destroyCookie(null, "@motorshop:profileId");
+      setCookie(null, "@motorshop:profileId", res2.data.id);
+      setcookieProfileView(res2.data.id)
+      
     } catch (error) {
       console.error(error);
     }
   };
+
+  const profileToRechargePage = async () => {
+    try {      
+      const res = await api.get(`/profile/${cookieProfileView}`);
+      setannouncementProfileView(res.data);
+    } catch(error) {
+      console.log(error)
+    }
+  }
 
   const goForprofile = () => {
     router.push("/profile");
@@ -171,6 +239,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         announcementProfileView,
         getAnnouncementsForProfile,
         userView,
+
         currentCars,
         handleNextPage,
         handlePreviousPage,
@@ -178,6 +247,13 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         currentPage,
         numPageEnd,
         numCountPage
+
+        setisEditOrDeleteAnnouncementOpen,
+        isEditOrDeleteAnnouncementOpen,
+        getAnnouncementById,
+        editAnnouncement,
+        profileToRechargePage,
+        cookieProfileView
       }}
     >
       {children}

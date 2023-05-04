@@ -12,21 +12,62 @@ import {
 import { useRouter } from "next/router";
 import AvatarIcon from "./avatarIcon";
 import { useAnnouncement } from "@/contexts/announcementContext";
+import { useAuth } from "@/contexts/authContext";
+import { useModal } from "@/contexts/modalContext";
+import EditOrDeleteAnnouncementModal from "./editOrDeleteAnnouncementModal";
+import { useCallback, useEffect } from "react";
+import { destroyCookie, setCookie } from "nookies";
 
-const AnnouceCard = (data: IAnnoucementInterface) => {
-  const { setannouncementView, userView, getAnnouncementsForProfile } =
-    useAnnouncement();
+const AnnouceCard = (data: IAnnoucementInterface) => { 
 
-  const viewAnnouncementDetails = (data: IAnnoucementInterface) => {
-    getAnnouncementsForProfile();
-    setannouncementView(data);
-    router.push("/details");
+  
+  const {
+    setannouncementView,
+    userView,
+    getAnnouncementsForProfile,
+    setisEditOrDeleteAnnouncementOpen,  
+    getAnnouncementById,
+    announcementView
+  } = useAnnouncement();
+  
+  const { onOpen, isOpen, modalType, setModalType } = useModal()
+  const { userLoged } = useAuth()
+   
+
+  const viewAnnouncementDetails = () => {
+    if (pathname == '/') {
+      getAnnouncementsForProfile();
+      setannouncementView(data);
+      destroyCookie(null, "@motorshop:profileId");
+      setCookie(null, "@motorshop:profileId",data.id);
+      if (userLoged?.name == user.name) {
+        router.push("/advertiser");
+      } else {
+        router.push("/details");
+      }
+    }
   };
 
-  const viewAnnouncementDetails2 = (data: IAnnoucementInterface) => {
-    setannouncementView(data);
-    router.push("/details");
+  const viewAnnouncementDetails2 = () => {
+    if (pathname.includes("profile")) {
+      setannouncementView(data);
+      router.push("/details");
+    }
   };
+
+  const advertiserToDetails = () => {
+    setannouncementView(data);
+    destroyCookie(null, "@motorshop:profileId");
+    setCookie(null, "@motorshop:profileId", data.id);
+    router.push("/details");
+  }
+
+  const openEditOrDeleteAnnouncementModal = useCallback(async () => {
+    setannouncementView(data);
+    setisEditOrDeleteAnnouncementOpen(true);
+    setModalType('editOrDelAnnounce')
+    onOpen();
+  }, []);
 
   let {
     id,
@@ -66,7 +107,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
           boxShadow={"none"}
           marginRight={{ base: "80px", lg: "0px" }}
           cursor={"pointer"}
-          onClick={() => viewAnnouncementDetails(data)}
+          onClick={() => viewAnnouncementDetails()}
         >
           <Image
             src={cover_img}
@@ -173,10 +214,10 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
             {pathname.includes("advertiser") ? (
               <Flex>
-                <Button variant={"outline1"} marginRight={"20px"}>
+                <Button variant={"outline1"} marginRight={"20px"} onClick={()=> openEditOrDeleteAnnouncementModal()}>
                   Edite
                 </Button>
-                <Button variant={"outline1"}>Ver detalhes</Button>
+                <Button variant={"outline1"} onClick={() => advertiserToDetails()}>Ver detalhes</Button>
               </Flex>
             ) : (
               <></>
@@ -195,7 +236,7 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
           minWidth={"none"}
           marginRight={{ base: "61px", lg: "0px" }}
           cursor={"pointer"}
-          onClick={() => viewAnnouncementDetails2(data)}
+          onClick={() => viewAnnouncementDetails2()}
         >
           <Image
             src={cover_img}
@@ -294,10 +335,10 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
             {pathname == "/advertiser" && (
               <Flex>
-                <Button variant={"outline1"} marginRight={"20px"}>
+                  <Button variant={"outline1"} marginRight={"20px"} onClick={() => openEditOrDeleteAnnouncementModal()}>
                   Edite
                 </Button>
-                <Button variant={"outline1"}>Ver detalhes</Button>
+                <Button variant={"outline1"} onClick={() => advertiserToDetails()}>Ver detalhes</Button>
               </Flex>
             )}
           </CardBody>

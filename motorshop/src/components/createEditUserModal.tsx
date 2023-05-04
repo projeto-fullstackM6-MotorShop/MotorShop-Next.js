@@ -36,7 +36,7 @@ const EditUserModal = () => {
   const [updatePass, setUpdatePass] = useState(false);
   const [deleteModal, setDeleteModal] = useState(false);
 
-  const { user, patchUser, deleteUser } = useAuth();
+  const { userLoged, patchUser, deleteUser } = useAuth();
 
   const { onClose } = useModal();
 
@@ -97,7 +97,7 @@ const EditUserModal = () => {
               id={"name"}
               fontSize={"xs"}
               {...register("name")}
-              defaultValue={user?.name}
+              defaultValue={userLoged?.name}
               placeholder={"Digite seu nome"}
             />
             {errors.name && (
@@ -121,7 +121,7 @@ const EditUserModal = () => {
               fontSize={"xs"}
               type={"email"}
               {...register("email")}
-              defaultValue={user?.email}
+              defaultValue={userLoged?.email}
               placeholder={"Digite seu email"}
             />
             {errors.email && (
@@ -145,7 +145,7 @@ const EditUserModal = () => {
               fontSize={"xs"}
               type={"number"}
               {...register("cpf")}
-              defaultValue={user?.cpf}
+              defaultValue={userLoged?.cpf}
               placeholder={"Digite seu cpf"}
             />
             {errors.cpf && (
@@ -169,7 +169,7 @@ const EditUserModal = () => {
               fontSize={"xs"}
               type={"number"}
               {...register("phone")}
-              defaultValue={user?.phone}
+              defaultValue={userLoged?.phone}
               placeholder={"Digite seu numero de celular"}
             />
             {errors.phone && (
@@ -192,7 +192,7 @@ const EditUserModal = () => {
               id={"birth_date"}
               fontSize={"xs"}
               {...register("birth_date")}
-              defaultValue={user?.birth_date}
+              defaultValue={userLoged?.birth_date}
               placeholder={"Digite sua data de nascimento"}
             />
             {errors.birth_date && (

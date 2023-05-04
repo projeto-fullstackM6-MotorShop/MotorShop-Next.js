@@ -1,9 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import ListOfCars from "@/components/listOfCars";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import AvatarIcon from "@/components/avatarIcon";
-import { Box, Button, Center, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { useModal } from "@/contexts/modalContext";
 import CreateAnnouncementModal from "@/components/createAnnouncementModal";
 import { useEffect } from "react";
@@ -13,32 +14,50 @@ import { GetServerSideProps } from "next";
 import nookies from "nookies";
 import { useAuth } from "@/contexts/authContext";
 import Pagination from "@/components/paginationAnnouncement";
+import { IAnnoucementInterface } from "@/interfaces/annoucement";
+import AnnouceCard from "@/components/annoucementCard";
+import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncementModal";
 
 const Advertiser = () => {
-  const { onOpen, isOpen } = useModal();
-  const { user } = useAuth()
+  const { onOpen, isOpen, modalType, setModalType } = useModal();
+  const { userLoged } = useAuth() 
   const {
     getAllCars,
     allCars,
     isCreateAnnouncementSucessOpen,
     setIsCreateAnnouncementOpen,
     isCreateAnnouncementOpen,
+    announcementProfileView,
+    setisEditOrDeleteAnnouncementOpen,
+    isEditOrDeleteAnnouncementOpen,
+    announcementView,
+    getAllAnnouncements,
+    profileToRechargePage,
+    cookieProfileView
   } = useAnnouncement();
 
   useEffect(() => {
     getAllCars();
-  }, []);
-
+    getAllAnnouncements()         
+      profileToRechargePage()          
+  }, [cookieProfileView ]);
+  
   const opencreateAnnouncementModal = () => {
     setIsCreateAnnouncementOpen(true);
+    setModalType('createAnnounce')
     onOpen();
   };
+  
+   
 
   return (
     <>
       <Header />
-      {isCreateAnnouncementOpen && <CreateAnnouncementModal />}
+
+      {modalType == 'createAnnounce' && <CreateAnnouncementModal />}
       {isCreateAnnouncementSucessOpen && <CreateAnnouncementSucessModal />}
+      {modalType == 'editOrDelAnnounce' && <EditOrDeleteAnnouncementModal {...announcementProfileView} />}
+
       <Box h={"277px"} bgColor={"brand.1"}></Box>
       <Flex
         paddingLeft={"28px"}
@@ -57,7 +76,7 @@ const Advertiser = () => {
         <AvatarIcon size={"xl"} />
         <Flex alignItems={"center"}>
           <Heading as={"h6"} variant={"healding_6_600"} marginRight={"9px"}>
-            {user?.name}
+            {userLoged?.name}
           </Heading>
           <Flex
             borderRadius={"4px"}
@@ -73,7 +92,7 @@ const Advertiser = () => {
           </Flex>
         </Flex>
         <Text textAlign={"start"} textStyle={"body_1_400"}>
-          {user?.description}
+          {userLoged?.description}
         </Text>
         <Button
           onClick={opencreateAnnouncementModal}
@@ -90,7 +109,15 @@ const Advertiser = () => {
         direction={'column'}
         alignItems={'center'}
       >
-        <ListOfCars />
+        <SimpleGrid columns={4} spacing={30} mt={"20px"} w={"90%"}>
+          {announcementProfileView.length > 0 ? (
+            announcementProfileView.map((data: IAnnoucementInterface) => (
+              <AnnouceCard {...data} key={data.id} />
+            ))
+          ) : (
+            <Text>Este usuario ainda nao possui anuncios</Text>
+          )}
+        </SimpleGrid>
 
         <Center p={"2rem 0"}>
           <Pagination />

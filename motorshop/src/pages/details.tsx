@@ -1,8 +1,10 @@
 import AvatarIcon from "@/components/avatarIcon";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import ModalAnnouncementPhotoDetail from "@/components/modalAnnouncementPhotoDetail";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
+import { useModal } from "@/contexts/modalContext";
 import {
   Box,
   Button,
@@ -14,27 +16,40 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import { imageOptimizer } from "next/dist/server/image-optimizer";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Details = () => {
-  const { user } = useAuth();
+  const { userLoged } = useAuth();
   const router = useRouter();
 
-  const { announcementView, goForprofile } = useAnnouncement();
+  const { onOpen, isOpen, detailImageModal, setDetailImageModal } = useModal();
+  const { announcementView, goForprofile, userView } = useAnnouncement();
 
-  useEffect(() => {}, [announcementView, user]);
+  useEffect(() => {}, [announcementView, userLoged]);
 
   const goForLogin = () => {
-    if (!user) {
+    if (!userLoged) {
       router.push("/login");
+    }
+  };
+
+  const setImageAndOpenImageDetailModal = (imageUrl: string) => {
+    setDetailImageModal(imageUrl);
+    onOpen();
+  };
+  const detailsOrAdvertiser = () => {
+    if (userLoged?.name == userView?.name) {
+      router.push("/advertiser");
+    } else {
+      goForprofile();
     }
   };
 
   return (
     <>
       <Header />
+      <ModalAnnouncementPhotoDetail></ModalAnnouncementPhotoDetail>
       <Box bgColor={"grey.8"} h={"1700px"} zIndex={1}>
         <Box w={"100%"} h={"550px"} bgColor={"brand.1"} zIndex={-1} />
         <Flex
@@ -57,6 +72,10 @@ const Details = () => {
                 <Img
                   src={announcementView?.cover_img}
                   objectFit={"scale-down"}
+                  onClick={() =>
+                    announcementView?.cover_img &&
+                    setImageAndOpenImageDetailModal(announcementView?.cover_img)
+                  }
                 ></Img>
               </Flex>
 
@@ -80,12 +99,13 @@ const Details = () => {
                   mt={"50px"}
                   mb={"10px"}
                 >
-                  <Flex w={"130px"} justify={"space-between"} h={"30px"}>
+                  <Flex justify={"space-between"} h={"30px"}>
                     <Text
                       padding={"5px"}
                       bgColor={"brand.4"}
                       borderRadius={"4px"}
                       color={"brand.1"}
+                      mr={"5px"}
                     >
                       {announcementView?.fabrication_year}
                     </Text>
@@ -98,10 +118,15 @@ const Details = () => {
                       {`${announcementView?.km} Km`}
                     </Text>
                   </Flex>
-                  <Text>{`R$ ${announcementView?.price}`}</Text>
+                  <Text>
+                    {announcementView?.price.toLocaleString("pt-BR", {
+                      style: "currency",
+                      currency: "BRL",
+                    })}
+                  </Text>
                 </Flex>
                 <Button
-                  variant={user ? "brand1" : "brandOpacity"}
+                  variant={userLoged ? "brand1" : "brandOpacity"}
                   position={"absolute"}
                   bottom={"10px"}
                   left={"20px"}
@@ -133,7 +158,7 @@ const Details = () => {
                 padding={"30px"}
               >
                 <Heading mb={"10px"}>Fotos</Heading>
-                <SimpleGrid columns={3} spacing={3}>
+                {/* <SimpleGrid columns={3} spacing={3}>
                   {announcementView?.image.length ? (
                     announcementView?.image.map((image) => {
                       return (
@@ -151,6 +176,9 @@ const Details = () => {
                             bgColor={"grey.6"}
                             borderRadius={"4px"}
                             objectFit={"scale-down"}
+                            onClick={() =>
+                              setImageAndOpenImageDetailModal(image.imageUrl)
+                            }
                           />
                         </Box>
                       );
@@ -158,7 +186,7 @@ const Details = () => {
                   ) : (
                     <Text>Este anuncio não possui imagens de detalhes</Text>
                   )}
-                </SimpleGrid>
+                </SimpleGrid> */}
               </Flex>
 
               <Flex
@@ -179,7 +207,7 @@ const Details = () => {
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industries
                 </Text>
-                <Button variant={"grey1"} onClick={goForprofile}>
+                <Button variant={"grey1"} onClick={detailsOrAdvertiser}>
                   {" "}
                   ver anuncios
                 </Button>
@@ -333,7 +361,7 @@ const Details = () => {
           >
             <Flex gap={"10px"} mb={"15px"} align={"center"}>
               <AvatarIcon size="sm" />
-              <Heading fontSize={"sm"}>{user?.name}</Heading>
+              <Heading fontSize={"sm"}>{userLoged?.name}</Heading>
             </Flex>
             <Center w={"100%"} h={"75%"}>
               <Textarea
@@ -348,7 +376,7 @@ const Details = () => {
               position={"absolute"}
               right={"50px"}
               bottom={"50px"}
-              variant={user ? "brand1" : "disable"}
+              variant={userLoged ? "brand1" : "disable"}
               size={"sm"}
               fontSize={"xxs"}
               padding={"4px 15px"}
