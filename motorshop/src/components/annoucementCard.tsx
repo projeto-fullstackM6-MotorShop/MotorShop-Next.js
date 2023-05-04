@@ -98,14 +98,14 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
       {pathname == "/" ? (
         <Card
           as={"li"}
-          w={{ base: "100%", lg: "100%" }}
+          minWidth={"287px"}
+          maxWidth={"287px"}
           h={"356px"}
           marginBottom={"85px"}
           bgColor={"transparent"}
           border={"none"}
           boxShadow={"none"}
-          minWidth={"none"}
-          marginRight={{ base: "61px", lg: "0px" }}
+          marginRight={{ base: "80px", lg: "0px" }}
           cursor={"pointer"}
           onClick={() => viewAnnouncementDetails()}
         >
@@ -162,7 +162,14 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
             <Heading fontSize={"xs"} fontWeight={"semibold"} color={"grey.1"}>
               {`${brand} - ${model}`}
             </Heading>
-            <Text textStyle={"body_1_400"}>{description}</Text>
+            <Text
+              textStyle={"body_1_400"}
+              whiteSpace={"nowrap"}
+              overflow="hidden"
+              textOverflow="ellipsis"
+            >
+              {description}
+            </Text>
 
             {pathname.includes("advertiser") ? (
               <></>

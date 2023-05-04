@@ -24,7 +24,7 @@ import { IAnnouncementRequest } from "@/interfaces/annoucement";
 const CreateAnnouncementModal = () => {
   const { allCars, allBrands, CreateAnnouncement } = useAnnouncement();
   const { onClose } = useModal();
-  const [selectedBrand, setSelectedBrand] = useState("chevrolet" as any);
+  const [selectedBrand, setSelectedBrand] = useState("" as any);
   const allSelectedBrandsCars = [allCars[selectedBrand]];
   const [selectedCar, setSelectedCar] = useState("");
   const [fipeValue, setFipeValue] = useState("");
@@ -153,7 +153,8 @@ const CreateAnnouncementModal = () => {
         </FormLabel>
         <Select
           fontSize={"xs"}
-          marginBottom={"30px"}
+          marginTop={"30px"}
+          placeholder="Selecione a marca"
           id="brand"
           {...register("brand")}
           onChange={(e) => setSelectedBrand(e.target.value)}
@@ -166,12 +167,19 @@ const CreateAnnouncementModal = () => {
             );
           })}
         </Select>
-        <Text className="errorMessage">{errors.brand?.message}</Text>
+        <Text
+          className="errorMessage"
+          textStyle={"error"}
+          marginBottom={"20px"}
+        >
+          {errors.brand?.message}
+        </Text>
 
         <FormLabel htmlFor="model" fontSize={"xs"} fontWeight={"bold"}>
           Modelo
         </FormLabel>
         <Select
+          placeholder={"Selecione um modelo"}
           fontSize={"xs"}
           id="model"
           {...register("model")}
@@ -188,7 +196,9 @@ const CreateAnnouncementModal = () => {
             );
           })}
         </Select>
-        <Text className="errorMessage">{errors.model?.message}</Text>
+        <Text className="errorMessage" textStyle={"error"}>
+          {errors.model?.message}
+        </Text>
 
         <Flex>
           <Box marginRight={"7px"} marginTop={"30px"}>
@@ -199,7 +209,7 @@ const CreateAnnouncementModal = () => {
               id="year"
               fontSize={"xs"}
               placeholder="2018"
-              defaultValue={yearValue}
+              value={yearValue}
               isDisabled
               type="text"
               {...register("fabrication_year")}
@@ -218,7 +228,7 @@ const CreateAnnouncementModal = () => {
               placeholder="Gasolina/Etanol"
               type="text"
               fontSize={"xs"}
-              defaultValue={fuelType}
+              value={fuelType}
               isDisabled
               {...register("fuel_type")}
             />
@@ -272,7 +282,7 @@ const CreateAnnouncementModal = () => {
               fontSize={"xs"}
               id="fipe"
               placeholder="R$ 48.000,00"
-              defaultValue={formattedFipeValue}
+              value={formattedFipeValue}
               isDisabled
               type="text"
               {...register("fipe")}
