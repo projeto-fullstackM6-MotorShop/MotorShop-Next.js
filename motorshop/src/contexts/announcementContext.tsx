@@ -41,12 +41,22 @@ interface announcementProviderData {
   userView: IUserData | null;
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
   getAllAnnouncements: () => void;
+
+  currentCars: IAnnoucementInterface[];
+  handlePreviousPage: () => void;
+  handleNextPage: () => void;
+  endIndex: number;
+  currentPage: number;
+  numPageEnd: number;
+  numCountPage: number;
+
   setisEditOrDeleteAnnouncementOpen: Dispatch<SetStateAction<boolean>>
   isEditOrDeleteAnnouncementOpen: boolean
   getAnnouncementById: (id: string) => Promise<void>
   editAnnouncement: (data: IAnnouncementRequest) => Promise<void>
   profileToRechargePage: () => Promise<void>
   cookieProfileView: string
+
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -186,6 +196,27 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     router.push("/profile");
   };
 
+  const [currentPage, setCurrentPage] = useState(0)
+
+  const startIndex = currentPage * 12
+  const endIndex = startIndex + 12
+  const currentCars: IAnnoucementInterface[] = allAnnouncements.slice(startIndex, endIndex)
+
+  const handlePreviousPage = () => {
+    setCurrentPage(currentPage - 1)
+    setNumCountPage(numCountPage - 1)
+  }
+
+  const handleNextPage = () => {
+    setCurrentPage(currentPage + 1)
+    setNumCountPage(numCountPage + 1)
+
+  }
+
+  const [numCountPage, setNumCountPage] = useState(1)
+
+  const numPageEnd = Math.ceil(allAnnouncements.length / 12);
+
   return (
     <AnnouncementContext.Provider
       value={{
@@ -208,6 +239,15 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         announcementProfileView,
         getAnnouncementsForProfile,
         userView,
+
+        currentCars,
+        handleNextPage,
+        handlePreviousPage,
+        endIndex,
+        currentPage,
+        numPageEnd,
+        numCountPage
+
         setisEditOrDeleteAnnouncementOpen,
         isEditOrDeleteAnnouncementOpen,
         getAnnouncementById,

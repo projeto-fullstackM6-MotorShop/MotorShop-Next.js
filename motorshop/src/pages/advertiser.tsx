@@ -13,6 +13,7 @@ import CreateAnnouncementSucessModal from "@/components/createAnnouncementSucess
 import { GetServerSideProps } from "next";
 import nookies from "nookies";
 import { useAuth } from "@/contexts/authContext";
+import Pagination from "@/components/paginationAnnouncement";
 import { IAnnoucementInterface } from "@/interfaces/annoucement";
 import AnnouceCard from "@/components/annoucementCard";
 import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncementModal";
@@ -119,27 +120,7 @@ const Advertiser = () => {
         </SimpleGrid>
 
         <Center p={"2rem 0"}>
-          <Flex
-            gap={"2rem"}
-            alignItems={"center"}
-            flexDirection={{ base: "column", lg: "row" }}
-          >
-            <Heading color={"grey.3"} fontSize={"md"} fontWeight={"semibold"}>
-              1 de 2
-            </Heading>
-            <Button
-              rightIcon={<ChevronRightIcon />}
-              variant={"unstyled"}
-              bg={"transparent"}
-              color={"brand.1"}
-              fontSize={"md"}
-              iconSpacing={1}
-              display={"flex"}
-              alignItems={"center"}
-            >
-              Seguinte
-            </Button>
-          </Flex>
+          <Pagination />
         </Center>
       </Flex>
       <Footer />
