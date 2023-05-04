@@ -4,7 +4,7 @@ import { useAnnouncement } from "@/contexts/announcementContext";
 import { useMediaQuery } from "react-responsive";
 
 const ListOfCars = () => {
-  const { allAnnouncements } = useAnnouncement();
+  const { currentCars } = useAnnouncement();
 
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 1048 });
 
@@ -29,7 +29,7 @@ const ListOfCars = () => {
           overflow={"auto"}
           gap={"20px"}
         >
-          {allAnnouncements.map((announcement) => {
+          {currentCars.map((announcement) => {
             return <AnnouceCard key={announcement.id} {...announcement} />;
           })}
         </Flex>
@@ -40,7 +40,7 @@ const ListOfCars = () => {
           mt={"20px"}
           w={"90%"}
         >
-          {allAnnouncements.map((announcement) => {
+          {currentCars.map((announcement) => {
             return <AnnouceCard key={announcement.id} {...announcement} />;
           })}
         </SimpleGrid>
