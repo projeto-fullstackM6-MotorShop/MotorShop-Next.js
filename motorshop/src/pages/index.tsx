@@ -3,11 +3,15 @@ import Footer from "../components/footer";
 import { Box, Button, Center, Flex, Heading, Image } from "@chakra-ui/react";
 import FilterCard from "@/components/filterCard";
 import ListOfCars from "@/components/listOfCars";
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons";
 import { useMediaQuery } from "react-responsive";
+import { useAnnouncement } from "@/contexts/announcementContext";
+import Pagination from "@/components/paginationAnnouncement";
 
 const Home = () => {
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 1048 });
+
+
   return (
     <>
       <Header />
@@ -57,23 +61,7 @@ const Home = () => {
       )}
 
       <Center p={"2rem 0"}>
-        <Flex gap={"2rem"} alignItems={"center"}>
-          <Heading color={"grey.3"} fontSize={"md"} fontWeight={"semibold"}>
-            1 de 2
-          </Heading>
-          <Button
-            rightIcon={<ChevronRightIcon />}
-            variant={"unstyled"}
-            bg={"transparent"}
-            color={"brand.1"}
-            fontSize={"md"}
-            iconSpacing={1}
-            display={"flex"}
-            alignItems={"center"}
-          >
-            Seguinte
-          </Button>
-        </Flex>
+        <Pagination />
       </Center>
 
       <Footer />
