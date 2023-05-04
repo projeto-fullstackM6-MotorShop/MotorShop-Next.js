@@ -120,6 +120,7 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
     editAnnouncement(formData);
     getAnnouncementsForProfile()
     onClose();
+    router.reload()
   };
 
   return (
