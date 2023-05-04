@@ -86,9 +86,9 @@ const Header = () => {
                 justifyContent={"flex-end"}
                 gap={"0.5rem"}
               >
-                <AvatarIcon name={user.name} />
+                <AvatarIcon name={userLoged.name} />
                 <Text fontSize={"xs"} color={"grey.2"}>
-                  {user.name}
+                  {userLoged.name}
                 </Text>
               </Flex>
             </MenuButton>
@@ -97,7 +97,7 @@ const Header = () => {
               <MenuItem onClick={openEditAddressModal}>
                 Editar Endereço
               </MenuItem>
-              {user.is_seller && (
+              {userLoged.is_seller && (
                 <MenuItem onClick={() => router.push("/advertiser")}>
                   Meus Anúncios
                 </MenuItem>
@@ -111,7 +111,7 @@ const Header = () => {
             </MenuList>
           </Menu>
         ) : (
-          user && (
+          userLoged && (
             <Menu>
               <MenuButton
                 as={Button}
@@ -150,7 +150,7 @@ const Header = () => {
             </Menu>
           )
         )}
-        {!user && isSmallScreen && (
+        {!userLoged && isSmallScreen && (
           <Menu>
             <MenuButton
               as={IconButton}
@@ -181,7 +181,7 @@ const Header = () => {
             </MenuList>
           </Menu>
         )}
-        {!user && !isSmallScreen && (
+        {!userLoged && !isSmallScreen && (
           <HStack h={"100%"} display={{ base: "none", md: "flex" }}>
             <Flex
               borderLeft={"2px solid"}
