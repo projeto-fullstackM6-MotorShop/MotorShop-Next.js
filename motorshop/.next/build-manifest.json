@@ -24,14 +24,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-<<<<<<< HEAD
     ],
     "/details/[annoucementId]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/details/[annoucementId].js"
-=======
->>>>>>> 4c839b801f2320b96ba0b948c0f592d2a5185af2
     ]
   },
   "ampFirstPages": []

@@ -23,7 +23,7 @@ import {
 import { ICreateCommentData } from "@/interfaces/comments";
 import { useModal } from "@/contexts/modalContext";
 import ModalAnnouncementPhotoDetail from "@/components/modalAnnouncementPhotoDetail";
-import { TimeIcon } from "@chakra-ui/icons";
+import { DeleteIcon, TimeIcon } from "@chakra-ui/icons";
 
 const makeACommentSchema = yup.object().shape({
   comment: yup.string().required().max(280),
@@ -31,14 +31,19 @@ const makeACommentSchema = yup.object().shape({
 
 const Details = () => {
   const [textAreaLength, setTextAreaLength] = useState(0);
+  const [value, setValue] = useState("");
 
   const { userLoged } = useAuth();
 
   const { announcementView, allAnnouncements, setannouncementView } =
     useAnnouncement();
 
-  const { commentsOfAnnoucement, getAllCommentsOfAnnoucement, createComment } =
-    useComment();
+  const {
+    commentsOfAnnoucement,
+    getAllCommentsOfAnnoucement,
+    createComment,
+    deleteComment,
+  } = useComment();
 
   const { onOpen, setDetailImageModal, setModalType, modalType } = useModal();
 
@@ -68,6 +73,7 @@ const Details = () => {
   };
 
   const makeAComment = (data: ICreateCommentData) => {
+    setValue("");
     createComment(data, annoucementId as string);
   };
 
@@ -75,6 +81,10 @@ const Details = () => {
     setModalType("biggerPhoto");
     setDetailImageModal(imageUrl);
     onOpen();
+  };
+
+  const removeComment = (commentId: string) => {
+    deleteComment(commentId, annoucementId as string);
   };
 
   const verifyTimeOfComment = (createdAt: string) => {
@@ -283,7 +293,11 @@ const Details = () => {
                 </Text>
                 <Button
                   variant={"grey1"}
-                  onClick={() => router.push("/profile")}
+                  onClick={() =>
+                    router.push(
+                      `/announces/profile/${announcementView?.user.id}`
+                    )
+                  }
                 >
                   Ver todos anúncios
                 </Button>
@@ -307,17 +321,30 @@ const Details = () => {
               {commentsOfAnnoucement.map((comment) => {
                 return (
                   <Box padding={"5px"} key={comment.id}>
-                    <Flex gap={"10px"} mb={"15px"} align={"center"}>
-                      <AvatarIcon size="sm" name={comment.user.name} />
-                      <Text variant={"body_2_500"} color={"grey.1"}>
-                        {comment.user.name}
-                      </Text>
-                      <TimeIcon fontSize={"xxs"} />
-                      <Text
-                        variant={"body_1_400"}
-                        color={"grey.3"}
-                      >{`há ${verifyTimeOfComment(comment.createdAt)}`}</Text>
+                    <Flex
+                      justifyContent={"space-between"}
+                      alignItems={"center"}
+                    >
+                      <Flex gap={"10px"} mb={"15px"} align={"center"}>
+                        <AvatarIcon size="sm" name={comment.user.name} />
+                        <Text variant={"body_2_500"} color={"grey.1"}>
+                          {comment.user.name}
+                        </Text>
+                        <TimeIcon fontSize={"xxs"} />
+                        <Text
+                          variant={"body_1_400"}
+                          color={"grey.3"}
+                        >{`há ${verifyTimeOfComment(comment.createdAt)}`}</Text>
+                      </Flex>
+                      {userLoged?.id == comment.user.id && (
+                        <DeleteIcon
+                          fontSize={"xxs"}
+                          color={"alert.1"}
+                          onClick={() => removeComment(comment.id)}
+                        />
+                      )}
                     </Flex>
+
                     <Text
                       variant={"body_2_400"}
                       color={"grey.2"}
@@ -357,8 +384,12 @@ const Details = () => {
                   w={"100%"}
                   h={"80%"}
                   resize={"none"}
+                  value={value}
                   {...register("comment")}
-                  onChange={(evt) => setTextAreaLength(evt.target.value.length)}
+                  onChange={(evt) => {
+                    setTextAreaLength(evt.target.value.length);
+                    setValue(evt.target.value);
+                  }}
                 />
                 <Button
                   position={"absolute"}
@@ -390,6 +421,8 @@ const Details = () => {
           </Flex>
         </Box>
       </Box>
+
+      {}
 
       <Footer />
     </>
