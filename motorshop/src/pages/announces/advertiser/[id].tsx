@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import ListOfCars from "@/components/listOfCars";
 import AvatarIcon from "@/components/avatarIcon";
 import CreateAnnouncementModal from "@/components/createAnnouncementModal";
 import CreateAnnouncementSucessModal from "@/components/createAnnouncementSucessModal";
@@ -18,27 +17,23 @@ import { useAuth } from "@/contexts/authContext";
 import { IAnnoucementInterface } from "@/interfaces/annoucement";
 import { useRouter } from "next/router";
 
+
 const Advertiser = () => {
   const router = useRouter();
-
   const { id } = router.query;
-  const { onOpen, isOpen, modalType, setModalType } = useModal();
+  const { onOpen, modalType, setModalType } = useModal();
   const { userLoged } = useAuth()
   const {
-    getAllCars,
-    allCars,
     isCreateAnnouncementSucessOpen,
     setIsCreateAnnouncementOpen,
-    isCreateAnnouncementOpen,
     announcementProfileView,
-    setisEditOrDeleteAnnouncementOpen,
-    isEditOrDeleteAnnouncementOpen,
-    announcementView,
-    getAllAnnouncements,
     toRechargePage
   } = useAnnouncement();
 
   useEffect(() => {
+    if (!userLoged?.is_seller) {
+      router.push('/')
+    }
     toRechargePage(id)
   }, []);
 
