@@ -8,7 +8,15 @@ import nookies from "nookies";
 import AnnouceCard from "@/components/annoucementCard";
 import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncementModal";
 import { ChevronRightIcon } from "@chakra-ui/icons";
-import { Box, Button, Center, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Center,
+  Flex,
+  Heading,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 import { useModal } from "@/contexts/modalContext";
 import { useEffect } from "react";
 import { useAnnouncement } from "@/contexts/announcementContext";
@@ -17,29 +25,28 @@ import { useAuth } from "@/contexts/authContext";
 import { IAnnoucementInterface } from "@/interfaces/annoucement";
 import { useRouter } from "next/router";
 
-
 const Advertiser = () => {
   const router = useRouter();
   const { id } = router.query;
   const { onOpen, modalType, setModalType } = useModal();
-  const { userLoged } = useAuth()
+  const { userLoged } = useAuth();
   const {
     isCreateAnnouncementSucessOpen,
     setIsCreateAnnouncementOpen,
     announcementProfileView,
-    toRechargePage
+    toRechargePage,
   } = useAnnouncement();
 
   useEffect(() => {
-    if (!userLoged?.is_seller) {
-      router.push('/')
+    if (userLoged && !userLoged?.is_seller) {
+      router.push("/");
     }
-    toRechargePage(id)
+    toRechargePage(id);
   }, []);
 
   const opencreateAnnouncementModal = () => {
     setIsCreateAnnouncementOpen(true);
-    setModalType('createAnnounce')
+    setModalType("createAnnounce");
     onOpen();
   };
 
@@ -47,9 +54,11 @@ const Advertiser = () => {
     <>
       <Header />
 
-      {modalType == 'createAnnounce' && <CreateAnnouncementModal />}
+      {modalType == "createAnnounce" && <CreateAnnouncementModal />}
       {isCreateAnnouncementSucessOpen && <CreateAnnouncementSucessModal />}
-      {modalType == 'editOrDelAnnounce' && <EditOrDeleteAnnouncementModal {...announcementProfileView} />}  
+      {modalType == "editOrDelAnnounce" && (
+        <EditOrDeleteAnnouncementModal {...announcementProfileView} />
+      )}
 
       <Box h={"277px"} bgColor={"brand.1"}></Box>
       <Flex
@@ -99,8 +108,8 @@ const Advertiser = () => {
         bgColor={"grey.8"}
         paddingTop={{ base: "386px", lg: "267px" }}
         marginTop={"-407px"}
-        direction={'column'}
-        alignItems={'center'}
+        direction={"column"}
+        alignItems={"center"}
       >
         <SimpleGrid columns={4} spacing={30} mt={"20px"} w={"90%"}>
           {announcementProfileView.length > 0 ? (

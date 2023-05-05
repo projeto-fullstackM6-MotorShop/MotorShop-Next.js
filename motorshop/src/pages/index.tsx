@@ -11,7 +11,6 @@ import Pagination from "@/components/paginationAnnouncement";
 const Home = () => {
   const isSmallScreen = useMediaQuery({ maxDeviceWidth: 1048 });
 
-
   return (
     <>
       <Header />
@@ -32,7 +31,7 @@ const Home = () => {
           zIndex={"-1"}
           position={"absolute"}
           objectFit={"cover"}
-          height={"30%"}
+          height={"25%"}
         />
         <Heading color={"grey.11"} fontWeight={"semibold"} fontSize={"xxxl"}>
           MotorShop

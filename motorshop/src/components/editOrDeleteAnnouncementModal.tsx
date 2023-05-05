@@ -25,17 +25,17 @@ import { IAnnouncementRequest } from "@/interfaces/annoucement";
 import { useRouter } from "next/router";
 
 const EditOrDeleteAnnouncementModal = (data: any) => {
-
   const router = useRouter();
 
-  const { allCars,
+  const {
+    allCars,
     editAnnouncement,
     announcementView,
     getAnnouncementById,
     getAnnouncementsForProfile,
     setdeleteAnnounceModal,
     deleteAnnounceModal,
-    deleteAnnounce
+    deleteAnnounce,
   } = useAnnouncement();
   const { onClose } = useModal();
 
@@ -51,7 +51,6 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
   useEffect(() => {
     getFipe();
     setCounter(2);
-
   }, [selectedCar]);
 
   const fipeToFormatt = +fipeValue;
@@ -81,10 +80,10 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
     onClose();
   };
 
-  const onDeleteAnnounce = () => { 
-    deleteAnnounce()
+  const onDeleteAnnounce = () => {
+    deleteAnnounce();
     onClose();
-    router.reload()    
+    router.reload();
   };
 
   const formschema = yup.object().shape({
@@ -97,9 +96,7 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
     price: yup.string().notRequired(),
     fipe: yup.string(),
     description: yup.string().notRequired(),
-    cover_img: yup
-      .string()
-      .required("O anuncio precisa de uma foto de capa.")
+    cover_img: yup.string().required("O anuncio precisa de uma foto de capa."),
     // image: yup.string().notRequired(),
     // image2: yup.string().notRequired(),
     // image3: yup.string().notRequired(),
@@ -118,14 +115,14 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
 
   const onFormSubmit = (formData: IAnnouncementRequest) => {
     editAnnouncement(formData);
-    getAnnouncementsForProfile()
+    getAnnouncementsForProfile();
     onClose();
-    router.reload()
+    router.reload();
   };
 
   return (
     <GeneralModal>
-      <FormControl padding={"24px"} >
+      <FormControl padding={"24px"}>
         <Heading
           color={"grey.0"}
           fontSize={"sm"}
@@ -147,8 +144,7 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
           value={announcementView?.brand}
           isDisabled
           {...register("brand")}
-        >
-        </Input>
+        ></Input>
         <Text className="errorMessage">{errors.brand?.message}</Text>
 
         <FormLabel htmlFor="model" fontSize={"xs"} fontWeight={"bold"}>
@@ -161,8 +157,7 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
           isDisabled
           type="text"
           {...register("model")}
-        >
-        </Input>
+        ></Input>
         <Text className="errorMessage">{errors.model?.message}</Text>
 
         <Flex>
@@ -426,7 +421,10 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
           <Button variant={"negative"} onClick={() => closeModal()}>
             Cancelar
           </Button>
-          <Button variant={"alert"} onClick={() => setdeleteAnnounceModal(true)}>
+          <Button
+            variant={"alert"}
+            onClick={() => setdeleteAnnounceModal(true)}
+          >
             Excluir anuncio
           </Button>
           <Button variant={"brandDisable"} onClick={handleSubmit(onFormSubmit)}>
@@ -443,16 +441,17 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
                 flexDirection={"column"}
                 gap={"2rem"}
                 width={"80%"}
-                padding={'15px'}                
+                padding={"15px"}
               >
                 <Flex justifyContent={"space-between"} alignItems={"center"}>
                   <Heading variant={"healding_7_500"}>Excluir Anuncio</Heading>
-                  <CloseButton onClick={() => setdeleteAnnounceModal(!deleteAnnounceModal)} />
+                  <CloseButton
+                    onClick={() => setdeleteAnnounceModal(!deleteAnnounceModal)}
+                  />
                 </Flex>
 
                 <Heading variant={"healding_7_600"} textAlign={"center"}>
-                  Deseja excluir o anuncio?
-                  esta ação não pode ser desfeita!
+                  Deseja excluir o anuncio? esta ação não pode ser desfeita!
                 </Heading>
 
                 <Flex justifyContent={"space-around"}>
@@ -466,7 +465,6 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
                     Não
                   </Button>
                 </Flex>
-
               </FormControl>
             </Center>
           </GeneralModal>
