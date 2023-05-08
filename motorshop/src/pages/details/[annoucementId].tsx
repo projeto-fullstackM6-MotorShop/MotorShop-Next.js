@@ -35,8 +35,12 @@ const Details = () => {
 
   const { userLoged } = useAuth();
 
-  const { announcementView, allAnnouncements, setannouncementView } =
-    useAnnouncement();
+  const {
+    announcementView,
+    allAnnouncements,
+    setannouncementView,
+    getAnnouncementsForProfile,
+  } = useAnnouncement();
 
   const {
     commentsOfAnnoucement,
@@ -113,6 +117,11 @@ const Details = () => {
     }
 
     return output;
+  };
+
+  const goToProfile = () => {
+    getAnnouncementsForProfile(announcementView?.user?.id as string);
+    router.push(`/announces/profile/${announcementView?.user?.id}`);
   };
 
   return (
@@ -293,14 +302,7 @@ const Details = () => {
                 >
                   {announcementView?.user?.description}
                 </Text>
-                <Button
-                  variant={"grey1"}
-                  onClick={() =>
-                    router.push(
-                      `/announces/profile/${announcementView?.user?.id}`
-                    )
-                  }
-                >
+                <Button variant={"grey1"} onClick={goToProfile}>
                   Ver todos anúncios
                 </Button>
               </Flex>

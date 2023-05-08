@@ -6,12 +6,12 @@ import { useEffect } from "react";
 const ProfileCars = () => {
   const { announcementProfileView } = useAnnouncement();
 
-  useEffect(() => { }, [announcementProfileView]);
+  useEffect(() => {}, [announcementProfileView]);
 
   return (
     <SimpleGrid columns={4} spacing={30} mt={"20px"} w={"90%"}>
       {announcementProfileView.map((announcement) => {
-        return <AnnouceCard key={announcement.id} {...announcement} />;
+        return <AnnouceCard key={announcement.id} annoucement={announcement} />;
       })}
     </SimpleGrid>
   );
