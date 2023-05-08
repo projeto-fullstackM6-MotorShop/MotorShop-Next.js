@@ -7,16 +7,7 @@ import CreateAnnouncementSucessModal from "@/components/createAnnouncementSucess
 import nookies from "nookies";
 import AnnouceCard from "@/components/annoucementCard";
 import EditOrDeleteAnnouncementModal from "@/components/editOrDeleteAnnouncementModal";
-import { ChevronRightIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Button,
-  Center,
-  Flex,
-  Heading,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { useModal } from "@/contexts/modalContext";
 import { useEffect } from "react";
 import { useAnnouncement } from "@/contexts/announcementContext";
@@ -26,26 +17,35 @@ import { IAnnoucementInterface } from "@/interfaces/annoucement";
 import { useRouter } from "next/router";
 
 const Advertiser = () => {
-  const router = useRouter();
-  const { id } = router.query;
-  const { onOpen, modalType, setModalType } = useModal();
   const { userLoged } = useAuth();
+
+  const { onOpen, modalType, setModalType } = useModal();
+
   const {
     isCreateAnnouncementSucessOpen,
     setIsCreateAnnouncementOpen,
-    announcementProfileView,
-    toRechargePage,
+    userWithAnnoucements,
+    getAnnouncementsForProfile,
+    getAllCars,
   } = useAnnouncement();
+
+  const router = useRouter();
+
+  const { id } = router.query;
 
   useEffect(() => {
     if (userLoged && !userLoged?.is_seller) {
       router.push("/");
     }
-    toRechargePage(id);
-  }, []);
+
+    if (!userWithAnnoucements) {
+      getAnnouncementsForProfile(id as string);
+    }
+  }, [userWithAnnoucements]);
 
   const opencreateAnnouncementModal = () => {
     setIsCreateAnnouncementOpen(true);
+    getAllCars();
     setModalType("createAnnounce");
     onOpen();
   };
@@ -55,10 +55,8 @@ const Advertiser = () => {
       <Header />
 
       {modalType == "createAnnounce" && <CreateAnnouncementModal />}
+      {modalType == "editOrDelAnnounce" && <EditOrDeleteAnnouncementModal />}
       {isCreateAnnouncementSucessOpen && <CreateAnnouncementSucessModal />}
-      {modalType == "editOrDelAnnounce" && (
-        <EditOrDeleteAnnouncementModal {...announcementProfileView} />
-      )}
 
       <Box h={"277px"} bgColor={"brand.1"}></Box>
       <Flex
@@ -78,7 +76,7 @@ const Advertiser = () => {
         <AvatarIcon size={"xl"} />
         <Flex alignItems={"center"}>
           <Heading as={"h6"} variant={"healding_6_600"} marginRight={"9px"}>
-            {userLoged?.name}
+            {userWithAnnoucements?.name}
           </Heading>
           <Flex
             borderRadius={"4px"}
@@ -94,7 +92,7 @@ const Advertiser = () => {
           </Flex>
         </Flex>
         <Text textAlign={"start"} textStyle={"body_1_400"}>
-          {userLoged?.description}
+          {userWithAnnoucements?.description}
         </Text>
         <Button
           onClick={opencreateAnnouncementModal}
@@ -112,38 +110,17 @@ const Advertiser = () => {
         alignItems={"center"}
       >
         <SimpleGrid columns={4} spacing={30} mt={"20px"} w={"90%"}>
-          {announcementProfileView.length > 0 ? (
-            announcementProfileView.map((data: IAnnoucementInterface) => (
-              <AnnouceCard {...data} key={data.id} />
-            ))
+          {userWithAnnoucements &&
+          userWithAnnoucements!.annoucements.length > 0 ? (
+            userWithAnnoucements!.annoucements.map(
+              (annoucement: IAnnoucementInterface) => (
+                <AnnouceCard {...annoucement} key={annoucement.id} />
+              )
+            )
           ) : (
             <Text>Este usuario ainda nao possui anuncios</Text>
           )}
         </SimpleGrid>
-
-        <Center p={"2rem 0"}>
-          <Flex
-            gap={"2rem"}
-            alignItems={"center"}
-            flexDirection={{ base: "column", lg: "row" }}
-          >
-            <Heading color={"grey.3"} fontSize={"md"} fontWeight={"semibold"}>
-              1 de 2
-            </Heading>
-            <Button
-              rightIcon={<ChevronRightIcon />}
-              variant={"unstyled"}
-              bg={"transparent"}
-              color={"brand.1"}
-              fontSize={"md"}
-              iconSpacing={1}
-              display={"flex"}
-              alignItems={"center"}
-            >
-              Seguinte
-            </Button>
-          </Flex>
-        </Center>
       </Flex>
       <Footer />
     </>
