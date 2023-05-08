@@ -24,6 +24,7 @@ import { ICreateCommentData } from "@/interfaces/comments";
 import { useModal } from "@/contexts/modalContext";
 import ModalAnnouncementPhotoDetail from "@/components/modalAnnouncementPhotoDetail";
 import { DeleteIcon, TimeIcon } from "@chakra-ui/icons";
+import Link from "next/link";
 
 const makeACommentSchema = yup.object().shape({
   comment: yup.string().required().max(280),
@@ -37,6 +38,8 @@ const Details = () => {
 
   const { announcementView, allAnnouncements, setannouncementView } =
     useAnnouncement();
+
+  const announcementPhoneToWhatsapp = ` https://wa.me/${announcementView?.user?.phone}`;
 
   const {
     commentsOfAnnoucement,
@@ -192,13 +195,30 @@ const Details = () => {
                     })}
                   </Text>
                 </Flex>
-                <Button
+                {/* <Button
                   w={"fit-content"}
                   variant={userLoged ? "brand1" : "brandOpacity"}
                   onClick={goForLogin}
                 >
                   Comprar
-                </Button>
+                </Button> */}
+
+                <Flex
+                  fontSize={"xs"}
+                  fontWeight={"normal"}
+                  bg={"brand.1"}
+                  border={"1.5px solid brand.1"}
+                  borderRadius={"4px"}
+                  color={"grey.11"}
+                  width={"100px"}
+                  height={"38px"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                >
+                  <Link href={announcementPhoneToWhatsapp} target="_blank">
+                    Comprar
+                  </Link>
+                </Flex>
               </Flex>
 
               <Flex
