@@ -195,14 +195,6 @@ const Details = () => {
                     })}
                   </Text>
                 </Flex>
-                {/* <Button
-                  w={"fit-content"}
-                  variant={userLoged ? "brand1" : "brandOpacity"}
-                  onClick={goForLogin}
-                >
-                  Comprar
-                </Button> */}
-
                 <Flex
                   fontSize={"xs"}
                   fontWeight={"normal"}
@@ -215,7 +207,10 @@ const Details = () => {
                   alignItems={"center"}
                   justifyContent={"center"}
                 >
-                  <Link href={announcementPhoneToWhatsapp} target="_blank">
+                  <Link
+                    href={userLoged ? announcementPhoneToWhatsapp : "/login"}
+                    target="_blank"
+                  >
                     Comprar
                   </Link>
                 </Flex>
