@@ -11,10 +11,11 @@ import { api, carsApi } from "@/services/api";
 import {
   IAnnoucementInterface,
   IAnnouncementRequest,
+  IAnnouncementUpdate,
 } from "../interfaces/annoucement";
 import { useAuth } from "./authContext";
 import { useRouter } from "next/router";
-import { IUserData } from "@/interfaces/users";
+import { IUserData, IUserWithAnnoucements } from "@/interfaces/users";
 import { Box, useToast } from "@chakra-ui/react";
 import { destroyCookie, parseCookies, setCookie } from "nookies";
 
@@ -34,7 +35,7 @@ interface announcementProviderData {
   setAllCars: Dispatch<SetStateAction<IAnnoucementInterface[]>>;
   setannouncementView: Dispatch<SetStateAction<IAnnoucementInterface | null>>;
   announcementView: IAnnoucementInterface | null;
-  getAnnouncementsForProfile: () => Promise<void>;
+  getAnnouncementsForProfile: (userId: string) => Promise<void>;
   announcementProfileView: IAnnoucementInterface[];
   userView: IUserData | null;
   CreateAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
@@ -48,12 +49,15 @@ interface announcementProviderData {
   numCountPage: number;
   setisEditOrDeleteAnnouncementOpen: Dispatch<SetStateAction<boolean>>;
   isEditOrDeleteAnnouncementOpen: boolean;
-  getAnnouncementById: (id: string) => Promise<void>;
-  editAnnouncement: (data: IAnnouncementRequest) => Promise<void>;
-  toRechargePage: (id: string | string[] | undefined) => Promise<void>;
+  getAnnouncementById: (annoucementId: string) => Promise<void>;
+  editAnnouncement: (
+    data: IAnnouncementUpdate,
+    annoucementId: string
+  ) => Promise<void>;
   setdeleteAnnounceModal: Dispatch<SetStateAction<boolean>>;
   deleteAnnounceModal: boolean;
-  deleteAnnounce: () => Promise<void>;
+  deleteAnnounce: (annoucementId: string) => Promise<void>;
+  userWithAnnoucements: IUserWithAnnoucements | null;
 }
 
 export const AnnouncementContext = createContext<announcementProviderData>(
@@ -61,15 +65,6 @@ export const AnnouncementContext = createContext<announcementProviderData>(
 );
 
 export const AnnouncementProvider = ({ children }: IChildren) => {
-  const cookies = parseCookies();
-
-  const [cookieProfileView, setcookieProfileView] = useState<string>(
-    cookies["@motorshop:profileId"] || ""
-  );
-  const [cookieAnnounceView, setcookieAnnounceView] = useState<string>(
-    cookies["@motorshop:announceId"] || ""
-  );
-
   const [allCars, setAllCars] = useState([] as IAnnoucementInterface[]);
   const [allBrands, setAllBrands] = useState([] as string[]);
   const [userAnnouncements, setUserAnnouncements] = useState(
@@ -82,7 +77,6 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   const [isEditOrDeleteAnnouncementOpen, setisEditOrDeleteAnnouncementOpen] =
     useState(false);
   const [allAnnouncements, setAllAnnouncements] = useState([] as any);
-
   const [announcementView, setannouncementView] =
     useState<IAnnoucementInterface | null>(null);
   const [userView, setuserView] = useState<IUserData | null>(null);
@@ -91,9 +85,11 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
   >([] as IAnnoucementInterface[]);
 
   const [deleteAnnounceModal, setdeleteAnnounceModal] = useState(false);
+  const [userWithAnnoucements, setUserWithAnnoucements] =
+    useState<IUserWithAnnoucements | null>(null);
 
-  const { token } = useAuth();
-  const router = useRouter();
+  const { token, userLoged } = useAuth();
+
   const toast = useToast();
 
   useEffect(() => {
@@ -118,6 +114,7 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
           Authorization: `Bearer ${token}`,
         },
       });
+      getAnnouncementsForProfile(userLoged?.id as string);
       setUserAnnouncements({ userAnnouncements, ...response.data });
       setIsCreateAnnouncementSucessOpen(true);
       setIsCreateAnnouncementOpen(false);
@@ -144,13 +141,16 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
-  const editAnnouncement = async (data: IAnnouncementRequest) => {
+  const editAnnouncement = async (
+    data: IAnnouncementUpdate,
+    annoucementId: string
+  ) => {
     try {
-      await api.patch(`/announcement/${announcementView?.id}`, data, {
+      await api.patch(`/announcement/${annoucementId}`, data, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      getAnnouncementsForProfile();
+      getAnnouncementsForProfile(userLoged?.id as string);
 
       toast({
         title: "sucess",
@@ -168,16 +168,11 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
-  const getAnnouncementsForProfile = async () => {
+  const getAnnouncementsForProfile = async (userId: string) => {
     try {
-      const res = await api.get(`/profile/${announcementView?.user.id}`);
-      const res2 = await api.get(`/user/${announcementView?.user.id}`);
-      setuserView(res2.data);
-      setannouncementProfileView(res.data);
+      const res = await api.get(`/profile/${userId}`);
 
-      destroyCookie(null, "@motorshop:profileId");
-      setCookie(null, "@motorshop:profileId", res2.data.id);
-      setcookieProfileView(res2.data.id);
+      setUserWithAnnoucements(res.data);
     } catch (error) {
       console.error(error);
     }
@@ -193,31 +188,15 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
     }
   };
 
-  const deleteAnnounce = async () => {
+  const deleteAnnounce = async (annoucementId: string) => {
     try {
-      await api.delete(`/announcement/${announcementView?.id}`, {
+      await api.delete(`/announcement/${annoucementId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
+
+      getAnnouncementsForProfile(userLoged?.id as string);
     } catch (error) {
       console.error(error);
-    }
-  };
-
-  const toRechargePage = async (id: string | string[] | undefined) => {
-    try {
-      const res = await api.get(`/profile/${id}`);
-      setannouncementProfileView(res.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const profileToRechargePage = async () => {
-    try {
-      const res = await api.get(`/profile/${cookieProfileView}`);
-      setannouncementProfileView(res.data);
-    } catch (error) {
-      console.log(error);
     }
   };
 
@@ -276,10 +255,10 @@ export const AnnouncementProvider = ({ children }: IChildren) => {
         isEditOrDeleteAnnouncementOpen,
         getAnnouncementById,
         editAnnouncement,
-        toRechargePage,
         setdeleteAnnounceModal,
         deleteAnnounceModal,
         deleteAnnounce,
+        userWithAnnoucements,
       }}
     >
       {children}

@@ -25,7 +25,6 @@ import { useAnnouncement } from "@/contexts/announcementContext";
 
 const Header = () => {
   const { userLoged } = useAuth();
-  const { toRechargePage } = useAnnouncement()
 
   const { onOpen, modalType, setModalType } = useModal();
   const { setIsFilterOpen } = useFilter();
@@ -33,9 +32,8 @@ const Header = () => {
   const router = useRouter();
 
   const toMyAnnounces = () => {
-    toRechargePage(userLoged!.id)
-    router.push(`/announces/advertiser/${userLoged!.id}`)
-  }
+    router.push(`/announces/advertiser/${userLoged!.id}`);
+  };
 
   const onLogout = () => {
     destroyCookie(null, "@motorshop:token");
@@ -148,7 +146,7 @@ const Header = () => {
                   Editar Endereço
                 </MenuItem>
                 {userLoged.is_seller && (
-                    <MenuItem onClick={() => toMyAnnounces()}>
+                  <MenuItem onClick={() => toMyAnnounces()}>
                     Meus Anúncios
                   </MenuItem>
                 )}

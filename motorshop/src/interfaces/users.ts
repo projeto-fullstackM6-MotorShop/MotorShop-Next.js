@@ -81,19 +81,18 @@ export interface IProviderProps {
   children: ReactNode;
 }
 
-export interface IUserProfileData {
+export interface IUserWithAnnoucements {
   id: string;
   name: string;
   email: string;
   cpf: string;
   phone: string;
   birth_date: string;
+  description: string;
   is_seller: boolean;
-  createdAt: Date;
-  updatedAt: Date;
-  address: IAddressRegister;
+  createdAt: string;
+  updatedAt: string;
   annoucements: IAnnoucementInterface[];
-  user?: IUserData;
 }
 
 export interface IUserRetrievePassword {

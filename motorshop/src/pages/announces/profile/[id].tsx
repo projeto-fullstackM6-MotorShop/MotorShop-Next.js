@@ -15,17 +15,20 @@ const Profile = () => {
 
   const { userLoged } = useAuth();
 
-  const { userView, announcementProfileView, toRechargePage } = useAnnouncement();
+  const { userWithAnnoucements, getAnnouncementsForProfile } =
+    useAnnouncement();
+  console.log(userWithAnnoucements);
+  useEffect(() => {
+    if (!userWithAnnoucements && id) {
+      getAnnouncementsForProfile(id as string);
+    }
+  }, [userWithAnnoucements, id]);
 
   const goForLogin = () => {
     if (!userLoged) {
       router.push("/login");
     }
   };
-
-  useEffect(() => {
-    toRechargePage(id)
-  }, []);
 
   return (
     <>
@@ -50,18 +53,18 @@ const Profile = () => {
           >
             <AvatarIcon size="xl" />
             <Flex gap={"10px"} alignItems={"center"}>
-              <Heading fontSize={"sm"}>{userView?.name}</Heading>
+              <Heading fontSize={"sm"}>{userWithAnnoucements?.name}</Heading>
               <Text
                 padding={"5px"}
                 bgColor={"brand.4"}
                 borderRadius={"4px"}
                 color={"brand.1"}
               >
-                {userView?.is_seller ? "Anunciante" : ""}
+                {userWithAnnoucements?.is_seller ? "Anunciante" : ""}
               </Text>
             </Flex>
             <Text textAlign={"start"} color={"grey.3"}>
-              {userView?.description}
+              {userWithAnnoucements?.description}
             </Text>
           </Box>
           <Heading
@@ -74,10 +77,13 @@ const Profile = () => {
             Anúncios
           </Heading>
           <SimpleGrid columns={4} spacing={30} mt={"20px"} w={"90%"}>
-            {announcementProfileView.length > 0 ? (
-              announcementProfileView.map((data: IAnnoucementInterface) => (
-                <AnnouceCard {...data} key={data.id} />
-              ))
+            {userWithAnnoucements &&
+            userWithAnnoucements!.annoucements.length > 0 ? (
+              userWithAnnoucements!.annoucements.map(
+                (data: IAnnoucementInterface) => (
+                  <AnnouceCard {...data} key={data.id} />
+                )
+              )
             ) : (
               <Text>Este usuario ainda nao possui anuncios</Text>
             )}

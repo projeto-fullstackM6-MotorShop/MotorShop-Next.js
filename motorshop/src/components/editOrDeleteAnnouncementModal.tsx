@@ -1,4 +1,15 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+import GeneralModal from "./generalModal";
+import { useAnnouncement } from "@/contexts/announcementContext";
+import { useEffect, useState } from "react";
+import dataCar from "../../dataTeste";
+import { useModal } from "@/contexts/modalContext";
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import {
+  IAnnoucementInterface,
+  IAnnouncementUpdate,
+} from "@/interfaces/annoucement";
 import {
   Box,
   Button,
@@ -9,115 +20,61 @@ import {
   FormLabel,
   Heading,
   Input,
-  Select,
   Text,
   Textarea,
 } from "@chakra-ui/react";
-import GeneralModal from "./generalModal";
-import { useAnnouncement } from "@/contexts/announcementContext";
-import { useEffect, useState } from "react";
-import dataCar from "../../../dataTeste";
-import { useModal } from "@/contexts/modalContext";
-import * as yup from "yup";
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { IAnnouncementRequest } from "@/interfaces/annoucement";
-import { useRouter } from "next/router";
 
-const EditOrDeleteAnnouncementModal = (data: any) => {
-  const router = useRouter();
-
+const EditOrDeleteAnnouncementModal = () => {
   const {
-    allCars,
     editAnnouncement,
     announcementView,
-    getAnnouncementById,
-    getAnnouncementsForProfile,
     setdeleteAnnounceModal,
     deleteAnnounceModal,
     deleteAnnounce,
   } = useAnnouncement();
+
   const { onClose } = useModal();
-
-  const [selectedBrand, setSelectedBrand] = useState("chevrolet" as any);
-  const allSelectedBrandsCars = [allCars[selectedBrand]];
-  const [selectedCar, setSelectedCar] = useState("");
-  const [fipeValue, setFipeValue] = useState("");
-  const [fuelType, setFuelType] = useState("");
-  const [yearValue, setYearValue] = useState("" as any);
-  let [counter, setCounter] = useState(2);
-  const [isDisable, setIsDisable] = useState(false);
-
-  useEffect(() => {
-    getFipe();
-    setCounter(2);
-  }, [selectedCar]);
-
-  const fipeToFormatt = +fipeValue;
-  const formattedFipeValue = fipeToFormatt.toLocaleString("pt-BR", {
-    style: "currency",
-    currency: "BRL",
-  });
-
-  const getFipe = () => {
-    dataCar.filter((car) => {
-      if (car.modelo.toLowerCase() === selectedCar.toLowerCase()) {
-        setFipeValue(car.valor);
-        setFuelType(car.type);
-        setYearValue(car.ano);
-      }
-    });
-  };
-
-  const addImageField = () => {
-    if (counter < 6) {
-      setCounter(counter + 1);
-    }
-  };
-
-  const closeModal = () => {
-    setCounter(2);
-    onClose();
-  };
-
-  const onDeleteAnnounce = () => {
-    deleteAnnounce();
-    onClose();
-    router.reload();
-  };
 
   const formschema = yup.object().shape({
     brand: yup.string().notRequired(),
     model: yup.string().notRequired(),
-    fabrication_year: yup.string(),
+    fabrication_year: yup.string().notRequired(),
     km: yup.string().notRequired(),
     color: yup.string().notRequired(),
-    fuel_type: yup.string(),
-    price: yup.string().notRequired(),
-    fipe: yup.string(),
+    fuel_type: yup.string().notRequired(),
+    price: yup.number().notRequired(),
+    fipe: yup.number().notRequired(),
     description: yup.string().notRequired(),
-    cover_img: yup.string().required("O anuncio precisa de uma foto de capa."),
-    // image: yup.string().notRequired(),
-    // image2: yup.string().notRequired(),
-    // image3: yup.string().notRequired(),
-    // image4: yup.string().notRequired(),
-    // image5: yup.string().notRequired(),
-    // image6: yup.string().notRequired(),
+    cover_img: yup.string().notRequired(),
+    image: yup.string().notRequired(),
+    image2: yup.string().notRequired(),
+    image3: yup.string().notRequired(),
+    image4: yup.string().notRequired(),
+    image5: yup.string().notRequired(),
+    image6: yup.string().notRequired(),
   });
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<IAnnouncementRequest>({
+  } = useForm<IAnnouncementUpdate>({
     resolver: yupResolver(formschema),
   });
 
-  const onFormSubmit = (formData: IAnnouncementRequest) => {
-    editAnnouncement(formData);
-    getAnnouncementsForProfile();
+  const closeModal = () => {
     onClose();
-    router.reload();
+  };
+
+  const onDeleteAnnounce = () => {
+    deleteAnnounce(announcementView!.id);
+    setdeleteAnnounceModal(false);
+    onClose();
+  };
+
+  const onFormSubmit = (formData: IAnnouncementUpdate) => {
+    editAnnouncement(formData, announcementView!.id);
+    onClose();
   };
 
   return (
@@ -244,7 +201,10 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
               fontSize={"xs"}
               id="fipe"
               placeholder="R$ 48.000,00"
-              value={formattedFipeValue}
+              value={announcementView?.fipe.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL",
+              })}
               isDisabled
               type="text"
               {...register("fipe")}
@@ -309,113 +269,28 @@ const EditOrDeleteAnnouncementModal = (data: any) => {
           </Text>
         </Box>
 
-        <>
-          <FormLabel
-            fontSize={"xs"}
-            fontWeight={"bold"}
-            htmlFor={`image{imgNumber}`}
-          >
-            1º Imagem da galeria
-          </FormLabel>
-          <Input
-            // {...register("image")}
-            marginBottom={"30px"}
-            fontSize={"xs"}
-            placeholder="https://image.com"
-          />
-        </>
-
-        <>
-          <FormLabel
-            fontSize={"xs"}
-            fontWeight={"bold"}
-            htmlFor={`image{imgNumber}`}
-          >
-            2º Imagem da galeria
-          </FormLabel>
-          <Input
-            // {...register("image2")}
-            marginBottom={"30px"}
-            fontSize={"xs"}
-            placeholder="https://image.com"
-          />
-        </>
-        {counter >= 3 && (
-          <>
-            <FormLabel
-              fontSize={"xs"}
-              fontWeight={"bold"}
-              htmlFor={`image{imgNumber}`}
-            >
-              3º Imagem da galeria
-            </FormLabel>
-            <Input
-              // {...register("image3")}
-              marginBottom={"30px"}
-              fontSize={"xs"}
-              placeholder="https://image.com"
-            />
-          </>
-        )}
-        {counter >= 4 && (
-          <>
-            <FormLabel
-              fontSize={"xs"}
-              fontWeight={"bold"}
-              htmlFor={`image{imgNumber}`}
-            >
-              4º Imagem da galeria
-            </FormLabel>
-            <Input
-              // {...register("image4")}
-              marginBottom={"30px"}
-              fontSize={"xs"}
-              placeholder="https://image.com"
-            />
-          </>
-        )}
-        {counter >= 5 && (
-          <>
-            <FormLabel
-              fontSize={"xs"}
-              fontWeight={"bold"}
-              htmlFor={`image{imgNumber}`}
-            >
-              5º Imagem da galeria
-            </FormLabel>
-            <Input
-              // {...register("image5")}
-              marginBottom={"30px"}
-              fontSize={"xs"}
-              placeholder="https://image.com"
-            />
-          </>
-        )}
-        {counter >= 6 && (
-          <>
-            <FormLabel
-              fontSize={"xs"}
-              fontWeight={"bold"}
-              htmlFor={`image{imgNumber}`}
-            >
-              6º Imagem da galeria
-            </FormLabel>
-            <Input
-              // {...register("image6")}
-              marginBottom={"30px"}
-              fontSize={"xs"}
-              placeholder="https://image.com"
-            />
-          </>
-        )}
-
-        <Button
-          variant={"outlineBrand1"}
-          border={"none"}
-          onClick={() => addImageField()}
-        >
-          Adicionar campo para imagem da galeria
-        </Button>
+        {announcementView!.image.length > 0 &&
+          announcementView!.image.map((image, index) => {
+            return (
+              <Box key={image.id}>
+                <FormLabel
+                  fontSize={"xs"}
+                  fontWeight={"bold"}
+                  htmlFor={`image${index}`}
+                >
+                  {`${index + 1}º Imagem da galeria`}
+                </FormLabel>
+                <Input
+                  {...register("image")}
+                  id={`image${index}`}
+                  marginBottom={"30px"}
+                  fontSize={"xs"}
+                  placeholder="https://image.com"
+                  defaultValue={image.imageUrl}
+                />
+              </Box>
+            );
+          })}
 
         <Flex marginTop={"56px"} justifyContent={"flex-end"} gap={"20px"}>
           <Button variant={"negative"} onClick={() => closeModal()}>
