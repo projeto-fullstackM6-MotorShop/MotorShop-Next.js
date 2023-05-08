@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import { IUserData } from "./users";
 
 export interface IAnnoucementInterface {
-  annoucements: any;
   id: string;
   brand: string;
   model: string;
@@ -10,7 +9,7 @@ export interface IAnnoucementInterface {
   km: string;
   color: string;
   fuel_type: string;
-  price: number;
+  price: string;
   fipe: number;
   description: string;
   cover_img: string;
@@ -18,7 +17,7 @@ export interface IAnnoucementInterface {
   updated_at: Date;
   is_active: boolean;
   is_good_price: boolean;
-  user: IUserData;
+  user?: IUserData;
   map?(arg0: (car: ICarBrand) => void): ReactNode;
   image: [
     {
@@ -44,6 +43,26 @@ export interface IAnnouncementRequest {
   fipe: number;
   description: string;
   cover_img: string;
+  image?: string;
+  image2?: string;
+  image3?: string;
+  image4?: string;
+  image5?: string;
+  image6?: string;
+  images?: (string | undefined)[];
+}
+
+export interface IAnnouncementUpdate {
+  brand?: string;
+  model?: string;
+  fabrication_year?: string;
+  km?: string;
+  color?: string;
+  fuel_type?: string;
+  price?: number;
+  fipe?: number;
+  description?: string;
+  cover_img?: string;
   image?: string;
   image2?: string;
   image3?: string;

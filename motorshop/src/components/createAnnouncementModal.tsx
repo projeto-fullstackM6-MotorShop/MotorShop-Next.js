@@ -14,7 +14,7 @@ import {
 import GeneralModal from "./generalModal";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useEffect, useState } from "react";
-import dataCar from "../../../dataTeste";
+import dataCar from "../../dataTeste";
 import { useModal } from "@/contexts/modalContext";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";

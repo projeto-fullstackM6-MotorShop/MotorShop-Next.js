@@ -184,10 +184,12 @@ const Details = () => {
                     </Text>
                   </Flex>
                   <Text variant={"healding_7_500"} color={"grey.1"}>
-                    {`${announcementView?.price.toLocaleString("pt-BR", {
+                    {parseFloat(
+                      announcementView?.price as string
+                    ).toLocaleString("pt-BR", {
                       style: "currency",
                       currency: "BRL",
-                    })}`}
+                    })}
                   </Text>
                 </Flex>
                 <Button
@@ -280,7 +282,7 @@ const Details = () => {
                 gap={"20px"}
                 borderRadius={"4px"}
               >
-                <AvatarIcon size="xl" name={announcementView?.user.name} />
+                <AvatarIcon size="xl" name={announcementView?.user?.name} />
                 <Heading variant={"healding_6_600"} color={"grey.1"}>
                   {announcementView?.user?.name}
                 </Heading>
@@ -289,13 +291,13 @@ const Details = () => {
                   variant={"body_1_400"}
                   color={"grey.2"}
                 >
-                  {announcementView?.user.description}
+                  {announcementView?.user?.description}
                 </Text>
                 <Button
                   variant={"grey1"}
                   onClick={() =>
                     router.push(
-                      `/announces/profile/${announcementView?.user.id}`
+                      `/announces/profile/${announcementView?.user?.id}`
                     )
                   }
                 >
