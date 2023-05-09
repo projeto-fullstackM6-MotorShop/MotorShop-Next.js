@@ -5,7 +5,7 @@ import { useAnnouncement } from "@/contexts/announcementContext";
 import { useAuth } from "@/contexts/authContext";
 import { useComment } from "@/contexts/commentContext";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -19,12 +19,12 @@ import {
   SimpleGrid,
   Text,
   Textarea,
+  Link,
 } from "@chakra-ui/react";
 import { ICreateCommentData } from "@/interfaces/comments";
 import { useModal } from "@/contexts/modalContext";
 import ModalAnnouncementPhotoDetail from "@/components/modalAnnouncementPhotoDetail";
-import { DeleteIcon, TimeIcon } from "@chakra-ui/icons";
-import Link from "next/link";
+import { DeleteIcon, EditIcon, TimeIcon } from "@chakra-ui/icons";
 
 const makeACommentSchema = yup.object().shape({
   comment: yup.string().required().max(280),
@@ -33,6 +33,9 @@ const makeACommentSchema = yup.object().shape({
 const Details = () => {
   const [textAreaLength, setTextAreaLength] = useState(0);
   const [value, setValue] = useState("");
+  const [isEditCommentOpen, setIsEditCommentOpen] = useState(false);
+  const [editCommentId, setEditCommentId] = useState("");
+  const [editCommentValue, setEditCommentValue] = useState("");
 
   const { userLoged } = useAuth();
 
@@ -50,6 +53,7 @@ const Details = () => {
     getAllCommentsOfAnnoucement,
     createComment,
     deleteComment,
+    updateComment,
   } = useComment();
 
   const { onOpen, setDetailImageModal, setModalType, modalType } = useModal();
@@ -92,6 +96,25 @@ const Details = () => {
 
   const removeComment = (commentId: string) => {
     deleteComment(commentId, annoucementId as string);
+  };
+
+  const changeToEditComment = (commentId: string, comment: string) => {
+    setEditCommentId(commentId);
+    setEditCommentValue(comment);
+
+    setIsEditCommentOpen(true);
+  };
+
+  const patchComment = (evt: FormEvent<HTMLDivElement>, commentId: string) => {
+    evt.preventDefault();
+    updateComment(
+      { comment: `${editCommentValue} (editado)` },
+      commentId,
+      annoucementId as string
+    );
+    setEditCommentId("");
+    setEditCommentValue("");
+    setIsEditCommentOpen(false);
   };
 
   const verifyTimeOfComment = (createdAt: string) => {
@@ -218,7 +241,8 @@ const Details = () => {
                 >
                   <Link
                     href={userLoged ? announcementPhoneToWhatsapp : "/login"}
-                    target="_blank"
+                    isExternal={userLoged ? true : false}
+                    _hover={{ textDecoration: "none" }}
                   >
                     Comprar
                   </Link>
@@ -356,21 +380,91 @@ const Details = () => {
                         >{`há ${verifyTimeOfComment(comment.createdAt)}`}</Text>
                       </Flex>
                       {userLoged?.id == comment.user.id && (
-                        <DeleteIcon
-                          fontSize={"xxs"}
-                          color={"alert.1"}
-                          onClick={() => removeComment(comment.id)}
-                        />
+                        <Flex gap={"5px"}>
+                          <EditIcon
+                            fontSize={"xxs"}
+                            color={"brand.1"}
+                            cursor={"pointer"}
+                            onClick={() =>
+                              changeToEditComment(comment.id, comment.comment)
+                            }
+                          />
+                          <DeleteIcon
+                            fontSize={"xxs"}
+                            color={"alert.1"}
+                            cursor={"pointer"}
+                            onClick={() => removeComment(comment.id)}
+                          />
+                        </Flex>
                       )}
                     </Flex>
 
-                    <Text
-                      variant={"body_2_400"}
-                      color={"grey.2"}
-                      textAlign={"justify"}
-                    >
-                      {comment.comment}
-                    </Text>
+                    {isEditCommentOpen && comment.id == editCommentId ? (
+                      <Box
+                        padding={"20px"}
+                        w={"100%"}
+                        h={"130px"}
+                        bgColor={"grey.11"}
+                        borderRadius={"4px"}
+                        position={"relative"}
+                      >
+                        <Center
+                          as={"form"}
+                          w={"100%"}
+                          h={"100%"}
+                          onSubmit={(evt: FormEvent<HTMLDivElement>) =>
+                            patchComment(evt, comment.id)
+                          }
+                        >
+                          <Textarea
+                            placeholder="Edite seu comentario"
+                            size={"xs"}
+                            w={"100%"}
+                            h={"100%"}
+                            resize={"none"}
+                            value={editCommentValue}
+                            onChange={(evt) =>
+                              setEditCommentValue(evt.target.value)
+                            }
+                          />
+                          <Flex
+                            position={"absolute"}
+                            right={"35px"}
+                            bottom={"30px"}
+                          >
+                            <Button
+                              variant={"brand1"}
+                              size={"xs"}
+                              fontSize={"xxs"}
+                              padding={"4px 8px"}
+                              type={"submit"}
+                              zIndex={2}
+                            >
+                              Editar
+                            </Button>
+                            <Button
+                              variant={"brand1"}
+                              size={"xs"}
+                              fontSize={"xxs"}
+                              padding={"4px 8px"}
+                              type={"button"}
+                              onClick={() => setIsEditCommentOpen(false)}
+                              zIndex={2}
+                            >
+                              Cancelar
+                            </Button>
+                          </Flex>
+                        </Center>
+                      </Box>
+                    ) : (
+                      <Text
+                        variant={"body_2_400"}
+                        color={"grey.2"}
+                        textAlign={"justify"}
+                      >
+                        {comment.comment}
+                      </Text>
+                    )}
                   </Box>
                 );
               })}
