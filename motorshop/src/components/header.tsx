@@ -27,11 +27,15 @@ const Header = () => {
   const { userLoged } = useAuth();
 
   const { onOpen, modalType, setModalType } = useModal();
+
   const { setIsFilterOpen } = useFilter();
+
+  const { getAnnouncementsForProfile } = useAnnouncement();
 
   const router = useRouter();
 
   const toMyAnnounces = () => {
+    getAnnouncementsForProfile(userLoged!.id);
     router.push(`/announces/advertiser/${userLoged!.id}`);
   };
 

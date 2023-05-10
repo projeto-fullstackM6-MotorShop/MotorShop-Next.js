@@ -14,33 +14,43 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import EditOrDeleteAnnouncementModal from "./editOrDeleteAnnouncementModal";
 
-const AnnouceCard = (data: IAnnoucementInterface) => {
+interface IPropsAnnoucementCard {
+  annoucement: IAnnoucementInterface;
+  userName?: string;
+  userId?: string;
+}
+
+const AnnouceCard = (data: IPropsAnnoucementCard) => {
   const { userLoged } = useAuth();
 
   const {
     setisEditOrDeleteAnnouncementOpen,
     getAnnouncementById,
-    announcementView,
+    getAnnouncementsForProfile,
   } = useAnnouncement();
 
-  const { onOpen, setModalType, modalType } = useModal();
+  const { onOpen, setModalType } = useModal();
 
   const router = useRouter();
   const pathname = router.pathname;
 
-  let {
-    id,
-    cover_img,
-    brand,
-    model,
-    description,
-    km,
-    fabrication_year,
-    price,
-    is_good_price,
-    is_active,
+  const {
+    userId,
+    userName,
+    annoucement: {
+      cover_img,
+      brand,
+      id,
+      description,
+      fabrication_year,
+      is_active,
+      is_good_price,
+      km,
+      model,
+      price,
+      user,
+    },
   } = data;
 
   useEffect(() => {
@@ -49,15 +59,18 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
 
   const viewAnnouncementDetails = () => {
     if (pathname == "/") {
-      if (userLoged?.id == announcementView?.user?.id) {
+      if (userLoged?.id == user?.id) {
+        getAnnouncementsForProfile(user!.id);
         router.push(`/announces/advertiser/${userLoged!.id}`);
       } else {
+        getAnnouncementById(id);
         router.push(`/details/${id}`);
       }
     }
   };
 
   const advertiserToDetails = () => {
+    getAnnouncementById(id);
     router.push(`/details/${id}`);
   };
 
@@ -149,9 +162,9 @@ const AnnouceCard = (data: IAnnoucementInterface) => {
             <></>
           ) : (
             <Flex alignItems={"center"} gap={"8px"}>
-              <AvatarIcon name={announcementView?.user?.name} />
+              <AvatarIcon name={userName ? userName : user?.name} />
               <Text fontSize={"xxs"} fontWeight={"medium"} color={"grey.2"}>
-                {announcementView?.user?.name}
+                {userName ? userName : user?.name}
               </Text>
             </Flex>
           )}

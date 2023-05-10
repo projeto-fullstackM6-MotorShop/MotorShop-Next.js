@@ -13,22 +13,7 @@ const Profile = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const { userLoged } = useAuth();
-
-  const { userWithAnnoucements, getAnnouncementsForProfile } =
-    useAnnouncement();
-  console.log(userWithAnnoucements);
-  useEffect(() => {
-    if (!userWithAnnoucements && id) {
-      getAnnouncementsForProfile(id as string);
-    }
-  }, [userWithAnnoucements, id]);
-
-  const goForLogin = () => {
-    if (!userLoged) {
-      router.push("/login");
-    }
-  };
+  const { userWithAnnoucements } = useAnnouncement();
 
   return (
     <>
@@ -81,7 +66,11 @@ const Profile = () => {
             userWithAnnoucements!.annoucements.length > 0 ? (
               userWithAnnoucements!.annoucements.map(
                 (data: IAnnoucementInterface) => (
-                  <AnnouceCard {...data} key={data.id} />
+                  <AnnouceCard
+                    annoucement={data}
+                    userName={userWithAnnoucements.name}
+                    key={data.id}
+                  />
                 )
               )
             ) : (

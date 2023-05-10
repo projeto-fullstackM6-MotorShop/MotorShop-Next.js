@@ -31,7 +31,9 @@ const ListOfCars = () => {
         >
           {currentCars.length ? (
             currentCars.map((announcement) => {
-              return <AnnouceCard key={announcement.id} {...announcement} />;
+              return (
+                <AnnouceCard key={announcement.id} annoucement={announcement} />
+              );
             })
           ) : (
             <Flex
@@ -54,7 +56,9 @@ const ListOfCars = () => {
           w={"90%"}
         >
           {currentCars.map((announcement) => {
-            return <AnnouceCard key={announcement.id} {...announcement} />;
+            return (
+              <AnnouceCard key={announcement.id} annoucement={announcement} />
+            );
           })}
         </SimpleGrid>
       ) : (
