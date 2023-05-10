@@ -63,12 +63,14 @@ const AnnouceCard = (data: IPropsAnnoucementCard) => {
         getAnnouncementsForProfile(user!.id);
         router.push(`/announces/advertiser/${userLoged!.id}`);
       } else {
+        getAnnouncementById(id);
         router.push(`/details/${id}`);
       }
     }
   };
 
   const advertiserToDetails = () => {
+    getAnnouncementById(id);
     router.push(`/details/${id}`);
   };
 

@@ -39,12 +39,8 @@ const Details = () => {
 
   const { userLoged } = useAuth();
 
-  const {
-    announcementView,
-    allAnnouncements,
-    setannouncementView,
-    getAnnouncementsForProfile,
-  } = useAnnouncement();
+  const { announcementView, getAnnouncementsForProfile, getAnnouncementById } =
+    useAnnouncement();
 
   const announcementPhoneToWhatsapp = ` https://wa.me/${announcementView?.user?.phone}`;
 
@@ -68,14 +64,10 @@ const Details = () => {
 
   useEffect(() => {
     if (annoucementId) {
-      setannouncementView(
-        allAnnouncements.find((annoucement) => annoucement.id == annoucementId)!
-      );
+      getAnnouncementById(annoucementId as string);
+      getAllCommentsOfAnnoucement(annoucementId as string);
     }
-    if (announcementView) {
-      getAllCommentsOfAnnoucement(announcementView!.id);
-    }
-  }, [annoucementId, announcementView]);
+  }, [annoucementId]);
 
   const goForLogin = () => {
     if (!userLoged) {
