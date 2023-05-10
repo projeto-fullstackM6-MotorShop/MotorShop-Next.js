@@ -1,4 +1,4 @@
-import { Flex, SimpleGrid, extendTheme } from "@chakra-ui/react";
+import { Flex, SimpleGrid, Text, extendTheme } from "@chakra-ui/react";
 import AnnouceCard from "./annoucementCard";
 import { useAnnouncement } from "@/contexts/announcementContext";
 import { useMediaQuery } from "react-responsive";
@@ -29,11 +29,26 @@ const ListOfCars = () => {
           overflow={"auto"}
           gap={"20px"}
         >
-          {currentCars.map((announcement) => {
-            return <AnnouceCard key={announcement.id} {...announcement} />;
-          })}
+          {currentCars.length ? (
+            currentCars.map((announcement) => {
+              return (
+                <AnnouceCard key={announcement.id} annoucement={announcement} />
+              );
+            })
+          ) : (
+            <Flex
+              alignItems={"center"}
+              justifyContent={"center"}
+              height={"100%"}
+              width={"100%"}
+            >
+              <Text fontSize={"sm"} color={"grey.4"} alignSelf={"center"}>
+                Ainda não há anuncios cadastrados
+              </Text>
+            </Flex>
+          )}
         </Flex>
-      ) : (
+      ) : currentCars.length ? (
         <SimpleGrid
           columns={{ base: 2, lg: 2, xl: 3, "2xl": 4 }}
           spacing={30}
@@ -41,9 +56,17 @@ const ListOfCars = () => {
           w={"90%"}
         >
           {currentCars.map((announcement) => {
-            return <AnnouceCard key={announcement.id} {...announcement} />;
+            return (
+              <AnnouceCard key={announcement.id} annoucement={announcement} />
+            );
           })}
         </SimpleGrid>
+      ) : (
+        <Flex alignItems={"center"} justifyContent={"center"} height={"100%"}>
+          <Text fontSize={"sm"} color={"grey.4"}>
+            Ainda não há anuncios cadastrados
+          </Text>
+        </Flex>
       )}
     </>
   );

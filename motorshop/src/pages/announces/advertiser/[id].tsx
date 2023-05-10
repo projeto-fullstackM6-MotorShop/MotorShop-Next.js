@@ -114,7 +114,12 @@ const Advertiser = () => {
           userWithAnnoucements!.annoucements.length > 0 ? (
             userWithAnnoucements!.annoucements.map(
               (annoucement: IAnnoucementInterface) => (
-                <AnnouceCard {...annoucement} key={annoucement.id} />
+                <AnnouceCard
+                  annoucement={annoucement}
+                  userId={userWithAnnoucements.id}
+                  userName={userWithAnnoucements.name}
+                  key={annoucement.id}
+                />
               )
             )
           ) : (

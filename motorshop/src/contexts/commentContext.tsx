@@ -8,6 +8,11 @@ interface CommentProviderData {
   createComment: (data: ICreateCommentData, annoucementId: string) => void;
   getAllCommentsOfAnnoucement: (annoucementId: string) => void;
   deleteComment: (commentId: string, annoucementId: string) => void;
+  updateComment: (
+    data: ICreateCommentData,
+    commentId: string,
+    annoucementId: string
+  ) => void;
   commentsOfAnnoucement: IComment[];
 }
 
@@ -59,12 +64,29 @@ export const CommentProvider = ({ children }: IChildren) => {
     }
   };
 
+  const updateComment = async (
+    data: ICreateCommentData,
+    commentId: string,
+    annoucementId: string
+  ) => {
+    try {
+      await api.patch(`/comment/${commentId}`, data, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      getAllCommentsOfAnnoucement(annoucementId);
+    } catch (error: any) {
+      console.error(error);
+    }
+  };
+
   return (
     <CommentContext.Provider
       value={{
         createComment,
         getAllCommentsOfAnnoucement,
         deleteComment,
+        updateComment,
         commentsOfAnnoucement,
       }}
     >
